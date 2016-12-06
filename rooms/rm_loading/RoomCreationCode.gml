@@ -1,0 +1,1 @@
+scr_setup_new_map("tsdcTest");

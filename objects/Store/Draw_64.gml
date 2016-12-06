@@ -1,0 +1,30 @@
+/// Draw the inventory
+event_inherited();
+
+draw_text(32, 200, string_hash_to_newline(current_item));
+
+// Set cell color
+draw_set_colour(c_black);
+draw_set_alpha(.5);
+
+// Draw the inventory slots
+scr_draw_inventory(global.inventory_slots, slot_width, inventory_coords[0], inventory_coords[1]);
+
+// Draw the equipment slots
+scr_draw_inventory(global.equipment_slots, slot_width, equipment_coords[0], equipment_coords[1]);
+
+// Draw the store slots
+scr_draw_inventory(store_slots, slot_width, store_coords[0], store_coords[1]);
+
+// Draw selected item stats
+if (selected_item != noone) {
+    scr_draw_inv_tooltip(selected_item.text,32,64,200);
+}
+
+// Reset the color and alpha
+draw_set_colour(c_white);
+draw_set_alpha(1);
+
+/// Draw the close btn
+draw_sprite(spr_menu_button,0,close_btn_x1,close_btn_y1);
+

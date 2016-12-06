@@ -1,0 +1,164 @@
+Converting GML script : ${project_dir}\scripts\scr_load_map\scr_load_map.gml
+Error : variable "layer_depth" has same name as a built-in (function, constant or variable), it must be renamed to function correctly
+DONE
+
+Converting GML script : ${project_dir}\scripts\scr_draw_tooltip\scr_draw_tooltip.gml
+Error : variable "draw_set_colour" has same name as a built-in (function, constant or variable), it must be renamed to function correctly
+DONE
+
+Converting GML script : ${project_dir}\scripts\scr_get_input\scr_get_input.gml
+Converted string : line 2 : 'D' -> "D"
+Converted string : line 3 : 'A' -> "A"
+Converted string : line 4 : 'W' -> "W"
+Converted string : line 5 : 'S' -> "S"
+Converted string : line 12 : 'C' -> "C"
+Converted string : line 13 : 'X' -> "X"
+Converted string : line 22 : '1' -> "1"
+Converted string : line 23 : '2' -> "2"
+Converted string : line 24 : '3' -> "3"
+Converted string : line 25 : '4' -> "4"
+Converted string : line 26 : '5' -> "5"
+Converted string : line 27 : '6' -> "6"
+Converted string : line 28 : '7' -> "7"
+Converted string : line 29 : '8' -> "8"
+Converted string : line 30 : '9' -> "9"
+Converted string : line 31 : '0' -> "0"
+Converted string : line 33 : 'I' -> "I"
+
+Converting GML script : ${project_dir}\scripts\scr_draw_inv_tooltip\scr_draw_inv_tooltip.gml
+Error : variable "draw_set_colour" has same name as a built-in (function, constant or variable), it must be renamed to function correctly
+DONE
+
+Converting GML script : ${project_dir}\scripts\scr_draw_nearest_comparison\scr_draw_nearest_comparison.gml
+Error : variable "draw_set_colour" has same name as a built-in (function, constant or variable), it must be renamed to function correctly
+DONE
+
+Converting GML script : ${project_dir}\scripts\scr_draw_equipment_comparison\scr_draw_equipment_comparison.gml
+Error : variable "draw_set_colour" has same name as a built-in (function, constant or variable), it must be renamed to function correctly
+DONE
+
+Converting GML script : ${project_dir}\scripts\scr_activate_onscreen_instances\scr_activate_onscreen_instances.gml
+Converted builtin : line 3 : view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 3 : view_yview[0] -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 3 : view_wview[0] -> __view_get( e__VW.WView, 0 )
+Converted builtin : line 3 : view_hview[0] -> __view_get( e__VW.HView, 0 )
+
+Converting GML script : ${project_dir}\scripts\scr_draw_inv_slot\scr_draw_inv_slot.gml
+Error : variable "draw_set_colour" has same name as a built-in (function, constant or variable), it must be renamed to function correctly
+DONE
+
+Converting GML script : ${project_dir}\scripts\scr_draw_inventory\scr_draw_inventory.gml
+Error : variable "draw_set_colour" has same name as a built-in (function, constant or variable), it must be renamed to function correctly
+DONE
+
+Converting GML script : ${project_dir}\scripts\scr_init_spark\scr_init_spark.gml
+Error : variable "part_type_colour2" has same name as a built-in (function, constant or variable), it must be renamed to function correctly
+DONE
+
+Converting GML script : ${project_dir}\scripts\scr_scale_view\scr_scale_view.gml
+Converted builtin : line 6 : view_wview[0] -> __view_get( e__VW.WView, 0 )
+Converted builtin : line 2 : view_wview[0] = argument0 -> __view_set( e__VW.WView, 0, argument0 )
+Converted builtin : line 6 : view_hview[0] -> __view_get( e__VW.HView, 0 )
+Converted builtin : line 3 : view_hview[0] = argument1 -> __view_set( e__VW.HView, 0, argument1 )
+Converted builtin : line 4 : view_hborder[0] = argument0/2 -> __view_set( e__VW.HBorder, 0, argument0/2 )
+Converted builtin : line 5 : view_vborder[0] = argument1/2 -> __view_set( e__VW.VBorder, 0, argument1/2 )
+
+Converting GML script : ${project_dir}\scripts\scr_init_blood\scr_init_blood.gml
+Error : variable "part_type_colour2" has same name as a built-in (function, constant or variable), it must be renamed to function correctly
+DONE
+
+Converting GML script : ${project_dir}\scripts\scr_draw_text_shadow\scr_draw_text_shadow.gml
+Error : variable "draw_get_colour" has same name as a built-in (function, constant or variable), it must be renamed to function correctly
+Error : variable "draw_set_colour" has same name as a built-in (function, constant or variable), it must be renamed to function correctly
+DONE
+
+Converting GML script : ${project_dir}\scripts\scr_equip\scr_equip.gml
+Converted builtin : line 27 : instance_id -> instance_id_get( 0 )
+DONE
+
+Converting GML script : ${project_dir}\scripts\scr_draw_btn\scr_draw_btn.gml
+Error : variable "draw_set_colour" has same name as a built-in (function, constant or variable), it must be renamed to function correctly
+DONE
+
+Converting GML script : ${project_dir}\scripts\scr_draw_tab_btn\scr_draw_tab_btn.gml
+Error : variable "draw_set_colour" has same name as a built-in (function, constant or variable), it must be renamed to function correctly
+DONE
+
+Converting GML script : ${project_dir}\objects\Dialog_Box\Create_0.gml
+Converted builtin : line 7 : view_wview[0] -> __view_get( e__VW.WView, 0 )
+
+Converting GML script : ${project_dir}\objects\Dialog_Box\Draw_64.gml
+Converted builtin : line 23 : view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 24 : view_yview[0] -> __view_get( e__VW.YView, 0 )
+
+Converting GML script : ${project_dir}\objects\Player\Step_0.gml
+ERROR : C:\Users\flowe\Documents\GameMakerStudio2\tsdc\objects\Player\Step_0.gml : 177 : Exception while parsing System.NullReferenceException: Object reference not set to an instance of an object.
+   at ..(YYGMLAstNode )
+   at ..(YYGMLAstNode )
+   at ..()
+Too many errors - GML not processed : ${project_dir}\objects\Player\Step_0.gml
+DONE - Maybe
+
+Converting GML script : ${project_dir}\objects\View\Create_0.gml
+Converted builtin : line 2 : view_wport[0] -> __view_get( e__VW.WPort, 0 )
+Converted builtin : line 3 : view_wport[0] -> __view_get( e__VW.WPort, 0 )
+Converted builtin : line 2 : view_hport[0] -> __view_get( e__VW.HPort, 0 )
+Converted builtin : line 4 : view_hport[0] -> __view_get( e__VW.HPort, 0 )
+
+Converting GML script : ${project_dir}\objects\HUD\Step_0.gml
+Converted builtin : line 5 : view_xview[1] = Player.x - view_wview[1]/2 -> __view_set( e__VW.XView, 1, Player.x - view_wview[1]/2 )
+Converted builtin : line 6 : view_yview[1] = Player.y - view_hview[1]/2 -> __view_set( e__VW.YView, 1, Player.y - view_hview[1]/2 )
+Converted builtin : line 5 : view_wview[1] -> __view_get( e__VW.WView, 1 )
+Converted builtin : line 6 : view_hview[1] -> __view_get( e__VW.HView, 1 )
+
+Converting GML script : ${project_dir}\objects\HUD\Mouse_53.gml
+Converted string : line 18 : 'I' -> "I"
+Converted string : line 23 : 'M' -> "M"
+
+Converting GML script : ${project_dir}\objects\Spawn_Button\Draw_64.gml
+Error : variable "draw_set_colour" has same name as a built-in (function, constant or variable), it must be renamed to function correctly
+DONE
+
+Converting GML script : ${project_dir}\objects\Inventory\Create_0.gml
+Converted builtin : line 24 : view_wport[0] -> __view_get( e__VW.WPort, 0 )
+Converted builtin : line 25 : view_hport[0] -> __view_get( e__VW.HPort, 0 )
+
+Converting GML script : ${project_dir}\objects\Inventory\Draw_64.gml
+Error : variable "draw_set_colour" has same name as a built-in (function, constant or variable), it must be renamed to function correctly
+DONE
+
+Converting GML script : ${project_dir}\objects\Store\Create_0.gml
+Converted builtin : line 19 : view_wport[0] -> __view_get( e__VW.WPort, 0 )
+Converted builtin : line 20 : view_hport[0] -> __view_get( e__VW.HPort, 0 )
+
+Converting GML script : ${project_dir}\objects\Store\Mouse_53.gml
+Converted string : line 10 : 'I' -> "I"
+
+Converting GML script : ${project_dir}\objects\Store\Draw_64.gml
+Error : variable "draw_set_colour" has same name as a built-in (function, constant or variable), it must be renamed to function correctly
+DONE
+
+Converting GML script : ${project_dir}\objects\Menu_Navigation\Mouse_56.gml
+Converted string : line 9 : "I am FILLED with Christ's love" -> "I am FILLED with Christ\'s love"
+
+Converting GML script : ${project_dir}\objects\Menu_Navigation\Draw_64.gml
+Error : variable "draw_set_colour" has same name as a built-in (function, constant or variable), it must be renamed to function correctly
+DONE
+
+Converting GML script : ${project_dir}\objects\Map\Mouse_50.gml
+Converted string : line 12 : 'M' -> "M"
+
+Converting GML script : instance inst_B991C5DD creation code
+Converted string : line 1 : "Robber's Den" -> "Robber\'s Den"
+
+game speed set to 30
+added compatibility script background/background_add.gml
+added compatibility script instance/instance_create.gml
+added compatibility script object/object_get_depth.gml
+added compatibility script view/__view_get.gml
+added compatibility script view/__view_set.gml
+added compatibility script view/__view_set_internal.gml
+added compatibility script background/__init_background.gml
+added compatibility script view/__init_view.gml
+added compatibility script __init_global.gml
+added compatibility script __global_object_depths.gml

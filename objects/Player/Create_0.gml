@@ -1,0 +1,53 @@
+/// Init Player object
+event_inherited();
+
+device_mouse_dbclick_enable(false);
+
+scale = 1.5;
+image_xscale = scale;
+image_yscale = scale;
+image_speed = .3;
+phy_fixed_rotation = true;
+
+global.mousedir = 0;
+attack_button = false;
+spell_button = false;
+
+// Timers
+attack_timer = 0;
+spell_timer = 0;
+stamina_timer = 0;
+
+// Teleport
+global.teleport_player_x = noone;
+global.teleport_player_y = noone;
+
+/// Init stats
+stats = ds_map_create();
+base_stats = ds_map_create();
+
+// Levels
+base_stats[? "Level"] = 1;
+base_stats[? "Experience"] = 0;
+base_stats[? "Next Level Experience"] = 5;
+
+// Health
+base_stats[? "Max Health"] = 50;
+base_stats[? "Health"] = base_stats[? "Max Health"];
+base_stats[? "Health Regen"] = 10;
+
+// Stamina
+base_stats[? "Max Stamina"] = 10;
+base_stats[? "Stamina"] = base_stats[? "Max Stamina"];
+base_stats[? "Stamina Regen"] = 1;
+
+// Attack stats
+base_stats[? "Damage"] = 3;
+base_stats[? "Spell Damage"] = 3;
+
+// Defense
+base_stats[? "Defense"] = 10;
+
+// Speed
+base_stats[? "Speed"] = 2;
+
