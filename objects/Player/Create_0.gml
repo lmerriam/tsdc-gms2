@@ -34,7 +34,7 @@ base_stats[? "Next Level Experience"] = 5;
 // Health
 base_stats[? "Max Health"] = 50;
 base_stats[? "Health"] = base_stats[? "Max Health"];
-base_stats[? "Health Regen"] = 10;
+base_stats[? "Health Regen"] = 1;
 
 // Stamina
 base_stats[? "Max Stamina"] = 10;

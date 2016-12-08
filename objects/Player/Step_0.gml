@@ -25,6 +25,7 @@ global.player_y = y;
 attack_button = false;
 spell_button = false;
 
+// TODO: make this part of Player state
 if (!global.cast_mode) {
 
     if (os_type == os_android) {
@@ -168,4 +169,3 @@ if (global.teleport_player_x != noone) {
     global.teleport_player_x = noone;
     global.teleport_player_y = noone;
 }
-

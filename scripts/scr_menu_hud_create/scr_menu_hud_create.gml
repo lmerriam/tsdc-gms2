@@ -1,23 +1,4 @@
-/// Show debug
-show_debug_overlay(true);
-
-/// Init GUI elements
-event_inherited();
-
-// Window properties
-window_width = global.window_width;
-window_height = global.window_height;
-windowpadding = .01 * window_width;
-draw_set_font(PixelSmall);
-
-// Init cast mode
-global.cast_mode = false;
-cast_btn_width = 96;
-cast_btn[0] = window_width - cast_btn_width - windowpadding;
-cast_btn[1] = window_height - windowpadding - cast_btn_width;
-cast_btn[2] = cast_btn_width;
-cast_btn[3] = cast_btn_width;
-cast_btn[4] = spr_menu_button;
+//@description Set up the HUD
 
 // Init minimap
 minimap = -1;

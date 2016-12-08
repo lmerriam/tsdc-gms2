@@ -1,4 +1,4 @@
-/// Draw the minimap surface
+// Prep minimap surface
 var sprw = sprite_get_width(global.current_map);
 var sprh = sprite_get_height(global.current_map);
 
@@ -14,4 +14,3 @@ if (surface_exists(minimap)) {
 } else {
     minimap = surface_create(200,200);
 }
-

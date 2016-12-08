@@ -4,7 +4,31 @@
     "mvc": "1.11",
     "name": "terrain_tileset",
     "auto_tile_sets": [
-        
+        {
+            "id": "0822bcdd-ba83-4509-9b5c-79e19286105a",
+            "modelName": "GMAutoTileSet",
+            "mvc": "1.0",
+            "closed_edge": false,
+            "name": "autotile_1",
+            "tiles": [
+                97,
+                34,
+                33,
+                65,
+                2,
+                96,
+                0,
+                64,
+                1,
+                0,
+                98,
+                66,
+                129,
+                128,
+                130,
+                0
+            ]
+        }
     ],
     "macroPageTiles": {
         "SerialiseData": null,

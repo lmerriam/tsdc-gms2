@@ -4,4 +4,3 @@ global.mousex = mouse_x;
 global.mousey = mouse_y;
 global.mouse_screen_x = window_mouse_get_x();
 global.mouse_screen_y = window_mouse_get_y();
-

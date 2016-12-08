@@ -25,7 +25,6 @@ scr_activate_inv();
 
 // Update drop tooltips
 with(Drop_Parent) scr_update_drop_tooltip();
-scr_calc_stats();
 
 if (obj.persistent = false) obj.persistent = true;
 obj.phy_position_x = -999;
