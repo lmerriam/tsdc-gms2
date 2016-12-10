@@ -1,4 +1,4 @@
 /// Show map
 
-scr_toggle_menu(global.menu_map);
+scr_menu_map();
 

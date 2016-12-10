@@ -1,5 +1,7 @@
 //@description Set up the HUD
 
+buttons = ds_list_create();
+
 // Init minimap
 minimap = -1;
 minimap_width = window_height/5;
@@ -22,7 +24,7 @@ menu_btn_x2 = menu_btn_origin_x + width;
 
 menu_btn[0] = windowpadding;
 menu_btn[1] = windowpadding;
-menu_btn[2] = windowpadding+width;
+menu_btn[2] = windowpadding + width;
 menu_btn[3] = windowpadding + height;
 menu_btn[4] = spr_menu_button;
 

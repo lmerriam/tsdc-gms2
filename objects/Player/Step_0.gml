@@ -149,7 +149,7 @@ if (!global.cast_mode) {
     var spell = scr_get_spell();
     
     // Left Attack
-    if (attack_button and scr_alarm_passed(attack_timer) and !global.mouse_over_ui) {
+    if (attack_button and scr_alarm_passed(attack_timer)) {
         script_execute(weapon.script);
         attack_timer = scr_sec_from_now(weapon.stats[? "Atk Delay"]);
     }

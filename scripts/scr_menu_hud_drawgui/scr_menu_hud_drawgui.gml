@@ -1,5 +1,11 @@
 /// Draw HUD elements
-event_inherited();
+
+// Draw buttons
+for (i = 0; i < ds_list_size(buttons); i++) {
+    var btn = buttons[| i];
+    if (btn[4] != noone) scr_draw_btn_sprite(btn);
+}
+
 
 // Draw nearest drop tooltip
 if (nearest_drop_in_range) {
@@ -28,5 +34,3 @@ var hbar = 3;
 var expr = Player.stats[? "Experience"];
 var maxexpr = Player.stats[? "Next Level Experience"];
 draw_healthbar(0,window_height-hbar,window_width,window_height,expr/maxexpr*100,c_black,c_white,c_white,0,true,true);
-
-

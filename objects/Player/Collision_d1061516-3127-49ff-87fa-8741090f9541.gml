@@ -4,7 +4,6 @@
 // They will automatically be deactivated again by the view after they've transitioned to the new room
 scr_activate_inv();
 
-instance_activate_object(Menu_Parent);
 instance_activate_object(Time);
 
 scr_setup_new_map(other.stats[? "New Room"]);

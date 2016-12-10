@@ -1,4 +1,3 @@
 /// Open inventory
-
-scr_toggle_menu(global.menu_inventory);
+scr_menu_inv();
 

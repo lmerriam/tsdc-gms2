@@ -66,22 +66,15 @@ global.__objectDepths[58] = 0; // Sign
 global.__objectDepths[59] = 0; // Prop_Parent
 global.__objectDepths[60] = 0; // Health
 global.__objectDepths[61] = 0; // Tree
-global.__objectDepths[62] = 0; // Menu_Parent
 global.__objectDepths[63] = 0; // Teleporter
-global.__objectDepths[64] = 0; // Cast_Mode
 global.__objectDepths[65] = 0; // Spell_Turret
 global.__objectDepths[66] = 1; // Chest
 global.__objectDepths[67] = 0; // Barrel
 global.__objectDepths[68] = 0; // Wall
-global.__objectDepths[69] = 0; // Pause_Menu
 global.__objectDepths[70] = 0; // Spell_Cone_Pull
-global.__objectDepths[71] = 0; // Inventory
-global.__objectDepths[72] = 0; // Store
-global.__objectDepths[73] = 9; // Menu_Navigation
 global.__objectDepths[74] = 0; // Stronghold_1
 global.__objectDepths[75] = 0; // Outpost_Parent
 global.__objectDepths[76] = 0; // Stronghold_Parent
-global.__objectDepths[77] = 0; // Map
 
 
 global.__objectNames[0] = "Expr";
@@ -146,28 +139,23 @@ global.__objectNames[58] = "Sign";
 global.__objectNames[59] = "Prop_Parent";
 global.__objectNames[60] = "Health";
 global.__objectNames[61] = "Tree";
-global.__objectNames[62] = "Menu_Parent";
 global.__objectNames[63] = "Teleporter";
-global.__objectNames[64] = "Cast_Mode";
 global.__objectNames[65] = "Spell_Turret";
 global.__objectNames[66] = "Chest";
 global.__objectNames[67] = "Barrel";
 global.__objectNames[68] = "Wall";
-global.__objectNames[69] = "Pause_Menu";
 global.__objectNames[70] = "Spell_Cone_Pull";
-global.__objectNames[71] = "Inventory";
-global.__objectNames[72] = "Store";
-global.__objectNames[73] = "Menu_Navigation";
 global.__objectNames[74] = "Stronghold_1";
 global.__objectNames[75] = "Outpost_Parent";
 global.__objectNames[76] = "Stronghold_Parent";
-global.__objectNames[77] = "Map";
 
 
 // create another array that has the correct entries
 var len = array_length_1d(global.__objectDepths);
 global.__objectID2Depth = [];
 for( var i=0; i<len; ++i ) {
-	var objID = asset_get_index( global.__objectNames[i] );
-	global.__objectID2Depth[ objID ] = global.__objectDepths[i];
+	if is_string(global.__objectNames[i]) {
+		var objID = asset_get_index( global.__objectNames[i] );
+		global.__objectID2Depth[ objID ] = global.__objectDepths[i];
+	}
 } // end for

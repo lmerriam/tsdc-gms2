@@ -18,20 +18,21 @@ if (distance_to_object(nearest_drop) < 32) {
 
 // Handle mouse clicks
 if (mouse_check_button_released(1)) {
+
+	// Cast mode
     if (scr_check_btn(cast_btn)) {
         global.cast_mode = true;
         global.timescale = .1;
 		scr_menu_castmode();
+		
+	// Inventory
     } else if (scr_check_btn(menu_btn)) {
-        with(View) {
-            event_perform(ev_keypress,ord("I"));
-        }
-    
+        scr_menu_inv();
+	
+	// Map
     } else if (scr_check_btn(minimap_btn)) {
-        with(View) {
-            event_perform(ev_keypress,ord("M"));
-        }
-        
+        scr_menu_map();
+		
     // Detect pickup button click
     } else if (nearest_drop != noone and scr_check_btn(nearest_btn)) {
         scr_send_to_inv(nearest_drop);
