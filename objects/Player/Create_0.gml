@@ -6,7 +6,7 @@ device_mouse_dbclick_enable(false);
 scale = 1.5;
 image_xscale = scale;
 image_yscale = scale;
-image_speed = .3;
+img_spd = .3*30/room_speed;
 phy_fixed_rotation = true;
 
 global.mousedir = 0;
@@ -49,5 +49,5 @@ base_stats[? "Spell Damage"] = 3;
 base_stats[? "Defense"] = 10;
 
 // Speed
-base_stats[? "Speed"] = 2;
+base_stats[? "Speed"] = 2 * 30/room_speed;
 

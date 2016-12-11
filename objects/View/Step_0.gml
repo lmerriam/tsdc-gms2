@@ -24,7 +24,7 @@ if (instance_exists(Player)) {
 }
 
 if (global.screen_shake > 4) {
-    if (global.screen_shake > 6) global.screen_shake = 8;
+    if (global.screen_shake > 10) global.screen_shake = 12;
     x += choose(-random(global.screen_shake),random(global.screen_shake)) * (30/room_speed);
     y += choose(-random(global.screen_shake),random(global.screen_shake)) * (30/room_speed);
 }

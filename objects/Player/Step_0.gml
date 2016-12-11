@@ -129,7 +129,7 @@ if (!global.cast_mode) {
         } else {
             sprite_index = spr_player_running_back;
         }
-        if (sign(hspd) == orientation) image_speed = .3 else image_speed = -.3;
+        if (sign(hspd) == orientation) image_speed = img_spd else image_speed = -img_spd;
         
     } else {
         if (front) {
