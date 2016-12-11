@@ -7257,6 +7257,63 @@
                 "resourcePath": "scripts\\scr_menu_map\\scr_menu_map.yy",
                 "resourceType": "GMScript"
             }
+        },
+        {
+            "Key": "23c5b29b-ecb9-4d1e-9b95-e7245ae3536a",
+            "Value": {
+                "id": "13c19309-1b35-4218-8b43-93b285b90d62",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "datafiles_yy\\tsdcTest2-mini.png.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
+            "Key": "7ac71af4-7014-40cc-9da7-dc188651ed45",
+            "Value": {
+                "id": "20c9bce3-01b2-4364-bfd0-dff7e5ac7255",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\\scr_minimap_x\\scr_minimap_x.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "aebc1470-1bdf-4acc-b506-188e7d3c3c53",
+            "Value": {
+                "id": "9d56739c-107e-45d9-93a5-01d4410a0b45",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\\scr_minimap_y\\scr_minimap_y.yy",
+                "resourceType": "GMScript"
+            }
         }
     ],
     "room_order": [
@@ -7400,7 +7457,9 @@
         "0871805d-2a89-47b7-b393-a4a4c97b3840",
         "d7941d65-ddfc-4227-807d-6df73b23d45b",
         "2f86608c-9c8d-4021-87d1-948bbfc43a50",
-        "e98b8c2e-7808-4131-a60d-3969bd874365"
+        "e98b8c2e-7808-4131-a60d-3969bd874365",
+        "7ac71af4-7014-40cc-9da7-dc188651ed45",
+        "aebc1470-1bdf-4acc-b506-188e7d3c3c53"
     ],
     "tutorial": ""
 }

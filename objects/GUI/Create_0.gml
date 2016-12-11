@@ -10,9 +10,9 @@ draw_set_font(PixelSmall);
 
 // Set up the various menus and their elements
 scr_menu_castmode_create();
+scr_menu_map_create();
 scr_menu_hud_create();
 scr_menu_inv_create();
-scr_menu_map_create();
 scr_menu_navigation_create();
 
 // Set initial menu state

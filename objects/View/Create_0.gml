@@ -22,3 +22,4 @@ global.screen_shake = 0;
 alarm[0] = 1;
 alarm[1] = 1;
 
+lyr_game_objects = layer_get_id("game_objects");

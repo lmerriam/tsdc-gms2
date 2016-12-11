@@ -1,4 +1,4 @@
-/// Draw HUD elements
+/// HUD drawgui event
 
 // Draw buttons
 for (i = 0; i < ds_list_size(buttons); i++) {

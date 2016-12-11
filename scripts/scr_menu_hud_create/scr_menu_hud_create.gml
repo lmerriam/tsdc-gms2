@@ -1,9 +1,10 @@
-//@description Set up the HUD
+// HUD create event
 
 buttons = ds_list_create();
 
 // Init minimap
 minimap = -1;
+minimap_ratio = room_width/sprw;
 minimap_width = window_height/5;
 minimap_height = minimap_width;
 minimap_window = 500;

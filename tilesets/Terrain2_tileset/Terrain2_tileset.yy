@@ -9,7 +9,7 @@
             "modelName": "GMAutoTileSet",
             "mvc": "1.0",
             "closed_edge": false,
-            "name": "autotile_1",
+            "name": "Dirt",
             "tiles": [
                 97,
                 34,
@@ -26,7 +26,32 @@
                 129,
                 128,
                 130,
-                0
+                162
+            ]
+        },
+        {
+            "id": "165a5444-e678-4de4-9a84-7eda26a001ff",
+            "modelName": "GMAutoTileSet",
+            "mvc": "1.0",
+            "closed_edge": false,
+            "name": "Grass1",
+            "tiles": [
+                289,
+                226,
+                225,
+                257,
+                194,
+                288,
+                0,
+                256,
+                193,
+                0,
+                290,
+                258,
+                321,
+                320,
+                322,
+                354
             ]
         }
     ],
