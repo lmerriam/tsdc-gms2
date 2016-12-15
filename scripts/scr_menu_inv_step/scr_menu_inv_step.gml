@@ -6,6 +6,7 @@ scr_menu_navigation_step()
 var mousex = device_mouse_x_to_gui(0);
 var mousey = device_mouse_y_to_gui(0);
 
+
 // TODO: figure out why the fuck div seems to be rounding up so I can remove these -3s
 if (scr_mouse_over_inv()) {
     current_inventory = global.inventory_slots;
@@ -54,4 +55,6 @@ if mouse_check_button_released(1) {
 	} else {
 	    eqp_btn = false;
 	}
+	
+	with (Drop_Parent) scr_update_drop_tooltip();
 }

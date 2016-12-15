@@ -9,4 +9,3 @@ if (stats[? "Discovered"] == false and distance_to_object(Player) < 600) {
 } else {
     alarm[0] = 0.5 * room_speed;
 }
-

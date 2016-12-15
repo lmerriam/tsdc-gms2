@@ -2,5 +2,5 @@
 if (global.screen_shake >= 2) {
     global.screen_shake -= 2;
 }
-alarm[0] = .2 * room_speed;
+alarm[0] = .4 * room_speed;
 

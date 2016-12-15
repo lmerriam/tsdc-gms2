@@ -6,4 +6,3 @@ scr_announce("Outpost liberated!",noone);
 
 ds_list_destroy(spawns);
 ds_map_destroy(stats);
-

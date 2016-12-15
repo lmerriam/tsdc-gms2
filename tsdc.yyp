@@ -7314,6 +7314,139 @@
                 "resourcePath": "scripts\\scr_minimap_y\\scr_minimap_y.yy",
                 "resourceType": "GMScript"
             }
+        },
+        {
+            "Key": "ad2275b1-be56-431d-8bd7-7e949e04c554",
+            "Value": {
+                "id": "c39b809b-c964-4717-87c4-a397a798a984",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\\scr_menu_char\\scr_menu_char.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "2b17e589-191b-4c06-b436-3cb37d662d1c",
+            "Value": {
+                "id": "408fde56-f0f1-4560-b3c0-2632dee74f86",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\\scr_menu_char_step\\scr_menu_char_step.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "a37e82dc-2acf-4568-9d1a-20888c2c5745",
+            "Value": {
+                "id": "93fa7843-b685-47ee-83cb-21ac0e76185f",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\\scr_menu_char_drawgui\\scr_menu_char_drawgui.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "bc06dc39-65c1-414f-997f-84cd160df218",
+            "Value": {
+                "id": "3265c5e0-2c49-4a3a-8668-2567d3e82194",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\\scr_menu_char_create\\scr_menu_char_create.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "f861b5fd-614a-4c56-a5e7-4f0b4cbaee0c",
+            "Value": {
+                "id": "aa902c2e-cab3-490e-9552-1e6e36368bc9",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "fonts\\pixeltype_12\\pixeltype_12.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
+            "Key": "1bf8575e-cb23-4b4e-866f-0ea1dd70fa4b",
+            "Value": {
+                "id": "718a53a6-18ff-46e8-a018-6e18cb478ded",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "fonts\\pixeltype_16\\pixeltype_16.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
+            "Key": "7f31f699-e38d-4f9f-9d15-9fddf68252b4",
+            "Value": {
+                "id": "15f967a8-eeb2-4507-9ceb-9f8fda7d0f4c",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "fonts\\pixeltype_24\\pixeltype_24.yy",
+                "resourceType": "GMFont"
+            }
         }
     ],
     "room_order": [
@@ -7458,6 +7591,10 @@
         "d7941d65-ddfc-4227-807d-6df73b23d45b",
         "2f86608c-9c8d-4021-87d1-948bbfc43a50",
         "e98b8c2e-7808-4131-a60d-3969bd874365",
+        "ad2275b1-be56-431d-8bd7-7e949e04c554",
+        "2b17e589-191b-4c06-b436-3cb37d662d1c",
+        "a37e82dc-2acf-4568-9d1a-20888c2c5745",
+        "bc06dc39-65c1-414f-997f-84cd160df218",
         "7ac71af4-7014-40cc-9da7-dc188651ed45",
         "aebc1470-1bdf-4acc-b506-188e7d3c3c53"
     ],
