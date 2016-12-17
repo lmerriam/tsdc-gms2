@@ -1,8 +1,8 @@
 /// Collect expr
-with (other) { instance_destroy(); exit; }
+with (other) { instance_destroy(); }
 
 // Level up
-stats[? "Experience"] += 1;
+base_stats[? "Experience"] += 1;
 
 if (base_stats[? "Experience"] >= base_stats[? "Next Level Experience"]) {
     base_stats[? "Level"] += 1;
@@ -11,6 +11,7 @@ if (base_stats[? "Experience"] >= base_stats[? "Next Level Experience"]) {
     base_stats[? "Health"] = base_stats[? "Max Health"];
     base_stats[? "Max Stamina"] += 2;
     base_stats[? "Stamina"] = base_stats[? "Max Stamina"];
+	base_stats[? "Stat points"] += 2;
     scr_announce("Achieved level " + string(base_stats[? "Level"]), noone);
 }
 

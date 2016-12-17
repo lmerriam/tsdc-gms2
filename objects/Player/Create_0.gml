@@ -30,6 +30,7 @@ base_stats = ds_map_create();
 base_stats[? "Level"] = 1;
 base_stats[? "Experience"] = 0;
 base_stats[? "Next Level Experience"] = 5;
+base_stats[? "Stat points"] = 10;
 
 // Health
 base_stats[? "Max Health"] = 50;
@@ -50,4 +51,14 @@ base_stats[? "Defense"] = 10;
 
 // Speed
 base_stats[? "Speed"] = 2 * 30/room_speed;
+
+// Increment stats
+stat_increments = ds_map_create();
+stat_increments[? "Max Health"] = 3;
+stat_increments[? "Max Stamina"] = 3;
+stat_increments[? "Damage"] = 1;
+stat_increments[? "Spell Damage"] = 1;
+stat_increments[? "Defense"] = 1;
+stat_increments[? "Speed"] = .1;
+
 

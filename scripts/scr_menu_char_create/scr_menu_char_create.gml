@@ -11,3 +11,7 @@ stat_list[3] = "Damage";
 stat_list[4] = "Spell Damage";
 stat_list[5] = "Defense";
 stat_list[6] = "Speed";
+
+// Show available stat points
+stat_points_x = window_width * .75;
+stat_points_y = 128;
