@@ -3,7 +3,7 @@ event_inherited();
 
 device_mouse_dbclick_enable(false);
 
-scale = 1.5;
+scale = 1;
 image_xscale = scale;
 image_yscale = scale;
 img_spd = .3*30/room_speed;

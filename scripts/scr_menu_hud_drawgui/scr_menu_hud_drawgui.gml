@@ -34,3 +34,6 @@ var hbar = 3;
 var expr = Player.base_stats[? "Experience"];
 var maxexpr = Player.base_stats[? "Next Level Experience"];
 draw_healthbar(0,window_height-hbar,window_width,window_height,expr/maxexpr*100,c_black,c_white,c_white,0,true,true);
+
+// Draw locations
+//with (Location) scr_location_drawgui();

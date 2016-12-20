@@ -4,4 +4,3 @@
 //    show_message(global.current_room);
 //    scr_load_map(global.current_room);
 //}
-

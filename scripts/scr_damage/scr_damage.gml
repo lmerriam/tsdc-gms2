@@ -7,7 +7,7 @@ var damage = argument[4];
 var knockback = argument[5];
 var buffs = argument[6];
 
-var dmg_inst = instance_create(xx, yy, dmg_obj);
+var dmg_inst = instance_create_layer(xx, yy, "game_objects", dmg_obj);
 dmg_inst.creator = creator;
 dmg_inst.damage = damage;
 dmg_inst.knockback = knockback;

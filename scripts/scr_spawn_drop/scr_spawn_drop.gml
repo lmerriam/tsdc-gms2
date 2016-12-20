@@ -5,7 +5,7 @@ var obj = argument[2];
 var level = argument[3];
 
 // Create the instance
-var drop = instance_create(targetx, targety, obj);
+var drop = instance_create_layer(targetx, targety, "entities", obj);
 
 // Apply a random impulse
 var xlocal = choose(3, -3);

@@ -6,6 +6,6 @@ var yy = item[? "y"];
 var saved_stats = item[? "Stats"];
 
 // Create the instance
-var inst = instance_create(xx,yy,index);
+var inst = instance_create_layer(xx,yy,"entities",index);
 ds_map_copy(inst.stats,saved_stats);
 return inst;

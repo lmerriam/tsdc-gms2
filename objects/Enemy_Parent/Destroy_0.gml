@@ -2,7 +2,7 @@
 event_inherited();
 
 for (var i = 0; i <= stats[? "Experience"]; i++) {
-    instance_create(x+random_range(-16,16),y+random_range(-16,16),Expr);
+    instance_create_layer(x+random_range(-16,16),y+random_range(-16,16),"entities",Expr);
 }
 
 var current_key = ds_map_find_first(loot); // Start with the first key in the map

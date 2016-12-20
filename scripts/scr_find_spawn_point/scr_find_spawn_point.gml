@@ -14,7 +14,7 @@ do {
 } until place_empty(xx,yy);
 
 // Spawn the chosen enemy at the chosen coordinates
-var inst = instance_create(xx, yy, obj);
+var inst = instance_create_layer(xx, yy, "entities", obj);
 
 // Level the instance
 inst.stats[? "Level"] = level;

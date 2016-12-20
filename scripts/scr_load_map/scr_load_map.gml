@@ -105,7 +105,7 @@ for ( var layer_i = 0; layer_i < ds_list_size(lst_layers); layer_i++){
                 var object_y = ds_map_find_value( object_map, "y" );
                 var object_properties = ds_map_find_value( object_map, "properties");
                 if object_exists(object_type){
-                    var object = instance_create( object_x, object_y, object_type);
+                    var object = instance_create_layer( object_x, object_y, "entities", object_type);
                     object.x = object_x;
                     object.y = object_y;
                     
