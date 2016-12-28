@@ -1,4 +1,5 @@
 ///scr_update_drop_tooltip()
+var name = properties[? "Name"];
 
 text[0,0] = string(name);
 text[0,1] = "";
