@@ -1,11 +1,11 @@
 /// Init spell and stats
 event_inherited();
 
-// Roll for type
-name = "Projectile";
-script = scr_spell_projectile;
+// Set up properties
+properties[? "Name"] = "Projectile";
+properties[? "Spell Script"] = scr_spell_projectile;
 
-// Roll for stats (eventually make this conditional based on spell)
+// Stats
 stats[? "Spell Damage"] = irandom_range(5,10);
 stats[? "Spell Knockback"] = irandom_range(5,20);
 stats[? "Cooldown"] = 2;

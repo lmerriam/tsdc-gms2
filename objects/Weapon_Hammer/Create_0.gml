@@ -1,8 +1,9 @@
 /// Init equipment stats
 event_inherited();
 
-name = "Hammer";
-script = scr_attack_hammer;
+// Set up properties
+properties[? "Name"] = "Hammer";
+properties[? "Attack Script"] = scr_attack_hammer;
 
 // Roll stats
 stats[? "Damage"] = irandom_range(2,3);

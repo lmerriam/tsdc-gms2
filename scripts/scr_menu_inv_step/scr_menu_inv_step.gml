@@ -12,7 +12,6 @@ if (scr_mouse_over_inv()) {
     current_inventory = global.inventory_slots;
     current_slot_x = (mousex - inventory_coords[0]-3) div slot_width;
     current_slot_y = (mousey - inventory_coords[1]-3) div slot_width;
-    if(current_slot_x == 6) show_message(string(mousex - inventory_coords[0]) + " " + string(slot_width));
     current_item = global.inventory_slots[# current_slot_x,current_slot_y];    
 } else if (scr_mouse_over_ui(equipment_coords[0],equipment_coords[1],equipment_coords[2],equipment_coords[3])) {
     current_inventory = global.equipment_slots;

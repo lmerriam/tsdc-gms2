@@ -1,7 +1,7 @@
 /// Init location
-stats = ds_map_create()
-stats[? "Name"] = "Inidentificado";
-stats[? "Discovered"] = false;
+properties = ds_map_create();
+properties[? "Name"] = "Inidentificado";
+properties[? "Discovered"] = false;
 creator = noone;
 
 image_xscale = 5;

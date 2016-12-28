@@ -1,6 +1,6 @@
 // Cast ye old spells
 if (mouse_check_button_released(1)) {
-	var spell = scr_get_spell().script;
+	var spell = scr_get_spell().properties[? "Spell Script"];
 	script_execute(spell);
 
 	// Leave cast mode

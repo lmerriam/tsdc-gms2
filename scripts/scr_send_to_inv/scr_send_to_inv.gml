@@ -1,5 +1,5 @@
 ///scr_send_to_inv(id)
-var drop = argument[0];
+var inst = argument[0];
 
 // Find an inventory slot
 var space = false;
@@ -13,14 +13,10 @@ for (row = 0; row < grid_height; row++) {
     for (column = 0; column < grid_width; column++) {
         if (slots[# column,row] = noone) {
             // Assign to cell
-            slots[# column,row] = drop;
-            
-            // Deactivate the object
-            // Move it out of room so it isn't reactivated by view
-            drop.phy_position_x = -999;
-            drop.phy_position_y = -999;
-            drop.persistent = true;
-            instance_deactivate_object(drop);
+			var props = ds_map_create();
+			ds_map_copy(props,inst.properties);
+            slots[# column,row] = props;
+            instance_destroy(inst);
             
             // Return the fact that a slot was found
             space = true;

@@ -1,11 +1,11 @@
 /// Init spell and stats
 event_inherited();
 
-// Roll for type
-name = "Column";
-script = scr_spell_column;
+// Set up properties
+properties[? "Name"] = "Column";
+properties[? "Spell Script"] = scr_spell_column;
 
-// Roll for stats
+// Roll stats
 stats[? "Spell Damage"] = irandom_range(8,12);
 stats[? "Spell Knockback"] = irandom_range(10,20);
 stats[? "Cooldown"] = 3;
