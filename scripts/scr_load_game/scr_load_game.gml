@@ -23,7 +23,7 @@ for (column = 0; column < ds_grid_width(global.inventory_slots); column++) {
         }
     }
 }
-with(Drop_Parent) scr_update_drop_tooltip();
+with(Drop_Parent) scr_update_drop_tooltip(properties);
 
 // Load instances
 // First destroy existing

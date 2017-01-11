@@ -1,4 +1,5 @@
 /// Explode
-
-scr_damage(xprevious,yprevious,Attack_Radius_Medium,Player.id,Player.stats[? "Damage"],scr_get_weapon().stats[? "Knockback"],scr_get_gem().buffs);
+var gem = scr_get_gem();
+var buffs = gem[? "Buffs"];
+scr_damage(xprevious,yprevious,Attack_Radius_Medium,Player.id,Player.stats[? "Damage"],scr_weapon_stat("Knockback"),buffs);
 

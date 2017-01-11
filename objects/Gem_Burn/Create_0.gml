@@ -8,4 +8,5 @@ buffs[? "burn_interval"] = 1 * room_speed;
 buffs[? "burn_damage"] = irandom_range(1,2);
 
 properties[? "Name"] = "Fiery gem";
-properties[? "Buffs"] = buffs;
+
+show_debug_message("Gem stats index: " + string(stats));

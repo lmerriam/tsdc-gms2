@@ -1,7 +1,7 @@
 {
     "id": "8576306e-3972-481a-b53c-0db024f2d314",
     "modelName": "GMSprite",
-    "mvc": "1.1",
+    "mvc": "1.11",
     "name": "terrain",
     "For3D": false,
     "HTile": true,
@@ -10,7 +10,7 @@
     "bbox_left": 0,
     "bbox_right": 63,
     "bbox_top": 0,
-    "bboxmode": 0,
+    "bboxmode": 2,
     "colkind": 1,
     "coltolerance": 0,
     "frames": [

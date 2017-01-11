@@ -143,20 +143,20 @@ if (!global.cast_mode) {
     phy_position_x += hspd;
     phy_position_y += vspd;
     
-    var weapon = scr_get_weapon();
-    var spell = scr_get_spell();
-    
     // Left Attack
     if (attack_button and scr_alarm_passed(attack_timer)) {
-        script_execute(weapon.properties[? "Attack Script"]);
-        attack_timer = scr_sec_from_now(weapon.stats[? "Atk Delay"]);
+		var weapon = scr_get_weapon();
+        script_execute(weapon[? "Attack Script"]);
+        attack_timer = scr_sec_from_now(scr_weapon_stat("Atk Delay"));
     }
     
     // Right attack
     if (spell_button and stats[? "Stamina"] >= spell.stats[? "Fatigue"] and scr_alarm_passed(spell_timer)) {
-        script_execute(spell.properties[? "Spell Script"]);
-        stats[? "Stamina"] -= spell.stats[? "Fatigue"];
-        spell_timer = scr_sec_from_now(spell.stats[? "Cooldown"]);
+        var spell = scr_get_spell();
+		var spell_stats = spell[? "Stats"];
+		script_execute(spell[? "Spell Script"]);
+        stats[? "Stamina"] -= scr_spell_stat("Fatigue");
+        spell_timer = scr_sec_from_now(scr_spell_stat("Cooldown"));
     }
 
 }

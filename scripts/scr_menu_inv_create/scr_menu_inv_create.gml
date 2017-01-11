@@ -29,10 +29,10 @@ inventory_coords = scr_init_inventory(global.inventory_slots, slot_width, invent
 // Set up the equipment slots
 global.equipment_slots = ds_grid_create(1,4);
 ds_grid_clear(global.equipment_slots,noone);
-scr_equip(instance_create_layer(0,0,"entities",STARTING_WEAPON));
-scr_equip(instance_create_layer(0,0,"entities",STARTING_SPELL));
-scr_equip(instance_create_layer(0,0,"entities",STARTING_ARMOR));
-scr_equip(instance_create_layer(0,0,"entities",STARTING_GEM));
+scr_equip_instance(instance_create_layer(0,0,"entities",STARTING_WEAPON));
+scr_equip_instance(instance_create_layer(0,0,"entities",STARTING_SPELL));
+scr_equip_instance(instance_create_layer(0,0,"entities",STARTING_ARMOR));
+scr_equip_instance(instance_create_layer(0,0,"entities",STARTING_GEM));
 scr_calc_stats();
 
 // Set up the equipment slot offsets
@@ -54,3 +54,16 @@ eqp_btn_x1 = inv_tooltip_x;
 eqp_btn_x2 = eqp_btn_x1 + inv_tooltip_width;
 eqp_btn_y1 = 0;
 eqp_btn_y2 = eqp_btn_y1 + 48;
+
+inv_tooltip_stats = noone;
+inv_tooltip_stats[0] = "Level";
+inv_tooltip_stats[1] = "Damage";
+inv_tooltip_stats[1] = "Spell Damage";
+inv_tooltip_stats[1] = "Atk Delay";
+inv_tooltip_stats[1] = "Fatigue";
+inv_tooltip_stats[1] = "Defense";
+inv_tooltip_stats[1] = "Speed";
+inv_tooltip_stats[1] = "Health";
+inv_tooltip_stats[1] = "Health Regen";
+inv_tooltip_stats[1] = "Stamina";
+inv_tooltip_stats[1] = "Stamina Regen";

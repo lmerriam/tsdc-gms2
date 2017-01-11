@@ -14,9 +14,11 @@ if (other.id != creator) {
     
     // Armor effects
     // Thorns
-    if (scr_get_armor().buffs[? "thorns"] = true and instance_exists(creator)) {
+	var armor = scr_get_armor();
+	var buffs = armor[? "Buffs"];
+    if (buffs[? "thorns"] = true and instance_exists(creator)) {
         //scr_damage(other.x,other.y,Attack_R
-        creator.stats[? "Health"] -= scr_get_armor().buffs[? "thorns_damage"];
+        creator.stats[? "Health"] -= buffs[? "thorns_damage"];
     }
 }
 

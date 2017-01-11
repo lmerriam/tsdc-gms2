@@ -1,4 +1,3 @@
 /// Destroy stats DS
 
-if ds_exists(stats,ds_type_map) ds_map_destroy(stats);
-
+if ds_exists(properties,ds_type_map) ds_map_destroy(properties);

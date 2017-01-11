@@ -1,7 +1,7 @@
 {
     "id": "6f8deb76-e440-42d3-82b8-0a3fdb07edb3",
     "modelName": "GMSprite",
-    "mvc": "1.1",
+    "mvc": "1.11",
     "name": "spr_player_attack_up",
     "For3D": false,
     "HTile": false,
@@ -10,7 +10,7 @@
     "bbox_left": 5,
     "bbox_right": 23,
     "bbox_top": 9,
-    "bboxmode": 0,
+    "bboxmode": 2,
     "colkind": 1,
     "coltolerance": 0,
     "frames": [

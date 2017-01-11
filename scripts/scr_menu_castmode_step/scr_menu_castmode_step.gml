@@ -1,7 +1,7 @@
 // Cast ye old spells
 if (mouse_check_button_released(1)) {
-	var spell = scr_get_spell().properties[? "Spell Script"];
-	script_execute(spell);
+	var spell = scr_get_spell();
+	script_execute(spell[? "Spell Script"]);
 
 	// Leave cast mode
 	scr_menu_hud();
@@ -10,5 +10,5 @@ if (mouse_check_button_released(1)) {
 
 	// Affect player stats
 	//Player.spell_timer = scr_sec_from_now(Player.spell_cd);
-	Player.stats[? "Stamina"] -= scr_get_spell().stats[? "Fatigue"];
+	Player.stats[? "Stamina"] -= scr_spell_stat("Fatigue");
 }

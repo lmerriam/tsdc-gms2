@@ -4404,7 +4404,7 @@
                 "resourceCreationConfigs": [
                     "default"
                 ],
-                "resourcePath": "scripts\\scr_equip\\scr_equip.yy",
+                "resourcePath": "scripts\\scr_equip_instance\\scr_equip_instance.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -7466,6 +7466,82 @@
                 "resourcePath": "scripts\\scr_location_drawgui\\scr_location_drawgui.yy",
                 "resourceType": "GMScript"
             }
+        },
+        {
+            "Key": "9e838b4f-bf98-4757-800b-8eb371158be1",
+            "Value": {
+                "id": "f44090c9-5b06-42ee-976c-576bc8496f42",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\\ds_map_deep_clone\\ds_map_deep_clone.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "1fd554e5-c510-4ee2-a3ac-390efef037a7",
+            "Value": {
+                "id": "794f683b-bf6d-4061-a97d-ddd896a86b56",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "timelines\\timeline_1\\timeline_1.yy",
+                "resourceType": "GMTimeline"
+            }
+        },
+        {
+            "Key": "2a411e79-45cf-4a65-89bc-34d08d2add0d",
+            "Value": {
+                "id": "86127432-e783-4056-bba5-4b704f22f53d",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "timelines\\timeline_2\\timeline_2.yy",
+                "resourceType": "GMTimeline"
+            }
+        },
+        {
+            "Key": "b3494bb0-4faf-42c5-8258-692acc32b13c",
+            "Value": {
+                "id": "7757358e-49d2-4f09-a61f-57366f9c2604",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\\scr_equip\\scr_equip.yy",
+                "resourceType": "GMScript"
+            }
         }
     ],
     "room_order": [
@@ -7581,6 +7657,7 @@
         "3ce13b69-7cb7-4f28-ac46-b716a4c434f2",
         "f7310c8e-bc1b-48ed-a993-1e15ea86bbd9",
         "120976cb-71aa-4afa-9955-fb8999c5f9a2",
+        "b3494bb0-4faf-42c5-8258-692acc32b13c",
         "db858ca1-0b85-46bb-b9eb-c84ffae38c2f",
         "57bcb03b-d272-419e-a7f4-1e7849d1fb47",
         "d70fb343-25c8-4f54-809f-d32162482462",
@@ -7616,7 +7693,8 @@
         "bc06dc39-65c1-414f-997f-84cd160df218",
         "7ac71af4-7014-40cc-9da7-dc188651ed45",
         "aebc1470-1bdf-4acc-b506-188e7d3c3c53",
-        "3dc36f9d-4705-41ba-ac02-d46b0fe597a7"
+        "3dc36f9d-4705-41ba-ac02-d46b0fe597a7",
+        "9e838b4f-bf98-4757-800b-8eb371158be1"
     ],
     "tutorial": ""
 }

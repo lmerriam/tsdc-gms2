@@ -1,7 +1,7 @@
 {
     "id": "ca8241ea-2782-47ad-92c1-07e395e1d349",
     "modelName": "GMSprite",
-    "mvc": "1.1",
+    "mvc": "1.11",
     "name": "spr_stronghold",
     "For3D": false,
     "HTile": false,
@@ -10,7 +10,7 @@
     "bbox_left": 6,
     "bbox_right": 57,
     "bbox_top": 19,
-    "bboxmode": 0,
+    "bboxmode": 2,
     "colkind": 1,
     "coltolerance": 0,
     "frames": [

@@ -3,7 +3,7 @@ event_inherited();
 
 // Set properties
 properties[? "Name"] = "Pistol";
-properites[? "Attack Script"] = scr_attack_pistol;
+properties[? "Attack Script"] = scr_attack_pistol;
 
 // Roll stats
 stats[? "Damage"] = irandom_range(3,5);

@@ -1,5 +1,5 @@
 ///scr_send_to_inv(id)
-var inst = argument[0];
+var item_props = argument[0];
 
 // Find an inventory slot
 var space = false;
@@ -12,11 +12,16 @@ var grid_height = ds_grid_height(global.inventory_slots);
 for (row = 0; row < grid_height; row++) {
     for (column = 0; column < grid_width; column++) {
         if (slots[# column,row] = noone) {
-            // Assign to cell
 			var props = ds_map_create();
-			ds_map_copy(props,inst.properties);
+            // Assign to cell
+			ds_map_copy(props,item_props);
+			props[? "Stats"] = ds_map_create();
+			ds_map_copy(props[? "Stats"],item_props[? "Stats"]);
+			props[? "Buffs"] = ds_map_create();
+			ds_map_copy(props[? "Buffs"],item_props[? "Buffs"]);
+			props[? "Text"] = ds_map_create();
+			ds_map_copy(props[? "Text"],item_props[? "Text"]);
             slots[# column,row] = props;
-            instance_destroy(inst);
             
             // Return the fact that a slot was found
             space = true;
@@ -26,3 +31,4 @@ for (row = 0; row < grid_height; row++) {
 }
 
 if (space = false) show_message("No room in inventory");
+return space;

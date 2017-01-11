@@ -1,5 +1,5 @@
 /// Draw top bar buttons
-draw_set_colour(c_black);
+draw_set_color(c_black);
 draw_set_alpha(.7);
 draw_rectangle(0,0,global.window_width,global.window_height,false);
 draw_set_alpha(1);

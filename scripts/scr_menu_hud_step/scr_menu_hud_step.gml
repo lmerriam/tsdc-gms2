@@ -35,6 +35,9 @@ if (mouse_check_button_released(1)) {
 		
     // Detect pickup button click
     } else if (nearest_drop != noone and scr_check_btn(nearest_btn)) {
-        scr_send_to_inv(nearest_drop);
+        scr_send_to_inv(nearest_drop.properties);
+		instance_destroy(nearest_drop);
+		nearest_drop_in_range = false;
+		nearest_drop = noone;
     }
 }
