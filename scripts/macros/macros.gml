@@ -5,3 +5,5 @@
 #macro STARTING_SPELL Scroll_Projectile
 
 #macro BASE_FONT pixeltype_16
+
+#macro STATS_LIST

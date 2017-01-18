@@ -1,5 +1,22 @@
 /// Init the inventory
 
+// Set up stats list
+inv_tooltip_stats = noone;
+inv_tooltip_stats[0] = "Level";
+inv_tooltip_stats[1] = "Damage";
+inv_tooltip_stats[2] = "Spell Damage";
+inv_tooltip_stats[3] = "Atk Delay";
+inv_tooltip_stats[4] = "Fatigue";
+inv_tooltip_stats[5] = "Defense";
+inv_tooltip_stats[6] = "Speed";
+inv_tooltip_stats[7] = "Health";
+inv_tooltip_stats[8] = "Health Regen";
+inv_tooltip_stats[9] = "Stamina";
+inv_tooltip_stats[10] = "Stamina Regen";
+inv_tooltip_stats[11] = "Knockback";
+inv_tooltip_stats[12] = "Spell Knockback";
+inv_tooltip_stats[13] = "Cooldown";
+
 // Set up inv slots
 global.inventory_slots = ds_grid_create(5,5);
 ds_grid_clear(global.inventory_slots,noone);
@@ -48,22 +65,10 @@ inv_tooltip_x = inventory_coords[2] + 16;
 inv_tooltip_y = inventory_coords[1];
 inv_tooltip_line_height = 24;
 inv_tooltip_padding = 13;
+inv_tooltip_line_count = 0;
 inv_tooltip_height = 0;
 
 eqp_btn_x1 = inv_tooltip_x;
 eqp_btn_x2 = eqp_btn_x1 + inv_tooltip_width;
 eqp_btn_y1 = 0;
 eqp_btn_y2 = eqp_btn_y1 + 48;
-
-inv_tooltip_stats = noone;
-inv_tooltip_stats[0] = "Level";
-inv_tooltip_stats[1] = "Damage";
-inv_tooltip_stats[1] = "Spell Damage";
-inv_tooltip_stats[1] = "Atk Delay";
-inv_tooltip_stats[1] = "Fatigue";
-inv_tooltip_stats[1] = "Defense";
-inv_tooltip_stats[1] = "Speed";
-inv_tooltip_stats[1] = "Health";
-inv_tooltip_stats[1] = "Health Regen";
-inv_tooltip_stats[1] = "Stamina";
-inv_tooltip_stats[1] = "Stamina Regen";

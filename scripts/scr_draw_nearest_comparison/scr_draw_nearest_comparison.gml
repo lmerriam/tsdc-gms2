@@ -1,10 +1,10 @@
 ///scr_draw_nearest_comparison(text,x_offset,y_offset,width)
-var text = argument[0];
+var _text = argument[0];
 var x_offset = argument[1];
 var y_offset = argument[2];
 var width = argument[3];
 
-var line_count = array_height_2d(text);
+var line_count = array_height_2d(_text);
 
 var padding = 3;
 var line_height = 20;
@@ -16,8 +16,8 @@ draw_rectangle(x_offset,y_offset,x_offset+width,y_offset+line_count*line_height+
 draw_set_color(c_white);
 draw_set_alpha(1);
 for (i=0;i<line_count;i++) {
-    draw_set_color(text[i,2]);
-    var finaltext = text[i,0] + " " + text[i,1];
+    draw_set_color(_text[i,2]);
+    var finaltext = _text[i,0] + " " + _text[i,1];
     draw_text_transformed(x_offset+padding,y_offset+(line_height*i)+padding, string_hash_to_newline(finaltext), 1, 1, 0);
 }
 

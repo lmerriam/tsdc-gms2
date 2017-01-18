@@ -1,5 +1,5 @@
 ///scr_draw_tooltip(text,x_offset,y_offset, width)
-var text = argument[0];
+var _text = argument[0];
 var x_offset = argument[1];
 var y_offset = argument[2];
 var width = argument[3];
@@ -16,5 +16,5 @@ draw_set_color(c_white);
 draw_set_alpha(1);
 for (i=0;i<line_count;i++) { 
     
-    draw_text_transformed(x+x_offset+padding, y+y_offset+(8*i)+padding, string_hash_to_newline(text[i]), .3, .3, 0);
+    draw_text_transformed(x+x_offset+padding, y+y_offset+(8*i)+padding, string_hash_to_newline(_text[i]), .3, .3, 0);
 }

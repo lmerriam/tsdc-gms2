@@ -25,14 +25,6 @@ if (scr_mouse_over_inv()) {
     current_item = noone;
 }
 
-if (selected_item != noone) {
-    inv_tooltip_height = array_height_2d(selected_item[? "Text"])*inv_tooltip_line_height+inv_tooltip_padding*2;
-    if (eqp_btn) {
-        eqp_btn_y1 = inv_tooltip_y + inv_tooltip_height + 16;
-        eqp_btn_y2 = eqp_btn_y1 + 48;
-    }
-}
-
 /// Check inventory clicks
 
 if mouse_check_button_released(1) {
@@ -43,9 +35,18 @@ if mouse_check_button_released(1) {
 	    scr_equip(selected_item);
 	}
 	
+	// Update currently selected item
 	selected_item = current_item;
 	selected_item_x = current_slot_x;
 	selected_item_y = current_slot_y;
+	
+	// Update inv tooltip dimensions for currently selected item
+	if (selected_item != noone) {
+		inv_tooltip_line_count = ds_grid_width(selected_item[? "Text"]);
+	    inv_tooltip_height = inv_tooltip_line_count*inv_tooltip_line_height+inv_tooltip_padding*2;
+	    eqp_btn_y1 = inv_tooltip_y + inv_tooltip_height + 16;
+	    eqp_btn_y2 = eqp_btn_y1 + 48;
+	}
 	
 	// Show/hide eqp btn
 	if (current_inventory == global.inventory_slots and current_item != noone) {
@@ -55,6 +56,6 @@ if mouse_check_button_released(1) {
 	} else {
 	    eqp_btn = false;
 	}
-	
+	// Recalculate drop tooltip comparisons
 	with (Drop_Parent) scr_update_drop_tooltip(properties);
 }

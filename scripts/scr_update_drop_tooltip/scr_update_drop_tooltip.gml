@@ -6,7 +6,7 @@ var buffs = props[? "Buffs"]
 var name = props[? "Name"];
 var type = props[? "Type"];
 var level = stats[? "Level"];
-var text = props[? "Text"];
+var _text = props[? "Text"];
 
 // Identify the equipped item to compare to
 var equipped_item;
@@ -27,27 +27,34 @@ switch(type) {
 	default:
 		show_message("Can't identify item type for inv tooltip");
 }
-var equipped_stats = equipped_item[? "Stats"];
+if (equipped_item != noone) {
+	var equipped_stats = equipped_item[? "Stats"];
+	show_debug_message("Updating: " + name);
+}
+// Resize the grid, add 1 for name
+var gridw = ds_map_size(stats) + ds_map_size(buffs) + 1;
+ds_grid_resize(_text,gridw,3);
 
 // Set the name
-text[# 0,0] = string(name);
-text[# 0,1] = "";
-text[# 0,2] = c_white;
+_text[# 0,0] = name;
+_text[# 0,1] = "";
+_text[# 0,2] = c_white;
 
-// Iterate through the stats
-var current_key = ds_map_find_first(stats);
-var size = ds_map_size(stats);
-
-// Because we already set up the name, the index for this loop needs to start at 1
-for(var line = 1; line<=size; line++) {
-
-	//var compare = scr_compare_to_equipped();
-	
-    text[# line,0] = current_key + ": " + string(stats[? "current_key"]);
-    text[# line,1] = "";
-    text[# line,2] = c_white;
-
-    
-    // Increment the current ds_map key
-    current_key = ds_map_find_next(stats, current_key);
+var i = 1;
+for (var j = 0; j<array_length_1d(GUI.inv_tooltip_stats); j++) {
+	var _stat = GUI.inv_tooltip_stats[j];
+	if (stats[? _stat] != undefined) {
+		_text[# i,0] = _stat + ": " + string(stats[? _stat]);
+		_text[# i,1] = "";
+		_text[# i,2] = c_white;
+		i++;
+	}
+}
+var key = ds_map_find_first(buffs);
+for (var k = 0; k<ds_map_size(buffs); k++) {
+	_text[# i,0] = key + ": " + string(buffs[? key]);
+	_text[# i,1] = "";
+	_text[# i,2] = c_white;
+	key = ds_map_find_next(buffs,key);
+	i++;
 }
