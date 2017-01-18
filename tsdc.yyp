@@ -7542,6 +7542,25 @@
                 "resourcePath": "scripts\\scr_equip\\scr_equip.yy",
                 "resourceType": "GMScript"
             }
+        },
+        {
+            "Key": "d8c3e6ef-da4d-49df-ab33-87d99a60b843",
+            "Value": {
+                "id": "ae3063d6-76bc-43c9-99e8-61208d5ce22c",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\\scr_copy_drop_props\\scr_copy_drop_props.yy",
+                "resourceType": "GMScript"
+            }
         }
     ],
     "room_order": [
@@ -7694,7 +7713,8 @@
         "7ac71af4-7014-40cc-9da7-dc188651ed45",
         "aebc1470-1bdf-4acc-b506-188e7d3c3c53",
         "3dc36f9d-4705-41ba-ac02-d46b0fe597a7",
-        "9e838b4f-bf98-4757-800b-8eb371158be1"
+        "9e838b4f-bf98-4757-800b-8eb371158be1",
+        "d8c3e6ef-da4d-49df-ab33-87d99a60b843"
     ],
     "tutorial": ""
 }
