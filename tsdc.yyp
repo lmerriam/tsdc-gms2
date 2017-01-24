@@ -7561,6 +7561,44 @@
                 "resourcePath": "scripts\\scr_copy_drop_props\\scr_copy_drop_props.yy",
                 "resourceType": "GMScript"
             }
+        },
+        {
+            "Key": "a3fa471d-46b6-4183-a04b-552aeca6171b",
+            "Value": {
+                "id": "d16841c1-7b48-4593-aabe-6a286ddee872",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\\scr_update_inv_tooltips\\scr_update_inv_tooltips.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "908416f5-8240-4ed3-90fa-3b4b3ac21be2",
+            "Value": {
+                "id": "3584399a-fe3f-4f6f-af39-f100a54d1780",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\\scr_draw_inv_tooltip_1\\scr_draw_inv_tooltip_1.yy",
+                "resourceType": "GMScript"
+            }
         }
     ],
     "room_order": [
@@ -7639,6 +7677,7 @@
         "690f82aa-c946-458b-8191-b0e7598ba9e7",
         "adb49150-4a59-4859-a696-fb148ca3d901",
         "515ea238-9c7c-44c2-8185-6a284a3c2348",
+        "908416f5-8240-4ed3-90fa-3b4b3ac21be2",
         "51310a9e-3f12-4f58-a4b8-b30c6ee3905c",
         "9d3663fd-972b-4f67-89f8-b342ddd87ec4",
         "8f05da69-b533-4828-926c-cb45f6b4bf72",
@@ -7677,6 +7716,7 @@
         "f7310c8e-bc1b-48ed-a993-1e15ea86bbd9",
         "120976cb-71aa-4afa-9955-fb8999c5f9a2",
         "b3494bb0-4faf-42c5-8258-692acc32b13c",
+        "a3fa471d-46b6-4183-a04b-552aeca6171b",
         "db858ca1-0b85-46bb-b9eb-c84ffae38c2f",
         "57bcb03b-d272-419e-a7f4-1e7849d1fb47",
         "d70fb343-25c8-4f54-809f-d32162482462",

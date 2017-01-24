@@ -20,7 +20,8 @@
         "3ce13b69-7cb7-4f28-ac46-b716a4c434f2",
         "f7310c8e-bc1b-48ed-a993-1e15ea86bbd9",
         "120976cb-71aa-4afa-9955-fb8999c5f9a2",
-        "b3494bb0-4faf-42c5-8258-692acc32b13c"
+        "b3494bb0-4faf-42c5-8258-692acc32b13c",
+        "a3fa471d-46b6-4183-a04b-552aeca6171b"
     ],
     "filterType": "GMScript",
     "folderName": "Equipment",

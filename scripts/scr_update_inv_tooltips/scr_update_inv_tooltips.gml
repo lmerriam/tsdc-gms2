@@ -1,6 +1,3 @@
-///scr_send_to_inv(id)
-var item_props = argument[0];
-
 // Find an inventory slot
 var slots = global.inventory_slots;
 
@@ -21,6 +18,3 @@ for (row = 0; row < grid_height; row++) {
         }
     }
 }
-
-show_message("No room in inventory");
-return false;

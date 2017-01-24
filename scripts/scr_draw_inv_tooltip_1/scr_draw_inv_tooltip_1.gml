@@ -1,12 +1,14 @@
-///scr_update_drop_tooltip(properties_id)
-var props = argument0;
+///scr_draw_inv_tooltip(props,xx,yy,width)
+var props = argument[0];
+var xx = argument[1];
+var yy = argument[2];
+var width = argument[3];
+
 var stats = props[? "Stats"]
 var buffs = props[? "Buffs"]
 
 var name = props[? "Name"];
 var type = props[? "Type"];
-var level = stats[? "Level"];
-var _text = props[? "Text"];
 
 // Identify the equipped item to compare to
 var equipped_item;
@@ -30,40 +32,31 @@ switch(type) {
 var equipped_stats = noone;
 if (equipped_item != noone) {
 	var equipped_stats = equipped_item[? "Stats"];
-	show_debug_message("Updating: " + name);
 }
 // Resize the grid, add 1 for name
-var gridw = ds_map_size(stats) + ds_map_size(buffs) + 1;
-ds_grid_resize(_text,gridw,3);
+var line_count = ds_map_size(stats) + ds_map_size(buffs) + 1;
 
-// Set the name
-_text[# 0,0] = name;
-_text[# 0,1] = "";
-_text[# 0,2] = c_white;
+// Draw the name
+// TODO: should "names" be in stats? types can stay in properties
+draw_text(xx, yy, name);
 
 var i = 1;
+var xcur = xx + inv_tooltip_padding;
 for (var j = 0; j<array_length_1d(GUI.inv_tooltip_stats); j++) {
 	var _stat = GUI.inv_tooltip_stats[j];
-	if (stats[? _stat] != undefined) {
-		var diff = 0;
-		_text[# i,0] = _stat + ": " + string(stats[? _stat]);
-		_text[# i,1] = "";
-		_text[# i,2] = c_white;
-		if (equipped_stats != noone) {
-			var item_stat = stats[? _stat];
-			var equipped_stat = equipped_stats[? _stat];
-			var diff = item_stat - equipped_stat;
-			if (diff > 0) { _text[# i,1] = "+"; _text[# i,2] = c_green; }
-			else if (diff < 0) {_text[# i,1] = "-"; _text[# i,2] = c_red;}
-		}
+	var stat_value = stats[? _stat];
+	if (stat_value != undefined) {
+		var ycur = yy + inv_tooltip_padding + i*inv_tooltip_line_height;
+		var text = _stat + ": " + string(stat_value);
+		draw_text(xcur, ycur, text);
 		i++;
 	}
 }
 var key = ds_map_find_first(buffs);
 for (var k = 0; k<ds_map_size(buffs); k++) {
-	_text[# i,0] = key + ": " + string(buffs[? key]);
-	_text[# i,1] = "";
-	_text[# i,2] = c_white;
+	var ycur = yy + inv_tooltip_padding + i*inv_tooltip_line_height;
+	var text = key + ": " + string(buffs[? key]);
+	draw_text(xcur, ycur, text);
 	key = ds_map_find_next(buffs,key);
 	i++;
 }

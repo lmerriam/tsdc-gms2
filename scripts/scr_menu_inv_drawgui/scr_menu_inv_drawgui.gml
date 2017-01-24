@@ -16,7 +16,7 @@ scr_draw_inventory(global.inventory_slots, slot_width, inventory_coords[0], inve
 scr_draw_inventory(global.equipment_slots, slot_width, equipment_coords[0], equipment_coords[1]);
 
 if (selected_item != noone) {
-   scr_draw_inv_tooltip(selected_item,32,64,200);
+   scr_draw_inv_tooltip_1(selected_item,32,64,200);
 }
 
 // Reset the color and alpha
