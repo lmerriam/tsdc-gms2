@@ -11,12 +11,7 @@ var width = grid_width*slot_width;
 var height = grid_height*slot_width;
 
 // Draw rounded rectangle
-draw_set_color(c_black);
-draw_set_alpha(.5);
-draw_roundrect_ext(offset_left,offset_top,offset_left+width,offset_top+height,2,2,false);
-// Draw outline
-draw_set_alpha(1);
-draw_roundrect_ext(offset_left,offset_top,offset_left+width,offset_top+height,2,2,true);
+draw_rectangle_fast(offset_left,offset_top,offset_left+width,offset_top+height);
 
 // Iterate over grid and draw slots
 for (column = 0; column < grid_width; column++) {

@@ -1,8 +1,8 @@
 {
-    "id": "a3fa471d-46b6-4183-a04b-552aeca6171b",
+    "id": "97d423ee-a641-40c2-bef7-5aac5cfda4f6",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "scr_update_inv_tooltips",
+    "name": "draw_rectangle_fast",
     "IsCompatibility": false,
     "IsDnD": false
 }

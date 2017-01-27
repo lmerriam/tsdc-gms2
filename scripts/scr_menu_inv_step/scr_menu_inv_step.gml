@@ -42,8 +42,9 @@ if mouse_check_button_released(1) {
 	
 	// Update inv tooltip dimensions for currently selected item
 	if (selected_item != noone) {
-		inv_tooltip_line_count = ds_grid_width(selected_item[? "Text"]);
+		inv_tooltip_line_count = ds_map_size(selected_item[? "Stats"]) + ds_map_size(selected_item[? "Buffs"]) + 1;
 	    inv_tooltip_height = inv_tooltip_line_count*inv_tooltip_line_height+inv_tooltip_padding*2;
+		inv_tooltip_compare_item = scr_get_equipped(selected_item[? "Type"]);
 	    eqp_btn_y1 = inv_tooltip_y + inv_tooltip_height + 16;
 	    eqp_btn_y2 = eqp_btn_y1 + 48;
 	}
@@ -56,6 +57,4 @@ if mouse_check_button_released(1) {
 	} else {
 	    eqp_btn = false;
 	}
-	// Recalculate drop tooltip comparisons
-	with (Drop_Parent) scr_update_drop_tooltip(properties);
 }

@@ -2,8 +2,6 @@
 var _props = argument0;
 var _type = _props[? "Type"];
 
-scr_update_drop_tooltip(_props);
-
 var _prev_obj;
 
 

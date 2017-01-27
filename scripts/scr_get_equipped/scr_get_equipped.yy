@@ -1,8 +1,8 @@
 {
-    "id": "908416f5-8240-4ed3-90fa-3b4b3ac21be2",
+    "id": "7371cc57-571b-441e-8d83-02c218cb69ea",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "scr_draw_inv_tooltip_1",
+    "name": "scr_get_equipped",
     "IsCompatibility": false,
     "IsDnD": false
 }

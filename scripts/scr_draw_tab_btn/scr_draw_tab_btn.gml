@@ -9,7 +9,7 @@ var menu = btn[5];
 
 // Draw button rectangle
 draw_set_color(c_black);
-draw_rectangle(x1,y1,x1+width,y1+height,false);
+draw_rectangle_fast(x1,y1,x1+width,y1+height);
 
 // Draw button text
 if (menu == GUI.menu_step) {

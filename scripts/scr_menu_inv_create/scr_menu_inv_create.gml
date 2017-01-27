@@ -60,7 +60,7 @@ var equipment_offset_top = inventory_coords[1];
 equipment_coords = scr_init_inventory(global.equipment_slots, slot_width, equipment_offset_left, equipment_offset_top);
 
 /// Set up inventory tooltip and equip button
-inv_tooltip_width = 200;
+inv_tooltip_width = 230;
 inv_tooltip_x = inventory_coords[2] + 16; 
 inv_tooltip_y = inventory_coords[1];
 inv_tooltip_line_height = 24;
