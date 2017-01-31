@@ -20,12 +20,14 @@ if (inv_tooltip_compare_item != noone) {
 // Draw the tooltip box
 draw_rectangle_fast(xx,yy,xx+width,yy+height);
 
+// Set up x position for text of tooltip
+var xcur = xx + inv_tooltip_padding;
+
 // Draw the name
 // TODO: should "names" be in stats? types can stay in properties
-draw_text(xx, yy, name);
+draw_text(xcur, yy+inv_tooltip_padding, name);
 
 var i = 1;
-var xcur = xx + inv_tooltip_padding;
 for (var j = 0; j<array_length_1d(GUI.inv_tooltip_stats); j++) {
 	var _stat = GUI.inv_tooltip_stats[j];
 	var stat_value = stats[? _stat];
@@ -42,6 +44,7 @@ for (var j = 0; j<array_length_1d(GUI.inv_tooltip_stats); j++) {
 	}
 	draw_set_color(c_white);
 }
+// Draw the buffs
 var key = ds_map_find_first(buffs);
 for (var k = 0; k<ds_map_size(buffs); k++) {
 	var ycur = yy + inv_tooltip_padding + i*inv_tooltip_line_height;
