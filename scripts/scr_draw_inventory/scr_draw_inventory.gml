@@ -10,8 +10,10 @@ var grid_width = ds_grid_width(slots);
 var width = grid_width*slot_width;
 var height = grid_height*slot_width;
 
+draw_set_alpha(0.5);
 // Draw rounded rectangle
 draw_rectangle_fast(offset_left,offset_top,offset_left+width,offset_top+height);
+draw_set_alpha(1);
 
 // Iterate over grid and draw slots
 for (column = 0; column < grid_width; column++) {

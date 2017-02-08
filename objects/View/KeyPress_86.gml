@@ -1,4 +1,4 @@
 /// Open store
 
-//scr_menu_store();
+scr_menu_store();
 

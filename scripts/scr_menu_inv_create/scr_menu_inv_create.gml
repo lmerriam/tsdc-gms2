@@ -67,6 +67,7 @@ inv_tooltip_line_height = 24;
 inv_tooltip_padding = 13;
 inv_tooltip_line_count = 0;
 inv_tooltip_height = 0;
+inv_tooltip_compare_item = noone;
 
 eqp_btn_x1 = inv_tooltip_x;
 eqp_btn_x2 = eqp_btn_x1 + inv_tooltip_width;
