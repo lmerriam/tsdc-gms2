@@ -3,7 +3,7 @@ var obj1 = argument[0];
 var obj2 = argument[1];
 var force = argument[2];
 
-show_debug_message(obj1.x);
+show_debug_message("Force: " + string(force));
 
 if instance_exists(obj2) {
 
