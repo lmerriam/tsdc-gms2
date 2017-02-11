@@ -1,7 +1,8 @@
 /// Detect the Inventory slot the mouse is over and store it
+//TODO: this shares sooo much code with inventory, refactor
 
 // Check navigation submenu
-scr_menu_navigation_step()
+//scr_menu_navigation_step()
 
 var mousex = device_mouse_x_to_gui(0);
 var mousey = device_mouse_y_to_gui(0);
@@ -25,7 +26,7 @@ if (scr_mouse_over_ui(inv_player_coords[0],inv_player_coords[1],inv_player_coord
     current_item = noone;
 }
 
-/// Check inventory clicks
+// Check inventory clicks
 
 if mouse_check_button_released(1) {
 	
@@ -40,7 +41,18 @@ if mouse_check_button_released(1) {
 		store_tooltip_line_count = ds_map_size(selected_item[? "Stats"]) + ds_map_size(selected_item[? "Buffs"]) + 1;
 	    store_tooltip_height = store_tooltip_line_count*store_tooltip_line_height+store_tooltip_padding*2;
 		store_tooltip_compare_item = scr_get_equipped(selected_item[? "Type"]);
+		
+		buy_btn = false;
+		sell_btn = false;
+		if (selected_item_origin == global.store_slots) {
+			buy_btn = true;
+		} else if (selected_item_origin == global.inventory_slots) {
+			sell_btn = true;
+		}
 	}
 	
+	// Update buy/sell btn dimensions
+	buy_btn_y1 = store_tooltip_y + store_tooltip_height + 16;
+	buy_btn_y2 = buy_btn_y1 + 48;
 
 }

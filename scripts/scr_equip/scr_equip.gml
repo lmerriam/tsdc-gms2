@@ -1,4 +1,4 @@
-/// scr_equip_props(properties_ds)
+/// scr_equip(properties_ds)
 var _props = argument0;
 var _type = _props[? "Type"];
 

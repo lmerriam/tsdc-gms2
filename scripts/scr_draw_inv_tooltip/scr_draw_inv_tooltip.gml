@@ -12,4 +12,5 @@ var compare_to = argument[7];
 draw_rectangle_fast(xx,yy,xx+width,yy+height);
 
 // Draw the stats
+draw_set_halign(fa_left);
 scr_draw_item_stats(props,xx,yy,width,height,padding,line_height,compare_to);
