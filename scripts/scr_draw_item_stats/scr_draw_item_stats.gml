@@ -13,6 +13,7 @@ var buffs = props[? "Buffs"]
 
 var name = props[? "Name"];
 var type = props[? "Type"];
+var value = props[? "Value"];
 
 // Identify the equipped item to compare to
 var compare_to_stats = noone;
@@ -53,3 +54,5 @@ for (var k = 0; k<ds_map_size(buffs); k++) {
 	key = ds_map_find_next(buffs,key);
 	i++;
 }
+// Draw the value
+draw_text(xcur,yy+padding+i*line_height,"Value: " + string(value));

@@ -1,7 +1,7 @@
 {
     "id": "c85c4fe1-cfbd-4ea4-8cd8-33d68f335185",
     "modelName": "GMSprite",
-    "mvc": "1.11",
+    "mvc": "1.12",
     "name": "spr_cone",
     "For3D": false,
     "HTile": false,
@@ -37,6 +37,8 @@
             ]
         }
     ],
+    "gridX": 0,
+    "gridY": 0,
     "height": 72,
     "layers": [
         {
@@ -51,6 +53,7 @@
             "visible": true
         }
     ],
+    "origin": 3,
     "playbackSpeed": 1,
     "playbackSpeedType": 1,
     "sepmasks": false,

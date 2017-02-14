@@ -38,7 +38,7 @@ if mouse_check_button_released(1) {
 	
 	// Update inv tooltip dimensions for currently selected item
 	if (selected_item != noone) {
-		store_tooltip_line_count = ds_map_size(selected_item[? "Stats"]) + ds_map_size(selected_item[? "Buffs"]) + 1;
+		store_tooltip_line_count = ds_map_size(selected_item[? "Stats"]) + ds_map_size(selected_item[? "Buffs"]) + 2;
 	    store_tooltip_height = store_tooltip_line_count*store_tooltip_line_height+store_tooltip_padding*2;
 		store_tooltip_compare_item = scr_get_equipped(selected_item[? "Type"]);
 		
