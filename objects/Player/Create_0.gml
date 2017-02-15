@@ -22,6 +22,9 @@ stamina_timer = 0;
 global.teleport_player_x = noone;
 global.teleport_player_y = noone;
 
+// Give some gold
+gold = 1000;
+
 /// Init stats
 stats = ds_map_create();
 base_stats = ds_map_create();
