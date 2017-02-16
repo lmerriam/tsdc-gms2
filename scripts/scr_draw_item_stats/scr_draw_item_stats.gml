@@ -26,6 +26,7 @@ var xcur = xx + padding;
 
 // Draw the name
 // TODO: should "names" be in stats? types can stay in properties
+draw_set_color(c_white);
 draw_text(xcur, yy+padding, name);
 
 var i = 1;

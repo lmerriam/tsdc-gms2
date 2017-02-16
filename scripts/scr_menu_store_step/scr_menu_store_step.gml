@@ -30,6 +30,7 @@ if (scr_mouse_over_ui(inv_player_coords[0],inv_player_coords[1],inv_player_coord
 
 if mouse_check_button_released(1) {
 
+	// Buy or sell
 	if (scr_mouse_over_ui(buy_btn_x1,buy_btn_y1,buy_btn_x2,buy_btn_y2)) {
 		if (buy_btn) {
 			Player.gold -= selected_item[? "Value"];

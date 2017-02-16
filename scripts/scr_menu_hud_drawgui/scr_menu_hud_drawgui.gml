@@ -9,7 +9,7 @@ for (i = 0; i < ds_list_size(buttons); i++) {
 
 // Draw nearest drop tooltip
 if (nearest_drop_in_range) {
-    //scr_draw_item_stats(nearest_drop.text,16,128,200);
+    scr_draw_nearest_comparison(nearest_drop.properties);
 }
     
     
