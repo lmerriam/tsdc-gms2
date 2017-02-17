@@ -1,8 +1,8 @@
 {
-    "id": "3e8982d3-f41d-4f7b-b34b-e4a66da7f683",
+    "id": "b368ad4d-1343-47ce-a773-3a4d05fe6c4f",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "scr_menu_store",
+    "name": "scr_menu_shop_step",
     "IsCompatibility": false,
     "IsDnD": false
 }

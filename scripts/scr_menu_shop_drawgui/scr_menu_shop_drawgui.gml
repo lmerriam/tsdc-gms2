@@ -10,11 +10,11 @@ draw_text(32, 200, string_hash_to_newline(current_item));
 scr_draw_inventory(global.inventory_slots, slot_width, inv_player_coords[0], inv_player_coords[1]);
 
 // Draw the equipment slots
-scr_draw_inventory(global.store_slots, slot_width, inv_vendor_coords[0], inv_vendor_coords[1]);
+scr_draw_inventory(global.shop_slots, slot_width, inv_vendor_coords[0], inv_vendor_coords[1]);
 
 // Draw the tooltip
 if (selected_item != noone) {
-	scr_draw_inv_tooltip(selected_item,store_tooltip_x,store_tooltip_y,store_tooltip_width,store_tooltip_height,store_tooltip_padding,store_tooltip_line_height,store_tooltip_compare_item);
+	scr_draw_inv_tooltip(selected_item,shop_tooltip_x,shop_tooltip_y,shop_tooltip_width,shop_tooltip_height,shop_tooltip_padding,shop_tooltip_line_height,shop_tooltip_compare_item);
 	// Draw buy button
 	if (buy_btn or sell_btn) {
 		draw_set_color(c_black);

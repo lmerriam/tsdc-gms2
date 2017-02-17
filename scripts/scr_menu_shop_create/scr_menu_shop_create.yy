@@ -1,8 +1,8 @@
 {
-    "id": "0da4fee6-07ae-491e-8a88-7c78899b7e9e",
+    "id": "167ac848-3da2-4a0b-97ac-34c34747a0fb",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "scr_menu_store_drawgui",
+    "name": "scr_menu_shop_create",
     "IsCompatibility": false,
     "IsDnD": false
 }

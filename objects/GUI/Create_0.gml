@@ -13,7 +13,7 @@ scr_menu_castmode_create();
 scr_menu_map_create();
 scr_menu_hud_create();
 scr_menu_inv_create();
-scr_menu_store_create();
+scr_menu_shop_create();
 scr_menu_navigation_create();
 scr_menu_char_create();
 
