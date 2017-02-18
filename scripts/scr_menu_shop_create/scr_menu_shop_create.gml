@@ -4,11 +4,6 @@
 global.shop_slots = ds_grid_create(3,5);
 ds_grid_clear(global.shop_slots,noone);
 
-// Some test shop inventory
-var drop = instance_create(0,0,Weapon_Shotgun);
-global.shop_slots[# 0,0] = scr_copy_drop_props(drop.properties);
-instance_destroy(drop);
-
 // Set up the inventory offsets
 // Centering that shit
 // TODO: why the fuck can I not get global.window_width yet

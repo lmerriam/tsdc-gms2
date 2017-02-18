@@ -16,6 +16,14 @@ if (distance_to_object(nearest_drop) < 32) {
     nearest_drop_in_range = false;   
 }
 
+// Check for nearest vendor
+nearest_vendor = instance_nearest(x,y,Vendor);
+if (distance_to_object(nearest_vendor) < 32) {
+    nearest_vendor_in_range = true;
+} else {
+    nearest_vendor_in_range = false;   
+}
+
 // Handle mouse clicks
 if (mouse_check_button_released(1)) {
 
@@ -34,10 +42,15 @@ if (mouse_check_button_released(1)) {
         scr_menu_map();
 		
     // Detect pickup button click
-    } else if (nearest_drop != noone and scr_mouse_over_ui(nearest_button_x1,nearest_button_y1,nearest_button_x2,nearest_button_y2)) {
+    } else if (nearest_drop != noone and nearest_drop_in_range and scr_mouse_over_ui(nearest_button_x1,nearest_button_y1,nearest_button_x2,nearest_button_y2)) {
         scr_send_to_inv(nearest_drop.properties);
 		instance_destroy(nearest_drop);
 		nearest_drop_in_range = false;
 		nearest_drop = noone;
+		
+	// Detect vendor button click
+    } else if (nearest_vendor != noone and nearest_vendor_in_range and scr_check_btn(shop_btn)) {
+        scr_menu_shop();
     }
+	
 }

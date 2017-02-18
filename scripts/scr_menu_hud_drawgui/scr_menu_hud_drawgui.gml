@@ -11,7 +11,11 @@ for (i = 0; i < ds_list_size(buttons); i++) {
 if (nearest_drop_in_range) {
     scr_draw_nearest_comparison(nearest_drop.properties);
 }
-    
+
+// Draw shop button
+if (nearest_vendor_in_range) {
+    scr_draw_btn_sprite(shop_btn);
+}
     
 // Draw the minimap
 draw_surface_stretched(minimap,minimap_window_x,minimap_window_y,minimap_width,minimap_height);
