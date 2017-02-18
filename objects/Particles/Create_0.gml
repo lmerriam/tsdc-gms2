@@ -10,4 +10,3 @@ part_system_depth(global.particles_above, -99999999);
 
 scr_init_flare();
 scr_init_spark();
-
