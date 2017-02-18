@@ -40,5 +40,14 @@ nearest_btn[2] = 0;
 nearest_btn[3] = nearest_button_height;
 nearest_btn[4] = noone;
 
+// Nearest vendor UI
+var width = 64;
+var height = 64;
+shop_btn[0] = window_width - (width+windowpadding);
+shop_btn[1] = cast_btn[1] - (height+windowpadding);
+shop_btn[2] = width;
+shop_btn[3] = height;
+shop_btn[4] = spr_menu_button;
+
 ds_list_add(buttons,cast_btn,menu_btn,nearest_btn);
 
