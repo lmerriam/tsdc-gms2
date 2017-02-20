@@ -14,3 +14,4 @@ for(var i = 0; i < ds_list_size(spawns); i++) {
 }
 if (cleared) instance_destroy();
 
+

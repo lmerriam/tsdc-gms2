@@ -17,8 +17,7 @@ do {
 var inst = instance_create_layer(xx, yy, "entities", obj);
 
 // Level the instance
-inst.stats[? "Level"] = level;
-with (inst) event_user(0);
+scr_level_instance(inst,level);
 
 // Return instance
 return inst;

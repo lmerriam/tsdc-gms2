@@ -1,6 +1,15 @@
-/// Set up inv
+/// Init vendor
+properties = ds_map_create();
+
+// Set up stats
+stats = ds_map_create();
+stats[? "Level"] = 0;
+properties[? "Stats"] = stats;
+
+// Set up inv
 vendor_inv = ds_grid_create(3,5);
 ds_grid_clear(vendor_inv,noone);
+properties[? "Inventory"] = vendor_inv;
 
 // Some test inventory
 var item = instance_create(0,0,Weapon_Shotgun);
