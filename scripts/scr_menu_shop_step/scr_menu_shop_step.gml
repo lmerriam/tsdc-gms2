@@ -2,7 +2,7 @@
 //TODO: this shares sooo much code with inventory, refactor
 
 // Check navigation submenu
-//scr_menu_navigation_step()
+scr_menu_navigation_step()
 
 var mousex = device_mouse_x_to_gui(0);
 var mousey = device_mouse_y_to_gui(0);
@@ -15,10 +15,10 @@ if (scr_mouse_over_ui(inv_player_coords[0],inv_player_coords[1],inv_player_coord
     current_slot_y = (mousey - inv_player_coords[1]-3) div slot_width;
     current_item = global.inventory_slots[# current_slot_x,current_slot_y];    
 } else if (scr_mouse_over_ui(inv_vendor_coords[0],inv_vendor_coords[1],inv_vendor_coords[2],inv_vendor_coords[3])) {
-    current_inventory = global.shop_slots;
+    current_inventory = shop_slots;
     current_slot_x = (mousex - inv_vendor_coords[0]-3) div slot_width;
     current_slot_y = (mousey - inv_vendor_coords[1]-3) div slot_width;
-    current_item = global.shop_slots[# current_slot_x,current_slot_y];
+    current_item = shop_slots[# current_slot_x,current_slot_y];
 } else {
     current_inventory = noone;
     current_slot_x = 0;
@@ -34,7 +34,7 @@ if mouse_check_button_released(1) {
 	if (scr_mouse_over_ui(buy_btn_x1,buy_btn_y1,buy_btn_x2,buy_btn_y2)) {
 		if (buy_btn) {
 			Player.gold -= selected_item[? "Value"];
-			global.shop_slots[# selected_item_x, selected_item_y] = noone;
+			shop_slots[# selected_item_x, selected_item_y] = noone;
 			scr_send_to_inv(selected_item);
 		} else if (sell_btn) {
 			Player.gold += selected_item[? "Value"];
@@ -56,7 +56,7 @@ if mouse_check_button_released(1) {
 		
 		buy_btn = false;
 		sell_btn = false;
-		if (selected_item_origin == global.shop_slots) {
+		if (selected_item_origin == shop_slots) {
 			buy_btn = true;
 		} else if (selected_item_origin == global.inventory_slots) {
 			sell_btn = true;

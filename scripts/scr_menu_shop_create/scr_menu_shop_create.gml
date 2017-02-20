@@ -1,8 +1,8 @@
 /// Init the inventory
 
 // Set up inv slots
-global.shop_slots = ds_grid_create(3,5);
-ds_grid_clear(global.shop_slots,noone);
+shop_slots = ds_grid_create(3,5);
+ds_grid_clear(shop_slots,noone);
 
 // Set up the inventory offsets
 // Centering that shit
@@ -11,7 +11,7 @@ var shop_offset_left = 32;
 var shop_offset_top = (__view_get( e__VW.HPort, 0 ) - slot_width * ds_grid_height(global.inventory_slots)) / 2 + 32;;
 
 // Get the equipment slot coordinates
-inv_vendor_coords = scr_init_inventory(global.shop_slots, slot_width, shop_offset_left, shop_offset_top);
+inv_vendor_coords = scr_init_inventory(shop_slots, slot_width, shop_offset_left, shop_offset_top);
 
 // Get the inventory coordinates
 inv_player_coords = scr_init_inventory(global.inventory_slots, slot_width, inv_vendor_coords[2]+16, shop_offset_top);

@@ -50,7 +50,7 @@ if (mouse_check_button_released(1)) {
 		
 	// Detect vendor button click
     } else if (nearest_vendor != noone and nearest_vendor_in_range and scr_check_btn(shop_btn)) {
-        scr_menu_shop();
+        scr_menu_shop(nearest_vendor);
     }
 	
 }

@@ -1,7 +1,7 @@
 /// Draw the inventory
 
 // Draw nav menu
-//scr_menu_navigation_drawgui();
+scr_menu_navigation_drawgui();
 
 // Debug
 draw_text(32, 200, string_hash_to_newline(current_item));
@@ -10,7 +10,7 @@ draw_text(32, 200, string_hash_to_newline(current_item));
 scr_draw_inventory(global.inventory_slots, slot_width, inv_player_coords[0], inv_player_coords[1]);
 
 // Draw the equipment slots
-scr_draw_inventory(global.shop_slots, slot_width, inv_vendor_coords[0], inv_vendor_coords[1]);
+scr_draw_inventory(shop_slots, slot_width, inv_vendor_coords[0], inv_vendor_coords[1]);
 
 // Draw the tooltip
 if (selected_item != noone) {
