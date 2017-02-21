@@ -35,7 +35,7 @@ if mouse_check_button_released(1) {
 		if (buy_btn) {
 			Player.gold -= selected_item[? "Value"];
 			shop_slots[# selected_item_x, selected_item_y] = noone;
-			scr_send_to_inv(selected_item);
+			scr_send_to_inv(selected_item,global.inventory_slots);
 		} else if (sell_btn) {
 			Player.gold += selected_item[? "Value"];
 			global.inventory_slots[# selected_item_x, selected_item_y] = noone;

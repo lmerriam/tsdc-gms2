@@ -3,15 +3,9 @@ properties = ds_map_create();
 
 // Set up stats
 stats = ds_map_create();
-stats[? "Level"] = 0;
+stats[? "Level"] = 1;
 properties[? "Stats"] = stats;
 
 // Set up inv
-vendor_inv = ds_grid_create(3,5);
-ds_grid_clear(vendor_inv,noone);
-properties[? "Inventory"] = vendor_inv;
-
-// Some test inventory
-var item = instance_create(0,0,Weapon_Shotgun);
-vendor_inv[# 0,0] = scr_copy_drop_props(item.properties);
-instance_destroy(item);
+properties[? "Inventory"] = ds_grid_create(3,5);
+ds_grid_clear(properties[? "Inventory"],noone);

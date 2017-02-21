@@ -23,6 +23,6 @@ if (_type == "Weapon") {
 	return false;
 }
 
-if (_prev_obj != noone) scr_send_to_inv(_prev_obj);
+if (_prev_obj != noone) scr_send_to_inv(_prev_obj,global.inventory_slots);
 
 return true;

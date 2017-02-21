@@ -1,8 +1,6 @@
-///scr_send_to_inv(id)
+///scr_send_to_inv(props,inventory)
 var item_props = argument[0];
-
-// Find an inventory slot
-var slots = global.inventory_slots;
+var slots = argument[1];
 
 // Get the inventory height and width
 var grid_width = ds_grid_width(global.inventory_slots);
