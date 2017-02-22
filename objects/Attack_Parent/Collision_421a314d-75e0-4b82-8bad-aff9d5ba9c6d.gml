@@ -15,8 +15,9 @@ if (creator == Player.id) {
     // Shake the screen
     global.screen_shake += 3;
     
-    if(ds_exists(other.effects,ds_type_map) and ds_exists(buffs,ds_type_map)) {
-        // Confer effects
-        ds_map_copy(other.effects,buffs);
+	// Confer effects 
+	var effects = other.properties[? "Effects"];
+    if(ds_exists(effects,ds_type_map) and ds_exists(buffs,ds_type_map)) {
+        ds_map_copy(effects,buffs);
     }
 }

@@ -8,14 +8,11 @@ var victim = scr_hitscan(x, y, targetx, targety, Enemy_Parent, false, true);
 
 if (victim != noone) {
 	// Damage victim
+	// TODO: make scr_damage, scr_damage_instance, scr_blood, etc
     victim.stats[? "Health"] -= damage;
 	
 	// Transfer buffs to effects
-	var gem = scr_get_gem();
-	var buffs = gem[? "Buffs"];
-    if (ds_exists(victim.effects,ds_type_map) and ds_exists(buffs,ds_type_map)) {
-        ds_map_copy(victim.effects, buffs);
-    }
+	scr_confer_effects(victim.properties,scr_get_gem());
 	
 	// Knockback the victim
     scr_knockback(Player, victim, scr_weapon_stat("Knockback"));

@@ -1,8 +1,8 @@
 {
-    "id": "6a49120e-616e-49f2-8fd2-eb4c70b586cb",
+    "id": "5cc37884-531b-498f-903c-52c3b3d12837",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "scr_random_list_item",
+    "name": "scr_confer_effects",
     "IsCompatibility": false,
     "IsDnD": false
 }

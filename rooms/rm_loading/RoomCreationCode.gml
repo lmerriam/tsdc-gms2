@@ -1,1 +1,1 @@
-scr_setup_new_map("tsdcTest");
+//scr_setup_new_map("tsdcTest");

@@ -7,7 +7,6 @@ scr_activate_inv();
 instance_activate_object(Time);
 
 // todo: use scr_get_instance_stats
-scr_setup_new_map(other.stats[? "New Room"]);
 x = other.stats[? "New X"];
 y = other.stats[? "New Y"];
 View.x = other.stats[? "New X"];

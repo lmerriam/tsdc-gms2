@@ -1,4 +1,6 @@
 /// Combust if effect is active
+var effects = properties[? "Effects"];
+
 if (ds_exists(effects,ds_type_map)) {
     if (effects[? "combust_duration"] > 0) {
 		var gem = scr_get_gem();

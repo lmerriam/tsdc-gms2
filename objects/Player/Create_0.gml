@@ -26,9 +26,6 @@ global.teleport_player_y = noone;
 gold = 1000;
 
 /// Init stats
-properties = ds_map_create()
-stats = ds_map_create();
-properties[? "Stats"] = stats;
 base_stats = ds_map_create();
 properties[? "Base Stats"] = base_stats;
 
