@@ -1,9 +1,5 @@
 /// Go through door
 
-// Activate objects that need to persist
-// They will automatically be deactivated again by the view after they've transitioned to the new room
-scr_activate_inv();
-
 instance_activate_object(Time);
 
 // todo: use scr_get_instance_stats
