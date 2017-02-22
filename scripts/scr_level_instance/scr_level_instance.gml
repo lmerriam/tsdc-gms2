@@ -2,5 +2,5 @@
 var inst = argument0;
 var level = argument1;
 
-inst.stats[? "Level"] = level;
+scr_set_instance_stat(Player,"Level",level);
 with (inst) event_user(0);

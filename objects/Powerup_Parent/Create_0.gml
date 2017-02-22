@@ -1,4 +1,4 @@
 /// Init powerup
+properties = ds_map_create();
 stats = ds_map_create();
-stats[? "Level"] = 1;
-
+properties[? "Stats"] = stats;

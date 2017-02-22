@@ -5,4 +5,4 @@ var target_y = lengthdir_y(attack_range,dir);
 
 var gem = scr_get_gem();
 var buffs = gem[? "Buffs"];
-scr_damage(x+target_x,y+target_y,Attack_Radius,Player.id,Player.stats[? "Damage"],scr_weapon_stat("Knockback"),buffs);
+scr_damage(x+target_x,y+target_y,Attack_Radius,Player.id,scr_get_instance_stat(Player,"Damage"),scr_weapon_stat("Knockback"),buffs);

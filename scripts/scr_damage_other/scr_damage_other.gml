@@ -1,2 +1,2 @@
 ///scr_damage_other(damage)
-other.stats[? "Health"] -= argument0;
+scr_set_instance_stat(other,"Health",argument0);

@@ -1,6 +1,6 @@
 ///scr_calc_stats
 
-ds_map_copy(Player.stats,Player.base_stats);
+ds_map_copy(Player.properties[? "Stats"],Player.properties[? "Base Stats"]);
 
 // Iterate through equipment slots
 for (i=0; i<ds_grid_height(global.equipment_slots); i++) {
@@ -15,7 +15,10 @@ for (i=0; i<ds_grid_height(global.equipment_slots); i++) {
     for(var j = 0; j<ds_map_size(item_stats); j++) {
         
         // Update the related player stat to include item boosts
-        if (Player.stats[? current_key] != undefined) Player.stats[? current_key] = scr_player_base_stat(current_key) + item_stats[? current_key];
+        if (scr_get_instance_stat(Player,current_key) != undefined) {
+			var value = scr_player_base_stat(current_key) + item_stats[? current_key];
+			scr_set_instance_stat(Player,current_key,value);
+		}
         
         // Increment the current ds_map key
         current_key = ds_map_find_next(item_stats, current_key);

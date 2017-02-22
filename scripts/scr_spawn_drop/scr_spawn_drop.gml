@@ -13,7 +13,7 @@ var ylocal = choose(3, -3);
 var xforce_local = choose(random_range(60,180), -random_range(60,180));
 var yforce_local = choose(random_range(60,180), -random_range(60,180));
 with(drop) physics_apply_local_force(xlocal,ylocal,xforce_local,yforce_local);
-drop.stats[? "Level"] = level;
+scr_set_instance_stat(drop,"Level",level)
 with(drop) event_user(0);
 
 return drop;

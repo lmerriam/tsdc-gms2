@@ -23,10 +23,10 @@ draw_rectangle_color(minimap_window_x, minimap_window_y, minimap_window_x+minima
 draw_sprite_ext(spr_player_arrow,0,(minimap_window_x + (minimap_width/2)),(minimap_window_y + (minimap_height/2)),1,1,global.mousedir,c_white,1);
     
 // Draw health and stamina
-var hp = Player.stats[? "Health"];
-var maxhp = Player.stats[? "Max Health"];
-var stamina = Player.stats[? "Stamina"];
-var maxstamina = Player.stats[? "Max Stamina"];
+var hp = scr_get_instance_stat(Player,"Health");
+var maxhp = scr_get_instance_stat(Player,"Max Health");
+var stamina = scr_get_instance_stat(Player,"Stamina");
+var maxstamina = scr_get_instance_stat(Player,"Max Stamina");
 var hbar = .025*window_height;
 var lbar = .25*window_width;
 var padding = .01*window_height;

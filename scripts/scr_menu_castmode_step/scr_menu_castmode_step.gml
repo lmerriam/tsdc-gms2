@@ -10,5 +10,6 @@ if (mouse_check_button_released(1)) {
 
 	// Affect player stats
 	//Player.spell_timer = scr_sec_from_now(Player.spell_cd);
-	Player.stats[? "Stamina"] -= scr_spell_stat("Fatigue");
+	var stamina = scr_get_instance_stat(Player,"Stamina") - scr_spell_stat("Fatigue");
+	scr_set_instance_stat(Player,"Stamina",stamina);
 }

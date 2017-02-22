@@ -1,7 +1,8 @@
 /// Damage player
 
 if (other.id != creator) {
-    other.stats[? "Health"] -= clamp(damage-(other.stats[? "Defense"]),1,9999);
+	var stats = other.properties[? "Stats"];
+    stats[? "Health"] -= clamp(damage-(scr_get_instance_stat(other,"Defense")),1,9999);
 	
     //knockback
     scr_knockback(id, other.id, knockback);
@@ -18,7 +19,8 @@ if (other.id != creator) {
 	var buffs = armor[? "Buffs"];
     if (buffs[? "thorns"] = true and instance_exists(creator)) {
         //scr_damage(other.x,other.y,Attack_R
-        creator.stats[? "Health"] -= buffs[? "thorns_damage"];
+		var stats = creator.properties[? "Stats"];
+        stats[? "Health"] -= buffs[? "thorns_damage"];
     }
 }
 

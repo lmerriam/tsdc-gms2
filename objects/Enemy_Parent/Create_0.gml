@@ -13,6 +13,4 @@ targetx = 0;
 targety = 0;
 
 // Stats
-stats = ds_map_create();
 stats[? "Level"] = 1;
-

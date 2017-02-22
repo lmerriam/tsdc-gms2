@@ -1,7 +1,15 @@
 /// Init the lifeform
 phy_fixed_rotation = true;
-freeze_slow = 0;
-//stats = ds_map_create();
-effects = ds_map_create();
-checking_collisions = false;
 
+// Set up properties
+properties = ds_map_create();
+
+stats = ds_map_create();
+properties[? "Stats"] = stats;
+
+effects = ds_map_create();
+properties[? "Effects"] = effects;
+
+// Set basic vars
+freeze_slow = 0;
+checking_collisions = false;

@@ -6,7 +6,7 @@ map = argument1;
 map[? "object_index"] = inst.object_index;
 
 // Save the item's stats
-ds_map_add_map(map,"Stats",inst.stats);
+ds_map_add_map(map,"Properties",inst.properties);
 
 // Save the item's position
 map[? "x"] = inst.x;

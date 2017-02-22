@@ -3,6 +3,8 @@
 // Draw the nav menu
 scr_menu_navigation_drawgui();
 
+var stat_points = ds_map_find_value(Player.properties[? "Base Stats"],"Stat points");
+
 // Draw each stat and it's increment button
 draw_set_font(pixeltype_24);
 for (var i = 0; i<array_length_1d(stat_list); i++) {
@@ -10,14 +12,14 @@ for (var i = 0; i<array_length_1d(stat_list); i++) {
 	var inc = Player.stat_increments[? stat];
 	var xx = stat_list_x;
 	var yy = stat_list_y + stat_list_line_height*i;
-	var text = stat + " " + string(Player.stats[? stat]);
+	var text = stat + " " + string(scr_get_instance_stat(Player,stat));
 	draw_text(xx, yy, text);
-	if (inc > 0 and Player.base_stats[? "Stat points"] > 0) draw_rectangle(xx-64,yy,xx-32, yy+32,true);
+	if (inc > 0 and stat_points > 0) draw_rectangle(xx-64,yy,xx-32, yy+32,true);
 }
 draw_set_font(BASE_FONT);
 
 draw_sprite_stretched(spr_player_idle,0,128,128,256,256);
 
-if Player.base_stats[? "Stat points"] != 0 {
-	draw_text(stat_points_x, stat_points_y, "Points available: " + string(Player.base_stats[? "Stat points"]));
+if stat_points != 0 {
+	draw_text(stat_points_x, stat_points_y, "Points available: " + string(stat_points));
 }
