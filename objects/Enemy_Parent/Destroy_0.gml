@@ -13,6 +13,9 @@ for (i=0; i < ds_map_size(loot); i++) {
     current_key = ds_map_find_next(loot,current_key); // Move to next key
 }
 
+var gold = instance_create_layer(x,y,"entities",Gold);
+gold.properties[? "Quantity"] = irandom(100);
+
 if ds_exists(stats,ds_type_map) ds_map_destroy(stats);
 if ds_exists(loot,ds_type_map) ds_map_destroy(loot);
 

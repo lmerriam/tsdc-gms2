@@ -12,5 +12,4 @@ instance_create_layer(x,y,"entities",Outpost_Parent);
 scr_announce("Outpost liberated!",noone);
 
 // Cleanup
-ds_list_destroy(spawns);
-ds_map_destroy(stats);
+//ds_map_destroy(properties);

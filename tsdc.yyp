@@ -759,6 +759,14 @@
             }
         },
         {
+            "Key": "45905d8a-4836-4a83-8605-068741eb6b48",
+            "Value": {
+                "id": "44aeeeda-8c87-4541-9bf4-b3fbe1be68ef",
+                "resourcePath": "sprites\\spr_gold\\spr_gold.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "46405024-154c-4c56-8d02-e9850d9a9ce0",
             "Value": {
                 "id": "76c7e6ad-cbc2-4800-9526-259f77ff9050",
@@ -1020,6 +1028,14 @@
                 "id": "8113843a-9e24-4d74-89ca-737dbd761da3",
                 "resourcePath": "scripts\\scr_confer_effects\\scr_confer_effects.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "5db57840-4488-4715-960f-b6bc5ccdf7d8",
+            "Value": {
+                "id": "cf14d077-d019-47ea-a60d-cc6be96a5a6f",
+                "resourcePath": "objects\\Gold\\Gold.yy",
+                "resourceType": "GMObject"
             }
         },
         {

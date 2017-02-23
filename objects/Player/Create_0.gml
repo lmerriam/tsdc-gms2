@@ -23,7 +23,7 @@ global.teleport_player_x = noone;
 global.teleport_player_y = noone;
 
 // Give some gold
-gold = 1000;
+properties[? "Gold"] = 1000;
 
 /// Init stats
 base_stats = ds_map_create();
