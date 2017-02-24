@@ -2,5 +2,6 @@
 var inst = argument0;
 var level = argument1;
 
-scr_set_instance_stat(Player,"Level",level);
+show_debug_message("Setting " + object_get_name(inst.object_index) + " level to: " + string(level));
+scr_set_instance_stat(inst,"Level",level);
 with (inst) event_user(0);

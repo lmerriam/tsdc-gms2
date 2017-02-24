@@ -1,6 +1,5 @@
 /// Control stats
 //scr_calc_stats();
-var stats = properties[? "Stats"];
 
 // Health
 if (stats[? "Health"] < 0) {

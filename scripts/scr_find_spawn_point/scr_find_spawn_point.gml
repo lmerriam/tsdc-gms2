@@ -5,7 +5,7 @@ var range = argument[2];
 var obj = argument[3];
 var level = argument[4];
 
-//show_debug_message("Finding a spawn point for: " + string(obj) + object_get_name(obj));
+//show_debug_message("Finding spawn for " + object_get_name(obj) + " with level: " + string(level));
 
 // Find a clear position to spawn the object
 do {

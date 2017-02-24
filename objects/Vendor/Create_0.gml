@@ -3,7 +3,6 @@ properties = ds_map_create();
 
 // Set up stats
 stats = ds_map_create();
-stats[? "Level"] = 1;
 properties[? "Stats"] = stats;
 
 // Set up inv

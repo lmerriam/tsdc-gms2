@@ -3,5 +3,6 @@ var inst = argument0;
 var stat = argument1;
 var value = argument2;
 var props = inst.properties;
+var stats = props[? "Stats"];
 
-ds_map_replace(props[? "Stats"],stat,value);
+stats[? stat] = value;

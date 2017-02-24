@@ -7,7 +7,7 @@ properties[? "Spawned"] = ds_list_create();
 
 stats[? "Level"] = 5;
 
-repeat(8) ds_list_add(properties[? "Spawns"],Slime);
-repeat(2) ds_list_add(properties[? "Spawns"],Slime_2);
+repeat(2) ds_list_add(properties[? "Spawns"],Slime);
+//repeat(2) ds_list_add(properties[? "Spawns"],Slime_2);
 
 alarm[0] = 1;

@@ -5,6 +5,7 @@ phy_fixed_rotation = true;
 properties = ds_map_create();
 
 stats = ds_map_create();
+stats[? "Level"] = 1;
 properties[? "Stats"] = stats;
 
 effects = ds_map_create();

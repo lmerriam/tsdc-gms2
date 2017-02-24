@@ -4,6 +4,7 @@ image_speed = .1 * (30/room_speed);
 base_image_speed = image_speed;
 
 // Damage
+stats[? "Level"] = 1;
 stats[? "Damage"] = 3;
 stats[? "Max Health"] = 20;
 stats[? "Health"] = stats[? "Max Health"];

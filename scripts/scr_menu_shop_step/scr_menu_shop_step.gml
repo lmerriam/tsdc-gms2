@@ -29,15 +29,14 @@ if (scr_mouse_over_ui(inv_player_coords[0],inv_player_coords[1],inv_player_coord
 // Check inventory clicks
 
 if mouse_check_button_released(1) {
-
 	// Buy or sell
 	if (scr_mouse_over_ui(buy_btn_x1,buy_btn_y1,buy_btn_x2,buy_btn_y2)) {
 		if (buy_btn) {
-			Player.gold -= selected_item[? "Value"];
+			Player.properties[? "Gold"] -= selected_item[? "Value"];
 			shop_slots[# selected_item_x, selected_item_y] = noone;
 			scr_send_to_inv(selected_item,global.inventory_slots);
 		} else if (sell_btn) {
-			Player.gold += selected_item[? "Value"];
+			Player.properties[? "Gold"] += selected_item[? "Value"];
 			global.inventory_slots[# selected_item_x, selected_item_y] = noone;
 		}
 	}
