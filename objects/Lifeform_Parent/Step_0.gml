@@ -1,5 +1,5 @@
 /// Depth and state and effects
-depth = -y;
+//depth = -y;
 if (stats[? "Health"] <= 0) {
     instance_destroy();
     exit;
@@ -7,7 +7,6 @@ if (stats[? "Health"] <= 0) {
 
 /// Effects
 //show_debug_message("Effects for " + object_get_name(object_index));
-var effects = properties[? "Effects"];
 if (ds_exists(effects, ds_type_map)) {
 
     if (effects[? "burn_duration"] > 0) {
