@@ -6,6 +6,10 @@ for (i = 0; i < ds_list_size(buttons); i++) {
     if (btn[4] != noone) scr_draw_btn_sprite(btn);
 }
 
+// Draw combos
+if (scr_alarm_running(combo_timer) and combo_count > 2) {
+	draw_text(256,256,"Combo x " + string(combo_count))
+}
 
 // Draw nearest drop tooltip
 if (nearest_drop_in_range) {

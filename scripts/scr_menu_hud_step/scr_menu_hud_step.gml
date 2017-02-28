@@ -24,6 +24,16 @@ if (distance_to_object(nearest_vendor) < 32) {
     nearest_vendor_in_range = false;   
 }
 
+// Check for combo
+if (combo_timer == Time.now) {
+	if (combo_count > 2) {
+		var xp = combo_count * Player.base_stats[? "Level"];
+		scr_announce("Combo bonus: " + string(xp),noone);
+		repeat(xp) instance_create(Player.x + random_range(-16,16), Player.y + random_range(32,48), Expr);
+	}
+	combo_count = 0;
+}
+
 // Handle mouse clicks
 if (mouse_check_button_released(1)) {
 
@@ -54,3 +64,4 @@ if (mouse_check_button_released(1)) {
     }
 	
 }
+

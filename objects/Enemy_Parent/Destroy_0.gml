@@ -19,3 +19,4 @@ gold.properties[? "Quantity"] = irandom(100);
 if ds_exists(stats,ds_type_map) ds_map_destroy(stats);
 if ds_exists(loot,ds_type_map) ds_map_destroy(loot);
 
+scr_increment_combo();

@@ -51,3 +51,6 @@ shop_btn[4] = spr_menu_button;
 
 ds_list_add(buttons,cast_btn,menu_btn,nearest_btn);
 
+// Keep track of combos
+combo_timer = Time.now;
+combo_count = 0;
