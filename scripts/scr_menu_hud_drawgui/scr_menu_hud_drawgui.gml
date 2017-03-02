@@ -9,6 +9,7 @@ for (i = 0; i < ds_list_size(buttons); i++) {
 // Draw combos
 if (scr_alarm_running(combo_timer) and combo_count > 2) {
 	draw_text(256,256,"Combo x " + string(combo_count))
+	draw_healthbar(256,290,356,296,(combo_timer-Time.now)/(5*room_speed)*100,c_black,c_white,c_white,0,true,false);
 }
 
 // Draw nearest drop tooltip
