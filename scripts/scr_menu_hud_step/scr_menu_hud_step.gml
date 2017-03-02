@@ -32,6 +32,8 @@ if (combo_timer == Time.now) {
 		repeat(xp) instance_create(Player.x + random_range(-16,16), Player.y + random_range(32,48), Expr);
 	}
 	combo_count = 0;
+} else if (scr_alarm_running(combo_timer)) {
+	combo_bar_percent = (combo_timer-Time.now)/(5*room_speed)*100;
 }
 
 // Handle mouse clicks

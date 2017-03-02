@@ -7,9 +7,14 @@ for (i = 0; i < ds_list_size(buttons); i++) {
 }
 
 // Draw combos
+// TODO: move logic to step
 if (scr_alarm_running(combo_timer) and combo_count > 2) {
-	draw_text(256,256,"Combo x " + string(combo_count))
-	draw_healthbar(256,290,356,296,(combo_timer-Time.now)/(5*room_speed)*100,c_black,c_white,c_white,0,true,false);
+	draw_set_halign(fa_center);
+	draw_set_color(c_yellow);
+	draw_text(window_hcenter,420,"COMBO x" + string(combo_count))
+	draw_healthbar(combo_bar_x1,442,combo_bar_x2,446,combo_bar_percent,c_black,c_yellow,c_yellow,0,true,false);
+	draw_set_halign(fa_left);
+	draw_set_color(c_white);
 }
 
 // Draw nearest drop tooltip

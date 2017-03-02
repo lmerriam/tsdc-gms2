@@ -54,3 +54,9 @@ ds_list_add(buttons,cast_btn,menu_btn,nearest_btn);
 // Keep track of combos
 combo_timer = Time.now;
 combo_count = 0;
+combo_bar_percent = 0;
+combo_count_y = 500;
+combo_bar_y = combo_count_y+20;
+combo_bar_width = 200;
+combo_bar_x1 = window_hcenter - combo_bar_width/2;
+combo_bar_x2 = window_hcenter + combo_bar_width/2;
