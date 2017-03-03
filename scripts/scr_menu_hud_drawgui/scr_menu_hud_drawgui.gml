@@ -11,8 +11,8 @@ for (i = 0; i < ds_list_size(buttons); i++) {
 if (scr_alarm_running(combo_timer) and combo_count > 2) {
 	draw_set_halign(fa_center);
 	draw_set_color(c_yellow);
-	draw_text(window_hcenter,420,"COMBO x" + string(combo_count))
-	draw_healthbar(combo_bar_x1,442,combo_bar_x2,446,combo_bar_percent,c_black,c_yellow,c_yellow,0,true,false);
+	draw_text(window_hcenter,combo_count_y,"COMBO x" + string(combo_count))
+	draw_healthbar(combo_bar_x1,combo_bar_y1,combo_bar_x2,combo_bar_y2,combo_bar_percent,c_black,c_yellow,c_yellow,0,true,false);
 	draw_set_halign(fa_left);
 	draw_set_color(c_white);
 }

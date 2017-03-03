@@ -16,7 +16,7 @@ for (i=0; i < ds_map_size(loot); i++) {
 var gold = instance_create_layer(x,y,"entities",Gold);
 gold.properties[? "Quantity"] = irandom(100);
 
-if ds_exists(stats,ds_type_map) ds_map_destroy(stats);
+if ds_exists(properties,ds_type_map) ds_map_destroy(properties);
 if ds_exists(loot,ds_type_map) ds_map_destroy(loot);
 
 scr_increment_combo();
