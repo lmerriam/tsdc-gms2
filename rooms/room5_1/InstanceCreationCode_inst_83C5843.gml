@@ -1,0 +1,1 @@
+text[0] = "Pick up a weapon, you'll need it.";

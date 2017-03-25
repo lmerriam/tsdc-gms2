@@ -1,3 +1,6 @@
 /// Update the depth
-depth = -y;
-
+if (distance_to_object(Player)< 32) {
+	show = true;
+} else {
+	show = false;
+}

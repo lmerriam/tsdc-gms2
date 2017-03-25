@@ -1,0 +1,1 @@
+text[0] = "Watch out! Something slimy waits ahead.";

@@ -687,6 +687,14 @@
             }
         },
         {
+            "Key": "3ff7f311-475b-49ae-a663-0888dfe7df6c",
+            "Value": {
+                "id": "6075827c-cb61-4ce5-8a27-77fe7f4438f2",
+                "resourcePath": "rooms\\room5_1\\room5_1.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "411f7bd4-b905-4111-88c9-99e5cb45fbd1",
             "Value": {
                 "id": "7e5a1f95-358a-4189-8ff0-00b3674e7d3a",
@@ -1020,6 +1028,14 @@
                 "id": "acfa954d-11bf-43dd-9fb4-edeb82073d6e",
                 "resourcePath": "scripts\\scr_set_instance_stat\\scr_set_instance_stat.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "59942f80-62e7-4247-836f-ef4352f988da",
+            "Value": {
+                "id": "4f61617f-bdff-4b58-9db1-e166306400d2",
+                "resourcePath": "sprites\\spr_alert\\spr_alert.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1532,6 +1548,14 @@
                 "id": "503d1ee1-8887-4982-a409-6c3efd5c22f5",
                 "resourcePath": "tilesets\\terrain_tileset\\terrain_tileset.yy",
                 "resourceType": "GMTileSet"
+            }
+        },
+        {
+            "Key": "87d3fdbd-7b6d-4eb9-ad56-e7e0ac0b52e4",
+            "Value": {
+                "id": "a0f6bb4a-808f-4565-8fb5-da9876c09582",
+                "resourcePath": "datafiles_yy\\room5_1.PNG.yy",
+                "resourceType": "GMIncludedFile"
             }
         },
         {
@@ -2100,6 +2124,14 @@
                 "id": "8bdc156b-2237-41d2-9bbf-610cacb50c67",
                 "resourcePath": "sprites\\spr_hammer_slash\\spr_hammer_slash.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "b1f4ac08-a55f-46dd-b39f-45c574d06b4a",
+            "Value": {
+                "id": "cff1f5d6-7ea0-45e2-8602-f8448b20b19c",
+                "resourcePath": "scripts\\scr_spawn_gold\\scr_spawn_gold.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -3262,7 +3294,8 @@
         "88388cb0-4b2a-4605-a4c4-aad36f68db70",
         "25db442b-c7b5-440f-9bbc-b68e4e3c6011",
         "5cc37884-531b-498f-903c-52c3b3d12837",
-        "c9704fa5-95bb-4b41-a367-bbbb297114b3"
+        "c9704fa5-95bb-4b41-a367-bbbb297114b3",
+        "b1f4ac08-a55f-46dd-b39f-45c574d06b4a"
     ],
     "tutorial": ""
 }
