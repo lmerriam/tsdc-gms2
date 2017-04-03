@@ -1,4 +1,5 @@
 /// Init powerup
-properties = ds_map_create();
+event_inherited();
+
 stats = ds_map_create();
 properties[? "Stats"] = stats;

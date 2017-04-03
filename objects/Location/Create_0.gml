@@ -1,5 +1,6 @@
 /// Init location
-properties = ds_map_create();
+event_inherited();
+
 properties[? "Name"] = "Inidentificado";
 properties[? "Discovered"] = false;
 creator = noone;

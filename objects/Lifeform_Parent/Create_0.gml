@@ -1,8 +1,6 @@
 /// Init the lifeform
+event_inherited();
 phy_fixed_rotation = true;
-
-// Set up properties
-properties = ds_map_create();
 
 stats = ds_map_create();
 stats[? "Level"] = 1;

@@ -4,29 +4,10 @@
     "mvc": "1.0",
     "name": "Gold",
     "eventList": [
-        {
-            "id": "d385f8d0-f626-49bd-aeab-ccae55a9cf14",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 0,
-            "m_owner": "5db57840-4488-4715-960f-b6bc5ccdf7d8"
-        },
-        {
-            "id": "7b59c8b6-9a3f-4931-ab53-ba421e910166",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 12,
-            "m_owner": "5db57840-4488-4715-960f-b6bc5ccdf7d8"
-        }
+        
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
-    "parentObjectId": "00000000-0000-0000-0000-000000000000",
+    "parentObjectId": "19e9b68d-283f-4aa1-8919-a5c34a79a45e",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,

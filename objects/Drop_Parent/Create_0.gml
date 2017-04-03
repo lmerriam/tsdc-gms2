@@ -1,6 +1,8 @@
 /// Init object
 image_speed = 0;
 
+event_inherited();
+
 // Create stats
 stats = ds_map_create();
 stats[? "Level"] = 1;
@@ -9,7 +11,6 @@ stats[? "Level"] = 1;
 buffs = ds_map_create();
 
 // Create properties
-properties = ds_map_create();
 properties[? "Object"] = object_index;
 properties[? "Sprite"] = sprite_index;
 properties[? "Stats"] = stats;

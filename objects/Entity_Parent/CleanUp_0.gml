@@ -1,2 +1,2 @@
-/// Clean up DS
+// Destroy properties
 ds_map_destroy(properties);

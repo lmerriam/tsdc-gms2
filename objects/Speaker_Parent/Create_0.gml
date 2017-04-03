@@ -1,7 +1,8 @@
 /// Init speaker
-text[0] = "Warning: slimes ahead.";
+event_inherited();
 
-properties = ds_map_create();
+// Text
+text[0] = "Warning: slimes ahead.";
 properties[? "Text"] = text;
 
 // Textbox properties

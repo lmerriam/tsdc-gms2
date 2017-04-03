@@ -12,4 +12,3 @@ if (ds_exists(effects,ds_type_map)) {
 /// Destroy DS
 
 ds_map_destroy(effects);
-

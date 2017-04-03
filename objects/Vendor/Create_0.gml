@@ -1,5 +1,6 @@
 /// Init vendor
-properties = ds_map_create();
+
+event_inherited();
 
 // Set up stats
 stats = ds_map_create();

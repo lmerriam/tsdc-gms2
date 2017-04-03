@@ -1,5 +1,6 @@
 /// Init stronghold
-properties = ds_map_create();
+event_inherited();
+
 stats = ds_map_create();
 properties[? "Stats"] = stats;
 properties[? "Spawns"] = ds_list_create();

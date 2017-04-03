@@ -255,6 +255,14 @@
             }
         },
         {
+            "Key": "19e9b68d-283f-4aa1-8919-a5c34a79a45e",
+            "Value": {
+                "id": "638f1e27-1291-405d-af59-94c3010b2c02",
+                "resourcePath": "objects\\Entity_Parent\\Entity_Parent.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "1b66442e-0f4b-4a3c-b1ed-ef45333ba16e",
             "Value": {
                 "id": "bbfd4a1d-f310-42e9-8c31-4da11094044b",
@@ -879,14 +887,6 @@
             }
         },
         {
-            "Key": "4ba41a7d-cfea-4d13-8291-49a60d89e323",
-            "Value": {
-                "id": "e16c8412-a301-4a5a-b02a-8fc251cec8cf",
-                "resourcePath": "objects\\Prop_Parent\\Prop_Parent.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "4eee9a07-8f35-47dc-9a96-4bed3858ad73",
             "Value": {
                 "id": "ecc83e68-0ca1-455a-b70d-c1fd866a1cd3",
@@ -972,14 +972,6 @@
                 "id": "6b5d01dc-efe9-4257-8843-9e207a4598ab",
                 "resourcePath": "scripts\\scr_attack_blade\\scr_attack_blade.yy",
                 "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "5659d030-fbf8-4917-a0d3-6b8d231c11eb",
-            "Value": {
-                "id": "3e1da7dc-4ea4-4629-9484-991e55487329",
-                "resourcePath": "views\\5659d030-fbf8-4917-a0d3-6b8d231c11eb.yy",
-                "resourceType": "GMFolder"
             }
         },
         {
