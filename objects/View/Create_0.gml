@@ -21,5 +21,3 @@ global.screen_shake = 0;
 // Get the screen shake decay going
 alarm[0] = 1;
 alarm[1] = 1;
-
-lyr_game_objects = layer_get_id("game_objects");

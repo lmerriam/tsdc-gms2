@@ -2,7 +2,7 @@
     "id": "3ff7f311-475b-49ae-a663-0888dfe7df6c",
     "modelName": "GMRoom",
     "mvc": "1.0",
-    "name": "room5_1",
+    "name": "rm_start",
     "IsDnD": false,
     "creationCodeFile": "RoomCreationCode.gml",
     "inheritCode": false,
@@ -22,7 +22,8 @@
         "b792d54f-ce04-47cd-be6a-4695b75efec2",
         "a62e2b4e-b54c-47f3-bd12-c6aaf6380121",
         "ed0dc428-e01d-4d24-9901-de4932a9c0dc",
-        "b01593f0-3bb4-42cd-9887-0b44ba1a74fd"
+        "b01593f0-3bb4-42cd-9887-0b44ba1a74fd",
+        "1d4c0c08-e447-4f26-9fc8-b94e4ea57ce5"
     ],
     "layers": [
         {
@@ -405,6 +406,30 @@
                     "inheritCode": false,
                     "name_with_no_file_rename": "inst_2ACD611",
                     "objId": "d37cd308-6168-4bf7-a250-0548d547addc",
+                    "rotation": 0,
+                    "scaleX": 1,
+                    "scaleY": 1
+                },
+                {
+                    "id": "1d4c0c08-e447-4f26-9fc8-b94e4ea57ce5",
+                    "modelName": "GMRInstance",
+                    "mvc": "1.0",
+                    "ignore": false,
+                    "inheritItemSettings": false,
+                    "m_originalParentID": "00000000-0000-0000-0000-000000000000",
+                    "m_serialiseFrozen": false,
+                    "name": "inst_3BB701D4",
+                    "x": 64,
+                    "y": 160,
+                    "IsDnD": false,
+                    "colour": {
+                        "Value": 4294967295
+                    },
+                    "creationCodeFile": "InstanceCreationCode_inst_3BB701D4.gml",
+                    "creationCodeType": ".gml",
+                    "inheritCode": false,
+                    "name_with_no_file_rename": "inst_3BB701D4",
+                    "objId": "d076759a-232d-4678-814c-daf3dc3a7b19",
                     "rotation": 0,
                     "scaleX": 1,
                     "scaleY": 1

@@ -1,1 +1,0 @@
-/// Destroy tile and collision maps

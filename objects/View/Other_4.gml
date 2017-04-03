@@ -1,6 +1,1 @@
-/// Load the map
-
-//if (!global.room_loaded) {
-//    show_message(global.current_room);
-//    scr_load_map(global.current_room);
-//}
+lyr_game_objects = layer_get_id("game_objects");
