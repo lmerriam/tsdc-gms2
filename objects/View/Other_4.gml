@@ -1,1 +1,0 @@
-lyr_game_objects = layer_get_id("game_objects");
