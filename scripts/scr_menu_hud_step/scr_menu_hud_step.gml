@@ -16,12 +16,13 @@ if (distance_to_object(nearest_drop) < 32) {
     nearest_drop_in_range = false;   
 }
 
-// Check for nearest vendor
-nearest_vendor = instance_nearest(x,y,Vendor);
-if (distance_to_object(nearest_vendor) < 32) {
-    nearest_vendor_in_range = true;
+// Check for nearest interactible
+nearest_interactable = instance_nearest(x,y,Interactable_Parent);
+if (distance_to_object(nearest_interactable) < 32) {
+    nearest_interactable_in_range = true;
+	shop_btn[4] = nearest_interactable.sprite_index;
 } else {
-    nearest_vendor_in_range = false;   
+    nearest_interactable_in_range = false;   
 }
 
 // Check for combo
@@ -61,8 +62,9 @@ if (mouse_check_button_released(1)) {
 		nearest_drop = noone;
 		
 	// Detect vendor button click
-    } else if (nearest_vendor != noone and nearest_vendor_in_range and scr_check_btn(shop_btn)) {
-        scr_menu_shop(nearest_vendor);
+    } else if (nearest_interactable != noone and nearest_interactable_in_range and scr_check_btn(shop_btn)) {
+		show_debug_message(nearest_interactable);
+		with(nearest_interactable) event_user(1);
     }
 	
 }

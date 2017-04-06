@@ -1959,6 +1959,14 @@
             }
         },
         {
+            "Key": "a71c5793-c58c-4590-9ce0-5da4b3932013",
+            "Value": {
+                "id": "f1400926-5467-4c3d-a095-d4e659db6a77",
+                "resourcePath": "objects\\Interactable_Parent\\Interactable_Parent.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "a8124ca6-0d63-4dab-a5ec-a1bbbbb06805",
             "Value": {
                 "id": "08da7cf2-fb5e-43db-9d82-2f84fa86dece",

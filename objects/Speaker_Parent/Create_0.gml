@@ -4,6 +4,7 @@ event_inherited();
 // Text
 text[0] = "Warning: slimes ahead.";
 properties[? "Text"] = text;
+properties[? "Read"] = false;
 
 // Textbox properties
 line_height = 16;

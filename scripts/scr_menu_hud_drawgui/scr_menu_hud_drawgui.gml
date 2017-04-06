@@ -23,7 +23,7 @@ if (nearest_drop_in_range) {
 }
 
 // Draw shop button
-if (nearest_vendor_in_range) {
+if (nearest_interactable_in_range) {
     scr_draw_btn_sprite(shop_btn);
 }
     
