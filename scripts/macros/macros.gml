@@ -4,4 +4,4 @@
 #macro STARTING_GEM Gem_Burn
 #macro STARTING_SPELL Scroll_Column
 
-#macro BASE_FONT pixeltype_16
+#macro BASE_FONT PixelSmall_12

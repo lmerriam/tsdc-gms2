@@ -9,13 +9,19 @@ if (!read) {
 
 // Draw the text
 if (show) {
-
+	draw_set_font(PixelSmall_6);
+	
+	line_height = 16;
+	padding = 8;
+	width = 128;
+	height = string_height_ext(text,line_height,width - (2*padding)) + 2*padding;
+	x1 = x - width/2;
+	y1 = y - height - 12;
+	x2 = x1 + width;
+	y2 = y1 + height;
+	
 	draw_rectangle_fast(x1,y1,x2,y2);
-
-	// Draw text
-	var xcur = x1 + padding;
-	for(var line = 0; line < line_count; line++) {
-		var ycur = y1 + padding + line_height*line;
-		draw_text_transformed(xcur,ycur,text[line],.5,.5,0);
-	}
+	draw_rectangle_color(x1,y1,x2,y2,c_yellow,c_yellow,c_yellow,c_yellow,true);
+	draw_text_ext(x1+padding,y1+padding,text,line_height,width-(padding*2));
+	draw_set_font(BASE_FONT);
 }

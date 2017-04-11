@@ -279,14 +279,6 @@
             }
         },
         {
-            "Key": "1bf8575e-cb23-4b4e-866f-0ea1dd70fa4b",
-            "Value": {
-                "id": "718a53a6-18ff-46e8-a018-6e18cb478ded",
-                "resourcePath": "fonts\\pixeltype_16\\pixeltype_16.yy",
-                "resourceType": "GMFont"
-            }
-        },
-        {
             "Key": "1c170e12-4a94-40d5-b0b3-9e0aec5e4fa5",
             "Value": {
                 "id": "78f9486a-cf7a-4864-adb6-1ec249d4165e",
@@ -1186,7 +1178,7 @@
             "Key": "691fbe02-1bea-4aea-8576-04b5039ff210",
             "Value": {
                 "id": "462d6c59-aa58-4410-a858-a4b1660ca945",
-                "resourcePath": "fonts\\PixelSmall\\PixelSmall.yy",
+                "resourcePath": "fonts\\PixelSmall_12\\PixelSmall_12.yy",
                 "resourceType": "GMFont"
             }
         },
@@ -1380,14 +1372,6 @@
                 "id": "aa037f44-7691-4e64-bf7f-17873a62c665",
                 "resourcePath": "scripts\\scr_menu_castmode_create\\scr_menu_castmode_create.yy",
                 "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "7f31f699-e38d-4f9f-9d15-9fddf68252b4",
-            "Value": {
-                "id": "15f967a8-eeb2-4507-9ceb-9f8fda7d0f4c",
-                "resourcePath": "fonts\\pixeltype_24\\pixeltype_24.yy",
-                "resourceType": "GMFont"
             }
         },
         {
@@ -1788,6 +1772,14 @@
                 "id": "66d613f8-dc48-4c51-a3fa-aa08b9124ba0",
                 "resourcePath": "sprites\\spr_slime_orange\\spr_slime_orange.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "93a5b0e3-6978-4b6b-b89b-a8477ba5e29f",
+            "Value": {
+                "id": "258d321f-d4a5-457a-a2d4-30dde6a3ad6c",
+                "resourcePath": "fonts\\PixelSmall_6\\PixelSmall_6.yy",
+                "resourceType": "GMFont"
             }
         },
         {
@@ -2324,6 +2316,14 @@
                 "id": "1ddcea13-ff9a-48a0-94bf-6988217c0c1c",
                 "resourcePath": "objects\\Attack_Bomb\\Attack_Bomb.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "c0313925-ee37-4678-8bd3-bab5bbef7b6d",
+            "Value": {
+                "id": "3d16fe2b-3452-41bc-b5f7-a33600433ee8",
+                "resourcePath": "fonts\\PixelSmall_18\\PixelSmall_18.yy",
+                "resourceType": "GMFont"
             }
         },
         {
@@ -3060,14 +3060,6 @@
                 "id": "d5b011eb-bbeb-420b-9896-20f8d36a724d",
                 "resourcePath": "scripts\\scr_save_instance\\scr_save_instance.yy",
                 "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "f861b5fd-614a-4c56-a5e7-4f0b4cbaee0c",
-            "Value": {
-                "id": "aa902c2e-cab3-490e-9552-1e6e36368bc9",
-                "resourcePath": "fonts\\pixeltype_12\\pixeltype_12.yy",
-                "resourceType": "GMFont"
             }
         },
         {

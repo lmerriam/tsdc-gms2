@@ -1,1 +1,1 @@
-text[0] = "Watch out! Something slimy waits ahead.";
+text = "Watch out! Something slimy waits ahead.";
