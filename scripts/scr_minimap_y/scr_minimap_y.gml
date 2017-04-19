@@ -1,4 +1,4 @@
 ///scr_map_y(y)
 var yy = argument0;
 
-return yy/GUI.minimap_ratio;
+return yy/global.map_spr_ratio;

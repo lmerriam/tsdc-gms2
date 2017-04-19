@@ -11,12 +11,12 @@ if (!read) {
 if (show) {
 	draw_set_font(PixelSmall_6);
 	
-	line_height = 16;
+	line_height = 12;
 	padding = 8;
 	width = 128;
 	height = string_height_ext(text,line_height,width - (2*padding)) + 2*padding;
 	x1 = x - width/2;
-	y1 = y - height - 12;
+	y1 = y - height - 16;
 	x2 = x1 + width;
 	y2 = y1 + height;
 	

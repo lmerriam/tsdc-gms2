@@ -231,6 +231,14 @@
             }
         },
         {
+            "Key": "16c71447-e392-4729-80ee-9707ef70279c",
+            "Value": {
+                "id": "74e98a5e-2895-481f-b170-0f5b93288035",
+                "resourcePath": "fonts\\PixelSmall_24\\PixelSmall_24.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "1776dd83-19d2-4cbc-a9b2-444967fc7834",
             "Value": {
                 "id": "e7f67886-8897-484b-a38c-b7470d7a1c6f",

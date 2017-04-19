@@ -6,7 +6,7 @@ scr_menu_navigation_drawgui();
 var stat_points = ds_map_find_value(Player.properties[? "Base Stats"],"Stat points");
 
 // Draw each stat and it's increment button
-draw_set_font(pixeltype_24);
+draw_set_font(PixelSmall_24);
 for (var i = 0; i<array_length_1d(stat_list); i++) {
 	var stat = stat_list[i];
 	var inc = Player.stat_increments[? stat];

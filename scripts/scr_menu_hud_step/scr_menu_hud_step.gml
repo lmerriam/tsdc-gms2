@@ -69,3 +69,7 @@ if (mouse_check_button_released(1)) {
 	
 }
 
+if (ds_list_size(global.announcements) > 0 and scr_alarm_passed(announce_timer)) {
+	ds_list_delete(global.announcements,0);
+	announce_timer = scr_sec_from_now(3);
+}

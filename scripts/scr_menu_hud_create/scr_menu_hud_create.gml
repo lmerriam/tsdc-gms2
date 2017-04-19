@@ -61,3 +61,10 @@ combo_bar_width = 200;
 combo_bar_x1 = window_hcenter - combo_bar_width/2;
 combo_bar_x2 = window_hcenter + combo_bar_width/2;
 combo_bar_y2 = combo_bar_y1 + 4;
+
+// Keep track of announcements
+announce_timer = scr_sec_from_now(3);
+announce_target = noone;
+global.announcements = ds_list_create();
+ds_list_add(global.announcements,"Hello, this is an announcement");
+ds_list_add(global.announcements,"This is another one");

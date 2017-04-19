@@ -1,4 +1,4 @@
-///scr_map_x(x)
+///scr_minimap_x(x)
 var xx = argument0;
 
-return xx/GUI.minimap_ratio;
+return xx/global.map_spr_ratio;
