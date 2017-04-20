@@ -18,4 +18,4 @@ with(Location) {
 draw_sprite(spr_player_idle,0,scr_map_x(global.player_x),scr_map_y(global.player_y));
 
 // Draw the current location
-draw_text(32,32,string_hash_to_newline(current_location));
+draw_text(32,32,string_hash_to_newline(current_location))
