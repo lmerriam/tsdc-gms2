@@ -5,7 +5,7 @@
 scr_menu_navigation_drawgui();
 
 // Draw the current map sprite
-draw_sprite_stretched(global.current_map,0,map_offset_x,map_offset_y,map_spr_w,map_spr_h);
+draw_sprite_stretched(global.current_map,0,map_offset_x,map_offset_y,map_w,map_h);
 
 // Draw the marker and set its map coordinates
 with(Location) {

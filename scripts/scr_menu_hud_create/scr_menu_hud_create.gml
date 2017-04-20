@@ -4,7 +4,7 @@ buttons = ds_list_create();
 
 // Init minimap
 minimap = -1;
-minimap_ratio = room_width/sprw;
+minimap_ratio = room_width/sprite_get_width(global.current_map);
 minimap_width = window_height/5;
 minimap_height = minimap_width;
 minimap_window = 500;
