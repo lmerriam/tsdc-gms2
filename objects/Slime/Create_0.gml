@@ -27,4 +27,3 @@ ds_map_add(loot, Scroll_Cone_Pull, .2);
 ds_map_add(loot, Scroll_Area, .2);
 ds_map_add(loot, Scroll_Blink, .2);
 ds_map_add(loot, Health, .2);
-

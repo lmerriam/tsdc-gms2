@@ -1,4 +1,10 @@
-///scr_find_spawn_point(x,y,range,obj,lvl)
+/// @description Find a spawn point
+/// @param target_x Target X
+/// @param target_y Target Y
+/// @param range Range
+/// @param obj Object
+/// @param lvl Level
+
 var targetx = argument[0];
 var targety = argument[1];
 var range = argument[2];

@@ -153,8 +153,8 @@ if (!global.cast_mode) {
     }
     
     // Right attack
-    if (spell_button and stats[? "Stamina"] >= spell.stats[? "Fatigue"] and scr_alarm_passed(spell_timer)) {
-        var spell = scr_get_spell();
+	var spell = scr_get_spell();
+    if (spell_button and stats[? "Stamina"] >= scr_spell_stat("Fatigue") and scr_alarm_passed(spell_timer)) {
 		if (spell != noone) {
 			var spell_stats = spell[? "Stats"];
 			script_execute(spell[? "Spell Script"]);

@@ -3,6 +3,7 @@ event_inherited();
 
 spawn_x = x;
 spawn_y = y;
+percent = 100;
 
 // States
 state = scr_enemy_idle_state;

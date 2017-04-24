@@ -12,7 +12,7 @@ for (var i = 0; i<array_length_1d(stat_list); i++) {
 	var inc = Player.stat_increments[? stat];
 	var xx = stat_list_x;
 	var yy = stat_list_y + stat_list_line_height*i;
-	var text = stat + " " + string(scr_get_instance_stat(Player,stat));
+	var text = stat + " " + string(scr_player_stat(stat));
 	draw_text(xx, yy, text);
 	if (inc > 0 and stat_points > 0) draw_rectangle(xx-64,yy,xx-32, yy+32,true);
 }
