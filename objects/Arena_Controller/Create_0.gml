@@ -1,5 +1,6 @@
 /// @description Set initial state
-// You can write your code in this editor
+
+wave_count = 0;
 
 // Set up the various menus and their elements
 scr_arena_wave_create();
