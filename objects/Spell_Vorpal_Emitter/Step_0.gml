@@ -11,6 +11,6 @@ with (Enemy_Parent) {
 }
 
 // emit damage and reset emit timer
-scr_damage(x,y,Attack_Radius_Medium,Player.id,scr_get_instance_stat(Player,"Spell Damage"),0,0);
+scr_damage_obj(x,y,Attack_Radius_Medium,Player.id,scr_get_instance_stat(Player,"Spell Damage"),0,0);
 emit_timer = scr_sec_from_now(.3);
 

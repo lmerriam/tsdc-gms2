@@ -114,7 +114,7 @@
             "Key": "08c37de6-4998-4b81-a4e1-a245117c7a7f",
             "Value": {
                 "id": "ff09e1f8-82ea-43b6-a82e-1b3fa6d74fc3",
-                "resourcePath": "scripts\\scr_damage_other\\scr_damage_other.yy",
+                "resourcePath": "scripts\\scr_damage\\scr_damage.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -1130,7 +1130,7 @@
             "Key": "60bf4d2d-3fe5-41cb-8cc9-c97b6bb77540",
             "Value": {
                 "id": "7756536b-e1ff-490f-b7f1-74ccb0cb7fe7",
-                "resourcePath": "scripts\\scr_damage\\scr_damage.yy",
+                "resourcePath": "scripts\\scr_damage_obj\\scr_damage_obj.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -1916,6 +1916,14 @@
                 "id": "6721a0a4-1a74-4b09-aeb3-7d8cfa54f4a6",
                 "resourcePath": "scripts\\scr_arena_rest_drawgui\\scr_arena_rest_drawgui.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "963a4673-d0ce-443e-9f1c-efadc671da38",
+            "Value": {
+                "id": "a14f931d-93fb-46a3-9624-ea467df375dc",
+                "resourcePath": "objects\\Damage_Counter\\Damage_Counter.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -3095,6 +3103,14 @@
             }
         },
         {
+            "Key": "f0a5c07f-b059-46ef-8d4b-4dfc731d97f9",
+            "Value": {
+                "id": "350e1fc3-a09c-4792-8f9b-9a7ef4138f65",
+                "resourcePath": "scripts\\scr_damage_other\\scr_damage_other.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "f134207d-0f43-4056-a0c5-4a14dc10e9b3",
             "Value": {
                 "id": "8022cbe2-cc5c-4025-a44e-e8cfc0d46adb",
@@ -3379,6 +3395,7 @@
         "97d423ee-a641-40c2-bef7-5aac5cfda4f6",
         "d26df9e2-0da9-48ad-98c1-b21bc08381ac",
         "59918607-b14b-432d-9160-ebf3d0e72d2c",
+        "f0a5c07f-b059-46ef-8d4b-4dfc731d97f9",
         "8f05da69-b533-4828-926c-cb45f6b4bf72",
         "f887d2b4-58f3-412c-8488-0da1f583b4b0",
         "c1321f41-6a51-4e86-b560-fd1bbbe54e2d",

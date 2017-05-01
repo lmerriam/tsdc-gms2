@@ -9,7 +9,8 @@ var victim = scr_hitscan(x, y, targetx, targety, Enemy_Parent, false, true);
 if (victim != noone) {
 	// Damage victim
 	// TODO: make scr_damage, scr_damage_instance, scr_blood, etc
-    victim.stats[? "Health"] -= damage;
+    //victim.stats[? "Health"] -= damage;
+	scr_damage(victim,damage);
 	
 	// Transfer buffs to effects
 	scr_confer_effects(victim.properties,scr_get_gem());

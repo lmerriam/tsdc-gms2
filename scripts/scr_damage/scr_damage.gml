@@ -1,14 +1,8 @@
-///scr_damage(x,y,dmg_obj,creator,damage,knockback,buffs)
-var xx = argument[0];
-var yy = argument[1];
-var dmg_obj = argument[2];
-var creator = argument[3];
-var damage = argument[4];
-var knockback = argument[5];
-var buffs = argument[6];
+///scr_damage_other(instance,damage)
+var inst = argument0;
+var dmg = argument1;
 
-var dmg_inst = instance_create_layer(xx, yy, "system_objects", dmg_obj);
-dmg_inst.creator = creator;
-dmg_inst.damage = damage;
-dmg_inst.knockback = knockback;
-dmg_inst.buffs = buffs;
+scr_set_instance_stat(inst,"Health",scr_get_instance_stat(inst,"Health")-dmg);
+
+var counter = instance_create_layer(inst.x,inst.y,"system_objects",Damage_Counter);
+counter.damage = dmg;

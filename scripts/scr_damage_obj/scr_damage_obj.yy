@@ -1,8 +1,8 @@
 {
-    "id": "f0a5c07f-b059-46ef-8d4b-4dfc731d97f9",
+    "id": "60bf4d2d-3fe5-41cb-8cc9-c97b6bb77540",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "scr_damage_other",
+    "name": "scr_damage_obj",
     "IsCompatibility": false,
     "IsDnD": false
 }
