@@ -615,6 +615,14 @@
             }
         },
         {
+            "Key": "343f8237-68d4-4b62-aa3c-e5be9ee07bfa",
+            "Value": {
+                "id": "817b3852-e160-4878-9c07-5334c11e602a",
+                "resourcePath": "scripts\\scr_activate_quest\\scr_activate_quest.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "351f1e63-04e0-4e7f-88bd-ee2ef941bceb",
             "Value": {
                 "id": "ba4ec156-b187-49b8-b8fd-88fa1203ea11",
@@ -2359,6 +2367,14 @@
             }
         },
         {
+            "Key": "b9280ac0-a59c-4479-b256-071796642729",
+            "Value": {
+                "id": "917af386-59f4-4c23-8212-73d09024c607",
+                "resourcePath": "objects\\Quest_Controller\\Quest_Controller.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "b985ded0-e722-4857-a6ce-c2e73f508395",
             "Value": {
                 "id": "ca7d2936-041a-400b-b21d-89f502fefdbb",
@@ -2836,6 +2852,14 @@
                 "id": "9e985784-8f9d-4d3c-b34f-d2a32532ef89",
                 "resourcePath": "sprites\\tileset1\\tileset1.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "d9c898c1-799a-4a24-9656-37a740311ab4",
+            "Value": {
+                "id": "d5f4b199-acaf-4276-9c50-29b8b88c7fc7",
+                "resourcePath": "scripts\\scr_get_quest\\scr_get_quest.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -3482,7 +3506,9 @@
         "bf615556-0a93-4a07-ba8f-d982ea5cd899",
         "d64f97a9-b2b0-47d1-a4f0-bbf1155324cb",
         "18be726f-7b7c-4e71-92c0-a762b8324dc5",
-        "95bbed8c-3a6b-4dcc-94d5-fa92e82cdff2"
+        "95bbed8c-3a6b-4dcc-94d5-fa92e82cdff2",
+        "343f8237-68d4-4b62-aa3c-e5be9ee07bfa",
+        "d9c898c1-799a-4a24-9656-37a740311ab4"
     ],
     "tutorial": ""
 }

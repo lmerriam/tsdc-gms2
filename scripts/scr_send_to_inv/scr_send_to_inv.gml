@@ -3,8 +3,8 @@ var item_props = argument[0];
 var slots = argument[1];
 
 // Get the inventory height and width
-var grid_width = ds_grid_width(global.inventory_slots);
-var grid_height = ds_grid_height(global.inventory_slots);
+var grid_width = ds_grid_width(slots);
+var grid_height = ds_grid_height(slots);
 
 // Iterate through all slots and deposit item into first empty one
 for (row = 0; row < grid_height; row++) {
