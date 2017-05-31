@@ -17,6 +17,7 @@ scr_menu_inv_create();
 scr_menu_shop_create();
 scr_menu_navigation_create();
 scr_menu_char_create();
+scr_menu_dialog_create();
 
 // Set initial menu state
 menu_step = scr_menu_hud_step;

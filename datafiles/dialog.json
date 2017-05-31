@@ -1,0 +1,30 @@
+{
+  "intro 1":
+  {
+    "text": "Wanna buy a drug?",
+    "responses":
+    [
+      {
+        "text": "No thanks drug man",
+        "script": "scr_menu_hud"
+      }, {
+        "text": "Interested to hear more",
+        "goto": "intro 2"
+      }
+    ]
+  },
+  "intro 2":
+  {
+    "text": "You gotta put it in your butthole",
+    "responses":
+    [
+      {
+        "text": "I'm out",
+        "script": "scr_menu_hud"
+      }, {
+        "text": "Let's start over",
+        "goto": "intro 1"
+      }
+    ]
+  }
+}
