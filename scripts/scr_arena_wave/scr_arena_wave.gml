@@ -27,7 +27,7 @@ for(var j = 0; j<ds_map_size(wave); j++) {
 	//scr_find_spawn_point()
         
 	// Increment the current ds_map key
-	current_key = ds_map_find_next(item_stats, current_key);
+	current_key = ds_map_find_next(waves, current_key);
 }
 
 repeat(12) {

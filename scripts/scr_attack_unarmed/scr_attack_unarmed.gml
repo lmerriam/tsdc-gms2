@@ -1,7 +1,8 @@
-///scr_attack_blade(creator)
+///scr_attack_unarmed()
+
 var dir = point_direction(x,y,mouse_x,mouse_y)
-var target_x = lengthdir_x(attack_range,dir);
-var target_y = lengthdir_y(attack_range,dir);
+var target_x = lengthdir_x(16,dir);
+var target_y = lengthdir_y(16,dir);
 
 var gem = scr_get_gem();
 var buffs = gem[? "Buffs"];
