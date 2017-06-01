@@ -7,6 +7,7 @@ if(mouse_check_button_released(mb_left)) {
 		var y2 = y1 + dialog_responses_line_height;
 		if (scr_mouse_over_ui(x1,y1,x2,y2)) {
 			scr_execute_response(dialog_responses[| i]);
+			exit;
 		}
 	}
 }

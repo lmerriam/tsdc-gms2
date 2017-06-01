@@ -5,8 +5,9 @@
     "responses":
     [
       {
-        "text": "No thanks drug man",
-        "script": "scr_menu_hud"
+        "text": "I'll take 3",
+        "activate quest": "Intro",
+        "goto": "intro 2"
       }, {
         "text": "Interested to hear more",
         "goto": "intro 2"
@@ -22,8 +23,35 @@
         "text": "I'm out",
         "script": "scr_menu_hud"
       }, {
-        "text": "Let's start over",
-        "goto": "intro 1"
+        "text": "Let's get this over with",
+        "complete quest": "Intro",
+        "goto": "intro 4"
+      }, {
+        "text": "Fuck off with that freak shit",
+        "goto": "intro 3"
+      }
+    ]
+  },
+  "intro 3":
+  {
+    "text": "Fine, but don't complain to me when you're bored later.",
+    "responses":
+    [
+      {
+        "text": "Bye now",
+        "script": "scr_menu_hud"
+      }
+    ]
+  },
+  "intro 4":
+  {
+    "text": "You won't regret it!",
+    "responses":
+    [
+      {
+        "text": "Better not",
+        "complete quest": "Intro",
+        "script": "scr_menu_hud"
       }
     ]
   }

@@ -1,2 +1,2 @@
 // Set quest
-scr_activate_quest(global.storyline_quests[? "Intro"]);
+scr_activate_quest(global.all_quests[? "Intro"]);
