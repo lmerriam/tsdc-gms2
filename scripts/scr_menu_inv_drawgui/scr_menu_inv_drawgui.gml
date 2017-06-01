@@ -5,6 +5,7 @@ scr_menu_navigation_drawgui();
 
 // Debug
 draw_text(32, 200, string_hash_to_newline(current_item));
+draw_text(32, 232, Player.properties[? "Gold"]);
 
 // Draw the inventory slots
 scr_draw_inventory(global.inventory_slots, slot_width, inventory_coords[0], inventory_coords[1]);

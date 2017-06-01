@@ -7,7 +7,8 @@
       {
         "text": "I'll take 3",
         "activate quest": "Intro",
-        "goto": "intro 2"
+        "goto": "intro 2",
+        "gold": -100
       }, {
         "text": "Interested to hear more",
         "goto": "intro 2"
@@ -25,6 +26,7 @@
       }, {
         "text": "Let's get this over with",
         "complete quest": "Intro",
+        "xp": 200,
         "goto": "intro 4"
       }, {
         "text": "Fuck off with that freak shit",

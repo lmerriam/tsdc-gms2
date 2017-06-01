@@ -35,7 +35,7 @@ if (response[? "complete quest"] != undefined) {
 
 // Check gold
 if (response[? "gold"] != undefined) {
-	Player.properties[? "gold"] += response[? "gold"];
+	Player.properties[? "Gold"] += response[? "gold"];
 }
 
 // Check XP

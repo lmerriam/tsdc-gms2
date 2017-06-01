@@ -3,6 +3,7 @@
 /// @param quantity
 var quantity = argument0;
 
+var base_stats = Player.properties[? "Base Stats"];
 base_stats[? "Experience"] += quantity;
 
 if (base_stats[? "Experience"] >= base_stats[? "Next Level Experience"]) {
