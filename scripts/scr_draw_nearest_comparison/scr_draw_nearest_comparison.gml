@@ -17,6 +17,7 @@ draw_rectangle_fast(xx,yy,xx+width,yy+line_count*line_height+padding*2);
 draw_set_alpha(1);
 
 // Draw stats
+draw_set_font(PixelSmall_12)
 scr_draw_item_stats(nearest_drop.properties,xx,yy,width,height,padding,line_height,scr_get_equipped(props[? "Type"]));
 
 // Update nearest btn

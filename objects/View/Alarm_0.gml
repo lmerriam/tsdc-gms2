@@ -4,5 +4,6 @@ if (global.screen_shake > 0) {
 } else {
 	global.screen_shake = 0;
 }
+
 alarm[0] = .4 * room_speed;
 

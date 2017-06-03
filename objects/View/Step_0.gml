@@ -41,4 +41,3 @@ if (global.cast_mode) {
 if (prev_screen_scale != screen_scale) scr_scale_view(screen_scale*320,screen_scale*180);
 
 prev_screen_scale = screen_scale;
-

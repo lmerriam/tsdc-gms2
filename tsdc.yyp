@@ -2159,6 +2159,14 @@
             }
         },
         {
+            "Key": "a860e310-03d0-4dfc-8266-0e5d7d2306a8",
+            "Value": {
+                "id": "f0656cbd-13fa-4095-94e3-1b1445d6a16c",
+                "resourcePath": "scripts\\scr_menu_quests_create\\scr_menu_quests_create.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "a9007faf-b33d-4e39-9f6f-1ded11c8a748",
             "Value": {
                 "id": "22616d5e-b7e8-4ed0-802c-94b68dd47662",
@@ -2188,6 +2196,14 @@
                 "id": "43bd3f68-5714-4d61-97af-221507bc86be",
                 "resourcePath": "objects\\Drop_Parent\\Drop_Parent.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "aa637813-a2b4-4e09-aafb-5b95dc8d0628",
+            "Value": {
+                "id": "6c5fc456-e915-4419-a7ea-c7d0ff6f7225",
+                "resourcePath": "notes\\todo.yy",
+                "resourceType": "GMNotes"
             }
         },
         {
@@ -2428,14 +2444,6 @@
                 "id": "3e0a8bf1-33a8-4936-b3bd-eb79c2a1a339",
                 "resourcePath": "sprites\\background8\\background8.yy",
                 "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "b9280ac0-a59c-4479-b256-071796642729",
-            "Value": {
-                "id": "917af386-59f4-4c23-8212-73d09024c607",
-                "resourcePath": "objects\\Quest_Controller\\Quest_Controller.yy",
-                "resourceType": "GMObject"
             }
         },
         {
@@ -2818,7 +2826,7 @@
             "Key": "d368bcc7-bfaf-46fd-a792-32c7a0f55deb",
             "Value": {
                 "id": "1e2d534c-1074-4b9e-97a5-e8eb90393321",
-                "resourcePath": "objects\\View\\View.yy",
+                "resourcePath": "objects\\Controller\\Controller.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -3004,6 +3012,14 @@
                 "id": "2a7ce3cd-932a-4d6f-8210-910cd3febb3b",
                 "resourcePath": "sprites\\background22\\background22.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "e2bdfab9-2b61-443e-9979-28162edad036",
+            "Value": {
+                "id": "305f655b-0b5b-42da-880f-99cf582ceaa7",
+                "resourcePath": "objects\\View\\View.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -3573,6 +3589,7 @@
         "5a9fd600-3847-4121-b4a5-101d41aba89c",
         "7cf14852-3ee2-4755-9301-4852ff17c290",
         "e369eadb-68ac-402a-99fe-48a07c37ffce",
+        "a860e310-03d0-4dfc-8266-0e5d7d2306a8",
         "aebc1470-1bdf-4acc-b506-188e7d3c3c53",
         "d8c3e6ef-da4d-49df-ab33-87d99a60b843",
         "7ac71af4-7014-40cc-9da7-dc188651ed45",

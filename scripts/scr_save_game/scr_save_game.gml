@@ -1,32 +1,16 @@
 ///scr_save_game()
 
-// Create map to save inventory to
-var inventory_data = ds_map_create()
+// Save player X and Y
 
-// Iterate through inventory
-for (column = 0; column < ds_grid_width(global.inventory_slots); column++) {
-    for (row = 0; row < ds_grid_height(global.inventory_slots); row++) {
+// Save current room
 
-        // Activate the item in this slot
-        var item = ds_grid_get(global.inventory_slots,column,row);// global.inventory_slots[# column, row];
+// Save inventory
 
-        // Get slot so we can return it to the right place
-        var slot = (row*4) + column;
+// Save player stats
 
-        // Save the items data to it's own map
-        var item_data = ds_map_create();
-        if (item != noone) {
-            scr_save_instance(item,item_data);
-        }
-        // Nest the item_data map
-        ds_map_add_map(inventory_data,slot,item_data);
-    }
-}
+// Save chests
 
-// Save spawners
-//var instance_data = ds_map_create();
-//instance_activate_object(Spawner_Parent);
-//with (Spawner_Parent) scr_save_instance(id,instance_data);
+// Save quests
 
 // Combine all the maps and save dat shit
 var save_data = ds_map_create();
