@@ -1,7 +1,8 @@
-Lighting system
 Saving system
 Random rare item generation
 Depth ordering
 Quest rewards (xp, gold, items) on completion
 Teleporters
+Player spawn points
 Story: what was the apocalyptic event?
+Lighting system

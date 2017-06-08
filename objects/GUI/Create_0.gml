@@ -1,5 +1,4 @@
 // Set up the HUD
-/// Show debug
 //show_debug_overlay(true);
 
 // Set up general purpose GUI variables
