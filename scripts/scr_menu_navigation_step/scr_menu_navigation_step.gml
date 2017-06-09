@@ -8,7 +8,7 @@ if (mouse_check_button_released(1)) {
 	    scr_menu_map();
 	} else if (scr_check_btn(save_btn)) {
 	    show_debug_message("I am FILLED with Christ\'s love");
-	    scr_save_game();
+	    scr_save_inv(global.inventory_slots,"Inventory");
 	} else if (scr_check_btn(close_btn)) {
 	    scr_menu_hud();
 	}

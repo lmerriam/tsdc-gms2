@@ -1490,7 +1490,7 @@
             "Key": "7c3fcff7-a96e-415f-9a02-074275034396",
             "Value": {
                 "id": "93e0c81b-77b0-4056-9ea0-9cbdce6a3ff7",
-                "resourcePath": "scripts\\scr_load_game\\scr_load_game.yy",
+                "resourcePath": "scripts\\scr_load_inv\\scr_load_inv.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -2583,6 +2583,14 @@
             }
         },
         {
+            "Key": "c44150d1-0d3c-429a-ae5c-dc48eb19ec9b",
+            "Value": {
+                "id": "4dbe5fb5-0c50-4dba-b5d9-720c6ed87759",
+                "resourcePath": "scripts\\scr_commit_save\\scr_commit_save.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "c4aeb067-67e3-4525-af35-57e5a0d00e33",
             "Value": {
                 "id": "92cdb8c0-ddee-4f70-91d3-4028b2e3953b",
@@ -3004,6 +3012,14 @@
                 "id": "c2937ba2-0a0f-42c6-8217-ed172b7de057",
                 "resourcePath": "views\\e068b082-ca2b-4be5-8fdc-75d9b21f8ee0.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "e0ab8884-004d-47ba-b434-b799bc655ff9",
+            "Value": {
+                "id": "efb5edd3-fc22-41cd-b7a3-ae87d597a6cd",
+                "resourcePath": "scripts\\scr_save_inv\\scr_save_inv.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -3614,7 +3630,9 @@
         "42a90234-b2b0-4672-b10f-6578cf7e4c7d",
         "02f37cfd-8d3d-4834-b3e2-3408287b5da7",
         "95de9e84-dfce-4e05-b8e2-c38011074e25",
-        "91280dac-1fe8-486e-b210-f6e6eb0dfec7"
+        "91280dac-1fe8-486e-b210-f6e6eb0dfec7",
+        "e0ab8884-004d-47ba-b434-b799bc655ff9",
+        "c44150d1-0d3c-429a-ae5c-dc48eb19ec9b"
     ],
     "tutorial": ""
 }
