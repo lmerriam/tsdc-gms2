@@ -13,7 +13,9 @@ for (var col=0; col<ds_grid_width(inventory); col++) {
 		var item = inventory[# col,row];
 		var slot = col + row*4;
 		if(item != noone) {
-			ds_map_add_map(inv_map,slot,item);
+			//ds_map_add_map(inv_map,slot,item);
+			inv_map[? slot] = ds_map_create();
+			ds_map_copy(inv_map[? slot],item);
 			ds_map_replace_map(inv_map[? slot],"Buffs",item[? "Buffs"]);
 			ds_map_replace_map(inv_map[? slot],"Stats",item[? "Stats"]);
 		} else {
