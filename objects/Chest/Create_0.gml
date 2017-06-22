@@ -10,3 +10,4 @@ stats[? "Level"] = 1;
 properties[? "Stats"] = stats;
 
 global.chests[? string(x)+string(y)+string(room)] = properties;
+scr_commit_save(global.chests,"Chests");
