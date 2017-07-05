@@ -64,4 +64,7 @@ stat_increments[? "Spell Damage"] = 1;
 stat_increments[? "Defense"] = 1;
 stat_increments[? "Speed"] = .1;
 
-
+// Set player state
+player_step_move = scr_player_move_standard_desktop;
+player_step_attack = scr_player_attack_standard_desktop;
+player_draw = scr_player_draw;
