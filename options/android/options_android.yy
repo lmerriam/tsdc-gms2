@@ -30,6 +30,7 @@
     "option_android_icon_xxxhdpi": "${base_options_dir}\\android\\icons\\xxxhdpi.png",
     "option_android_install_location": 0,
     "option_android_interpolate_pixels": false,
+    "option_android_lint": false,
     "option_android_minimum_sdk": 9,
     "option_android_moga_support": false,
     "option_android_orient_landscape": true,

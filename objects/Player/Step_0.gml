@@ -19,7 +19,8 @@ global.player_y = y;
 
 // Execute state
 script_execute(player_step_move);
-script_execute(player_step_attack);
+script_execute(player_step_weapon);
+script_execute(player_step_spell);
 
 /// Teleport player
 if (global.teleport_player_x != noone) {

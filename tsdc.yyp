@@ -1455,14 +1455,6 @@
             }
         },
         {
-            "Key": "77c55afb-89f4-49a1-a85a-387043217c0d",
-            "Value": {
-                "id": "74327b57-8a72-4d53-bf57-72c4894fa111",
-                "resourcePath": "scripts\\scr_player_attack_standard_desktop\\scr_player_attack_standard_desktop.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "7837fdae-00cd-46eb-88d7-0664741be9ba",
             "Value": {
                 "id": "c7ac94e0-69f4-4188-be3e-94f531b2c7c2",
@@ -1476,6 +1468,14 @@
                 "id": "a7d0435b-cb3c-4381-8040-4ddaeeacdd71",
                 "resourcePath": "objects\\Gem_Freeze\\Gem_Freeze.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "7ac6e078-3434-428e-99e2-c148e31c7a39",
+            "Value": {
+                "id": "6f877d70-9122-4dcd-b1c5-a87148b8d042",
+                "resourcePath": "scripts\\scr_spell_state_standard\\scr_spell_state_standard.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1740,6 +1740,14 @@
                 "id": "3846de42-3223-49d1-96c1-497eec7e76d4",
                 "resourcePath": "objects\\Teleporter\\Teleporter.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "89445c83-d555-418f-8bf2-7aa7b8c9ec1a",
+            "Value": {
+                "id": "35c5c919-9832-45c9-902f-388486cabdca",
+                "resourcePath": "scripts\\scr_weapon_state_standard\\scr_weapon_state_standard.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -3191,14 +3199,6 @@
             }
         },
         {
-            "Key": "eb1646e0-78e3-4f72-9579-9515c9367f49",
-            "Value": {
-                "id": "533297e0-13d2-46b9-9d22-c49de31acb15",
-                "resourcePath": "scripts\\scr_spell_column\\scr_spell_column.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "ebacd832-384c-4a89-878d-48c5967cde4c",
             "Value": {
                 "id": "02ba5034-d7b4-4b84-a2cc-dae42ca8d9f4",
@@ -3252,6 +3252,14 @@
                 "id": "8963de55-b9c3-4587-97ab-521639d412f0",
                 "resourcePath": "objects\\Spell_Area\\Spell_Area.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "efb91b7f-b9d4-4b18-93f7-903badac7a31",
+            "Value": {
+                "id": "dd5d9b6c-75e6-407b-ab3c-a715ed9d0314",
+                "resourcePath": "scripts\\scr_spell_column\\scr_spell_column.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -3578,9 +3586,9 @@
         "e804c457-e50f-4d29-9ca9-a1312e6f9c63",
         "fc75e038-feae-42ad-9e33-3e06273b416b",
         "a05065b5-bcd8-432e-be99-1db655155785",
-        "eb1646e0-78e3-4f72-9579-9515c9367f49",
         "e86425b2-bd32-4995-a182-209b287a76c2",
         "90ccf905-57cb-441e-918b-430e9358ea24",
+        "efb91b7f-b9d4-4b18-93f7-903badac7a31",
         "6e8cd12b-6ca9-427f-b132-1e2b97a3e1a1",
         "37f0c425-868a-4b36-a664-be8171afe3a5",
         "4f5633a8-2bab-444a-874e-dc598174c859",
@@ -3668,7 +3676,7 @@
         "e8ec29b7-a0c4-4f60-a674-278bff376857",
         "cbf9e5b7-0cbc-4aa1-9390-36723897ed3c",
         "153ec312-0175-49bc-af7d-cdaef1362c4e",
-        "77c55afb-89f4-49a1-a85a-387043217c0d"
+        "89445c83-d555-418f-8bf2-7aa7b8c9ec1a"
     ],
     "tutorial": ""
 }

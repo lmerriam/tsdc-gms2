@@ -9,7 +9,6 @@
             "modelName": "GMMoment",
             "mvc": "1.0",
             "name": "",
-            "description": "Move player",
             "evnt": {
                 "id": "6d799c2f-5412-4749-b880-0789513050f0",
                 "modelName": "GMEvent",
@@ -27,7 +26,6 @@
             "modelName": "GMMoment",
             "mvc": "1.0",
             "name": "",
-            "description": "Spawn AOE dmg",
             "evnt": {
                 "id": "47179307-46c1-478d-a604-80aa48fcc292",
                 "modelName": "GMEvent",
@@ -45,7 +43,6 @@
             "modelName": "GMMoment",
             "mvc": "1.0",
             "name": "",
-            "description": "Finish",
             "evnt": {
                 "id": "a9513b87-5bdc-478f-9d10-de1fdb207cc3",
                 "modelName": "GMEvent",

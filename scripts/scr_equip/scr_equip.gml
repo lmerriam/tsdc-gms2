@@ -9,9 +9,11 @@ var _prev_obj;
 if (_type == "Weapon") {
 	_prev_obj = global.equipment_slots[# 0,0];
 	global.equipment_slots[# 0,0] = scr_copy_drop_props(_props);
+	Player.player_step_weapon = _props[? "Weapon State"];
 } else if (_type == "Scroll") {
 	_prev_obj = global.equipment_slots[# 0,1];
 	global.equipment_slots[# 0,1] = scr_copy_drop_props(_props);
+	Player.player_step_spell = _props[? "Spell State"];
 } else if (_type == "Armor") {
 	_prev_obj = global.equipment_slots[# 0,2];
 	global.equipment_slots[# 0,2] = scr_copy_drop_props(_props);

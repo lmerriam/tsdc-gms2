@@ -66,5 +66,6 @@ stat_increments[? "Speed"] = .1;
 
 // Set player state
 player_step_move = scr_player_move_standard_desktop;
-player_step_attack = scr_player_attack_standard_desktop;
+player_step_weapon = scr_weapon_state_standard;
+player_step_spell = scr_spell_state_standard;
 player_draw = scr_player_draw;
