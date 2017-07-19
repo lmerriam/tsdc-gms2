@@ -3,9 +3,11 @@ event_inherited();
 
 image_blend = c_red;
 
-buffs[? "burn_duration"] = irandom_range(5,10) * room_speed;
-buffs[? "burn_interval"] = 1 * room_speed;
-buffs[? "burn_damage"] = irandom_range(1,2);
+var burn = ds_map_create();
+burn[? "Duration"] = irandom_range(5,10) * room_speed;
+burn[? "Interval"] = 1 * room_speed;
+burn[? "Damage"] = irandom_range(1,2);
+buffs[? "Burn"] = burn;
 
 properties[? "Name"] = "Fiery gem";
 

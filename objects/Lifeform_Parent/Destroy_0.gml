@@ -1,11 +1,12 @@
 /// Combust if effect is active
 var effects = properties[? "Effects"];
 
-if (ds_exists(effects,ds_type_map)) {
-    if (effects[? "combust_duration"] > 0) {
+var combust = effects[? "Combust"]
+if (combust != undefined) {
+    if (combust[? "Duration"] > 0) {
 		var gem = scr_get_gem();
 		var buffs = gem[? "Buffs"];
-        scr_damage_obj(x,y,Attack_Radius_Large,Player.id,effects[? "combust_damage"],10,buffs);
+        scr_damage_obj(x,y,Attack_Radius_Large,Player.id,combust[? "Damage"],10,buffs);
     }
 }
 

@@ -9,24 +9,27 @@ if (stats[? "Health"] <= 0) {
 /// Effects
 //show_debug_message("Effects for " + object_get_name(object_index));
 if (ds_exists(effects, ds_type_map)) {
-
-    if (effects[? "burn_duration"] > 0) {
-        if (effects[? "burn_duration"] mod effects[? "burn_interval"] == 0) {
+	
+	var burn = effects[? "Burn"];
+    if (burn != undefined and burn[? "Duration"] > 0) {
+        if (burn[? "Duration"] mod burn[? "Interval"] == 0) {
             part_particles_create(global.particles_below, x, y, global.flare_particles, 1);
-            stats[? "Health"] -= effects[? "burn_damage"];
+            stats[? "Health"] -= burn[? "Damage"];
         }
-        effects[? "burn_duration"]--;
+        burn[? "Duration"]--;
     }
-
-    if (effects[? "combust_duration"] > 0) {
+	
+	var combust = effects[? "Combust"];
+    if (combust != undefined and combust[? "Duration"] > 0) {
         part_particles_create(global.particles_below, x, y, global.spark_particles, 1);
-        effects[? "combust_duration"]--;
+        combust[? "Duration"]--;
     }
-
-    if (effects[? "freeze_duration"] > 0) {
-        freeze_slow = effects[? "freeze_slow"];
+	
+	var freeze = effects[? "Freeze"];
+    if (freeze != undefined and freeze[? "Duration"] > 0) {
+        freeze_slow = freeze[? "Slow"];
         image_blend = c_aqua;
-        effects[? "freeze_duration"]--;
+        freeze[? "Duration"]--;
     } else {
         freeze_slow = 0;
         image_blend = c_white;

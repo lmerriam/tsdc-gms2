@@ -17,10 +17,10 @@ if (other.id != creator) {
     // Thorns
 	var armor = scr_get_armor();
 	var buffs = armor[? "Buffs"];
-    if (buffs[? "thorns"] = true and instance_exists(creator)) {
+    if (ds_map_exists(buffs,"Thorns") and instance_exists(creator)) {
         //scr_damage_obj(other.x,other.y,Attack_R
 		var stats = creator.properties[? "Stats"];
-        stats[? "Health"] -= buffs[? "thorns_damage"];
+        stats[? "Health"] -= ds_map_find_value(buffs[? "Thorns"],"Damage");
     }
 }
 

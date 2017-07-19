@@ -46,14 +46,32 @@ for (var j = 0; j<array_length_1d(GUI.inv_tooltip_stats); j++) {
 	}
 	draw_set_color(c_white);
 }
+
 // Draw the buffs
 var key = ds_map_find_first(buffs);
 for (var k = 0; k<ds_map_size(buffs); k++) {
+
+	// Draw the name of the buff
 	var ycur = yy + padding + i*line_height;
-	var text = key + ": " + string(buffs[? key]);
+	var text = key;
 	draw_text(xcur, ycur, text);
-	key = ds_map_find_next(buffs,key);
+	
+	// Increment the current line of text
 	i++;
+	
+	// Draw the buff stats
+	var current_buff = (buffs[? key]);
+	var current_buff_property = ds_map_find_first(current_buff);
+	for (var l=0; l<ds_map_size(current_buff); l++) {
+		var ycur = yy + padding + i * line_height;
+		var text = current_buff_property + ": " + string(current_buff[? current_buff_property]);
+		draw_text(xcur+8, ycur, text);
+		i++;
+		var current_buff_property = ds_map_find_next(current_buff, current_buff_property);
+	}
+	
+	// Go to next buff
+	key = ds_map_find_next(buffs,key);
 }
 // Draw the value
 draw_text(xcur,yy+padding+i*line_height,"Value: " + string(value));
