@@ -47,10 +47,13 @@ inventory_coords = scr_init_inventory(global.inventory_slots, slot_width, invent
 global.equipment_slots = ds_grid_create(1,4);
 ds_grid_clear(global.equipment_slots,noone);
 
-scr_equip_instance(instance_create_layer(0,0,"entities",STARTING_WEAPON));
-scr_equip_instance(instance_create_layer(0,0,"entities",STARTING_SPELL));
-scr_equip_instance(instance_create_layer(0,0,"entities",STARTING_ARMOR));
-scr_equip_instance(instance_create_layer(0,0,"entities",STARTING_GEM));
+scr_equip_instance(scr_spawn_equipment(0,0,"SMG"));
+scr_equip_instance(scr_spawn_equipment(0,0,"Heavy Armor"));
+scr_equip_instance(scr_spawn_equipment(0,0,"Gem"));
+scr_equip_instance(scr_spawn_equipment(0,0,"Projectile"));
+//scr_equip_instance(instance_create_layer(0,0,"entities",STARTING_SPELL));
+//scr_equip_instance(instance_create_layer(0,0,"entities",STARTING_ARMOR));
+//scr_equip_instance(instance_create_layer(0,0,"entities",STARTING_GEM));
 
 scr_calc_stats();
 // Set up the equipment slot offsets

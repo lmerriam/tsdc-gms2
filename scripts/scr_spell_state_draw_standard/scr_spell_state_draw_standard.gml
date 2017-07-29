@@ -1,0 +1,1 @@
+/// @description Draw the standard weapon state

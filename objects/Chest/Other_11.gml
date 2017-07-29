@@ -11,17 +11,30 @@ if (!properties[? "Opened"]) {
 		case 3: rarity = "Epic";
 		case 4: rarity = "Legendary";
 		default: rarity = "Common";
-	}
+	};
 	show_debug_message( "Rarity: " + rarity);
 	
 	// Set up the pool of buffs and boosts to pull from
-	var equipment_buff_pool = ds_list_create();
-	var equipment_statboost_pool = ds_list_create();
+	var equipment_blueprints = ds_map_create();
+	
+	var smg = ds_map_create();
+	smg[? "Stats"] = ds_map_create();
+	
+	var buff_pool = ds_map_create();
+	smg[? "Buff Pool"] =  buff_pool;
+		
+	
+	equipment_blueprints[? "SMG"] = smg;
+	
+	
+	// Equipment type
+		// Base stats
+		// Available buffs
+			// Buff values
 	
 	repeat (rarity_roll) {
 		
 	}
-	
 	
     image_index = 1;
     properties[? "Opened"] = true;

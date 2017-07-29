@@ -6,9 +6,9 @@ var y2 = argument[3];
 var props = argument[4];
 
 if (props = selected_item and props != noone) {
-    //draw_set_color(c_yellow);
-    //draw_roundrect_ext(x1+2,y1+2,x2-2,y2-2,2,2,true);
-    //draw_set_color(c_white);
+    draw_set_color(c_yellow);
+    draw_roundrect_ext(x1+2,y1+2,x2-2,y2-2,2,2,true);
+    draw_set_color(c_white);
 }
 
 if(props != noone) {

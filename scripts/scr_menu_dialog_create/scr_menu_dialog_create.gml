@@ -40,4 +40,4 @@ while (!file_text_eof(theJsonFile))
 }
 file_text_close(theJsonFile);
 global.all_dialog = json_decode(theData);
-scr_debug_map(global.all_dialog);
+//scr_debug_map(global.all_dialog);

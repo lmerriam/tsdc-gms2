@@ -9,4 +9,3 @@ properties[? "Attack Script"] = scr_attack_hammer;
 stats[? "Damage"] = irandom_range(2,3);
 stats[? "Knockback"] = 30;
 stats[? "Atk Delay"] = 1;
-

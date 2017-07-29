@@ -3,28 +3,34 @@ var _props = argument0;
 var _type = _props[? "Type"];
 
 var _prev_obj;
-
+scr_debug_map(_props);
 
 // Detect equipment type and send it to the correct slot
-if (_type == "Weapon") {
-	_prev_obj = global.equipment_slots[# 0,0];
-	global.equipment_slots[# 0,0] = scr_copy_drop_props(_props);
-	Player.player_weapon_state = _props[? "Weapon State"];
-} else if (_type == "Scroll") {
-	_prev_obj = global.equipment_slots[# 0,1];
-	global.equipment_slots[# 0,1] = scr_copy_drop_props(_props);
-	Player.player_spell_state = _props[? "Spell State"];
-} else if (_type == "Armor") {
-	_prev_obj = global.equipment_slots[# 0,2];
-	global.equipment_slots[# 0,2] = scr_copy_drop_props(_props);
-} else if (_type == "Gem") {
-	_prev_obj = global.equipment_slots[# 0,3];
-	global.equipment_slots[# 0,3] = scr_copy_drop_props(_props);
-} else {
-    show_message("Cant equip that object");
-	return false;
+var slot;
+switch(_type) {
+	case "Weapon":
+		slot = 0;
+		Player.weapon_state_step = _props[? "Weapon State Step"];
+		Player.weapon_state_draw = _props[? "Weapon State Draw"];
+		break;
+	case "Spell":
+		slot = 1;
+		Player.spell_state_step = _props[? "Spell State Step"];
+		Player.spell_state_draw = _props[? "Spell State Draw"];
+		break;
+	case "Armor":
+		slot = 2;
+		break;
+	case "Gem":
+		slot = 3;
+		break;
 }
 
+// Equip the new item
+_prev_obj = global.equipment_slots[# 0,slot];
+global.equipment_slots[# 0,slot] = scr_copy_drop_props(_props);
+
+// Send the previously equipped item to the inventory
 if (_prev_obj != noone) scr_send_to_inv(_prev_obj,global.inventory_slots);
 
 return true;

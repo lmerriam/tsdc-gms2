@@ -11,5 +11,4 @@ if (combust != undefined) {
 }
 
 /// Destroy DS
-
 ds_map_destroy(effects);

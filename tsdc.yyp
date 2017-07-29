@@ -226,7 +226,7 @@
             "Key": "153ec312-0175-49bc-af7d-cdaef1362c4e",
             "Value": {
                 "id": "9c341a27-6a6b-4a3d-8299-78286991c8d3",
-                "resourcePath": "scripts\\scr_player_move_standard_desktop\\scr_player_move_standard_desktop.yy",
+                "resourcePath": "scripts\\scr_player_state_step_standard\\scr_player_state_step_standard.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -338,7 +338,7 @@
             "Key": "1e03d9d0-ec14-4e87-8a30-72302acbc0ad",
             "Value": {
                 "id": "29ee05aa-9fb6-4f54-89ac-8ca0980ea016",
-                "resourcePath": "sprites\\spr_dagger\\spr_dagger.yy",
+                "resourcePath": "sprites\\spr_blade\\spr_blade.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -439,6 +439,14 @@
             }
         },
         {
+            "Key": "250333e4-d3f5-4d9f-b32a-660d176f665d",
+            "Value": {
+                "id": "ebe21922-3498-4c5b-9feb-d4aac769400a",
+                "resourcePath": "datafiles_yy\\equipment.json.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
             "Key": "25226a83-da08-4872-9291-89f963519ea4",
             "Value": {
                 "id": "e3c811f5-95de-44af-89bc-e075dc27563a",
@@ -476,6 +484,14 @@
                 "id": "6fd420ca-adf5-4c64-af89-cf61b1f87a05",
                 "resourcePath": "views\\27d125a3-0801-4cee-bdc6-6ff819b0a8f3.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "280d9736-312d-40b3-ba7b-dbd5c95f0a2c",
+            "Value": {
+                "id": "9da985e6-e727-420f-a6ee-3c2850a37746",
+                "resourcePath": "scripts\\scr_spawn_equipment\\scr_spawn_equipment.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -819,6 +835,14 @@
             "Value": {
                 "id": "6dc50079-48d6-4b98-a7d2-e0ffff624cd0",
                 "resourcePath": "scripts\\scr_execute_response\\scr_execute_response.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "42d29eb1-5415-4068-8869-96720dd43f47",
+            "Value": {
+                "id": "83ebcbf9-3cda-4c80-ad14-c20362f601ef",
+                "resourcePath": "scripts\\scr_spell_state_draw_standard\\scr_spell_state_draw_standard.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -1455,6 +1479,14 @@
             }
         },
         {
+            "Key": "75743ae8-e1c0-49ab-8e99-9a4e9fae52a6",
+            "Value": {
+                "id": "64f3b7a5-4c98-460c-b3f6-cb859394a1f9",
+                "resourcePath": "objects\\Equipment_Parent\\Equipment_Parent.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "7837fdae-00cd-46eb-88d7-0664741be9ba",
             "Value": {
                 "id": "c7ac94e0-69f4-4188-be3e-94f531b2c7c2",
@@ -1474,7 +1506,7 @@
             "Key": "7ac6e078-3434-428e-99e2-c148e31c7a39",
             "Value": {
                 "id": "6f877d70-9122-4dcd-b1c5-a87148b8d042",
-                "resourcePath": "scripts\\scr_spell_state_standard\\scr_spell_state_standard.yy",
+                "resourcePath": "scripts\\scr_spell_state_step_standard\\scr_spell_state_step_standard.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -1746,7 +1778,7 @@
             "Key": "89445c83-d555-418f-8bf2-7aa7b8c9ec1a",
             "Value": {
                 "id": "35c5c919-9832-45c9-902f-388486cabdca",
-                "resourcePath": "scripts\\scr_weapon_state_standard\\scr_weapon_state_standard.yy",
+                "resourcePath": "scripts\\scr_weapon_state_step_standard\\scr_weapon_state_step_standard.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -1930,7 +1962,7 @@
             "Key": "90ccf905-57cb-441e-918b-430e9358ea24",
             "Value": {
                 "id": "ada7a21e-e4a3-4795-8467-5a53817202bb",
-                "resourcePath": "scripts\\scr_spell_cone_pull\\scr_spell_cone_pull.yy",
+                "resourcePath": "scripts\\scr_spell_pull\\scr_spell_pull.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -2423,6 +2455,14 @@
             }
         },
         {
+            "Key": "b5c6f0fc-5435-4d41-8d7a-a88156005588",
+            "Value": {
+                "id": "1591fcfb-10b6-4cfb-9e8e-a5300e4af170",
+                "resourcePath": "scripts\\scr_weapon_state_draw_standard\\scr_weapon_state_draw_standard.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "b66f0a32-8353-4497-8e4f-a476c9b4bba0",
             "Value": {
                 "id": "96f97039-b031-42bf-ac91-1778417d48f2",
@@ -2746,7 +2786,7 @@
             "Key": "cbf9e5b7-0cbc-4aa1-9390-36723897ed3c",
             "Value": {
                 "id": "fc22c6ec-1a62-4666-b711-12b1ae086a69",
-                "resourcePath": "scripts\\scr_player_draw\\scr_player_draw.yy",
+                "resourcePath": "scripts\\scr_player_state_draw_standard\\scr_player_state_draw_standard.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -2900,14 +2940,6 @@
                 "id": "164aee0e-3bfe-442b-9fa5-f7c9fc49479f",
                 "resourcePath": "scripts\\scr_arena_rest_step\\scr_arena_rest_step.yy",
                 "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "d674de8a-96c2-401d-acaa-766b70b2ebe0",
-            "Value": {
-                "id": "a069e5e7-300a-44bf-8e4a-ac3fd9f00bc5",
-                "resourcePath": "sprites\\spr_sword\\spr_sword.yy",
-                "resourceType": "GMSprite"
             }
         },
         {
@@ -3146,7 +3178,7 @@
             "Key": "e86425b2-bd32-4995-a182-209b287a76c2",
             "Value": {
                 "id": "7aa49391-a5da-43b1-981c-c10f828918bc",
-                "resourcePath": "scripts\\scr_spell_cone\\scr_spell_cone.yy",
+                "resourcePath": "scripts\\scr_spell_push\\scr_spell_push.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -3676,7 +3708,11 @@
         "e8ec29b7-a0c4-4f60-a674-278bff376857",
         "cbf9e5b7-0cbc-4aa1-9390-36723897ed3c",
         "153ec312-0175-49bc-af7d-cdaef1362c4e",
-        "89445c83-d555-418f-8bf2-7aa7b8c9ec1a"
+        "89445c83-d555-418f-8bf2-7aa7b8c9ec1a",
+        "7ac6e078-3434-428e-99e2-c148e31c7a39",
+        "280d9736-312d-40b3-ba7b-dbd5c95f0a2c",
+        "b5c6f0fc-5435-4d41-8d7a-a88156005588",
+        "42d29eb1-5415-4068-8869-96720dd43f47"
     ],
     "tutorial": ""
 }

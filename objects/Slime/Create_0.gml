@@ -14,16 +14,15 @@ stats[? "Speed"] = 1 * (30/room_speed);
 
 // Loot
 loot = ds_map_create();
-ds_map_add(loot, Weapon_Pistol, .2);
-ds_map_add(loot, Weapon_Shotgun, .2);
-ds_map_add(loot, Weapon_SMG, .2);
-ds_map_add(loot, Weapon_Bomb, .2);
-ds_map_add(loot, Weapon_Blade, .2);
-ds_map_add(loot, Scroll_Vorpal, .2);
-ds_map_add(loot, Scroll_Projectile, .2);
-ds_map_add(loot, Scroll_Column, .2);
-ds_map_add(loot, Scroll_Cone, .2);
-ds_map_add(loot, Scroll_Cone_Pull, .2);
-ds_map_add(loot, Scroll_Area, .2);
-ds_map_add(loot, Scroll_Blink, .2);
-ds_map_add(loot, Health, .2);
+ds_map_add(loot, "Pistol", .2);
+ds_map_add(loot, "Shotgun", .2);
+ds_map_add(loot, "SMG", .2);
+ds_map_add(loot, "Bomb", .2);
+ds_map_add(loot, "Blade", .2);
+ds_map_add(loot, "Vorpal", .2);
+ds_map_add(loot, "Projectile", .2);
+ds_map_add(loot, "Column", .2);
+ds_map_add(loot, "Cone", .2);
+ds_map_add(loot, "Pull", .2);
+ds_map_add(loot, "Area", .2);
+ds_map_add(loot, "Blink", .2);

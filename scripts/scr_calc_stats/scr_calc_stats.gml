@@ -6,7 +6,7 @@ ds_map_copy(Player.properties[? "Stats"],Player.properties[? "Base Stats"]);
 for (i=0; i<ds_grid_height(global.equipment_slots); i++) {
     var props = global.equipment_slots[# 0, i];
 	if (props!=noone){
-		show_debug_message("Object: " + object_get_name(props[? "Object"]));
+		//show_debug_message("Object: " + object_get_name(props[? "Object"]));
 		var item_stats = props[? "Stats"];
 		show_debug_message("Equipment stats ds_map index: " + string(item_stats));
     

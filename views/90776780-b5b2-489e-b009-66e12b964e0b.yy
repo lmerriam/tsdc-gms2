@@ -26,7 +26,9 @@
         "319bfabd-fdc4-4d2e-a07c-0a3abe6b9b94",
         "bf7a3b07-d3ca-48dd-96a7-7fba73d91035",
         "8c9c53b0-434d-4551-87f2-d9f21bc8eed8",
-        "da64e979-aa67-4991-bdc0-7751efae8292"
+        "da64e979-aa67-4991-bdc0-7751efae8292",
+        "975cb07f-f082-4cde-b585-ca93a9dfca36",
+        "75743ae8-e1c0-49ab-8e99-9a4e9fae52a6"
     ],
     "filterType": "GMObject",
     "folderName": "Drops",

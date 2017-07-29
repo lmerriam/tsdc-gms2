@@ -65,7 +65,13 @@ stat_increments[? "Defense"] = 1;
 stat_increments[? "Speed"] = .1;
 
 // Set player state
-player_step_move = scr_player_move_standard_desktop;
-player_weapon_state = scr_weapon_state_standard;
-player_spell_state = scr_spell_state_standard;
-player_draw = scr_player_draw;
+player_state_step = scr_player_state_step_standard;
+player_state_draw = scr_player_state_draw_standard;
+
+// Set weapon state
+weapon_state_step = scr_weapon_state_step_standard;
+weapon_state_draw = scr_weapon_state_draw_standard;
+
+// Set spell state
+spell_state_step = scr_spell_state_step_standard;
+spell_state_draw = scr_spell_state_draw_standard;

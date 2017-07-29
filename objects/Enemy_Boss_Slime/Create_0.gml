@@ -10,7 +10,5 @@ stats[? "Experience"] = 25;
 
 // Loot
 loot = ds_map_create();
-ds_map_add(loot, Weapon_Pistol, .05);
-ds_map_add(loot, Weapon_Blade, .05);
-ds_map_add(loot, Health, .1);
-
+ds_map_add(loot, "Pistol", .05);
+ds_map_add(loot, "Blade", .05);
