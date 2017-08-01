@@ -10,6 +10,8 @@ if (stats[? "Health"] <= 0) {
 //show_debug_message("Effects for " + object_get_name(object_index));
 //scr_debug_map(effects);
 
+// TODO: figure out how to combine colors for multiple effects
+
 if (ds_exists(effects, ds_type_map)) {
 	
 	var burn = effects[? "Burn"];
