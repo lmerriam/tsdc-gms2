@@ -17,7 +17,7 @@ if (response[? "script"] != undefined) {
 // Check goto
 if (response[? "goto"] != undefined) {
 	var goto = response[? "goto"];
-	show_debug_message("Goto :" + goto);
+	//show_debug_message("Goto :" + goto);
 	scr_menu_dialog(GUI.dialog_portrait,global.all_dialog[? goto]);
 }
 

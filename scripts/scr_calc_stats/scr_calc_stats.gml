@@ -8,7 +8,7 @@ for (i=0; i<ds_grid_height(global.equipment_slots); i++) {
 	if (props!=noone){
 		//show_debug_message("Object: " + object_get_name(props[? "Object"]));
 		var item_stats = props[? "Stats"];
-		show_debug_message("Equipment stats ds_map index: " + string(item_stats));
+		//show_debug_message("Equipment stats ds_map index: " + string(item_stats));
     
 	    // Iterate through stats in the current item
 	    var current_key = ds_map_find_first(item_stats);

@@ -4,7 +4,7 @@ event_inherited();
 image_speed = 0;
 
 stats = ds_map_create();
-properties[? "Loot"] = choose(Weapon_Shotgun,Weapon_Bomb,Weapon_Pistol,Weapon_SMG);
+properties[? "Loot"] = choose("Shotgun","Hammer","Pistol","SMG");
 properties[? "Open"] = false;
 stats[? "Level"] = 1;
 properties[? "Stats"] = stats;

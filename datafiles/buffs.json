@@ -1,0 +1,16 @@
+{
+  "Burn": {
+    "Damage": 1,
+    "Duration": 200
+  },
+  "Freeze": {
+    "Slow": 0.7,
+    "Duration": 200
+  },
+  "Combust": {
+    "Duration": 300
+  },
+  "Thorns": {
+    "Damage": 1
+  }
+}

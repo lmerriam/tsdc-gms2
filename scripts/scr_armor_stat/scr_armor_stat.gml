@@ -5,7 +5,7 @@ var stats = props[? "Stats"];
 var result = stats[? stat_name];
 
 if (is_undefined(result)) {
-    show_debug_message("Stat undefined");
+    show_debug_message("Stat undefined: " + stat_name);
     return 0;
 } else {
     return result;

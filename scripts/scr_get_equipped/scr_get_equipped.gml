@@ -6,7 +6,7 @@ switch(type) {
 	case "Weapon":
 		equipped_item = scr_get_weapon();
 		break;
-	case "Scroll":
+	case "Spell":
 		equipped_item = scr_get_spell();
 		break;
 	case "Gem":
@@ -16,7 +16,7 @@ switch(type) {
 		equipped_item = scr_get_armor();
 		break;
 	default:
-		show_debug_message("Can't identify item type for inv tooltip");
+		show_debug_message("Can't identify item type for inv tooltip:" + string(type));
 		return noone;
 }
 

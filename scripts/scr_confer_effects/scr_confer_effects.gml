@@ -1,4 +1,9 @@
-/// scr_confer_effects(target,source)
+/// @description scr_confer_effects(target,source)
+/// @param target
+/// @param source
+
+//TODO: how to stack effects?
+
 var target = argument0;
 var source = argument1;
 
@@ -9,7 +14,15 @@ if (ds_exists(source,ds_type_map)) {
 	var effects = target[? "Effects"];
 
 	if (ds_exists(effects,ds_type_map) and ds_exists(buffs,ds_type_map)) {
-		ds_map_copy(effects, buffs);
+		//scr_copy_child_maps(effects,buffs);
+		
+		var key = ds_map_find_first(buffs);
+		for(var i=0;i<ds_map_size(buffs);i++) {
+			effects[? key] = ds_map_create();
+			ds_map_copy(effects[? key],buffs[? key]);
+			//show_debug_message("Copying: " + key);
+			key = ds_map_find_next(buffs,key);
+		}
 	} else {
 		show_debug_message("No buffs to confer as effects");
 	}

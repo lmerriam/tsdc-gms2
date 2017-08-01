@@ -3,7 +3,7 @@ var _props = argument0;
 var _type = _props[? "Type"];
 
 var _prev_obj;
-scr_debug_map(_props);
+//scr_debug_map(_props);
 
 // Detect equipment type and send it to the correct slot
 var slot;

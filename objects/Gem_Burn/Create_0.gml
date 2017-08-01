@@ -10,4 +10,4 @@ buffs[? "Burn"] = burn;
 
 properties[? "Name"] = "Fiery gem";
 
-show_debug_message("Gem stats index: " + string(stats));
+//show_debug_message("Gem stats index: " + string(stats));

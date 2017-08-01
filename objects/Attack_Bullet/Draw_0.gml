@@ -13,7 +13,9 @@ if (victim != noone) {
 	scr_damage(victim,damage);
 	
 	// Transfer buffs to effects
-	scr_confer_effects(victim.properties,scr_get_gem());
+	for(var i=0;i<ds_grid_height(global.equipment_slots);i++) {
+		scr_confer_effects(victim.properties,global.equipment_slots[# 0,i]);
+	}
 	
 	// Knockback the victim
     scr_knockback(Player, victim, scr_weapon_stat("Knockback"));

@@ -22,7 +22,7 @@ ds_map_add(loot, "Blade", .2);
 ds_map_add(loot, "Vorpal", .2);
 ds_map_add(loot, "Projectile", .2);
 ds_map_add(loot, "Column", .2);
-ds_map_add(loot, "Cone", .2);
+ds_map_add(loot, "Push", .2);
 ds_map_add(loot, "Pull", .2);
 ds_map_add(loot, "Area", .2);
 ds_map_add(loot, "Blink", .2);
