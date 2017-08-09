@@ -13,9 +13,8 @@ if (victim != noone) {
 	scr_damage(victim,damage);
 	
 	// Transfer buffs to effects
-	for(var i=0;i<ds_grid_height(global.equipment_slots);i++) {
-		scr_confer_effects(victim.properties,global.equipment_slots[# 0,i]);
-	}
+	var weapon = scr_get_weapon();
+	scr_confer_effects(victim.properties[? "Effects"],weapon[? "Buffs"]);
 	
 	// Knockback the victim
     scr_knockback(Player, victim, scr_weapon_stat("Knockback"));
@@ -27,7 +26,7 @@ if (victim != noone) {
     part_particles_create(global.particles_below, victim.x, victim.y, global.blood_particles, 10);
 
     // Screen shake
-    global.screen_shake += 2;
+    global.screen_shake += 1;
 
 } else {
     draw_line_width(x, y, targetx, targety, 1);

@@ -15,7 +15,6 @@ if (creator == Player.id and ds_exists(other.properties,ds_type_map)) {
     
 	// Confer effects 
 	var effects = other.properties[? "Effects"];
-    if(ds_exists(effects,ds_type_map) and ds_exists(buffs,ds_type_map)) {
-        ds_map_copy(effects,buffs);
-    }
+	scr_confer_effects(effects,buffs);
+
 }
