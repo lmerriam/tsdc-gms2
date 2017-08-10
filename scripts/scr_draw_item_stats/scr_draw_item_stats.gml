@@ -26,8 +26,9 @@ var xcur = xx + padding;
 
 // Draw the name
 // TODO: should "names" be in stats? types can stay in properties
-draw_set_color(c_white);
+draw_set_color(scr_get_rarity_color(props[? "Rarity"]));
 draw_text(xcur, yy+padding, name);
+draw_set_color(c_white);
 
 var i = 1;
 for (var j = 0; j<array_length_1d(GUI.inv_tooltip_stats); j++) {

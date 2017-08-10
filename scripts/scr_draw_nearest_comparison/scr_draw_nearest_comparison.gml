@@ -13,15 +13,21 @@ var y2 = yy+height;
 // Draw box
 draw_set_color(c_black);
 draw_set_alpha(.75);
-draw_rectangle_fast(xx,yy,xx+width,yy+line_count*line_height+padding*2);
+draw_rectangle_fast(xx,yy,xx+width,yy+(2*line_height)+(2*padding));
 draw_set_alpha(1);
 
 // Draw stats
 draw_set_font(PixelSmall_12)
-scr_draw_item_stats(nearest_drop.properties,xx,yy,width,height,padding,line_height,scr_get_equipped(props[? "Type"]));
+//scr_draw_item_stats(nearest_drop.properties,xx,yy,width,height,padding,line_height,scr_get_equipped(props[? "Type"]));
+
+var props = nearest_drop.properties;
+draw_set_color(props[? "Rarity color"]);
+draw_text(xx+padding, yy+padding, props[? "Name"]);
+draw_set_color(c_white);
+draw_text(xx+padding, yy+padding+line_height, props[? "Rarity"]);
 
 // Update nearest btn
-nearest_button_y1 = yy+(line_height*line_count)+padding+16;
+nearest_button_y1 = yy+(2*line_height)+(3*padding);
 nearest_button_y2 = nearest_button_y1 + nearest_button_height;
 nearest_button_x1 = xx;
 nearest_button_x2 = xx + width;

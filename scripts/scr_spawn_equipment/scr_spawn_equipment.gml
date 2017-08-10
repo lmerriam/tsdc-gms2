@@ -44,14 +44,19 @@ switch(props[? "Type"]) {
 
 var roll = irandom(3);
 repeat(roll) {
-	var final_key = irandom_range(1,ds_map_size(global.buffs)) - 1;
-	var key = ds_map_find_first(global.buffs);
+	var final_key = irandom_range(1,ds_map_size(global.buffs))-1;
+	var buff = ds_map_find_first(global.buffs);
 	for (var i=0; i<final_key; i++){
-		key = ds_map_find_next(global.buffs,key);
+		
+		buff = ds_map_find_next(global.buffs,buff);
 	}
 	var value = ds_map_create();
-	ds_map_copy(value,global.buffs[? key]);
-	ds_map_add(props[? "Buffs"],key,value);
+	ds_map_copy(value,global.buffs[? buff]);
+	ds_map_add(props[? "Buffs"],buff,value);
 }
+
+// Set up rarity
+props[? "Rarity"] = scr_get_rarity(props[? "Buffs"]);
+props[? "Rarity color"] = scr_get_rarity_color(props[? "Rarity"]);
 
 return inst;

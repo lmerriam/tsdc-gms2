@@ -1439,6 +1439,14 @@
             }
         },
         {
+            "Key": "72c1132d-fcb4-403d-a8b1-712637945449",
+            "Value": {
+                "id": "8c50b68b-cbc7-424c-9bc7-b3845409559e",
+                "resourcePath": "scripts\\scr_get_rarity\\scr_get_rarity.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "72c74a06-b260-4d24-9f3c-2bb9fafaa524",
             "Value": {
                 "id": "3204006b-75f1-487a-9d30-0600f1fa6d7d",
@@ -2655,6 +2663,14 @@
             }
         },
         {
+            "Key": "c42908e9-f130-42fc-81f7-30a1923e12bc",
+            "Value": {
+                "id": "8a944ceb-43b2-478d-8710-a88725ecf782",
+                "resourcePath": "scripts\\scr_get_rarity_color\\scr_get_rarity_color.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "c44150d1-0d3c-429a-ae5c-dc48eb19ec9b",
             "Value": {
                 "id": "4dbe5fb5-0c50-4dba-b5d9-720c6ed87759",
@@ -3060,6 +3076,14 @@
                 "id": "6b19f20b-a87a-4904-b6f0-63694d3de5fe",
                 "resourcePath": "views\\dcbe8c48-5eda-4671-b29f-dcc0e44f41d1.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "dce90f0b-d240-422e-bdfa-d9fc0512081b",
+            "Value": {
+                "id": "2ed8e735-2e5c-4817-ae74-c29f4e10408b",
+                "resourcePath": "sprites\\spr_equipment_parent\\spr_equipment_parent.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -3737,7 +3761,10 @@
         "280d9736-312d-40b3-ba7b-dbd5c95f0a2c",
         "b5c6f0fc-5435-4d41-8d7a-a88156005588",
         "42d29eb1-5415-4068-8869-96720dd43f47",
-        "c61d4cfb-d631-4d24-a443-68b33ad44ba6"
+        "c61d4cfb-d631-4d24-a443-68b33ad44ba6",
+        "e60e1fe8-7c99-49ba-8271-0284ae541492",
+        "72c1132d-fcb4-403d-a8b1-712637945449",
+        "c42908e9-f130-42fc-81f7-30a1923e12bc"
     ],
     "tutorial": ""
 }

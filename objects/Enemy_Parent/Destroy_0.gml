@@ -8,7 +8,8 @@ for (var i = 0; i <= stats[? "Experience"]; i++) {
 var current_key = ds_map_find_first(loot); // Start with the first key in the map
 for (i=0; i < ds_map_size(loot); i++) {
     if (scr_chance(ds_map_find_value(loot, current_key))) { // Get the spawn chance of the current drop
-        scr_spawn_equipment(x, y, current_key); // Spawn the current drop
+        var inst = scr_spawn_equipment(x, y, current_key); // Spawn the current drop
+		//with(inst){physics_apply_local_impulse(inst.x,inst.y,irandom_range(-2,2),irandom_range(-2,2))};
     }
     current_key = ds_map_find_next(loot,current_key); // Move to next key
 }
