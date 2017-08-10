@@ -24,6 +24,8 @@ props[? "Buffs"] = ds_map_create();
 props[? "Sprite"] = asset_get_index(props[? "Sprite"]);
 inst.sprite_index = props[? "Sprite"];
 
+with (inst) { sprite_set_offset(sprite_index,sprite_width/2,sprite_height/2); }
+
 // Type-specific prepping
 switch(props[? "Type"]) {
 	case "Weapon":
