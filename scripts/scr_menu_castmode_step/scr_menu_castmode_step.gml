@@ -13,6 +13,5 @@ if (mouse_check_button_released(1)) {
 	// Leave cast mode
 	scr_menu_hud();
 	global.cast_mode = false;
-	global.timescale = 1;
 
 }

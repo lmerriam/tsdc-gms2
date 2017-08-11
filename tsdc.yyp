@@ -1495,6 +1495,14 @@
             }
         },
         {
+            "Key": "760252eb-3162-421c-b81b-5eac80d1b05f",
+            "Value": {
+                "id": "827d5871-1212-4896-aaa9-033af1761218",
+                "resourcePath": "sprites\\spr_twinkle\\spr_twinkle.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "7837fdae-00cd-46eb-88d7-0664741be9ba",
             "Value": {
                 "id": "c7ac94e0-69f4-4188-be3e-94f531b2c7c2",
@@ -1563,6 +1571,14 @@
             "Value": {
                 "id": "aa037f44-7691-4e64-bf7f-17873a62c665",
                 "resourcePath": "scripts\\scr_menu_castmode_create\\scr_menu_castmode_create.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "7f07f6c3-3870-431c-9f6d-31750d7716fc",
+            "Value": {
+                "id": "2ac15f59-7217-47d2-82ec-6ee776f874f4",
+                "resourcePath": "scripts\\scr_init_twinkle\\scr_init_twinkle.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -3655,6 +3671,7 @@
         "8f05da69-b533-4828-926c-cb45f6b4bf72",
         "f887d2b4-58f3-412c-8488-0da1f583b4b0",
         "c1321f41-6a51-4e86-b560-fd1bbbe54e2d",
+        "7f07f6c3-3870-431c-9f6d-31750d7716fc",
         "55485778-a80b-4950-bf96-d3ed9581345e",
         "fa409153-6426-490b-9003-0eb397b03a06",
         "3bd76b89-af18-4c1d-8413-bce5bcafd4f1",

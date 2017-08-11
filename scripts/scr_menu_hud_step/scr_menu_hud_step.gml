@@ -43,7 +43,6 @@ if (mouse_check_button_released(1)) {
 	// Cast mode
     if (scr_check_btn(cast_btn)) {
         global.cast_mode = true;
-        global.timescale = .1;
 		scr_menu_castmode();
 		
 	// Inventory

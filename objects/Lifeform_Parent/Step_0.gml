@@ -17,7 +17,7 @@ if (ds_exists(effects, ds_type_map)) {
 	var burn = effects[? "Burn"];
     if (burn != undefined and burn[? "Duration"] > 0) {
         if (burn[? "Duration"] mod room_speed*global.timescale == 0) {
-            part_particles_create(global.particles_below, x, y, global.flare_particles, 1);
+            part_particles_create(global.particles_above, x, y, global.flare_particles, 1);
             stats[? "Health"] -= burn[? "Damage"];
         }
         burn[? "Duration"]--;
@@ -25,7 +25,7 @@ if (ds_exists(effects, ds_type_map)) {
 	
 	var combust = effects[? "Combust"];
     if (combust != undefined and combust[? "Duration"] > 0) {
-        part_particles_create(global.particles_below, x, y, global.spark_particles, 1);
+        part_particles_create(global.particles_above, x, y, global.spark_particles, 1);
         combust[? "Duration"]--;
     }
 	
