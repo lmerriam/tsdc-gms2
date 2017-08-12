@@ -11,8 +11,8 @@ if (instance_exists(Player)) {
         } else {
             dis = point_distance(Player.x,Player.y,mouse_x,mouse_y);
         }
-        var targetx = Player.x + lengthdir_x(dis/5,global.mousedir);
-        var targety = Player.y + lengthdir_y(dis/5,global.mousedir);
+        var targetx = Player.x + lengthdir_x(dis/5,global.aimdir);
+        var targety = Player.y + lengthdir_y(dis/5,global.aimdir);
 
         global.crosshair_x = targetx;
         global.crosshair_y = targety;

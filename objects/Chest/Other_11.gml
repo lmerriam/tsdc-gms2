@@ -1,8 +1,4 @@
 /// Spawn loot
-if (!properties[? "Opened"]) {
-    var drop = scr_spawn_equipment(x,y,properties[? "Loot"]);
-	
-    image_index = 1;
-    properties[? "Opened"] = true;
-}
-
+layer_sprite_create(layer_get_id("sprites"),x,y,spr_chest_opened);
+scr_spawn_equipment(x,y,properties[? "Loot"]);
+instance_destroy();

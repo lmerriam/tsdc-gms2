@@ -1,6 +1,6 @@
 /// Rotate and set alarm
 event_inherited();
-phy_rotation = -global.mousedir;
+phy_rotation = -global.aimdir;
 expire_timer = scr_sec_from_now(2);
 
 var spell = scr_get_spell();
