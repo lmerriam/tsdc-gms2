@@ -359,6 +359,14 @@
             }
         },
         {
+            "Key": "1ecd51a1-e669-4661-b437-f19e4a97a31e",
+            "Value": {
+                "id": "48525069-956a-4e04-bce6-d1dedb259c8c",
+                "resourcePath": "sprites\\spr_bloodspot_1\\spr_bloodspot_1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "1f23c118-9169-4066-b59e-3b3ec4472407",
             "Value": {
                 "id": "357b24ed-f8f0-4428-ad88-c148280b0803",
@@ -1948,6 +1956,14 @@
                 "id": "a43c3f90-26e9-41e7-a830-dc28dbdd095a",
                 "resourcePath": "scripts\\@__view_set\\__view_set.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "8e34c6a4-7995-4816-99c1-c89b7b1b975f",
+            "Value": {
+                "id": "ecfb45b0-56b8-48c9-a7e3-a8dc2504ef0a",
+                "resourcePath": "sprites\\spr_crater_1\\spr_crater_1.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
