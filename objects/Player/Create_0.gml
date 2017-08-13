@@ -10,6 +10,10 @@ img_spd = .3*30/room_speed;
 phy_fixed_rotation = true;
 
 global.aimdir = 0;
+global.weapondir = 0;
+aim_touch = 0;
+move_touch = 0;
+move_dir = 0;
 attack_button = false;
 spell_button = false;
 
