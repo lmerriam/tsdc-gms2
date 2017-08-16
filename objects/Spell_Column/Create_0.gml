@@ -1,3 +1,3 @@
 /// Rotate object
 event_inherited();
-phy_rotation = -global.aimdir;
+phy_rotation = -global.aim_dir;

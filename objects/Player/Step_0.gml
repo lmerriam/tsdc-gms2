@@ -18,6 +18,7 @@ global.player_x = x;
 global.player_y = y;
 
 // Execute state
+
 script_execute(player_state_step);
 script_execute(weapon_state_step);
 script_execute(spell_state_step);

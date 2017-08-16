@@ -1,5 +1,5 @@
 /// Draw collisions and lines
-var dir = global.weapondir + random_range(-aim_vary,aim_vary);
+var dir = global.aim_dir + random_range(-aim_vary,aim_vary);
 var range = 200;
 var targetx = global.weapon_origin_x + lengthdir_x(range, dir);
 var targety = global.weapon_origin_y + lengthdir_y(range, dir);

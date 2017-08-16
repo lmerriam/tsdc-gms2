@@ -634,7 +634,54 @@
             "userdefined_depth": false,
             "visible": true,
             "assets": [
-                
+                {
+                    "__type": "GMRSpriteGraphic_Model:#YoYoStudio.MVCFormat",
+                    "id": "0e7ba2ba-90f6-4a59-b26b-3b5598d377b8",
+                    "modelName": "GMRSpriteGraphic",
+                    "mvc": "1.0",
+                    "ignore": false,
+                    "inheritItemSettings": false,
+                    "m_originalParentID": "00000000-0000-0000-0000-000000000000",
+                    "m_serialiseFrozen": false,
+                    "name": "graphic_7E1442D0",
+                    "x": 896,
+                    "y": 128,
+                    "animationFPS": 15,
+                    "animationSpeedType": 0,
+                    "colour": {
+                        "Value": 4294967295
+                    },
+                    "frameIndex": 0,
+                    "rotation": 0,
+                    "scaleX": 1,
+                    "scaleY": 12,
+                    "spriteId": "0580440c-e47d-4f54-8dab-ddb7bd2c36b0",
+                    "userdefined_animFPS": false
+                },
+                {
+                    "__type": "GMRSpriteGraphic_Model:#YoYoStudio.MVCFormat",
+                    "id": "19fca695-6f1b-4e58-a01f-0f6c7e52136f",
+                    "modelName": "GMRSpriteGraphic",
+                    "mvc": "1.0",
+                    "ignore": false,
+                    "inheritItemSettings": false,
+                    "m_originalParentID": "00000000-0000-0000-0000-000000000000",
+                    "m_serialiseFrozen": false,
+                    "name": "graphic_691EC768",
+                    "x": 1312,
+                    "y": 96,
+                    "animationFPS": 15,
+                    "animationSpeedType": 0,
+                    "colour": {
+                        "Value": 4294967295
+                    },
+                    "frameIndex": 0,
+                    "rotation": -89.99735,
+                    "scaleX": 1,
+                    "scaleY": 12,
+                    "spriteId": "0580440c-e47d-4f54-8dab-ddb7bd2c36b0",
+                    "userdefined_animFPS": false
+                }
             ]
         },
         {

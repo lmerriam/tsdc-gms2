@@ -87,6 +87,14 @@
             }
         },
         {
+            "Key": "0580440c-e47d-4f54-8dab-ddb7bd2c36b0",
+            "Value": {
+                "id": "6c041007-3f9c-48c9-9996-4f9b7c2388e7",
+                "resourcePath": "sprites\\spr_wire_vertical\\spr_wire_vertical.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "05be0168-2799-400f-a924-784272bf5900",
             "Value": {
                 "id": "803ff26d-4823-4720-9c39-f744455100ac",
@@ -531,6 +539,14 @@
             "Value": {
                 "id": "435fb257-a2d6-46b1-9cf8-e52cd616a10b",
                 "resourcePath": "objects\\Weapon_Blade\\Weapon_Blade.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "29881124-1e5d-4c0b-857c-bfc8280583bd",
+            "Value": {
+                "id": "bebe7728-9488-4f31-8b67-d348df5d8235",
+                "resourcePath": "objects\\Jumper\\Jumper.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -2623,6 +2639,14 @@
             }
         },
         {
+            "Key": "bd1b96fe-ad73-4663-bc9c-16ac69ab87d9",
+            "Value": {
+                "id": "96091ca4-b2a7-45ef-9ee7-ad53d1ccaa53",
+                "resourcePath": "scripts\\scr_controls_touch\\scr_controls_touch.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "be6d1c27-1f33-446d-86c8-e1ed5df6daf4",
             "Value": {
                 "id": "15846112-78ea-42a6-b935-b62f28a41b3b",
@@ -2716,6 +2740,14 @@
                 "id": "86934cd2-87eb-42cd-aa4d-b7357b630e2e",
                 "resourcePath": "views\\c3b2a4c6-65d3-4b93-8af1-cd8e3e7c9a9c.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "c3c27720-6f17-4c12-bcd8-26568235fd9c",
+            "Value": {
+                "id": "1244b247-d2c7-4215-b1a5-c5adffd69250",
+                "resourcePath": "scripts\\scr_controls_mouse\\scr_controls_mouse.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -3516,6 +3548,14 @@
                 "id": "9fb59ad7-e38c-4db2-88ee-a6afd81ec6a0",
                 "resourcePath": "scripts\\scr_get_gem\\scr_get_gem.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "f7eaf91b-50a0-4fac-aed4-09de85598bcc",
+            "Value": {
+                "id": "161a896b-1c42-44ea-adeb-302f02fe970f",
+                "resourcePath": "sprites\\spr_jumper\\spr_jumper.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
