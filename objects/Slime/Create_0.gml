@@ -13,7 +13,6 @@ stats[? "Knockback"] = 5;
 stats[? "Speed"] = 1 * (30/room_speed);
 
 // Loot
-loot = ds_map_create();
 ds_map_add(loot, "Pistol", .2);
 ds_map_add(loot, "Shotgun", .2);
 ds_map_add(loot, "SMG", .2);

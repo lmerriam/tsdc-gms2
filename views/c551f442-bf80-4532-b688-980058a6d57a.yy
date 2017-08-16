@@ -9,7 +9,8 @@
         "686a8c1d-88a9-4712-9b8d-013fc10f3cf9",
         "57a6f9db-360b-4c28-bb14-903e6f16d896",
         "542ae177-4a89-4d1e-80c9-4413053983de",
-        "7bd2c9b9-c65c-452f-afcf-9e4033e2feaf"
+        "7bd2c9b9-c65c-452f-afcf-9e4033e2feaf",
+        "70ec38ec-6ae2-4a43-8fab-cec16537b4c9"
     ],
     "filterType": "GMScript",
     "folderName": "Enemy states",

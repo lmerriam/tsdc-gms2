@@ -4,6 +4,8 @@ event_inherited();
 spawn_x = x;
 spawn_y = y;
 percent = 100;
+base_image_speed = 1;
+loot = ds_map_create();
 
 // States
 state = scr_enemy_idle_state;

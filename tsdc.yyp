@@ -655,6 +655,14 @@
             }
         },
         {
+            "Key": "31074bb6-dbe3-4eda-9bdd-1c6a5e4a1b7a",
+            "Value": {
+                "id": "c58950e0-7957-4986-9a68-662dfced2340",
+                "resourcePath": "scripts\\scr_jumper_land_state\\scr_jumper_land_state.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "3156630d-9a89-4d10-a250-47373ef50890",
             "Value": {
                 "id": "168830b2-9caf-43fa-9fe7-a6814316a6fd",
@@ -1463,6 +1471,14 @@
             }
         },
         {
+            "Key": "70ec38ec-6ae2-4a43-8fab-cec16537b4c9",
+            "Value": {
+                "id": "891a5c86-d2a3-4de9-9d99-f92b66f5d226",
+                "resourcePath": "views\\70ec38ec-6ae2-4a43-8fab-cec16537b4c9.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "71ab4305-fe8e-4b16-9acc-fa362f0231ae",
             "Value": {
                 "id": "dab356ad-bf29-47b0-b134-6d5779878e09",
@@ -1556,6 +1572,14 @@
                 "id": "a7d0435b-cb3c-4381-8040-4ddaeeacdd71",
                 "resourcePath": "objects\\Gem_Freeze\\Gem_Freeze.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "78c2ea43-4bcb-41df-b5a0-ce32780c9a6a",
+            "Value": {
+                "id": "32e97e03-cd81-4341-94b2-282ff1af82ce",
+                "resourcePath": "scripts\\scr_jumper_aim_state\\scr_jumper_aim_state.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -2012,6 +2036,14 @@
                 "id": "d38029f5-6c7b-42b2-8d2e-25f2a3ea257b",
                 "resourcePath": "tilesets\\background8_tileset\\background8_tileset.yy",
                 "resourceType": "GMTileSet"
+            }
+        },
+        {
+            "Key": "902a5822-41fa-4eb1-9efd-494d54177b21",
+            "Value": {
+                "id": "33898a5c-1538-428a-9b54-a73b97e6beba",
+                "resourcePath": "scripts\\scr_jumper_jump_state\\scr_jumper_jump_state.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -2951,6 +2983,14 @@
             }
         },
         {
+            "Key": "cf26ffca-8ead-4e16-a3ea-c7994257c19c",
+            "Value": {
+                "id": "54d2e611-c8a5-47ce-9264-841df088c8ae",
+                "resourcePath": "scripts\\scr_jumper_wander_state\\scr_jumper_wander_state.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "cf278e12-0859-4616-885a-98a7e4b7414c",
             "Value": {
                 "id": "798a64cc-7c02-4ee5-832a-3dac6bd1070b",
@@ -3717,6 +3757,9 @@
         "57a6f9db-360b-4c28-bb14-903e6f16d896",
         "542ae177-4a89-4d1e-80c9-4413053983de",
         "7bd2c9b9-c65c-452f-afcf-9e4033e2feaf",
+        "78c2ea43-4bcb-41df-b5a0-ce32780c9a6a",
+        "902a5822-41fa-4eb1-9efd-494d54177b21",
+        "31074bb6-dbe3-4eda-9bdd-1c6a5e4a1b7a",
         "8dbe428b-f742-4ba6-9b77-583a91d2069c",
         "d7d4b22a-b0d9-4177-8754-d3cce7f6a240",
         "6a43ae54-2338-4c36-ac8d-0d7a27397d44",
@@ -3869,7 +3912,10 @@
         "c61d4cfb-d631-4d24-a443-68b33ad44ba6",
         "e60e1fe8-7c99-49ba-8271-0284ae541492",
         "72c1132d-fcb4-403d-a8b1-712637945449",
-        "c42908e9-f130-42fc-81f7-30a1923e12bc"
+        "c42908e9-f130-42fc-81f7-30a1923e12bc",
+        "bd1b96fe-ad73-4663-bc9c-16ac69ab87d9",
+        "c3c27720-6f17-4c12-bcd8-26568235fd9c",
+        "cf26ffca-8ead-4e16-a3ea-c7994257c19c"
     ],
     "tutorial": ""
 }
