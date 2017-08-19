@@ -6,8 +6,7 @@
       "Value": 100,
       "Sprite": "spr_SMG",
       "Attack Script": "scr_attack_smg",
-      "Weapon State Step": "scr_weapon_state_step_standard",
-      "Weapon State Draw": "scr_weapon_state_draw_standard",
+      "Equip Script": "scr_equip_weapon_standard",
       "Stats": {
         "Damage": 1,
         "Knockback": 2,
@@ -22,8 +21,7 @@
       "Value": 100,
       "Sprite": "spr_pistol",
       "Attack Script": "scr_attack_pistol",
-      "Weapon State Step": "scr_weapon_state_step_standard",
-      "Weapon State Draw": "scr_weapon_state_draw_standard",
+      "Equip Script": "scr_equip_weapon_standard",
       "Stats": {
         "Damage": 3,
         "Knockback": 5,
@@ -38,8 +36,7 @@
       "Value": 100,
       "Sprite": "spr_bomb",
       "Attack Script": "scr_attack_bomb",
-      "Weapon State Step": "scr_weapon_state_step_standard",
-      "Weapon State Draw": "scr_weapon_state_draw_standard",
+      "Equip Script": "scr_equip_weapon_standard",
       "Stats": {
         "Damage": 5,
         "Knockback": 10,
@@ -54,8 +51,7 @@
       "Value": 100,
       "Sprite": "spr_shotgun",
       "Attack Script": "scr_attack_shotgun",
-      "Weapon State Step": "scr_weapon_state_step_standard",
-      "Weapon State Draw": "scr_weapon_state_draw_standard",
+      "Equip Script": "scr_equip_weapon_standard",
       "Stats": {
         "Damage": 6,
         "Knockback": 2,
@@ -70,8 +66,7 @@
       "Value": 100,
       "Sprite": "spr_blade",
       "Attack Script": "scr_attack_blade",
-      "Weapon State Step": "scr_weapon_state_step_standard",
-      "Weapon State Draw": "scr_weapon_state_draw_standard",
+      "Equip Script": "scr_equip_weapon_standard",
       "Stats": {
         "Damage": 3,
         "Knockback": 10,
@@ -86,8 +81,22 @@
       "Value": 100,
       "Sprite": "spr_hammer",
       "Attack Script": "scr_attack_hammer",
-      "Weapon State Step": "scr_weapon_state_step_standard",
-      "Weapon State Draw": "scr_weapon_state_draw_standard",
+      "Equip Script": "scr_equip_weapon_standard",
+      "Stats": {
+        "Damage": 2,
+        "Knockback": 30,
+        "Atk Delay": 1
+      }
+    }
+  },
+  "Bow": {
+    "Properties": {
+      "Type": "Weapon",
+      "Name": "Bow",
+      "Value": 100,
+      "Sprite": "spr_bow",
+      "Attack Script": "scr_attack_bow",
+      "Equip Script": "scr_equip_weapon_bow",
       "Stats": {
         "Damage": 2,
         "Knockback": 30,

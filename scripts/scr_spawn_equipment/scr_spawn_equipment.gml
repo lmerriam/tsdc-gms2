@@ -30,8 +30,7 @@ with (inst) { sprite_set_offset(sprite_index,sprite_width/2,sprite_height/2); }
 switch(props[? "Type"]) {
 	case "Weapon":
 		props[? "Attack Script"] = asset_get_index(props[? "Attack Script"]);
-		props[? "Weapon State Step"] = asset_get_index(props[? "Weapon State Step"]);
-		props[? "Weapon State Draw"] = asset_get_index(props[? "Weapon State Draw"]);
+		//script_execute(asset_get_index(props[? "Equip Script"]));
 		break;
 	case "Spell":
 		props[? "Spell Script"] = asset_get_index(props[? "Spell Script"]);

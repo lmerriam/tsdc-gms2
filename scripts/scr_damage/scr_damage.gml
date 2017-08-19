@@ -1,4 +1,6 @@
-///scr_damage_other(instance,damage)
+///scr_damage(instance,damage)
+/// @param inst
+/// @param damage
 var inst = argument0;
 var dmg = argument1;
 

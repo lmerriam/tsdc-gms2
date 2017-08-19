@@ -10,8 +10,7 @@ var slot;
 switch(_type) {
 	case "Weapon":
 		slot = 0;
-		Player.weapon_state_step = _props[? "Weapon State Step"];
-		Player.weapon_state_draw = _props[? "Weapon State Draw"];
+		script_execute(asset_get_index(_props[? "Equip Script"]));
 		break;
 	case "Spell":
 		slot = 1;

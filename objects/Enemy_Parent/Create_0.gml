@@ -11,7 +11,7 @@ loot = ds_map_create();
 state = scr_enemy_idle_state;
 wander_alarm = scr_sec_from_now(irandom_range(2,5));
 stall_alarm = 0;
-sight = 96;
+sight = 128;
 targetx = 0;
 targety = 0;
 
