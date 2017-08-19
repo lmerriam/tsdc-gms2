@@ -12,5 +12,6 @@ if (props = selected_item and props != noone) {
 }
 
 if(props != noone) {
+	draw_sprite_ext(spr_inv_slot_highlight, 0,x1+(slot_width/2),y1+(slot_width/2),3,3,45,props[? "Rarity color"],1)
     draw_sprite_ext(props[? "Sprite"], 0,x1+(slot_width/2),y1+(slot_width/2),3,3,45,c_white,1);
 }

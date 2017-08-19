@@ -959,6 +959,14 @@
             }
         },
         {
+            "Key": "454c2cfd-bb67-4674-9c23-5674dc23331b",
+            "Value": {
+                "id": "7835211c-2013-437f-b5fc-390d983bcc3c",
+                "resourcePath": "sprites\\spr_inv_slot_highlight\\spr_inv_slot_highlight.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "45905d8a-4836-4a83-8605-068741eb6b48",
             "Value": {
                 "id": "44aeeeda-8c87-4541-9bf4-b3fbe1be68ef",

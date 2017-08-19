@@ -4,4 +4,3 @@ Player.bow_sprite = 0;
 Player.bow_start_time = 0;
 Player.bow_power = 0;
 Player.attack_timer = 0;
-Player.bow_aim_vary = 0;
