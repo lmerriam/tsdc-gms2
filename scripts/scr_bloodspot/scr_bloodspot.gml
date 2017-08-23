@@ -1,4 +1,4 @@
-/// @description scr_bloodspot
+/// scr_bloodspot
 /// @param x
 /// @param y
 /// @param chance
