@@ -375,6 +375,14 @@
             }
         },
         {
+            "Key": "1e77d34c-cf3d-4e89-b0d3-dea327a8ba2d",
+            "Value": {
+                "id": "f5ccc760-d854-47d9-b5e1-c149606f54f3",
+                "resourcePath": "scripts\\scr_weapon_state_draw_flamethrower\\scr_weapon_state_draw_flamethrower.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "1e9e9133-4c07-4217-8ee2-eec91430eb26",
             "Value": {
                 "id": "92fe97e5-2dad-418c-a324-09c600f2f39e",
@@ -943,6 +951,14 @@
             }
         },
         {
+            "Key": "449e3ca2-1b6a-4d78-91b1-842ac905a5c6",
+            "Value": {
+                "id": "c2fa70cc-b615-4523-bf27-800c9a99a921",
+                "resourcePath": "scripts\\scr_weapon_state_step_boomerang\\scr_weapon_state_step_boomerang.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "44b9d1d7-8758-4861-b925-8214ed274dff",
             "Value": {
                 "id": "f7056562-db00-4956-bb0d-2e260ee1efe2",
@@ -1063,11 +1079,27 @@
             }
         },
         {
+            "Key": "4a1c74ca-b95a-451c-bef6-7b33b0b9b340",
+            "Value": {
+                "id": "56424844-b787-4efb-9d5c-1aa673794679",
+                "resourcePath": "scripts\\scr_weapon_state_draw_boomerang\\scr_weapon_state_draw_boomerang.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "4a1c7ed5-e86f-44fa-81da-1d14d955918d",
             "Value": {
                 "id": "460b3549-d501-4306-99d5-4049df244abf",
                 "resourcePath": "scripts\\scr_move_toward_instance\\scr_move_toward_instance.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "4a3752ae-4419-4ef0-9747-86908c79df75",
+            "Value": {
+                "id": "579ba24f-3bfe-4204-920a-3315fb4c2c74",
+                "resourcePath": "objects\\Attack_Flamethrower\\Attack_Flamethrower.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -1115,6 +1147,14 @@
             "Value": {
                 "id": "e0bac3ce-c1f5-45b0-8fcd-4cc7ee367ec9",
                 "resourcePath": "scripts\\scr_tile_collision\\scr_tile_collision.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "51f99f69-2600-4d8f-ab62-407d15fb5ac4",
+            "Value": {
+                "id": "7118eafa-2896-4d7c-b85a-8b32ffd2ec76",
+                "resourcePath": "scripts\\scr_bloodspot\\scr_bloodspot.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -1300,6 +1340,14 @@
                 "id": "1f0b09e2-4e88-42bf-928c-108dc8bca5d6",
                 "resourcePath": "scripts\\scr_weapon_state_draw_bow\\scr_weapon_state_draw_bow.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "5f63c599-a63d-4cc3-9e48-eb62dbf5a70b",
+            "Value": {
+                "id": "8c03ce48-4bd2-46f0-b9a8-a8ee7f47d72b",
+                "resourcePath": "sprites\\spr_boomerang\\spr_boomerang.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1615,6 +1663,14 @@
             }
         },
         {
+            "Key": "7472345f-23c8-425a-b8e0-e50b6b74cbb3",
+            "Value": {
+                "id": "6dfa876b-288d-43fe-bcc2-3396838acfe8",
+                "resourcePath": "scripts\\scr_equip_weapon_boomerang\\scr_equip_weapon_boomerang.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "75451c91-232f-46e2-b261-eacca82c1325",
             "Value": {
                 "id": "fa6ea932-fb33-483e-9c24-c9203ebf5bda",
@@ -1636,6 +1692,14 @@
                 "id": "827d5871-1212-4896-aaa9-033af1761218",
                 "resourcePath": "sprites\\spr_twinkle\\spr_twinkle.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "76d1bdea-c192-4d2e-bb99-0963f2dc82fd",
+            "Value": {
+                "id": "eb9456ab-b4cf-4f3c-b64d-2bee8d66ca01",
+                "resourcePath": "objects\\Attack_Boomerang\\Attack_Boomerang.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -1711,6 +1775,14 @@
             }
         },
         {
+            "Key": "7d6ddb9a-f203-4bd6-95a7-1a39b5e90a43",
+            "Value": {
+                "id": "1444d5a1-f03d-463d-86f8-e0d1b3c2424c",
+                "resourcePath": "scripts\\scr_equip_weapon_flamethrower\\scr_equip_weapon_flamethrower.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "7f004dce-1cd3-4449-a3e0-6ebf0560cbe2",
             "Value": {
                 "id": "aa037f44-7691-4e64-bf7f-17873a62c665",
@@ -1723,6 +1795,14 @@
             "Value": {
                 "id": "2ac15f59-7217-47d2-82ec-6ee776f874f4",
                 "resourcePath": "scripts\\scr_init_twinkle\\scr_init_twinkle.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "7fb22b69-4931-44bd-a0ee-bd5951549f22",
+            "Value": {
+                "id": "f64ee021-2479-4893-89da-2f22324aba76",
+                "resourcePath": "scripts\\scr_weapon_state_step_flamethrower\\scr_weapon_state_step_flamethrower.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -2267,6 +2347,14 @@
             "Value": {
                 "id": "ad1b9a90-1c32-4377-9f24-5f12da00627b",
                 "resourcePath": "sprites\\background19\\background19.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "997fbf60-3254-4e76-b399-613cb96e788f",
+            "Value": {
+                "id": "3461561b-cb56-4a66-b809-71feadf33b47",
+                "resourcePath": "sprites\\spr_flamethrower\\spr_flamethrower.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -2996,6 +3084,14 @@
                 "id": "08ec1534-0953-422a-9557-b394acb93aa9",
                 "resourcePath": "objects\\Scroll_Area\\Scroll_Area.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "c9ef2772-0b58-4428-8814-3a78ac8b5442",
+            "Value": {
+                "id": "cf22f57b-d611-46cb-be39-b8b6bf4f7d7f",
+                "resourcePath": "sprites\\spr_flamethrower_attack\\spr_flamethrower_attack.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

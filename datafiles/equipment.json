@@ -98,8 +98,38 @@
       "Attack Script": "scr_attack_bow",
       "Equip Script": "scr_equip_weapon_bow",
       "Stats": {
+        "Damage": 20,
+        "Knockback": 10,
+        "Atk Delay": 0.5
+      }
+    }
+  },
+  "Flamethrower": {
+    "Properties": {
+      "Type": "Weapon",
+      "Name": "Flamethrower",
+      "Value": 100,
+      "Sprite": "spr_flamethrower",
+      "Attack Script": "scr_attack_flamethrower",
+      "Equip Script": "scr_equip_weapon_flamethrower",
+      "Stats": {
+        "Damage": 1,
+        "Knockback": 0,
+        "Atk Delay": 1
+      }
+    }
+  },
+  "Boomerang": {
+    "Properties": {
+      "Type": "Weapon",
+      "Name": "Boomerang",
+      "Value": 100,
+      "Sprite": "spr_boomerang",
+      "Attack Script": "scr_attack_boomerang",
+      "Equip Script": "scr_equip_weapon_boomerang",
+      "Stats": {
         "Damage": 2,
-        "Knockback": 30,
+        "Knockback": 0,
         "Atk Delay": 1
       }
     }

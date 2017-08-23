@@ -29,3 +29,6 @@ if (global.move_len > 0) {
 // Move the player
 phy_position_x += hspd;
 phy_position_y += vspd;
+
+global.player_speed_x = hspd;
+global.player_speed_y = vspd;

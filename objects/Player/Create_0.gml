@@ -18,6 +18,9 @@ stamina_timer = 0;
 global.teleport_player_x = noone;
 global.teleport_player_y = noone;
 
+global.player_speed_x = 0;
+global.player_speed_y = 0;
+
 // Give some gold
 properties[? "Gold"] = 1000;
 

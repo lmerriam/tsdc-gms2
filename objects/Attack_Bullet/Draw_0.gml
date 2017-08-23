@@ -24,7 +24,8 @@ if (victim != noone) {
 
     // Draw blood
     part_particles_create(global.particles_below, victim.x, victim.y, global.blood_particles, 10);
-
+	scr_bloodspot(other.x,other.y,.3);
+	
     // Screen shake
     global.screen_shake += 1;
 

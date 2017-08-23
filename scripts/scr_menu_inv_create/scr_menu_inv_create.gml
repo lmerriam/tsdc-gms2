@@ -47,7 +47,7 @@ inventory_coords = scr_init_inventory(global.inventory_slots, slot_width, invent
 global.equipment_slots = ds_grid_create(1,4);
 ds_grid_clear(global.equipment_slots,noone);
 
-scr_equip_instance(scr_spawn_equipment(0,0,"Bow"));
+scr_equip_instance(scr_spawn_equipment(0,0,"Boomerang"));
 scr_equip_instance(scr_spawn_equipment(0,0,"Heavy Armor"));
 scr_equip_instance(scr_spawn_equipment(0,0,"Gem"));
 scr_equip_instance(scr_spawn_equipment(0,0,"Projectile"));

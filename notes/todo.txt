@@ -7,5 +7,6 @@ Player spawn points
 Story: what was the apocalyptic event?
 Lighting system
 
+
 Refactor attacks/damaging: to start, there is an ATTACK event, which contains a DAMAGE event
 Refactor buffs/effects
