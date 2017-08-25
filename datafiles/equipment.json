@@ -149,6 +149,21 @@
       }
     }
   },
+  "Philactery": {
+    "Properties": {
+      "Type": "Weapon",
+      "Name": "Philactery",
+      "Value": 100,
+      "Sprite": "spr_philactery",
+      "Attack Script": "scr_attack_philactery",
+      "Equip Script": "scr_equip_weapon_philactery",
+      "Stats": {
+        "Damage": 3,
+        "Knockback": 0,
+        "Atk Delay": 1
+      }
+    }
+  },
   "Gem": {
     "Properties": {
       "Type": "Gem",

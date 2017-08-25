@@ -1319,6 +1319,14 @@
             }
         },
         {
+            "Key": "5bdd6735-3db5-47cc-80f1-96149276527c",
+            "Value": {
+                "id": "3559d508-beeb-4bfc-b038-c3f915f5b80d",
+                "resourcePath": "scripts\\scr_equip_weapon_philactery\\scr_equip_weapon_philactery.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "5c6fa4f7-7062-4139-8a49-27a12006f9e8",
             "Value": {
                 "id": "0b8317d8-7c84-4a91-b33b-bab6f1a54bfe",
@@ -1643,6 +1651,14 @@
             "Value": {
                 "id": "ece271bf-0a18-4027-a24c-8f99c7d8bd92",
                 "resourcePath": "objects\\Attack_Arrow\\Attack_Arrow.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "71be8e6d-b28d-4a74-8808-461a3963782c",
+            "Value": {
+                "id": "8b57b4fc-ed65-4938-8f25-39bab905d74a",
+                "resourcePath": "objects\\Damage_Philactery\\Damage_Philactery.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -2076,6 +2092,14 @@
                 "id": "35c5c919-9832-45c9-902f-388486cabdca",
                 "resourcePath": "scripts\\scr_weapon_state_step_standard\\scr_weapon_state_step_standard.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "8953fdc4-f517-4dcc-9674-1942d0ed1d4b",
+            "Value": {
+                "id": "8fa48513-3ea7-48f4-a3c7-4b8625865953",
+                "resourcePath": "sprites\\spr_philactery\\spr_philactery.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -3095,6 +3119,14 @@
             }
         },
         {
+            "Key": "c63e3cac-f2fe-4128-9df6-66fff1cecab2",
+            "Value": {
+                "id": "5a2de0d8-6aed-4503-9bd0-a6fb8b6f41da",
+                "resourcePath": "sprites\\spr_damage_philactery\\spr_damage_philactery.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "c85c4fe1-cfbd-4ea4-8cd8-33d68f335185",
             "Value": {
                 "id": "cd17ef18-f339-4bed-ac1f-3236e78f55e4",
@@ -3527,6 +3559,22 @@
             }
         },
         {
+            "Key": "e11205de-6ee0-4553-b835-e41e1d875dcb",
+            "Value": {
+                "id": "0122867b-15fc-44c3-802d-f663353e80e4",
+                "resourcePath": "objects\\Attack_Philactery\\Attack_Philactery.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "e1ccc4d1-1ca2-43eb-80f1-f8965afe44ce",
+            "Value": {
+                "id": "219a9dfd-6f52-49fc-8b3b-a7ef2d91abd3",
+                "resourcePath": "scripts\\scr_weapon_state_draw_philactery\\scr_weapon_state_draw_philactery.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "e28f1dd2-6cfb-4ae2-a298-c784c0d058b2",
             "Value": {
                 "id": "2a7ce3cd-932a-4d6f-8210-910cd3febb3b",
@@ -3675,6 +3723,14 @@
             "Value": {
                 "id": "6b4e2a03-3575-46a3-b8da-678f28d04798",
                 "resourcePath": "scripts\\scr_enemy_idle_state\\scr_enemy_idle_state.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "eae234be-4edb-47ba-8de8-d5a509e51488",
+            "Value": {
+                "id": "39d86247-99af-41c6-ac98-a105766378f4",
+                "resourcePath": "scripts\\scr_weapon_state_step_philactery\\scr_weapon_state_step_philactery.yy",
                 "resourceType": "GMScript"
             }
         },
