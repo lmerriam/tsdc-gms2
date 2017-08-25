@@ -89,6 +89,21 @@
       }
     }
   },
+  "Spear": {
+    "Properties": {
+      "Type": "Weapon",
+      "Name": "Spear",
+      "Value": 100,
+      "Sprite": "spr_spear",
+      "Attack Script": "scr_attack_spear",
+      "Equip Script": "scr_equip_weapon_spear",
+      "Stats": {
+        "Damage": 2,
+        "Knockback": 30,
+        "Atk Delay": 1
+      }
+    }
+  },
   "Bow": {
     "Properties": {
       "Type": "Weapon",

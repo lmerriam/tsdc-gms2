@@ -11,6 +11,14 @@
 //      notme       if true, ignore the calling instance, bool
 //
 /// GMLscripts.com/license
+/// @param x1
+/// @param y1
+/// @param x2
+/// @param y2
+/// @param object_to_check_for
+/// @param precise
+/// @param notme
+
 {
     var ox,oy,dx,dy,object,prec,notme,sx,sy,inst,i;
     ox = argument0;

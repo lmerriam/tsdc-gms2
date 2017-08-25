@@ -119,6 +119,14 @@
             }
         },
         {
+            "Key": "05f2baef-d78f-4c5b-9636-7d975df4cc02",
+            "Value": {
+                "id": "75350a20-7b8a-49cd-a569-86c67146d056",
+                "resourcePath": "scripts\\scr_weapon_state_step_spear\\scr_weapon_state_step_spear.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "06dac5c0-f8c7-4132-8f60-5227e2ba5712",
             "Value": {
                 "id": "985eab90-b88f-4ca2-bba9-bc12b9e346a3",
@@ -228,6 +236,14 @@
                 "id": "e54350bd-612e-4ce1-b65b-f2169f7ba1e2",
                 "resourcePath": "views\\11c8d05c-a539-4df5-ae78-523044656701.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "1228e45d-1687-48d4-bd67-f0b6691f2f06",
+            "Value": {
+                "id": "4d9b894c-ae1b-41a1-9507-35ab3362edee",
+                "resourcePath": "sprites\\spr_spear\\spr_spear.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -364,6 +380,14 @@
                 "id": "c22836a3-cdb7-4af8-a263-879c0a7b5bcc",
                 "resourcePath": "sprites\\spr_sign\\spr_sign.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "1dee656f-b594-4ab6-b42e-bb12c0d8b2f1",
+            "Value": {
+                "id": "cff3ce1c-9e65-4f64-b902-a8eafb3b57d4",
+                "resourcePath": "scripts\\scr_weapon_state_draw_spear\\scr_weapon_state_draw_spear.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1455,6 +1479,14 @@
             }
         },
         {
+            "Key": "66e37156-35cf-416a-a949-7f796855e462",
+            "Value": {
+                "id": "589a0e54-ed70-4477-b04f-95b7b1e5bfe6",
+                "resourcePath": "objects\\Attack_Spear\\Attack_Spear.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "6773a744-170c-4430-99e3-14682b11441e",
             "Value": {
                 "id": "dd212156-960c-4eaa-aa2b-9f3bd2593653",
@@ -1708,6 +1740,14 @@
                 "id": "c7ac94e0-69f4-4188-be3e-94f531b2c7c2",
                 "resourcePath": "objects\\Scroll_Vorpal\\Scroll_Vorpal.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "78875324-699c-4404-8e32-77b0de872612",
+            "Value": {
+                "id": "8402f481-8bf7-4dc0-b0a1-4f80ad2a515f",
+                "resourcePath": "scripts\\scr_draw_projectile_shadow\\scr_draw_projectile_shadow.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -2647,6 +2687,14 @@
             }
         },
         {
+            "Key": "afd693db-69e3-4838-9df9-7cd534188532",
+            "Value": {
+                "id": "904198e6-c17b-4e43-af6b-c773214ad3da",
+                "resourcePath": "objects\\Attack_Spear_Inactive\\Attack_Spear_Inactive.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "aff2b33e-221a-4a01-a8eb-d15cc1ff8db6",
             "Value": {
                 "id": "61e1dd83-d955-42fe-bff5-2cd230371bca",
@@ -2979,6 +3027,14 @@
             "Value": {
                 "id": "8a944ceb-43b2-478d-8710-a88725ecf782",
                 "resourcePath": "scripts\\scr_get_rarity_color\\scr_get_rarity_color.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "c4357883-64ec-4bf9-a631-2e5cb42acd00",
+            "Value": {
+                "id": "763817a9-76b4-46c7-a0e7-c42a93ce1199",
+                "resourcePath": "scripts\\scr_equip_weapon_spear\\scr_equip_weapon_spear.yy",
                 "resourceType": "GMScript"
             }
         },
