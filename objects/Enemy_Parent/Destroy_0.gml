@@ -1,6 +1,8 @@
 /// Loot and XP and
 event_inherited();
 
+if (spawner != noone and instance_exists(spawner)) spawner.current_enemies -= 1;
+
 for (var i = 0; i <= stats[? "Experience"]; i++) {
     instance_create_layer(x+random_range(-16,16),y+random_range(-16,16),"entities",Expr);
 }

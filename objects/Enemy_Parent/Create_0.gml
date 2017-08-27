@@ -1,6 +1,7 @@
 /// Trigger init alarm
 event_inherited();
 
+spawner = noone;
 spawn_x = x;
 spawn_y = y;
 percent = 100;

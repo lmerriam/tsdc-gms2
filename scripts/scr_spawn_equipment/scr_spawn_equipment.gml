@@ -29,6 +29,7 @@ with (inst) { sprite_set_offset(sprite_index,sprite_width/2,sprite_height/2); }
 // Type-specific prepping
 switch(props[? "Type"]) {
 	case "Weapon":
+		
 		props[? "Attack Script"] = asset_get_index(props[? "Attack Script"]);
 		//script_execute(asset_get_index(props[? "Equip Script"]));
 		break;
@@ -48,7 +49,6 @@ repeat(roll) {
 	var final_key = irandom_range(1,ds_map_size(global.buffs))-1;
 	var buff = ds_map_find_first(global.buffs);
 	for (var i=0; i<final_key; i++){
-		
 		buff = ds_map_find_next(global.buffs,buff);
 	}
 	var value = ds_map_create();

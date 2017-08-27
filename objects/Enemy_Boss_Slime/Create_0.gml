@@ -12,3 +12,7 @@ stats[? "Experience"] = 25;
 loot = ds_map_create();
 ds_map_add(loot, "Pistol", .05);
 ds_map_add(loot, "Blade", .05);
+
+pointer_dir = 0;
+pointer_x = 0;
+pointer_y = 0;
