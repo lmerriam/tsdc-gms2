@@ -10,3 +10,5 @@ Lighting system
 
 Refactor attacks/damaging: to start, there is an ATTACK event, which contains a DAMAGE event
 Refactor buffs/effects
+Refactor equipping
+Add variation to equipment stats and level them, and figure out how to roll for buffs

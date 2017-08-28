@@ -53,7 +53,7 @@
       "Attack Script": "scr_attack_shotgun",
       "Equip Script": "scr_equip_weapon_standard",
       "Stats": {
-        "Damage": 6,
+        "Damage": 8,
         "Knockback": 2,
         "Atk Delay": 1
       }

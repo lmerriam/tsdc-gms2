@@ -2527,6 +2527,14 @@
             }
         },
         {
+            "Key": "a4265ff4-7bfa-4030-b19e-3ff38e53b864",
+            "Value": {
+                "id": "9b0b8f9b-ac9c-4087-9eb8-cf8644c3b0e5",
+                "resourcePath": "scripts\\scr_buff_equipment\\scr_buff_equipment.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "a4d62194-9e39-427c-b850-fadaef4a2513",
             "Value": {
                 "id": "47a7985e-806c-491e-978a-cba41003106a",
@@ -2620,6 +2628,14 @@
                 "id": "ded43885-3441-4ae8-b539-0892abb3a0cd",
                 "resourcePath": "tilesets\\background21_tileset\\background21_tileset.yy",
                 "resourceType": "GMTileSet"
+            }
+        },
+        {
+            "Key": "aaed34aa-9686-4541-b21d-e7554feda681",
+            "Value": {
+                "id": "a5f448d1-9ec3-48ff-bea3-15aed64b127f",
+                "resourcePath": "scripts\\scr_choose_rarity\\scr_choose_rarity.yy",
+                "resourceType": "GMScript"
             }
         },
         {

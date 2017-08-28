@@ -29,7 +29,6 @@ with (inst) { sprite_set_offset(sprite_index,sprite_width/2,sprite_height/2); }
 // Type-specific prepping
 switch(props[? "Type"]) {
 	case "Weapon":
-		
 		props[? "Attack Script"] = asset_get_index(props[? "Attack Script"]);
 		//script_execute(asset_get_index(props[? "Equip Script"]));
 		break;
@@ -44,20 +43,8 @@ switch(props[? "Type"]) {
 		break;
 }
 
-var roll = irandom(3);
-repeat(roll) {
-	var final_key = irandom_range(1,ds_map_size(global.buffs))-1;
-	var buff = ds_map_find_first(global.buffs);
-	for (var i=0; i<final_key; i++){
-		buff = ds_map_find_next(global.buffs,buff);
-	}
-	var value = ds_map_create();
-	ds_map_copy(value,global.buffs[? buff]);
-	ds_map_add(props[? "Buffs"],buff,value);
-}
-
-// Set up rarity
-props[? "Rarity"] = scr_get_rarity(props[? "Buffs"]);
-props[? "Rarity color"] = scr_get_rarity_color(props[? "Rarity"]);
+//var roll = irandom(3);
+var roll = scr_choose_rarity(0.25,1,0.1);
+scr_buff_equipment(props,roll);
 
 return inst;
