@@ -1,9 +1,10 @@
 // Cast ye old spells
 if (mouse_check_button_released(1)) {
 	var spell = scr_get_spell();
+	//show_debug_message("Spell DS: " + string(spell));
 	if (spell != noone) {
 		global.aim_dir = point_direction(Player.x, Player.y, mouse_x, mouse_y);
-		script_execute(spell[? "Spell Script"]);
+		script_execute(asset_get_index(spell[? "Spell Script"]));
 	
 		// Affect player stats
 		//Player.spell_timer = scr_sec_from_now(Player.spell_cd);

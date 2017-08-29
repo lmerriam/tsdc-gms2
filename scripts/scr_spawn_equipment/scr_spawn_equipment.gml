@@ -26,25 +26,7 @@ inst.sprite_index = props[? "Sprite"];
 
 with (inst) { sprite_set_offset(sprite_index,sprite_width/2,sprite_height/2); }
 
-// Type-specific prepping
-switch(props[? "Type"]) {
-	case "Weapon":
-		props[? "Attack Script"] = asset_get_index(props[? "Attack Script"]);
-		//script_execute(asset_get_index(props[? "Equip Script"]));
-		break;
-	case "Spell":
-		props[? "Spell Script"] = asset_get_index(props[? "Spell Script"]);
-		props[? "Spell State Step"] = asset_get_index(props[? "Spell State Step"]);
-		props[? "Spell State Draw"] = asset_get_index(props[? "Spell State Draw"]);
-		break;
-	case "Armor":
-		break;
-	case "Gem":
-		break;
-}
-
-//var roll = irandom(3);
-var roll = scr_choose_rarity(0.25,1,0.1);
+var roll = scr_choose_rarity(0.25,0.25,0.15);
 scr_buff_equipment(props,roll);
 
 return inst;

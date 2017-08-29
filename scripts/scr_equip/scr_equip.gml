@@ -14,8 +14,7 @@ switch(_type) {
 		break;
 	case "Spell":
 		slot = 1;
-		Player.spell_state_step = _props[? "Spell State Step"];
-		Player.spell_state_draw = _props[? "Spell State Draw"];
+		script_execute(asset_get_index(_props[? "Equip Script"]));
 		break;
 	case "Armor":
 		slot = 2;

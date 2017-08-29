@@ -1,5 +1,4 @@
-Player.weapon_state_step = scr_weapon_state_step_bow;
-Player.weapon_state_draw = scr_weapon_state_draw_bow;
+scr_set_weapon_state("bow");
 Player.bow_sprite = 0;
 Player.bow_start_time = 0;
 Player.bow_power = 0;
