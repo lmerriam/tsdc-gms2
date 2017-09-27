@@ -1,58 +1,55 @@
 {
   "intro 1":
   {
-    "text": "Wanna buy a drug?",
+    "text": "Hey, how did you get in here--nevermind. Grab that weapon, can't you hear them coming?",
     "responses":
     [
-      {
-        "text": "I'll take 3",
-        "activate quest": "Intro",
-        "goto": "intro 2",
-        "gold": -100
-      }, {
-        "text": "Interested to hear more",
+     {
+        "text": "...where am I?",
         "goto": "intro 2"
       }
     ]
   },
   "intro 2":
   {
-    "text": "You gotta put it in your butthole",
+    "text": "Christ sake just pick up that weapon over there",
     "responses":
     [
       {
-        "text": "I'm out",
+        "text": "[DONE]",
         "script": "scr_menu_hud"
-      }, {
-        "text": "Let's get this over with",
-        "complete quest": "Intro",
-        "xp": 200,
-        "goto": "intro 4"
-      }, {
-        "text": "Fuck off with that freak shit",
-        "goto": "intro 3"
       }
     ]
   },
   "intro 3":
   {
-    "text": "Fine, but don't complain to me when you're bored later.",
+    "text": "Do you have a death wish?? I meant pick up the crowbar--wait, how are you still standing?",
     "responses":
     [
       {
-        "text": "Bye now",
-        "script": "scr_menu_hud"
+        "text": "What are you talking ab...",
+        "goto": "intro 4"
       }
     ]
   },
   "intro 4":
   {
-    "text": "You won't regret it!",
+    "text": "CRASH",
     "responses":
     [
       {
-        "text": "Better not",
-        "complete quest": "Intro",
+        "text": "[NEXT]",
+        "goto": "intro 5"
+      }
+    ]
+  },
+  "intro 5":
+  {
+    "text": "Nevermind we have bigger problems. They'll breach the door soon, get ready to use that thing.",
+    "responses":
+    [
+      {
+        "text": "[END]",
         "script": "scr_menu_hud"
       }
     ]

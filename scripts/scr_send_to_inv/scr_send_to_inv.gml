@@ -13,9 +13,14 @@ for (row = 0; row < grid_height; row++) {
 			
 			// Copy props into new slot
             slots[# column,row] = scr_copy_drop_props(item_props);
+			
+			// Fire send_to_inv event
+			//script_execute(event_send_to_inv);
+			scr_event_send("send to inv",item_props);
             
             // Return the fact that a slot was found
             return true;
+			
         }
     }
 }

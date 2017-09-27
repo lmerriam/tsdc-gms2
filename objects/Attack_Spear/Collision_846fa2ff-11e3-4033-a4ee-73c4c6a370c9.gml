@@ -6,7 +6,6 @@ counter += 1;
 //	var spear = other;
 //	var hspd = lengthdir_x(32,spear.image_angle);
 //	var vspd = lengthdir_y(32,spear.image_angle);
-//	//show_debug_message()
 //	spear.second_victim = scr_hitscan(x,y,x+hspd,y+vspd,Enemy_Parent,false,true);
 //}
 
@@ -15,7 +14,6 @@ counter += 1;
 //	second_victim.state = scr_blank;
 //	scr_damage(second_victim,damage);
 //	scr_bloodspot(x,y,1);
-//	//show_debug_message("Second victim x: " + string(second_victim.x));
 //	var inactive_spear = instance_create_layer(x+(second_victim.x-x),y+(second_victim.y-y),"entities",Attack_Spear_Inactive)
 //	inactive_spear.phy_rotation = phy_rotation;
 //	inactive_spear.first_victim = id;

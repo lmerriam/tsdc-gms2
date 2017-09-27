@@ -1,0 +1,1 @@
+scr_set_weapon_state("unarmed");

@@ -40,6 +40,9 @@ nearest_btn[2] = 0;
 nearest_btn[3] = nearest_button_height;
 nearest_btn[4] = noone;
 
+// Nearest interactable
+nearest_interactable_in_range = false;
+
 // Nearest vendor UI
 var width = 64;
 var height = 64;

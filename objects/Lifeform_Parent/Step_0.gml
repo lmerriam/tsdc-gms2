@@ -7,7 +7,6 @@ if (stats[? "Health"] <= 0) {
 }
 
 /// Effects
-//show_debug_message("Effects for " + object_get_name(object_index));
 //scr_debug_map(effects);
 
 // TODO: figure out how to combine colors for multiple effects

@@ -56,6 +56,7 @@ if (mouse_check_button_released(1)) {
     // Detect pickup button click
     } else if (nearest_drop != noone and nearest_drop_in_range and scr_mouse_over_ui(nearest_button_x1,nearest_button_y1,nearest_button_x2,nearest_button_y2)) {
         scr_send_to_inv(nearest_drop.properties,global.inventory_slots);
+		//script_execute(nearest_drop.event_send_to_inv);
 		instance_destroy(nearest_drop);
 		nearest_drop_in_range = false;
 		nearest_drop = noone;

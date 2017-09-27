@@ -9,5 +9,3 @@ burn[? "Damage"] = irandom_range(1,2);
 buffs[? "Burn"] = burn;
 
 properties[? "Name"] = "Fiery gem";
-
-//show_debug_message("Gem stats index: " + string(stats));

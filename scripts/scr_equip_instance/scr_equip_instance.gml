@@ -4,4 +4,11 @@ var inst = argument[0];
 
 var success = scr_equip(inst.properties);
 
-if (success) instance_destroy(inst);
+if (success) {
+	instance_destroy(inst);
+	// Send an event
+	var args;
+	args[0] = inst;
+	scr_event_send("send instance to inv",args);
+	scr_debug_map(global.events);
+}

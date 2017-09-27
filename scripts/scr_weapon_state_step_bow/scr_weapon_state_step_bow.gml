@@ -8,7 +8,6 @@ if (scr_alarm_passed(attack_timer)) {
 	if (global.attack_button) {
 		bow_dur = scr_sec_since(bow_start_time);
 		bow_power = clamp(bow_dur,0,1)/1;
-		//show_debug_message("Power: " + string(bow_power) + "Dur: " + string(bow_dur));
 	}
 	if (global.attack_button_released) {
 		bow_dur = scr_sec_since(bow_start_time);

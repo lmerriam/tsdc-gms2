@@ -1,1 +1,1 @@
-text = "Pick up a weapon, you'll need it.";
+text = "Hey newcomer, go open that chest. You'll need the contents.";
