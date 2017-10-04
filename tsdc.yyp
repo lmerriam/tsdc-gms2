@@ -1671,6 +1671,14 @@
             }
         },
         {
+            "Key": "6c792e80-9f8c-4eb8-a852-8265b69a2f45",
+            "Value": {
+                "id": "4610b9e2-a2f9-4c4c-933e-1a1e7bd850e7",
+                "resourcePath": "objects\\GUI_Tutorial_Parent\\GUI_Tutorial_Parent.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "6d235333-2ecb-4462-8c52-b06f6cb6e046",
             "Value": {
                 "id": "e0313877-0e1a-49d4-9ea8-5f4bd6f16c38",
@@ -2783,6 +2791,14 @@
             }
         },
         {
+            "Key": "abff1d4a-1500-4899-b4a5-988ac1793a0f",
+            "Value": {
+                "id": "852ec405-c3ed-4165-bca1-aebc2bb7be31",
+                "resourcePath": "scripts\\scr_tutorial_leftStick\\scr_tutorial_leftStick.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "ad0c481e-502c-45e8-b5b0-ab19115ceeef",
             "Value": {
                 "id": "2ef16e0b-8c94-41e0-b3a8-979627eb019c",
@@ -3060,6 +3076,14 @@
                 "id": "ca7d2936-041a-400b-b21d-89f502fefdbb",
                 "resourcePath": "sprites\\spr_scroll_area\\spr_scroll_area.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "baea5e7a-0e3f-4df8-a76d-c000a6644d62",
+            "Value": {
+                "id": "20fdc295-7b80-48da-8016-5827183c7630",
+                "resourcePath": "objects\\GUI_Tutorial_LeftStick\\GUI_Tutorial_LeftStick.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -3839,6 +3863,14 @@
             }
         },
         {
+            "Key": "e5a0d58e-41f5-447a-84c6-986e38105f1e",
+            "Value": {
+                "id": "fbc0e206-953e-4273-a5e1-862a8b7b6ddc",
+                "resourcePath": "sprites\\sprite117\\sprite117.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "e5c3424d-9705-40fc-9d25-2e7dc32f21d8",
             "Value": {
                 "id": "220e2e3f-bbad-486e-ad20-fe0255007425",
@@ -3996,6 +4028,14 @@
                 "id": "69df318c-1662-46a3-8b8f-40ef5d753356",
                 "resourcePath": "objects\\Attack_Parent\\Attack_Parent.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "ef73f2a3-4181-4eaf-a591-60394b1fbfba",
+            "Value": {
+                "id": "15b6dac5-3b05-40fa-9731-a6f7bf51d99c",
+                "resourcePath": "sprites\\spr_hint_leftstick\\spr_hint_leftstick.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

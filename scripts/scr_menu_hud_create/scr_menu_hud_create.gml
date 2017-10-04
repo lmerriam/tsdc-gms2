@@ -69,5 +69,3 @@ combo_bar_y2 = combo_bar_y1 + 4;
 announce_timer = scr_sec_from_now(3);
 announce_target = noone;
 global.announcements = ds_list_create();
-ds_list_add(global.announcements,"Hello, this is an announcement");
-ds_list_add(global.announcements,"This is another one");

@@ -17,7 +17,7 @@
     [
       {
         "text": "[DONE]",
-        "script": "scr_menu_hud"
+        "script": "scr_tutorial_leftStick"
       }
     ]
   },

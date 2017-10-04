@@ -1,0 +1,1 @@
+if (global.move_len > 0) instance_destroy();

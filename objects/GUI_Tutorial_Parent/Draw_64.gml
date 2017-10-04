@@ -1,0 +1,1 @@
+draw_sprite_stretched(sprite,Time.now mod (num_frames*5) / 5,32,global.window_height-2*spr_height,2*spr_width,2*spr_height);
