@@ -50,7 +50,7 @@
     [
       {
         "text": "[END]",
-        "script": "scr_menu_hud"
+        "script": "scr_tutorial_openInventory"
       }
     ]
   }

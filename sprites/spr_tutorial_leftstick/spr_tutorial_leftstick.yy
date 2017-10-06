@@ -2,7 +2,7 @@
     "id": "ef73f2a3-4181-4eaf-a591-60394b1fbfba",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "spr_hint_leftstick",
+    "name": "spr_tutorial_leftstick",
     "For3D": false,
     "HTile": false,
     "VTile": false,

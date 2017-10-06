@@ -56,6 +56,8 @@
     "option_android_support_lib": "25.0.0",
     "option_android_target_sdk": 25,
     "option_android_texture_page": "2048x2048",
+    "option_android_tv_banner": "${base_options_dir}\\android\\tv_banner.png",
+    "option_android_tv_isgame": true,
     "option_android_use_facebook": false,
     "option_android_version": {
         "build": 0,

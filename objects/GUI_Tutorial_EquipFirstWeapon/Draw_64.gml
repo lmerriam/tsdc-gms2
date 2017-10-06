@@ -1,0 +1,1 @@
+draw_sprite_stretched(spr_tutorial_inventory,0,xx,yy,width,height);

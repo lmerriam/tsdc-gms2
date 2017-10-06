@@ -31,6 +31,14 @@
     },
     "resources": [
         {
+            "Key": "011052cd-a283-4e39-8482-d00fc6da32ec",
+            "Value": {
+                "id": "e3637246-c11b-4909-b41f-83d458812f07",
+                "resourcePath": "views\\011052cd-a283-4e39-8482-d00fc6da32ec.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "0258f0bf-6446-4cfc-a9ee-7a5da28ef5cb",
             "Value": {
                 "id": "b8447307-79bc-408d-89d2-371201f6922a",
@@ -68,6 +76,14 @@
                 "id": "74116b1e-a2eb-47bb-94c4-049d2dd03b16",
                 "resourcePath": "scripts\\scr_menu_map\\scr_menu_map.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "034f759a-0d2b-42c3-9e23-c336af98633c",
+            "Value": {
+                "id": "ba1fa33f-b54d-41fe-8b94-577eaa4467c4",
+                "resourcePath": "sprites\\spr_tutorial_inventory\\spr_tutorial_inventory.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -663,6 +679,14 @@
             }
         },
         {
+            "Key": "2c8a59bd-3f2e-4209-ba9c-6cb97ef27d6b",
+            "Value": {
+                "id": "39bec270-e9f8-43f1-be55-9010a07c5f67",
+                "resourcePath": "objects\\GUI_Tutorial_EquipFirstWeapon\\GUI_Tutorial_EquipFirstWeapon.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "2d02858e-7e5f-402c-9c0f-781b3a6339e9",
             "Value": {
                 "id": "e81f5aa8-4772-4197-ab78-cc9c05f3eedf",
@@ -676,6 +700,14 @@
                 "id": "e7a8f443-0698-4c6b-937b-b59c8a4a7747",
                 "resourcePath": "sprites\\spr_player_running\\spr_player_running.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "2db4f966-585d-4454-ab24-2d25ccae772a",
+            "Value": {
+                "id": "13ea3fc5-e796-450a-a586-eb23159ad8f7",
+                "resourcePath": "scripts\\scr_tutorial_openInventory\\scr_tutorial_openInventory.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -2199,6 +2231,14 @@
             }
         },
         {
+            "Key": "88a857d6-5060-4143-b155-106c13885e99",
+            "Value": {
+                "id": "f42ba9fc-6203-4763-9467-6b11db190de4",
+                "resourcePath": "views\\88a857d6-5060-4143-b155-106c13885e99.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "88e2935d-2364-4b16-afc5-f2e4cd0beb2c",
             "Value": {
                 "id": "3846de42-3223-49d1-96c1-497eec7e76d4",
@@ -2460,6 +2500,14 @@
                 "id": "36f1321d-3824-4406-a853-25313f287656",
                 "resourcePath": "sprites\\background18\\background18.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "940cb5db-5f27-4953-ae5a-47fc283a642f",
+            "Value": {
+                "id": "5a08a5c4-0563-45bd-ab79-cb5e4e60f66a",
+                "resourcePath": "objects\\GUI_Tutorial_Inventory\\GUI_Tutorial_Inventory.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -3863,14 +3911,6 @@
             }
         },
         {
-            "Key": "e5a0d58e-41f5-447a-84c6-986e38105f1e",
-            "Value": {
-                "id": "fbc0e206-953e-4273-a5e1-862a8b7b6ddc",
-                "resourcePath": "sprites\\sprite117\\sprite117.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "e5c3424d-9705-40fc-9d25-2e7dc32f21d8",
             "Value": {
                 "id": "220e2e3f-bbad-486e-ad20-fe0255007425",
@@ -4034,7 +4074,7 @@
             "Key": "ef73f2a3-4181-4eaf-a591-60394b1fbfba",
             "Value": {
                 "id": "15b6dac5-3b05-40fa-9731-a6f7bf51d99c",
-                "resourcePath": "sprites\\spr_hint_leftstick\\spr_hint_leftstick.yy",
+                "resourcePath": "sprites\\spr_tutorial_leftstick\\spr_tutorial_leftstick.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -4556,6 +4596,8 @@
         "371714ee-757b-4aa9-9005-8980196c6098",
         "2d02858e-7e5f-402c-9c0f-781b3a6339e9",
         "fb9185a8-7108-47dc-8158-d5b50031dca7",
+        "2db4f966-585d-4454-ab24-2d25ccae772a",
+        "abff1d4a-1500-4899-b4a5-988ac1793a0f",
         "9944bd0b-c12b-4f09-9c36-942d210fde69",
         "823ee795-7e2e-4668-80ef-e6ed0eb1def8",
         "955248a1-40ee-4a8a-a07e-aa2740b646fa"
