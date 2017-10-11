@@ -6,7 +6,7 @@ gml_pragma( "global", "__global_object_depths()");
 // insert the generated arrays here
 global.__objectDepths[0] = 0; // Expr
 global.__objectDepths[1] = 0; // Particles
-global.__objectDepths[2] = -1000; // Dialog_Box
+//global.__objectDepths[2] = -1000; // Dialog_Box
 global.__objectDepths[3] = -10; // Player
 global.__objectDepths[4] = 0; // Door
 global.__objectDepths[5] = 0; // Speaker_Parent
@@ -78,7 +78,7 @@ global.__objectDepths[76] = 0; // Stronghold_Parent
 
 global.__objectNames[0] = "Expr";
 global.__objectNames[1] = "Particles";
-global.__objectNames[2] = "Dialog_Box";
+//global.__objectNames[2] = "Dialog_Box";
 global.__objectNames[3] = "Player";
 global.__objectNames[4] = "Door";
 global.__objectNames[5] = "Speaker_Parent";
