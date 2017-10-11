@@ -27,10 +27,11 @@
         "bf7a3b07-d3ca-48dd-96a7-7fba73d91035",
         "8c9c53b0-434d-4551-87f2-d9f21bc8eed8",
         "da64e979-aa67-4991-bdc0-7751efae8292",
-        "75743ae8-e1c0-49ab-8e99-9a4e9fae52a6"
+        "75743ae8-e1c0-49ab-8e99-9a4e9fae52a6",
+        "5db57840-4488-4715-960f-b6bc5ccdf7d8"
     ],
     "filterType": "GMObject",
-    "folderName": "Drops",
+    "folderName": "Equipment",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

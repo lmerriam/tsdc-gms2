@@ -17,7 +17,16 @@
         "881121b1-1298-4a06-b50c-30a28fe1ab85",
         "f7a48283-20f6-4142-b2db-08be981edd9b",
         "b3494bb0-4faf-42c5-8258-692acc32b13c",
-        "7371cc57-571b-441e-8d83-02c218cb69ea"
+        "7371cc57-571b-441e-8d83-02c218cb69ea",
+        "280d9736-312d-40b3-ba7b-dbd5c95f0a2c",
+        "72c1132d-fcb4-403d-a8b1-712637945449",
+        "c42908e9-f130-42fc-81f7-30a1923e12bc",
+        "a4265ff4-7bfa-4030-b19e-3ff38e53b864",
+        "aaed34aa-9686-4541-b21d-e7554feda681",
+        "955248a1-40ee-4a8a-a07e-aa2740b646fa",
+        "5cc37884-531b-498f-903c-52c3b3d12837",
+        "d8c3e6ef-da4d-49df-ab33-87d99a60b843",
+        "b1f4ac08-a55f-46dd-b39f-45c574d06b4a"
     ],
     "filterType": "GMScript",
     "folderName": "Equipment",

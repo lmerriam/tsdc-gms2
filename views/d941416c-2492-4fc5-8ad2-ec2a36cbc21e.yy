@@ -10,7 +10,7 @@
         "ae253cd5-443d-4a45-9195-64926fe0cdba"
     ],
     "filterType": "GMScript",
-    "folderName": "Loading",
+    "folderName": "(OLD)",
     "isDefaultView": false,
     "localisedFolderName": ""
 }
