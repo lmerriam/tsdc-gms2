@@ -215,6 +215,14 @@
             }
         },
         {
+            "Key": "0b7868ab-e7bb-4a1c-a055-97930613803f",
+            "Value": {
+                "id": "744beb56-4504-4e65-857e-4c73cf08731c",
+                "resourcePath": "rooms\\rm_init\\rm_init.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "0cfbfb51-7e1f-4ed6-b40e-f53874535d6b",
             "Value": {
                 "id": "2214002d-04aa-4f61-a8a3-8747268cdc55",
@@ -682,7 +690,7 @@
             "Key": "2c8a59bd-3f2e-4209-ba9c-6cb97ef27d6b",
             "Value": {
                 "id": "39bec270-e9f8-43f1-be55-9010a07c5f67",
-                "resourcePath": "objects\\GUI_Tutorial_EquipFirstWeapon\\GUI_Tutorial_EquipFirstWeapon.yy",
+                "resourcePath": "objects\\GUI_Tutorial_SelectFirstWeapon\\GUI_Tutorial_SelectFirstWeapon.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -900,6 +908,14 @@
                 "id": "6c939dd7-5760-493a-97c1-5bf8680c8124",
                 "resourcePath": "scripts\\scr_attack_unarmed\\scr_attack_unarmed.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "3cbf4a15-6cb6-4001-9d87-8d1a201be049",
+            "Value": {
+                "id": "6ddadecd-e4a5-4592-8fcf-269ced759f64",
+                "resourcePath": "objects\\GUI_Tutorial_EquiptFirstWeapon\\GUI_Tutorial_EquiptFirstWeapon.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -2895,6 +2911,14 @@
             }
         },
         {
+            "Key": "a8c1d14f-d520-47d1-a521-f0262b4ff25c",
+            "Value": {
+                "id": "5951e945-f117-4375-818c-253c51da686a",
+                "resourcePath": "datafiles_yy\\quests.json.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
             "Key": "a9007faf-b33d-4e39-9f6f-1ded11c8a748",
             "Value": {
                 "id": "22616d5e-b7e8-4ed0-802c-94b68dd47662",
@@ -4568,9 +4592,6 @@
         "f94b5567-5d1b-4a65-85ae-2dc01ee89eab",
         "f8b72a0e-26f3-4926-ac29-1053807881b3",
         "f23b862f-d0ba-456d-8404-1afa0e8f486d",
-        "6d235333-2ecb-4462-8c52-b06f6cb6e046",
-        "8e3d4e59-97ec-41e6-8493-25cbe488aa39",
-        "b5274bf3-afab-4d10-905b-9b7d50d37a59",
         "88147d11-61f8-41b9-bc80-c966c593f590",
         "690f82aa-c946-458b-8191-b0e7598ba9e7",
         "515ea238-9c7c-44c2-8185-6a284a3c2348",
@@ -4695,6 +4716,9 @@
         "9944bd0b-c12b-4f09-9c36-942d210fde69",
         "823ee795-7e2e-4668-80ef-e6ed0eb1def8",
         "ca1749cf-442f-4371-86df-84dcaa9bcbc1",
+        "8e3d4e59-97ec-41e6-8493-25cbe488aa39",
+        "6d235333-2ecb-4462-8c52-b06f6cb6e046",
+        "b5274bf3-afab-4d10-905b-9b7d50d37a59",
         "4b973507-8358-480e-873b-be6519e6dea4",
         "78c0431d-1a7b-4e7d-b08c-46a0ee14062d",
         "947c1e71-179c-44d4-9b2a-e225f17aa1de",

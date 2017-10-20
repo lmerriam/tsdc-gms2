@@ -2,7 +2,7 @@
     "id": "2c8a59bd-3f2e-4209-ba9c-6cb97ef27d6b",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "GUI_Tutorial_EquipFirstWeapon",
+    "name": "GUI_Tutorial_SelectFirstWeapon",
     "eventList": [
         {
             "id": "3ec6f7b4-87b3-4edf-94f1-3ea1fc3870de",

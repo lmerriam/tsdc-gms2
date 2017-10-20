@@ -1,3 +1,5 @@
+/// @description Point user to first weapon
+
 sprite = spr_tutorial_inventory;
 frame_speed = room_speed;
 width = sprite_get_width(sprite)*2;

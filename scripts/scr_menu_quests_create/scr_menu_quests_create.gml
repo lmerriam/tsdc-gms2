@@ -10,3 +10,5 @@ quest_intro[? "Active"] = false;
 quest_intro[? "Current Step"] = 0;
 
 global.all_quests[? "Intro"] = quest_intro;
+
+global.all_quests = scr_load_json("quests");
