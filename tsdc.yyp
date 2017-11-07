@@ -911,10 +911,18 @@
             }
         },
         {
+            "Key": "3c4ab83d-2eb4-4f5b-a69f-70d5a5834e59",
+            "Value": {
+                "id": "cc5a3d76-a31b-4f9b-90c6-0b0294718103",
+                "resourcePath": "scripts\\scr_event_tutorialDoorBash\\scr_event_tutorialDoorBash.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "3cbf4a15-6cb6-4001-9d87-8d1a201be049",
             "Value": {
                 "id": "6ddadecd-e4a5-4592-8fcf-269ced759f64",
-                "resourcePath": "objects\\GUI_Tutorial_EquiptFirstWeapon\\GUI_Tutorial_EquiptFirstWeapon.yy",
+                "resourcePath": "objects\\GUI_Tutorial_EquipFirstWeapon\\GUI_Tutorial_EquipFirstWeapon.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -1719,6 +1727,14 @@
             }
         },
         {
+            "Key": "6b1d94cc-5aea-40f8-becb-626c25e561cd",
+            "Value": {
+                "id": "d0e7095f-94a4-4223-8dea-2503d608baea",
+                "resourcePath": "objects\\Event_Tutorial_BaddiesAttack\\Event_Tutorial_BaddiesAttack.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "6b23b772-0658-4fd8-b7c8-8b09422af8f5",
             "Value": {
                 "id": "15821924-f545-4a37-98e5-884879574205",
@@ -1924,6 +1940,14 @@
                 "id": "827d5871-1212-4896-aaa9-033af1761218",
                 "resourcePath": "sprites\\spr_twinkle\\spr_twinkle.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "76c55adf-5787-4f42-9af7-a2bf9f72e268",
+            "Value": {
+                "id": "251fb2f4-eb32-448c-a8fc-6bffce6dc2ba",
+                "resourcePath": "scripts\\scr_set_alarm\\scr_set_alarm.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -2708,6 +2732,14 @@
                 "id": "ef6b0ec2-ff07-4322-a1b9-27ace82dd83d",
                 "resourcePath": "objects\\Wall\\Wall.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "96ff810d-b959-44f5-a968-260c6febd983",
+            "Value": {
+                "id": "56f18fd6-bb42-48f1-9ac7-dd67d6ea96ac",
+                "resourcePath": "sprites\\sprite118\\sprite118.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -4172,6 +4204,14 @@
                 "id": "35c5c725-e38f-47c9-9307-e0129370d2a3",
                 "resourcePath": "scripts\\scr_equip_spell_pull\\scr_equip_spell_pull.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "eccc10a0-7215-43c8-bef1-f3b39a288449",
+            "Value": {
+                "id": "1a306552-be4b-4930-b737-186a62e37203",
+                "resourcePath": "objects\\Event_Tutorial_CloseInventory\\Event_Tutorial_CloseInventory.yy",
+                "resourceType": "GMObject"
             }
         },
         {

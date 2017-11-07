@@ -1,42 +1,32 @@
 {
-    "id": "3cbf4a15-6cb6-4001-9d87-8d1a201be049",
+    "id": "6b1d94cc-5aea-40f8-becb-626c25e561cd",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "GUI_Tutorial_EquiptFirstWeapon",
+    "name": "Event_Tutorial_BaddiesAttack",
     "eventList": [
         {
-            "id": "d138598f-3442-420f-a047-63d34e46d989",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 0,
-            "m_owner": "3cbf4a15-6cb6-4001-9d87-8d1a201be049"
-        },
-        {
-            "id": "4df77596-d926-4826-b827-f56f4af22e88",
+            "id": "f5e870be-34d7-4460-9845-645bfb46d17b",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 3,
-            "m_owner": "3cbf4a15-6cb6-4001-9d87-8d1a201be049"
+            "m_owner": "6b1d94cc-5aea-40f8-becb-626c25e561cd"
         },
         {
-            "id": "f353e361-9da7-4c36-81d7-a84614f56cca",
+            "id": "36b5d08b-a281-4ad5-9fe7-eb15a66c4a84",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 64,
-            "eventtype": 8,
-            "m_owner": "3cbf4a15-6cb6-4001-9d87-8d1a201be049"
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "6b1d94cc-5aea-40f8-becb-626c25e561cd"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
-    "parentObjectId": "6c792e80-9f8c-4eb8-a852-8265b69a2f45",
+    "parentObjectId": "00000000-0000-0000-0000-000000000000",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
