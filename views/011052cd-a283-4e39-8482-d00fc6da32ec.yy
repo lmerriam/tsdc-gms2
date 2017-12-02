@@ -8,10 +8,11 @@
         "baea5e7a-0e3f-4df8-a76d-c000a6644d62",
         "940cb5db-5f27-4953-ae5a-47fc283a642f",
         "2c8a59bd-3f2e-4209-ba9c-6cb97ef27d6b",
-        "3cbf4a15-6cb6-4001-9d87-8d1a201be049"
+        "3cbf4a15-6cb6-4001-9d87-8d1a201be049",
+        "eccc10a0-7215-43c8-bef1-f3b39a288449"
     ],
     "filterType": "GMObject",
-    "folderName": "Tutorial",
+    "folderName": "Tutorial (Obsolete)",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

@@ -12,12 +12,3 @@ if (time_to_dismiss) {
 
 x = Player.x;
 y = Player.y;
-
-/// Set up pointer
-if (creator != noone) {
-    var len = 32;
-    pointer_dir = point_direction(x,y,creator.x,creator.y);
-    pointer_x = Player.x + lengthdir_x(len,pointer_dir);
-    pointer_y = Player.y + lengthdir_y(len,pointer_dir);
-}
-

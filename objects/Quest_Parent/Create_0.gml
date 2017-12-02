@@ -1,4 +1,3 @@
 /// Create
-name = "Quest parent";
-text = "Lorem ipsum dolor sit amet";
-active = false;
+properties = ds_map_create();
+properties[? "Name"] = "Quest Parent";

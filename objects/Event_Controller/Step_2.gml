@@ -12,8 +12,8 @@ for(var i=0;i<ds_list_size(observers);i++) {
 	if (event_set != undefined) {
 		for (var i=0;i<ds_list_size(event_set);i++) {
 			var event_arguments = event_set[| i];
-			script_execute(script,event_arguments,observer_arguments);
-			if (expire) ds_list_delete(observers,i);
+			var success = script_execute(script,event_arguments,observer_arguments);
+			if (expire and success) ds_list_delete(observers,i);
 		}
 	}
 }

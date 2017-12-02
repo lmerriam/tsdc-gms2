@@ -3,6 +3,7 @@
 
 var inst = argument0;
 var item_name = argument1;
+var identifier = string(item_name) + string(inst) + string(irandom(100));
 
 // Get DS
 var equipment = global.equipment[? item_name];
@@ -10,6 +11,7 @@ var props = scr_copy_drop_props(equipment[? "Properties"]);
 
 // Assign properties
 inst.properties = props;
+props[? "ID"] = identifier;
 
 // Create stats
 props[? "Buffs"] = ds_map_create();

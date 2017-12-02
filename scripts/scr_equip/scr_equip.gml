@@ -31,4 +31,10 @@ global.equipment_slots[# 0,slot] = scr_copy_drop_props(_props);
 // Send the previously equipped item to the inventory
 if (_prev_obj != noone) scr_send_to_inv(_prev_obj,global.inventory_slots);
 
+// Send an event
+var args = [];
+args[0] = _props;
+args[1] = _type;
+scr_event_send("equip item",args);
+
 return true;
