@@ -207,6 +207,14 @@
             }
         },
         {
+            "Key": "097e1ce3-9b12-4998-a000-e109aece6930",
+            "Value": {
+                "id": "ebebc129-d57b-4fc5-ac25-4fe0605b7341",
+                "resourcePath": "scripts\\scr_current_menu\\scr_current_menu.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "09c0a05f-daf4-4d3f-82dd-d58c43732c4c",
             "Value": {
                 "id": "a57d60ef-1f67-4d5b-a287-c28554a7c392",

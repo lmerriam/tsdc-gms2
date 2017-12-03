@@ -4,3 +4,4 @@ GUI.menu_draw = scr_menu_castmode_draw;
 GUI.menu_drawgui = scr_menu_castmode_drawgui;
 global.cast_mode = true;
 global.timescale = .1;
+global.current_menu = "Cast Mode";

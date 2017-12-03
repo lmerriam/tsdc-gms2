@@ -7,13 +7,16 @@ switch phase {
 		break;
 		
 	case "open inventory":
-		draw_sprite_stretched(spr_tutorial_inventory,0,96,96,128,128);
+		if (global.current_menu = "HUD") draw_sprite_stretched(spr_tutorial_inventory,Time.now mod (2*room_speed) / room_speed,96,96,128,128);
 		break;
 		
 	case "select weapon":
 		break;
 		
 	case "equip weapon":
+		var xx = GUI.eqp_btn_x1 + 64;
+		var yy = GUI.eqp_btn_y2;
+		if (GUI.selected_item[? "ID"] == quest_weapon_id) draw_sprite_ext(spr_tutorial_inventory,0,xx,yy,1,1,-45,c_white,1);
 		break;
 		
 	case "close inventory":

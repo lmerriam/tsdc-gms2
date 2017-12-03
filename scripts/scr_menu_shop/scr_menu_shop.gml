@@ -7,3 +7,4 @@ GUI.menu_draw = scr_blank;
 GUI.menu_drawgui = scr_menu_shop_drawgui;
 
 global.timescale = 0;
+global.current_menu = "Shop";
