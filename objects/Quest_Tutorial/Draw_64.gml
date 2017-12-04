@@ -1,4 +1,9 @@
 switch phase {
+	case "left stick":
+		draw_set_halign(fa_center);
+		draw_text(global.window_width/2,global.window_height-128,"Drag on the left side of the screen to move.");
+		draw_set_halign(fa_left);
+		break;
 
 	case "pick up weapon":
 		draw_set_halign(fa_center);

@@ -122,7 +122,7 @@
             "Key": "05be0168-2799-400f-a924-784272bf5900",
             "Value": {
                 "id": "803ff26d-4823-4720-9c39-f744455100ac",
-                "resourcePath": "sprites\\spr_player_idle\\spr_player_idle.yy",
+                "resourcePath": "sprites\\spr_npc_idle\\spr_npc_idle.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -2479,6 +2479,14 @@
             }
         },
         {
+            "Key": "8bf79d19-4526-4a94-aae7-9e2507bdf7a2",
+            "Value": {
+                "id": "22f31635-26c8-4983-954e-2414cc111622",
+                "resourcePath": "sprites\\spr_player_idle\\spr_player_idle.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "8c9c53b0-434d-4551-87f2-d9f21bc8eed8",
             "Value": {
                 "id": "0adca969-be1e-49f5-a912-350143de57fb",
@@ -3500,6 +3508,14 @@
                 "id": "1244b247-d2c7-4215-b1a5-c5adffd69250",
                 "resourcePath": "scripts\\scr_controls_mouse\\scr_controls_mouse.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "c40d988d-d8a7-49e2-b391-927c8cfb6018",
+            "Value": {
+                "id": "34813615-4c24-4b3b-8480-cf1c264e552b",
+                "resourcePath": "objects\\NPC\\NPC.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -4860,7 +4876,8 @@
         "76c55adf-5787-4f42-9af7-a2bf9f72e268",
         "3c4ab83d-2eb4-4f5b-a69f-70d5a5834e59",
         "4826915d-44e4-4613-8e08-7fb677beac16",
-        "dba74da0-71f9-4809-9f40-a6ed6b384cdd"
+        "dba74da0-71f9-4809-9f40-a6ed6b384cdd",
+        "097e1ce3-9b12-4998-a000-e109aece6930"
     ],
     "tutorial": ""
 }

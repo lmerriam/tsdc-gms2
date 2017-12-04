@@ -1,4 +1,13 @@
 switch phase {
+	
+	case "left stick":
+		if (global.player_speed_x != 0) phase = "talk to npc";
+		break;
+	
+	case "talk to npc":
+		if (global.current_menu == "Dialog") phase = "left stick";
+		NPC.active_quest = false;
+		break;
 
 	case "pick up weapon":
 		if (instance_exists(creator) == false) {
@@ -68,3 +77,4 @@ switch phase {
 }
 
 show_debug_message(phase);
+properties[? "Phase"] = phase;

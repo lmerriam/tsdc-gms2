@@ -17,7 +17,7 @@
     [
       {
         "text": "[DONE]",
-        "script": "scr_tutorial_leftStick"
+        "script": "scr_menu_hud"
       }
     ]
   },
@@ -56,11 +56,22 @@
   },
   "intro 6":
   {
-    "text": "Nice job, you saved both our asses. You seem just as confused as me, so let me take you to the one person who can help us sort this out.",
+    "text": "Nice job, you saved both our asses.",
     "responses":
     [
       {
-        "text": "OK.",
+        "text": "Thanks, I guess",
+        "goto": "intro 7"
+      }
+    ]
+  },
+  "intro 7":
+  {
+    "text": "Look, you seem just as confused as I am. Let's go see the only person who can sort this out.",
+    "responses":
+    [
+      {
+        "text": "Lead the way",
         "script": "scr_menu_hud"
       }
     ]
