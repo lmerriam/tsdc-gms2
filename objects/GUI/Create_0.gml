@@ -20,6 +20,7 @@ scr_menu_dialog_create();
 scr_menu_quests_create();
 
 // Set initial menu state
+global.current_menu = "HUD";
 menu_step = scr_menu_hud_step;
 menu_draw = scr_menu_hud_draw;
 menu_drawgui = scr_menu_hud_drawgui;
