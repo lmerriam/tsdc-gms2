@@ -1,0 +1,1 @@
+draw_sprite(spr_player_unconscious,0,x,y);
