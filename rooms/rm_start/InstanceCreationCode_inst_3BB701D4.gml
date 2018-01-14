@@ -1,1 +1,0 @@
-properties[? "New Room"] = rm_vault_1;

@@ -1,0 +1,49 @@
+# Opening script
+Hey, what are you doing? Why don't you have a weapon?
+
+Go pick up that one to the right.
+
+-- Player picks up gun
+
+What?? Are you nuts? I meant the crowbar.
+...
+Wait...
+Why are you not dead?
+
+-- BANG
+
+You know what? Never mind.
+If we survive the next few minutes then I'll have time to be amazed.
+
+-- BANG
+
+Almost through.
+See that barrel over to the right?
+If you really can use that boomstick hit it when they come in.
+
+-- BANG
+
+*Enemies pour in, player defeats them
+
+Let's go visit the one person who can explain you being here.
+
+* Player exits room
+* Bright outer area
+* Quest marker to first town
+
+* Player encounters enemies and defeats them
+* Player levels up, message explains levelling
+
+Hey I'm curious. Can you open that container over there?
+
+* Player opens it up, uncommon spell pops out
+
+I don't know who you are, but no one has been able to open those containers for as long as I can remember.
+
+Why not? It was easy.
+
+It wasn't easy for the rest of us. Go on, pick up that fancy artifact.
+
+* Player picks up the spell and equips it
+* Tutorial about new spell button and how to use spells
+* New enemies around corner, player wrecks them with spell

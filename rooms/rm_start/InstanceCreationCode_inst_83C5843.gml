@@ -1,1 +1,0 @@
-text = "Hey newcomer, go open that chest. You'll need the contents.";

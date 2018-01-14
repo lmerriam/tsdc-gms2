@@ -685,6 +685,25 @@
             }
         },
         {
+            "Key": "13fdb954-e44c-4868-8e45-62a21bb8f8ee",
+            "Value": {
+                "id": "a41ff4d4-b5d6-4ffc-a29b-6e07de0e3404",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/spr_tiles_forest\/spr_tiles_forest.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "14046c94-76cb-460d-9cf1-faf656a9f5cf",
             "Value": {
                 "id": "6704dfdb-e3cc-443d-ab6f-60d021c28a3b",
@@ -1347,6 +1366,25 @@
                 ],
                 "resourcePath": "scripts\/scr_level_instance\/scr_level_instance.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "26343725-0c5e-464b-97fa-ca3525c0bfcf",
+            "Value": {
+                "id": "3de0dea7-85f6-4ae0-8340-f9ca5fe62a09",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/Quest_Controller\/Quest_Controller.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -2107,6 +2145,25 @@
                 ],
                 "resourcePath": "scripts\/scr_turret_follow_state\/scr_turret_follow_state.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "3979fcc1-6a13-4289-9e60-2e51bac3a961",
+            "Value": {
+                "id": "f51e8f4c-bae0-4795-a4ef-70f68b157166",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/spr_gold_animated\/spr_gold_animated.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -4176,7 +4233,7 @@
                 "resourceCreationConfigs": [
                     "default"
                 ],
-                "resourcePath": "objects\/Quest_Tutorial\/Quest_Tutorial.yy",
+                "resourcePath": "objects\/Event_Tutorial\/Event_Tutorial.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -4615,6 +4672,25 @@
                 ],
                 "resourcePath": "scripts\/scr_equip_weapon_boomerang\/scr_equip_weapon_boomerang.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "7527f4cc-409b-4c92-9c27-8d7dca2c08e4",
+            "Value": {
+                "id": "83655bde-35e6-41ff-bf54-cc719d20ea47",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/Event_FirstLevelUp\/Event_FirstLevelUp.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -7107,6 +7183,25 @@
             }
         },
         {
+            "Key": "a63ad7bf-dd30-4465-8225-47d55141bc06",
+            "Value": {
+                "id": "c9772903-5df6-4b11-bc1f-9917e3d55dc7",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/spr_tiles_postApocalyptic\/spr_tiles_postApocalyptic.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "a71c5793-c58c-4590-9ce0-5da4b3932013",
             "Value": {
                 "id": "f1400926-5467-4c3d-a095-d4e659db6a77",
@@ -8660,7 +8755,7 @@
                 "resourceCreationConfigs": [
                     "default"
                 ],
-                "resourcePath": "objects\/Quest_Parent\/Quest_Parent.yy",
+                "resourcePath": "objects\/Event_Parent\/Event_Parent.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -10351,7 +10446,7 @@
                 "resourceCreationConfigs": [
                     "default"
                 ],
-                "resourcePath": "notes\/notes.yy",
+                "resourcePath": "notes\/scripted_events.yy",
                 "resourceType": "GMNotes"
             }
         },
@@ -10603,6 +10698,25 @@
             }
         },
         {
+            "Key": "f471949e-3453-4259-ae0b-af2f7715bfb1",
+            "Value": {
+                "id": "bb97e555-b4c5-4078-a7eb-7409ba1141a7",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "tilesets\/tile_forest\/tile_forest.yy",
+                "resourceType": "GMTileSet"
+            }
+        },
+        {
             "Key": "f47c2498-4f88-429b-8429-5fef8bb03f3b",
             "Value": {
                 "id": "071a806e-e66d-44a2-9ea2-aa2091913775",
@@ -10638,6 +10752,25 @@
                 ],
                 "resourcePath": "sprites\/spr_projectile_damage\/spr_projectile_damage.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "f4ea6bca-4129-4651-b558-605d78716f07",
+            "Value": {
+                "id": "71fe212f-37bb-40bf-abb0-e05996a658fd",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "tilesets\/tileset22\/tileset22.yy",
+                "resourceType": "GMTileSet"
             }
         },
         {

@@ -29,8 +29,9 @@ if (global.move_len > 0) {
 }
     
 // Move the player
-phy_position_x += hspd;
-phy_position_y += vspd;
+var tiles = layer_tilemap_get_id("forest");
+if (!tilemap_get_at_pixel(tiles,phy_position_x+hspd,phy_position_y)) phy_position_x += hspd;
+if (!tilemap_get_at_pixel(tiles,phy_position_x,phy_position_y+vspd))phy_position_y += vspd;
 
 global.player_speed_x = hspd;
 global.player_speed_y = vspd;

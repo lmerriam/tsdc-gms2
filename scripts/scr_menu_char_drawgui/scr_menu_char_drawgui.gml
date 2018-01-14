@@ -3,7 +3,10 @@
 // Draw the nav menu
 scr_menu_navigation_drawgui();
 
+// Get and draw stat points
 var stat_points = ds_map_find_value(Player.properties[? "Base Stats"],"Stat points");
+
+
 
 // Draw each stat and it's increment button
 draw_set_font(PixelSmall_24);

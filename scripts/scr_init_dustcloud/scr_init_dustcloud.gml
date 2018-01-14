@@ -9,4 +9,4 @@ part_type_sprite(pt,spr_dust_cloud,true,true,false);
 part_type_size(pt, 1, 1, 0, 0);
 //part_type_speed(pt, .5, 1, 0, 0);
 //part_type_direction(pt, 90, 90, 0, 0);
-part_type_life(pt,room_speed,room_speed);
+part_type_life(pt,room_speed*.75,room_speed*.75);
