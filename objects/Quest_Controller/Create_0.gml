@@ -1,15 +1,14 @@
-/// @description Create quest map
-// You can write your code in this editor
+/// @description Create quest data structures
 
 global.active_quests = ds_list_create();
+active_quests = global.active_quests;
+
 global.completed_quests = ds_list_create();
+completed_quests = global.completed_quests;
 
-global.all_quests = ds_map_create();
-var quest_intro = ds_map_create();
-quest_intro[? "Name"] = "Intro";
-quest_intro[? "Active"] = false;
-quest_intro[? "Current Step"] = 0;
+global.quest_library = scr_load_json("quests");
+quest_library = global.quest_library;
 
-global.all_quests[? "Intro"] = quest_intro;
+current_quest = noone;
 
-global.all_quests = scr_load_json("quests");
+current_quest = scr_init_quest("Intro","Welcome to Vaultworld",Chest);

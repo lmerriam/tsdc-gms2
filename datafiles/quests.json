@@ -1,8 +1,10 @@
 {
   "Intro": {
-    "Name": "Welcome to Vaultworld"
+    "Name": "Welcome to Vaultworld",
+    "Target": "Chest"
   },
   "Save Town 1": {
-    "Name": "Help out your new friend"
+    "Name": "Help out your new friend",
+    "Target": "Noone"
   }
 }

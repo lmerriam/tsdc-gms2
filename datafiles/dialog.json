@@ -75,5 +75,38 @@
         "script": "scr_menu_hud"
       }
     ]
+  },
+  "intro chest discovered":
+  {
+    "text": "I'm curious--can you open that container over there?",
+    "responses":
+    [
+      {
+        "text": "One way to find out",
+        "script": "scr_menu_hud"
+      }
+    ]
+  },
+  "intro chest opened":
+  {
+    "text": "I don't know who you are, but no one has been able to open those containers for as long as I can remember.",
+    "responses":
+    [
+      {
+        "text": "Why not? It was easy.",
+        "goto": "intro chest opened 2"
+      }
+    ]
+  },
+  "intro chest opened 2":
+  {
+    "text": "It wasn't easy for the rest of us. Go on, pick up that fancy artifact.",
+    "responses":
+    [
+      {
+        "text": "Hopefully it's useful",
+        "script": "scr_menu_hud"
+      }
+    ]
   }
 }
