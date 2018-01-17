@@ -38,7 +38,7 @@ if (device_mouse_check_button_pressed(aim_touch,mb_left)) {
 // Get the length if the move device is active
 if (device_mouse_check_button(move_touch,mb_left)) { moving = true };
 if (moving) {
-    global.move_len = clamp(point_distance(move_origin_x,move_origin_y,move_touch_x,move_touch_y),0,stats[? "Speed"]);
+    global.move_len = clamp(point_distance(move_origin_x,move_origin_y,move_touch_x,move_touch_y),0,Player.stats[? "Speed"]);
     global.move_dir = point_direction(move_origin_x,move_origin_y,move_touch_x,move_touch_y);
 }
             

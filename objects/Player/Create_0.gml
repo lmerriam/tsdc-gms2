@@ -21,6 +21,10 @@ global.teleport_player_y = noone;
 global.player_speed_x = 0;
 global.player_speed_y = 0;
 
+global.move_dir = 0;
+global.move_len = 0;
+global.aim_dir = 0;
+
 // Give some gold
 properties[? "Gold"] = 1000;
 
