@@ -24,12 +24,12 @@ if (response[? "goto"] != undefined) {
 if (response[? "activate quest"] != undefined) {
 	var quest_name = response[? "activate quest"];
 	var quest = global.all_quests[? quest_name];
-	scr_activate_quest(quest);
+	scr_activate_quest(quest_name,true,true);
 }
 if (response[? "complete quest"] != undefined) {
 	var quest_name = response[? "complete quest"];
 	var quest = global.all_quests[? quest_name];
-	scr_complete_quest(quest);
+	scr_complete_quest(quest_name,true);
 }
 
 // Check gold

@@ -1,7 +1,13 @@
-/// scr_activate_quest(quest)
-var quest = argument0;
+/// @description Complete a quest
+/// @param name
+/// @param announce
+var name = argument0;
+var announce = argument1;
 
-quest[? "Active"] = false;
-ds_list_add(global.completed_quests,quest);
+var quest = global.active_quests[? name];
+ds_map_delete(global.active_quests,name);
+ds_map_add(global.completed_quests,name,quest);
 
-scr_announce("Quest complete: " + quest[? "Name"], noone);
+if (announce) scr_announce("Quest complete: " + quest[? "Title"], noone);
+
+return quest;
