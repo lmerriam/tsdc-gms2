@@ -4,7 +4,8 @@ if (instance_exists(Player)) {
     y = Player.y;
 }
 
-/// Set up the view
+// Set up the view
+// TODO: set the window width 
 display_set_gui_size(__view_get( e__VW.WPort, 0 ),__view_get( e__VW.HPort, 0 ));
 global.window_width = __view_get( e__VW.WPort, 0 );
 global.window_height = __view_get( e__VW.HPort, 0 );

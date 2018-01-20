@@ -1,3 +1,5 @@
+device_mouse_dbclick_enable(false);
+
 // Create chest registry
 global.chests = ds_map_create();
 

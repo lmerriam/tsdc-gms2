@@ -18,7 +18,7 @@ if (effects != undefined and buffs != undefined and ds_exists(effects,ds_type_ma
 			//show_debug_message("Copying: " + key);
 			key = ds_map_find_next(buffs,key);
 		}
-
+		
 } else {
 	show_debug_message("Can't confer, missing effects or buffs");
 }

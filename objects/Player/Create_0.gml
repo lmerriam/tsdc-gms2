@@ -1,13 +1,17 @@
 /// Init Player object
 event_inherited();
 
-device_mouse_dbclick_enable(false);
+bleeds = true;
 
 scale = 1;
 image_xscale = scale;
 image_yscale = scale;
 img_spd = .3*30/room_speed;
 phy_fixed_rotation = true;
+
+// Who damages it
+damaged_by = ds_list_create();
+ds_list_add(damaged_by,Prop_Parent,Enemy_Parent);
 
 // Timers
 attack_timer = 0;

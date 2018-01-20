@@ -19,7 +19,6 @@ if (instance_exists(Player)) {
 
         x += (targetx - x) * .1  * (30/room_speed);
         y += (targety - y) * .1 * (30/room_speed);
-
     }
 }
 
