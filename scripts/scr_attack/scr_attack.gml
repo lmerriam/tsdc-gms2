@@ -26,7 +26,7 @@ if (victim != attacker and scr_is_damaged_by(victim,attacker)) {
 	}
 	
 	// Shake screen
-	global.screen_shake += clamp(damage,0,3);
+	global.screen_shake += clamp(damage,0,1);
 	
 	// Confer effects
 	scr_confer_effects(victim.properties[? "Effects"],buffs);
