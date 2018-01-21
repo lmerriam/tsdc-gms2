@@ -2205,6 +2205,25 @@
             }
         },
         {
+            "Key": "393016aa-a874-4f0a-bd47-7938d5a8fdfd",
+            "Value": {
+                "id": "4e3c9f7f-6a44-46d3-ab12-fded3320af1a",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/scr_init_bulletspark\/scr_init_bulletspark.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "3979fcc1-6a13-4289-9e60-2e51bac3a961",
             "Value": {
                 "id": "f51e8f4c-bae0-4795-a4ef-70f68b157166",
@@ -11679,6 +11698,7 @@
         "51f99f69-2600-4d8f-ab62-407d15fb5ac4",
         "6b8d1e56-5044-410b-9210-66acbd6c09e2",
         "9c7a4e2d-b2cd-4273-8b6d-4339b0d7d5c2",
+        "393016aa-a874-4f0a-bd47-7938d5a8fdfd",
         "61543921-7373-4c3a-bd96-f834fef3ffc8",
         "e804c457-e50f-4d29-9ca9-a1312e6f9c63",
         "fc75e038-feae-42ad-9e33-3e06273b416b",
@@ -11849,7 +11869,8 @@
         "f1566065-0115-4b2e-b538-265b117329a9",
         "e0161372-9845-4318-884f-f59ffa71abba",
         "5df2b1f8-cf59-42d9-8433-37cb43861ed6",
-        "3e873a7d-d22d-4996-af51-f3200e895191"
+        "3e873a7d-d22d-4996-af51-f3200e895191",
+        "b864f2a9-c0df-4940-8f02-bc58675f653d"
     ],
     "tutorial": ""
 }
