@@ -4,8 +4,7 @@ if (state != scr_enemy_stall_state) {
     var xdir = lengthdir_x(1, dir);
     var ydir = lengthdir_y(1, dir);
     
-    scr_damage_obj(other.x+xdir, other.y+ydir, Attack_Radius, id, stats[? "Damage"], stats[? "Knockback"], 0);
-    
+    scr_damage_obj(other.x+xdir, other.y+ydir, Attack_Radius, id, stats[? "Damage"], stats[? "Knockback"], noone);
     
     state = scr_enemy_stall_state;
     stall_alarm = scr_sec_from_now(1);

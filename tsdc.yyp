@@ -8190,6 +8190,25 @@
             }
         },
         {
+            "Key": "b864f2a9-c0df-4940-8f02-bc58675f653d",
+            "Value": {
+                "id": "12357fe3-55b9-4f5f-9058-086bf0ebfd23",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/scr_bullet\/scr_bullet.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "b87c727c-af8d-44e2-aa6c-a84e1a2413fb",
             "Value": {
                 "id": "f57bcdfa-d738-4bb3-9431-94241d582832",

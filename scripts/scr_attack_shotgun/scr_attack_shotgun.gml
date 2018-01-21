@@ -1,8 +1,5 @@
 ///scr_attack_shotgun
-
+var weapon = scr_get_weapon();
 repeat(3) {
-    var bullet = instance_create_layer(x, y, "entities", Attack_Bullet);
-    bullet.damage = scr_get_instance_stat(Player,"Damage")/3;
-    bullet.aim_vary = 15;
-	bullet.buffs = Player.properties[? "Buffs"];
+	scr_bullet(x,y,scr_weapon_stat("Damage"),15,weapon[? "Buffs"]);
 }
