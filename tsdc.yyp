@@ -1388,6 +1388,25 @@
             }
         },
         {
+            "Key": "25343988-d369-42b0-8d36-66016c4745be",
+            "Value": {
+                "id": "9566f785-5d73-4af2-b729-77aaf72a414f",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/Damage_Explosion_Small\/Damage_Explosion_Small.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "25db442b-c7b5-440f-9bbc-b68e4e3c6011",
             "Value": {
                 "id": "c73cb134-03eb-45e9-ab30-b86aadcd8f6c",
@@ -7085,6 +7104,25 @@
                 ],
                 "resourcePath": "scripts\/scr_spell_vorpal\/scr_spell_vorpal.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "a08dd4c7-c441-48d2-8a1e-0044b72c87b9",
+            "Value": {
+                "id": "eff219b3-949f-4e31-8ab3-632a08f1909f",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/spr_explosion_small\/spr_explosion_small.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

@@ -1,6 +1,7 @@
 /// @description Init
 // You can write your code in this editor
 event_inherited();
+image_speed = 0;
 
 damaged_by = ds_list_create();
 ds_list_add(damaged_by,Prop_Parent,Player,Enemy_Parent);
@@ -11,3 +12,4 @@ damage_object = Damage_Mushroom_Cloud;
 damage = 5 + scr_player_base_stat("Level");
 knockback = 8;
 stats[? "Health"] = 10 + scr_player_base_stat("Level");
+stats[? "Max Health"] = stats[? "Health"];
