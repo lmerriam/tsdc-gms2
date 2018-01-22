@@ -18,6 +18,7 @@ scr_menu_navigation_create();
 scr_menu_char_create();
 scr_menu_dialog_create();
 scr_menu_quests_create();
+scr_menu_overworld_create();
 
 // Set initial menu state
 global.current_menu = "HUD";

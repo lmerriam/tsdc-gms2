@@ -2,14 +2,16 @@
 //
 //  Draws a given string with a simple shadow effect applied to it.
 //
-//      x,y         position of text, real
-//      str         text, string
-//      color       text color, real
-//      shadow      shadow color, real
-//      intensity   shadow intensity [0..1], real
-//      distance    shadow distance in pixels, real
-//      direction   shadow direction in degrees, real
-//
+/// @param x
+/// @param y         position of text, real
+/// @param str         text, string
+/// @param color       text color, real
+/// @param shadow      shadow color, real
+/// @param intensity   shadow intensity [0..1], real
+/// @param distance    shadow distance in pixels, real
+/// @param direction   shadow direction in degrees, real
+/// @param alpha
+/// @param align
 /// GMLscripts.com/license
 {
     var c,a,i,j;

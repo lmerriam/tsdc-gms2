@@ -1,0 +1,14 @@
+{
+  "San Francisco": {
+    "x": 112,
+    "y": 135,
+    "discovered": true,
+    "room": "rm_sanfrancisco"
+  },
+  "Sacramento": {
+    "x": 175,
+    "y": 66,
+    "discovered": true,
+    "room": "rm_sacramento"
+  }
+}

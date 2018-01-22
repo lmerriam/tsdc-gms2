@@ -628,6 +628,25 @@
             }
         },
         {
+            "Key": "0db00ba6-f892-49e8-8fcb-38ae58d97cd8",
+            "Value": {
+                "id": "1e10a625-21e6-41d4-80f8-d23f3f591e38",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/scr_menu_overworld_drawgui\/scr_menu_overworld_drawgui.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "0e088423-70d3-4065-b2ae-9c13f4035ad2",
             "Value": {
                 "id": "e6e7dc5f-fd8b-4393-a2f9-913c9e6ebe02",
@@ -2053,6 +2072,25 @@
             }
         },
         {
+            "Key": "3595304b-8c2d-45ad-a620-5adfc2275f0b",
+            "Value": {
+                "id": "c1d2ceaa-1adf-4878-8b47-43427147f700",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/scr_menu_overworld\/scr_menu_overworld.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "3680b8d3-851d-4841-9c4c-f69d8e163ac3",
             "Value": {
                 "id": "2d0ef738-7462-474e-a7f7-7bb187762be7",
@@ -3383,6 +3421,25 @@
             }
         },
         {
+            "Key": "54482403-4bac-4a69-a9b2-7eac25ec591d",
+            "Value": {
+                "id": "e15dc34c-1c14-4413-922c-53a4b132fbda",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "rooms\/rm_sacramento\/rm_sacramento.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "550064dc-8c1a-4814-82be-c3f623a7acda",
             "Value": {
                 "id": "48361b5b-6165-4991-b04c-2a83e41326f4",
@@ -4029,6 +4086,25 @@
             }
         },
         {
+            "Key": "64d56959-cf46-4802-bea7-457bc3e7eafc",
+            "Value": {
+                "id": "5b21f20c-be5e-40c3-bfda-10d959d77471",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/spr_overworld\/spr_overworld.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "650928d2-93f0-4396-b28e-b5b3abdf3c21",
             "Value": {
                 "id": "7431975c-17b3-4ca2-9e16-ea7bf3b377c1",
@@ -4181,6 +4257,25 @@
             }
         },
         {
+            "Key": "67fde378-f0ff-4973-8fcc-b0a1813b00a5",
+            "Value": {
+                "id": "32f71cdf-7ee8-4db9-b0b7-3dbdce05f133",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/scr_menu_overworld_step\/scr_menu_overworld_step.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "686a8c1d-88a9-4712-9b8d-013fc10f3cf9",
             "Value": {
                 "id": "4a0c02af-870b-4b90-94bc-b4a258a20340",
@@ -4310,6 +4405,25 @@
                     "default"
                 ],
                 "resourcePath": "scripts\/scr_debug_map\/scr_debug_map.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "6a66363a-2a5b-4fa8-bba4-1451cfa5d555",
+            "Value": {
+                "id": "b6930f6e-a61b-4021-9296-69f040a89fe3",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/scr_menu_overworld_create\/scr_menu_overworld_create.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -8000,6 +8114,25 @@
             }
         },
         {
+            "Key": "b11c5f01-73db-4bb1-ab78-43e8cf655e9a",
+            "Value": {
+                "id": "d77bc78f-4660-4cb5-af2d-c8a7e70c1079",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "views\/b11c5f01-73db-4bb1-ab78-43e8cf655e9a.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "b1656070-afa4-4fa3-9a20-68229c30e4df",
             "Value": {
                 "id": "378a5c93-6772-48a8-a997-e1f6a847e9bd",
@@ -8700,6 +8833,25 @@
                 ],
                 "resourcePath": "sprites\/spr_chest\/spr_chest.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "c0e6ed6a-9fb8-432c-ac35-42a0b5cc5023",
+            "Value": {
+                "id": "d7d58e27-b817-41f2-b7c3-cc7d663fddbb",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "rooms\/rm_sanfrancisco\/rm_sanfrancisco.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -10242,6 +10394,25 @@
             }
         },
         {
+            "Key": "e0bd4d26-5976-404e-b351-66b5af0689f6",
+            "Value": {
+                "id": "330f1208-6e33-4db5-93d8-ca291a7370a6",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "datafiles_yy\/overworld_locations.json.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
             "Key": "e11205de-6ee0-4553-b835-e41e1d875dcb",
             "Value": {
                 "id": "0122867b-15fc-44c3-802d-f663353e80e4",
@@ -11770,8 +11941,9 @@
         "e369eadb-68ac-402a-99fe-48a07c37ffce",
         "42a90234-b2b0-4672-b10f-6578cf7e4c7d",
         "a860e310-03d0-4dfc-8266-0e5d7d2306a8",
-        "57bcb03b-d272-419e-a7f4-1e7849d1fb47",
+        "3595304b-8c2d-45ad-a620-5adfc2275f0b",
         "29270429-82ec-4b92-86da-dcc175047aeb",
+        "57bcb03b-d272-419e-a7f4-1e7849d1fb47",
         "8dbe428b-f742-4ba6-9b77-583a91d2069c",
         "87fff89b-ae94-4bb9-b953-f508303dd0d5",
         "4a9e8c77-d529-4e4b-94c0-f60b1ae8764a",
@@ -11870,7 +12042,10 @@
         "e0161372-9845-4318-884f-f59ffa71abba",
         "5df2b1f8-cf59-42d9-8433-37cb43861ed6",
         "3e873a7d-d22d-4996-af51-f3200e895191",
-        "b864f2a9-c0df-4940-8f02-bc58675f653d"
+        "b864f2a9-c0df-4940-8f02-bc58675f653d",
+        "67fde378-f0ff-4973-8fcc-b0a1813b00a5",
+        "6a66363a-2a5b-4fa8-bba4-1451cfa5d555",
+        "0db00ba6-f892-49e8-8fcb-38ae58d97cd8"
     ],
     "tutorial": ""
 }
