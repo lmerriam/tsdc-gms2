@@ -6,7 +6,3 @@ Player.phy_position_x = xx;
 Player.phy_position_y = yy;
 View.x = xx;
 View.y = yy;
-GUI.x = xx;
-GUI.y = yy;
-Time.x = xx;
-Time.y = yy;

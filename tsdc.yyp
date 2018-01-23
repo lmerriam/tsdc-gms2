@@ -4200,6 +4200,25 @@
             }
         },
         {
+            "Key": "6642e544-7d33-4a11-9e75-b5c7b8955e0b",
+            "Value": {
+                "id": "ae80a68c-47ee-4387-9d8c-04dcd595d249",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "rooms\/room8\/room8.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "66854444-07f9-4c20-bf90-d879b97facf2",
             "Value": {
                 "id": "9d59dacb-8317-473f-8ce6-42ec37cee015",
@@ -4444,6 +4463,25 @@
                 ],
                 "resourcePath": "scripts\/scr_quest_tutorial_equipFirstWeapon\/scr_quest_tutorial_equipFirstWeapon.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "6aa1273c-d834-417d-92f2-f210854ee39b",
+            "Value": {
+                "id": "1494202c-45ea-4c0d-b14f-67ebc7597b94",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/spr_map_test\/spr_map_test.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -7259,6 +7297,25 @@
             }
         },
         {
+            "Key": "a11820e8-caa9-4846-8d4e-18c77aff0c73",
+            "Value": {
+                "id": "d4ac269a-1a9e-49ae-a573-c3ba6dfe596c",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/Spawn_Point\/Spawn_Point.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "a128950b-5063-4876-b4a6-b99dbd2ea6d1",
             "Value": {
                 "id": "c2341f3c-0953-4d9e-b661-43a4e72a1770",
@@ -9406,6 +9463,25 @@
             }
         },
         {
+            "Key": "cb6cd810-89fa-460d-9e8f-522e67ae5da0",
+            "Value": {
+                "id": "11237f46-ff8d-4a90-b4f2-038c527fce0d",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/Spawn_Controller\/Spawn_Controller.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "cb84a1d5-61a9-48f3-ada1-8b1f81ffa0d1",
             "Value": {
                 "id": "c5c8b2d8-aa6e-46a1-acf5-160af4ca77ba",
@@ -10163,6 +10239,25 @@
                 ],
                 "resourcePath": "objects\/Armor_Heavy\/Armor_Heavy.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "dac95695-94d3-4ff3-95f4-e54600acd3c9",
+            "Value": {
+                "id": "67aa687f-87b7-42dc-9ca1-708cb23020fc",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "rooms\/rm_test\/rm_test.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -11588,25 +11683,6 @@
                 ],
                 "resourcePath": "scripts\/scr_attack_hammer\/scr_attack_hammer.yy",
                 "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "fab27cf1-3a56-4d84-b78e-e6454ffe9f2c",
-            "Value": {
-                "id": "1bc5cc04-f095-428d-9e6c-bb008152f9e9",
-                "modelName": "GMResourceInfo",
-                "mvc": "1.0",
-                "configDeltaFiles": [
-                    
-                ],
-                "configDeltas": [
-                    
-                ],
-                "resourceCreationConfigs": [
-                    "default"
-                ],
-                "resourcePath": "rooms\/rm_vault_1\/rm_vault_1.yy",
-                "resourceType": "GMRoom"
             }
         },
         {

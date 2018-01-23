@@ -1,5 +1,5 @@
 /// Init spawner
 event_inherited();
 
-stats[? "Quantity"] = 3;
-stats[? "Object"] = Slime;
+quantity = 3;
+spawn_object = Slime;

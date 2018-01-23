@@ -1,5 +1,7 @@
 /// @param Save data
 /// @param Filename
+
+/// NOTE: ALWAYS COPY DS into params, the original will be destroyed when the save_data is committed
 var save_data = argument0;
 var filename = argument1;
 

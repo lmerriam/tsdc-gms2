@@ -29,10 +29,11 @@ Let's go visit the one person who can explain you being here.
 
 * Player exits room
 * Bright outer area
-* Quest marker to first town
 
 * Player encounters enemies and defeats them
 * Player levels up, message explains levelling
+
+* Player continues, encounters a chest
 
 Hey I'm curious. Can you open that container over there?
 
@@ -46,4 +47,5 @@ It wasn't easy for the rest of us. Go on, pick up that fancy artifact.
 
 * Player picks up the spell and equips it
 * Tutorial about new spell button and how to use spells
-* New enemies around corner, player wrecks them with spell
+* Enemy spawner around corner, player wrecks them with spell and destroys spawner
+

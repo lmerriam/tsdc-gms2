@@ -1,4 +1,8 @@
 ///scr_draw_btn(btn_array,btn_color,txt_color)
+/// @param btn_array
+/// @param btn_color
+/// @param txt_color
+
 var btn = argument0;
 var color = argument1;
 var textcolor = argument2;
