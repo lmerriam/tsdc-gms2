@@ -18,3 +18,5 @@ if (os_type == os_android) {
 } else {
 	control_scheme = scr_controls_mouse;
 }
+
+alarm[1] = 1;

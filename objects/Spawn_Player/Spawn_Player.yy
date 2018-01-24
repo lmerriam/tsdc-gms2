@@ -2,7 +2,7 @@
     "id": "a11820e8-caa9-4846-8d4e-18c77aff0c73",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "Spawn_Point",
+    "name": "Spawn_Player",
     "eventList": [
         
     ],

@@ -6252,25 +6252,6 @@
             }
         },
         {
-            "Key": "8ae16490-96d3-4e9a-be06-fa5dfd5e9ba8",
-            "Value": {
-                "id": "b92fdc28-22ed-4d0a-a946-764f00255124",
-                "modelName": "GMResourceInfo",
-                "mvc": "1.0",
-                "configDeltaFiles": [
-                    
-                ],
-                "configDeltas": [
-                    
-                ],
-                "resourceCreationConfigs": [
-                    "default"
-                ],
-                "resourcePath": "objects\/Spawner_Parent\/Spawner_Parent.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "8b3ad5af-dc53-427b-ab0b-1f7d32594c25",
             "Value": {
                 "id": "cdc00c22-10b9-4127-93be-f76605288089",
@@ -7311,7 +7292,7 @@
                 "resourceCreationConfigs": [
                     "default"
                 ],
-                "resourcePath": "objects\/Spawn_Point\/Spawn_Point.yy",
+                "resourcePath": "objects\/Spawn_Player\/Spawn_Player.yy",
                 "resourceType": "GMObject"
             }
         },
