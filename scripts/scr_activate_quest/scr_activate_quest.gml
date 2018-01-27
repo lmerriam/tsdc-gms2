@@ -14,7 +14,7 @@ var title = quest[? "Title"];
 global.active_quests[? name] = quest;
 
 // Set the target (if target is still a string from JSON, convert it to an asset index)
-if (target != "noone" and is_string(target)) quest[? "Target"] = asset_get_index(target);
+if (target != noone and target != "noone" and is_string(target)) quest[? "Target"] = asset_get_index(target);
 
 // Make it current
 if (current) scr_set_current_quest(name);

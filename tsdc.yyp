@@ -2319,25 +2319,6 @@
             }
         },
         {
-            "Key": "3b99e891-fc4b-4830-ae8f-04cf86bd4bb9",
-            "Value": {
-                "id": "773e0c9f-5ebb-4244-848a-35eb38f68645",
-                "modelName": "GMResourceInfo",
-                "mvc": "1.0",
-                "configDeltaFiles": [
-                    
-                ],
-                "configDeltas": [
-                    
-                ],
-                "resourceCreationConfigs": [
-                    "default"
-                ],
-                "resourcePath": "objects\/Stronghold_1\/Stronghold_1.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "3bd76b89-af18-4c1d-8413-bce5bcafd4f1",
             "Value": {
                 "id": "6c939dd7-5760-493a-97c1-5bf8680c8124",
@@ -4064,6 +4045,25 @@
                 ],
                 "resourcePath": "sprites\/spr_SMG\/spr_SMG.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "646309d9-0e9d-4073-909b-725106770e31",
+            "Value": {
+                "id": "60e7ccc4-dc79-4106-bb0a-89c9f11339d8",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/scr_point_in_view\/scr_point_in_view.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -6784,6 +6784,25 @@
             }
         },
         {
+            "Key": "92fcb139-6bb7-4162-8ab8-bf0277662658",
+            "Value": {
+                "id": "4a952d5a-91a7-4eb3-a39c-d29d970ca175",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/sprite132\/sprite132.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "93a5b0e3-6978-4b6b-b89b-a8477ba5e29f",
             "Value": {
                 "id": "258d321f-d4a5-457a-a2d4-30dde6a3ad6c",
@@ -8339,6 +8358,25 @@
                 ],
                 "resourcePath": "scripts\/scr_alarm_running\/scr_alarm_running.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "b54c77f2-2549-41c2-8d69-6b1840c1b678",
+            "Value": {
+                "id": "e20d14e9-3979-4647-b416-44d3ab4d865f",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/Event_TalkToNPC\/Event_TalkToNPC.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -10409,6 +10447,25 @@
                     "default"
                 ],
                 "resourcePath": "objects\/Equipment\/Equipment.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "e008e0fa-a722-4994-a167-3b660166f414",
+            "Value": {
+                "id": "6ec1c282-c912-4c3d-a5bf-49f29000e0ea",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/Event_Test_Quest\/Event_Test_Quest.yy",
                 "resourceType": "GMObject"
             }
         },

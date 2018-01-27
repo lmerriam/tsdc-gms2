@@ -5,6 +5,7 @@ device_mouse_dbclick_enable(false);
 
 // Create chest registry
 global.chests = ds_map_create();
+global.locations = ds_list_create();
 
 // Equipment 
 global.equipment = scr_load_json("equipment");

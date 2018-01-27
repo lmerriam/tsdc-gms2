@@ -70,7 +70,7 @@ global.__objectDepths[66] = 1; // Chest
 global.__objectDepths[67] = 0; // Barrel
 global.__objectDepths[68] = 0; // Wall
 global.__objectDepths[70] = 0; // Spell_Cone_Pull
-global.__objectDepths[74] = 0; // Stronghold_1
+//global.__objectDepths[74] = 0; // Stronghold_1
 global.__objectDepths[75] = 0; // Outpost_Parent
 global.__objectDepths[76] = 0; // Stronghold_Parent
 
@@ -141,7 +141,7 @@ global.__objectNames[66] = "Chest";
 global.__objectNames[67] = "Barrel";
 global.__objectNames[68] = "Wall";
 global.__objectNames[70] = "Spell_Cone_Pull";
-global.__objectNames[74] = "Stronghold_1";
+//global.__objectNames[74] = "Stronghold_1";
 global.__objectNames[75] = "Outpost_Parent";
 global.__objectNames[76] = "Stronghold_Parent";
 

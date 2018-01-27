@@ -108,5 +108,31 @@
         "script": "scr_menu_hud"
       }
     ]
-  }
+  },
+  "test quest":
+  {
+    "text": "Hey you! You look like an adventurer. I have a quest for you.",
+    "responses":
+    [
+      {
+        "text": "All right, let's hear it.",
+        "goto": "test quest 2"
+      },
+      {
+        "text": "Not now, thanks.",
+        "script": "scr_menu_hud"
+      }
+    ]
+  },
+  "test quest 2":
+  {
+    "text": "I lost my wedding ring, and I need help retrieving it. You can keep everything else you find and I'll pay you.",
+    "responses":
+    [
+      {
+        "text": "Sounds like a deal",
+        "activate event": "Event_Test_Quest"
+      }
+    ]
+  },
 }

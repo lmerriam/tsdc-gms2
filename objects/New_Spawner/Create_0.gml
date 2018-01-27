@@ -1,3 +1,6 @@
+ds_list_add(global.locations,id);
+discovered = false;
+
 max_enemies = 8;
 current_enemies = 0;
 spawn_timer = 0;
@@ -11,6 +14,7 @@ var jumpers = ds_map_create();
 ds_list_add(enemies_base,jumpers);
 jumpers[? "Object"] = Jumper;
 jumpers[? "Quantity"] = 15;
+//scr_add_enemy_to_stronghold(Jumper,15);
 
 var slimes = ds_map_create();
 ds_list_add(enemies_base,slimes);

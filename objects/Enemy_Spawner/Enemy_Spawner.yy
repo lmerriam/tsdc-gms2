@@ -68,8 +68,8 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "Slime",
-            "varName": "object",
+            "value": "tileset1_tileset",
+            "varName": "spawn_object",
             "varType": 5
         }
     ],

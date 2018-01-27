@@ -21,12 +21,13 @@ if (response[? "goto"] != undefined) {
 }
 
 // Check quests
-if (response[? "activate quest"] != undefined) {
+if (response[? "activate event"] != undefined) {
 	var quest_name = response[? "activate quest"];
-	var quest = global.all_quests[? quest_name];
-	scr_activate_quest(quest_name,true,true);
+	//var quest = global.all_quests[? quest_name];
+	//scr_activate_quest(quest_name,true,true);
+	instance_create_layer(x,y,"entities",Event_Test_Quest);
 }
-if (response[? "complete quest"] != undefined) {
+if (response[? "complete event"] != undefined) {
 	var quest_name = response[? "complete quest"];
 	var quest = global.all_quests[? quest_name];
 	scr_complete_quest(quest_name,true);
@@ -40,4 +41,15 @@ if (response[? "gold"] != undefined) {
 // Check XP
 if (response[? "xp"] != undefined) {
 	scr_give_xp(response[? "xp"]);
+}
+
+// Check accepted quest
+if (response[? "accept quest"] != undefined) {
+	var event = response[? "accept quest"];
+	event.completed = true;
+}
+
+// Check denied quest
+if (response[? "deny quest"] != undefined) {
+	// Maybenot needed
 }

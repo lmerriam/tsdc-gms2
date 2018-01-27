@@ -8,10 +8,11 @@ scr_menu_navigation_drawgui();
 draw_sprite_stretched(global.current_map,0,map_offset_x,map_offset_y,map_w,map_h);
 
 // Draw the marker and set its map coordinates
-with(Location) {
-    map_x = scr_map_x(x);
-    map_y = scr_map_y(y);
-    draw_sprite(sprite_index,0,map_x,map_y);
+for (var i = 0; i<ds_list_size(global.locations); i++) {
+	var location = global.locations[| i];
+	var map_x = scr_map_x(location.x);
+    var map_y = scr_map_y(location.y);
+    draw_sprite(location.sprite_index,0,map_x,map_y);
 }
 
 // Draw player position

@@ -8,7 +8,8 @@
         "6b1d94cc-5aea-40f8-becb-626c25e561cd",
         "c6f8168e-4a5f-4cde-8c0a-56a05e04fc29",
         "7527f4cc-409b-4c92-9c27-8d7dca2c08e4",
-        "6dd593c6-52af-4c11-8e1e-ad338e59b2f9"
+        "6dd593c6-52af-4c11-8e1e-ad338e59b2f9",
+        "e008e0fa-a722-4994-a167-3b660166f414"
     ],
     "filterType": "GMObject",
     "folderName": "Quests",
