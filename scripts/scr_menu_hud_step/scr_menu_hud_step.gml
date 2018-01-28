@@ -38,7 +38,7 @@ if (combo_timer == Time.now) {
 	if (combo_count > 2) {
 		var xp = combo_count * Player.base_stats[? "Level"];
 		scr_announce("Combo bonus: " + string(xp),noone);
-		repeat(xp) instance_create(Player.x + random_range(-16,16), Player.y + random_range(32,48), Expr);
+		repeat(xp) instance_create_layer(Player.x + random_range(-16,16), Player.y + random_range(32,48), "entities", Expr);
 	}
 	combo_count = 0;
 } else if (scr_alarm_running(combo_timer)) {

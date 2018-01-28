@@ -1,1 +1,0 @@
-num_frames = sprite_get_number(sprite);

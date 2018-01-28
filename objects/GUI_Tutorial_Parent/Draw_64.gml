@@ -1,1 +1,0 @@
-draw_sprite_stretched(sprite,Time.now mod (num_frames*frame_speed) / frame_speed,xx,yy,width,height);

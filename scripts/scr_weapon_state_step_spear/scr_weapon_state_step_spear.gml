@@ -3,7 +3,7 @@ if (global.attack_button and scr_alarm_passed(attack_timer)) {
 	var hspd = lengthdir_x(spd,global.aim_dir);
 	var vspd = lengthdir_y(spd,global.aim_dir);
 
-	var spear = instance_create(x,y,Attack_Spear);
+	var spear = instance_create_layer(x,y,"entities",Attack_Spear);
 	spear.phy_speed_x = hspd;
 	spear.phy_speed_y = vspd;
 	spear.phy_rotation = -global.aim_dir;

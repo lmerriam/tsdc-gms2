@@ -7,7 +7,7 @@ scr_damage(other,damage);
 
 scr_bloodspot(other.x,other.y,0.5);
 
-var arrow = instance_create(x,y,Attack_Arrow_Inactive);
+var arrow = instance_create_layer(x,y,"entities",Attack_Arrow_Inactive);
 arrow.image_angle = image_angle;
 arrow.inst = other.id;
 arrow.x_offset = x-other.x;
