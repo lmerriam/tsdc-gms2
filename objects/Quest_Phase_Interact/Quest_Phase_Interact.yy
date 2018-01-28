@@ -1,28 +1,28 @@
 {
-    "id": "52771db2-52a2-4161-b8aa-9ef26580280e",
+    "id": "c8c7ee5c-21e0-4bc6-b966-6e6db9138bb7",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "Enemy_Spawner",
+    "name": "Quest_Phase_Interact",
     "eventList": [
         {
-            "id": "033e9ffa-0501-4ffb-8ace-f6903fb6c6e6",
+            "id": "5bae37cb-5a5f-45c5-ad5a-fff128f4b426",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 0,
-            "m_owner": "52771db2-52a2-4161-b8aa-9ef26580280e"
+            "m_owner": "c8c7ee5c-21e0-4bc6-b966-6e6db9138bb7"
         },
         {
-            "id": "1fdf091a-7923-4a98-9fc4-f4cf63828e36",
+            "id": "4412a41a-1b75-4173-a691-642f69e324a0",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 2,
-            "m_owner": "52771db2-52a2-4161-b8aa-9ef26580280e"
+            "enumb": 10,
+            "eventtype": 7,
+            "m_owner": "c8c7ee5c-21e0-4bc6-b966-6e6db9138bb7"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -38,14 +38,12 @@
     "physicsObject": false,
     "physicsRestitution": 0.1,
     "physicsSensor": false,
-    "physicsShape": 0,
-    "physicsShapePoints": [
-        
-    ],
+    "physicsShape": 1,
+    "physicsShapePoints": null,
     "physicsStartAwake": true,
     "properties": [
         {
-            "id": "c4eb9871-319f-4103-acaa-1f2d4e439277",
+            "id": "568badbe-8780-4d70-8a64-1712793354b0",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -54,26 +52,12 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "3",
-            "varName": "quantity",
-            "varType": 1
-        },
-        {
-            "id": "481be00d-f8c8-4305-94b1-aa54ca92e98e",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "Slime",
-            "varName": "spawn_object",
+            "value": "Quest_Interact",
+            "varName": "interact_object",
             "varType": 5
         }
     ],
     "solid": false,
-    "spriteId": "8d24c668-c020-4f92-89fe-13be3234ac18",
-    "visible": false
+    "spriteId": "00000000-0000-0000-0000-000000000000",
+    "visible": true
 }

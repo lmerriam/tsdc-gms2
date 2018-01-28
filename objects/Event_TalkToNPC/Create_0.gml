@@ -12,6 +12,7 @@ dialog[? "responses"] = responses;
 
 var response_yes = ds_map_create();
 response_yes[? "text"] = "I'll do it";
+response_yes[? "script"] = "scr_menu_hud";
 response_yes[? "accept quest"] = id;
 
 var response_no = ds_map_create();
