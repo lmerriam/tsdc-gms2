@@ -2,7 +2,7 @@
     "id": "b54c77f2-2549-41c2-8d69-6b1840c1b678",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "Event_TalkToNPC",
+    "name": "Quest_Giver_NPC",
     "eventList": [
         {
             "id": "cf50467f-acba-4f3e-80ae-3cd719e09301",
@@ -27,7 +27,7 @@
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "a71c5793-c58c-4590-9ce0-5da4b3932013",
+    "parentObjectId": "94a4ef8f-acc6-43bb-9d27-8c8434eda8ca",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,

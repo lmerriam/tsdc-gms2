@@ -1,7 +1,6 @@
 /// Init speaker
 event_inherited();
-
-// TODO: register speakers interactables and interactables to a centralized controller and handle logic there
+scr_register_interactable(id);
 
 // Text
 text = "Warning: slimes ahead.";

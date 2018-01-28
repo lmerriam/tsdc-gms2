@@ -43,8 +43,14 @@ if (response[? "xp"] != undefined) {
 	scr_give_xp(response[? "xp"]);
 }
 
-// Check accepted quest
-if (response[? "accept quest"] != undefined) {
+// Check if room quest activated
+if (response[? "activate room quest"] != undefined) {
+	var name = response[? "activate room quest"];
+	scr_activate_room_quest(name);
+}
+
+// Check completed quest phase
+if (response[? "complete quest phase"] != undefined) {
 	var event = response[? "accept quest"];
 	event.completed = true;
 }

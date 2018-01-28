@@ -1,5 +1,6 @@
 /// Init
 event_inherited();
+scr_register_interactable(id);
 
 image_speed = 0;
 

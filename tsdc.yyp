@@ -239,6 +239,14 @@
             }
         },
         {
+            "Key": "09a0b590-c16e-44b6-9401-0e79159fa44e",
+            "Value": {
+                "id": "ca9923f1-51c3-44d5-835c-e8f28bec58f2",
+                "resourcePath": "scripts\\scr_register_interactable\\scr_register_interactable.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "09c0a05f-daf4-4d3f-82dd-d58c43732c4c",
             "Value": {
                 "id": "a57d60ef-1f67-4d5b-a287-c28554a7c392",
@@ -1339,6 +1347,14 @@
             "Value": {
                 "id": "c29f5341-b9d1-430b-8720-6a3db9e9565b",
                 "resourcePath": "scripts\/scr_equip_spell_area\/scr_equip_spell_area.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "4c3c7182-4130-41ea-be4c-e58d172a8cce",
+            "Value": {
+                "id": "7c290136-0cdf-4a2a-b892-a44c473dda87",
+                "resourcePath": "scripts\\scr_register_location\\scr_register_location.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -2927,6 +2943,14 @@
             }
         },
         {
+            "Key": "94a4ef8f-acc6-43bb-9d27-8c8434eda8ca",
+            "Value": {
+                "id": "bd034fcd-c879-4e9f-9095-f8e15916c128",
+                "resourcePath": "objects\\Quest_Giver_Parent\\Quest_Giver_Parent.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "95215631-b654-4dce-bd0b-a85dc287a2fa",
             "Value": {
                 "id": "098dc908-88ba-44fa-99c4-31799bc87b58",
@@ -3570,7 +3594,7 @@
             "Key": "b54c77f2-2549-41c2-8d69-6b1840c1b678",
             "Value": {
                 "id": "e20d14e9-3979-4647-b416-44d3ab4d865f",
-                "resourcePath": "objects\/Event_TalkToNPC\/Event_TalkToNPC.yy",
+                "resourcePath": "objects\\Quest_Giver_NPC\\Quest_Giver_NPC.yy",
                 "resourceType": "GMObject"
             }
         },

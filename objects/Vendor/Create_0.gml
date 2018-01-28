@@ -1,9 +1,7 @@
 /// Init vendor
-
 event_inherited();
-
-ds_list_add(global.locations,id);
-discovered = false;
+scr_register_interactable(id);
+scr_register_location(id);
 
 // Set up stats
 stats = ds_map_create();

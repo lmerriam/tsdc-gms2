@@ -1,5 +1,4 @@
-ds_list_add(global.locations,id);
-discovered = false;
+scr_register_location(id);
 
 max_enemies = 8;
 current_enemies = 0;

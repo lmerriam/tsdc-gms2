@@ -1,8 +1,7 @@
 /// Init door
 event_inherited();
-
-ds_list_add(global.locations,id);
-discovered = false;
+scr_register_location(id);
+scr_register_interactable(id);
 
 properties[? "New X"] = 0;
 properties[? "New Y"] = 0;
