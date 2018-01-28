@@ -30,7 +30,7 @@ if (response[? "activate event"] != undefined) {
 if (response[? "complete event"] != undefined) {
 	var quest_name = response[? "complete quest"];
 	var quest = global.all_quests[? quest_name];
-	scr_complete_quest(quest_name,true);
+	scr_complete_quest(quest_name);
 }
 
 // Check gold
