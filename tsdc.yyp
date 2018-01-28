@@ -39,14 +39,6 @@
             }
         },
         {
-            "Key": "011052cd-a283-4e39-8482-d00fc6da32ec",
-            "Value": {
-                "id": "e3637246-c11b-4909-b41f-83d458812f07",
-                "resourcePath": "views\/011052cd-a283-4e39-8482-d00fc6da32ec.yy",
-                "resourceType": "GMFolder"
-            }
-        },
-        {
             "Key": "0258f0bf-6446-4cfc-a9ee-7a5da28ef5cb",
             "Value": {
                 "id": "b8447307-79bc-408d-89d2-371201f6922a",
@@ -767,14 +759,6 @@
             }
         },
         {
-            "Key": "2c8a59bd-3f2e-4209-ba9c-6cb97ef27d6b",
-            "Value": {
-                "id": "39bec270-e9f8-43f1-be55-9010a07c5f67",
-                "resourcePath": "objects\/GUI_Tutorial_SelectFirstWeapon\/GUI_Tutorial_SelectFirstWeapon.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "2d02858e-7e5f-402c-9c0f-781b3a6339e9",
             "Value": {
                 "id": "e81f5aa8-4772-4197-ab78-cc9c05f3eedf",
@@ -1012,14 +996,6 @@
                 "id": "cc5a3d76-a31b-4f9b-90c6-0b0294718103",
                 "resourcePath": "scripts\/scr_event_tutorialDoorBash\/scr_event_tutorialDoorBash.yy",
                 "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "3cbf4a15-6cb6-4001-9d87-8d1a201be049",
-            "Value": {
-                "id": "6ddadecd-e4a5-4592-8fcf-269ced759f64",
-                "resourcePath": "objects\/GUI_Tutorial_EquipFirstWeapon\/GUI_Tutorial_EquipFirstWeapon.yy",
-                "resourceType": "GMObject"
             }
         },
         {
@@ -1380,14 +1356,6 @@
                 "id": "06bc3867-e649-4f42-a243-68039afcd8e1",
                 "resourcePath": "scripts\/scr_equip_weapon_unarmed\/scr_equip_weapon_unarmed.yy",
                 "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "50e9f33e-1167-4f6a-b680-d7d83a2c16a9",
-            "Value": {
-                "id": "9b6082d3-f8f2-44a8-b119-79d58319bcab",
-                "resourcePath": "objects\/Announcement\/Announcement.yy",
-                "resourceType": "GMObject"
             }
         },
         {
@@ -1975,14 +1943,6 @@
             }
         },
         {
-            "Key": "6c792e80-9f8c-4eb8-a852-8265b69a2f45",
-            "Value": {
-                "id": "4610b9e2-a2f9-4c4c-933e-1a1e7bd850e7",
-                "resourcePath": "objects\/GUI_Tutorial_Parent\/GUI_Tutorial_Parent.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "6d235333-2ecb-4462-8c52-b06f6cb6e046",
             "Value": {
                 "id": "e0313877-0e1a-49d4-9ea8-5f4bd6f16c38",
@@ -2388,6 +2348,14 @@
                 "id": "b038d5bb-a961-4e37-a58c-45aa248b3e8e",
                 "resourcePath": "objects\/Enemy_Boss_Slime\/Enemy_Boss_Slime.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "80b49fd4-12f2-4a5b-9273-b999ae4f9821",
+            "Value": {
+                "id": "8f9d98e5-6bb1-4a57-8fb5-9685ccd91abc",
+                "resourcePath": "scripts\\scr_register_spawner\\scr_register_spawner.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -2924,14 +2892,6 @@
                 "id": "36f1321d-3824-4406-a853-25313f287656",
                 "resourcePath": "sprites\/background18\/background18.yy",
                 "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "940cb5db-5f27-4953-ae5a-47fc283a642f",
-            "Value": {
-                "id": "5a08a5c4-0563-45bd-ab79-cb5e4e60f66a",
-                "resourcePath": "objects\/GUI_Tutorial_Inventory\/GUI_Tutorial_Inventory.yy",
-                "resourceType": "GMObject"
             }
         },
         {
@@ -3668,14 +3628,6 @@
                 "id": "ca7d2936-041a-400b-b21d-89f502fefdbb",
                 "resourcePath": "sprites\/spr_scroll_area\/spr_scroll_area.yy",
                 "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "baea5e7a-0e3f-4df8-a76d-c000a6644d62",
-            "Value": {
-                "id": "20fdc295-7b80-48da-8016-5827183c7630",
-                "resourcePath": "objects\/GUI_Tutorial_LeftStick\/GUI_Tutorial_LeftStick.yy",
-                "resourceType": "GMObject"
             }
         },
         {
@@ -4479,22 +4431,6 @@
             }
         },
         {
-            "Key": "e008e0fa-a722-4994-a167-3b660166f414",
-            "Value": {
-                "id": "6ec1c282-c912-4c3d-a5bf-49f29000e0ea",
-                "resourcePath": "objects\\Event_Test_Quest\\Event_Test_Quest.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
-            "Key": "e0161372-9845-4318-884f-f59ffa71abba",
-            "Value": {
-                "id": "933f4e54-3fb8-4102-9465-1dc35f7e3157",
-                "resourcePath": "scripts\/script236\/script236.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "e068b082-ca2b-4be5-8fdc-75d9b21f8ee0",
             "Value": {
                 "id": "c2937ba2-0a0f-42c6-8217-ed172b7de057",
@@ -4703,14 +4639,6 @@
             }
         },
         {
-            "Key": "eccc10a0-7215-43c8-bef1-f3b39a288449",
-            "Value": {
-                "id": "1a306552-be4b-4930-b737-186a62e37203",
-                "resourcePath": "objects\/Event_Tutorial_CloseInventory\/Event_Tutorial_CloseInventory.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "ee4e1e86-8a72-4b42-93b1-885b74d04565",
             "Value": {
                 "id": "ad6cf927-1fe2-4b25-815d-bff8d561ebbf",
@@ -4804,14 +4732,6 @@
                 "id": "350e1fc3-a09c-4792-8f9b-9a7ef4138f65",
                 "resourcePath": "scripts\/scr_damage_other\/scr_damage_other.yy",
                 "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "f134207d-0f43-4056-a0c5-4a14dc10e9b3",
-            "Value": {
-                "id": "8022cbe2-cc5c-4025-a44e-e8cfc0d46adb",
-                "resourcePath": "objects\/Location\/Location.yy",
-                "resourceType": "GMObject"
             }
         },
         {
@@ -5342,14 +5262,19 @@
         "bb2e86ae-a796-443a-9cbc-f5d99b50f09d",
         "ffe7dbe3-9b2f-497d-a5af-77d336c996cf",
         "f1566065-0115-4b2e-b538-265b117329a9",
-        "e0161372-9845-4318-884f-f59ffa71abba",
         "5df2b1f8-cf59-42d9-8433-37cb43861ed6",
         "3e873a7d-d22d-4996-af51-f3200e895191",
         "b864f2a9-c0df-4940-8f02-bc58675f653d",
         "67fde378-f0ff-4973-8fcc-b0a1813b00a5",
         "6a66363a-2a5b-4fa8-bba4-1451cfa5d555",
         "0db00ba6-f892-49e8-8fcb-38ae58d97cd8",
-        "646309d9-0e9d-4073-909b-725106770e31"
+        "646309d9-0e9d-4073-909b-725106770e31",
+        "b278d58b-8f1c-40ba-a19a-dc5137630a56",
+        "a6f523aa-52be-4246-9f98-2a2f89e770eb",
+        "6d2708e2-85f4-48a1-a0f9-645fdd5b5306",
+        "4c3c7182-4130-41ea-be4c-e58d172a8cce",
+        "09a0b590-c16e-44b6-9401-0e79159fa44e",
+        "80b49fd4-12f2-4a5b-9273-b999ae4f9821"
     ],
     "tutorial": ""
 }
