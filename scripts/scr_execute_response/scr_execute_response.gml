@@ -57,5 +57,5 @@ if (response[? "complete quest phase"] != undefined) {
 
 // Check denied quest
 if (response[? "deny quest"] != undefined) {
-	// Maybenot needed
+	// Maybe not needed
 }

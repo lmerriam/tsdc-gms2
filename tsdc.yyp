@@ -1343,6 +1343,14 @@
             }
         },
         {
+            "Key": "514214cd-2d69-46f2-ae3e-74cb1ab1da12",
+            "Value": {
+                "id": "9dcb7d30-d965-4de9-8236-5f740143ae47",
+                "resourcePath": "objects\\Quest_Phase_Spawner\\Quest_Phase_Spawner.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "515ea238-9c7c-44c2-8185-6a284a3c2348",
             "Value": {
                 "id": "e0bac3ce-c1f5-45b0-8fcd-4cc7ee367ec9",
