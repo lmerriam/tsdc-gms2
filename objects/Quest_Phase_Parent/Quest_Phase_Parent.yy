@@ -1,33 +1,23 @@
 {
-    "id": "c8c7ee5c-21e0-4bc6-b966-6e6db9138bb7",
+    "id": "8820d9ac-70dd-4db5-82e2-186fd949a6a7",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "Quest_Phase_Interact",
+    "name": "Quest_Phase_Parent",
     "eventList": [
         {
-            "id": "5bae37cb-5a5f-45c5-ad5a-fff128f4b426",
+            "id": "9a52e0ab-6501-4cba-9389-55f93f1d3407",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 0,
-            "m_owner": "c8c7ee5c-21e0-4bc6-b966-6e6db9138bb7"
-        },
-        {
-            "id": "4412a41a-1b75-4173-a691-642f69e324a0",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 10,
-            "eventtype": 7,
-            "m_owner": "c8c7ee5c-21e0-4bc6-b966-6e6db9138bb7"
+            "m_owner": "8820d9ac-70dd-4db5-82e2-186fd949a6a7"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "8820d9ac-70dd-4db5-82e2-186fd949a6a7",
+    "parentObjectId": "00000000-0000-0000-0000-000000000000",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
@@ -43,7 +33,7 @@
     "physicsStartAwake": true,
     "properties": [
         {
-            "id": "568badbe-8780-4d70-8a64-1712793354b0",
+            "id": "a5a2c742-d37e-4a05-a98a-c0845893f1c1",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -52,9 +42,23 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "Quest_Interact",
-            "varName": "interact_object",
-            "varType": 5
+            "value": "default quest",
+            "varName": "quest_name",
+            "varType": 2
+        },
+        {
+            "id": "5a124307-709a-49da-883c-02cbcd44c852",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "phase_number",
+            "varType": 1
         }
     ],
     "solid": false,

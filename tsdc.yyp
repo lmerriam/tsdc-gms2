@@ -1975,6 +1975,14 @@
             }
         },
         {
+            "Key": "6d2708e2-85f4-48a1-a0f9-645fdd5b5306",
+            "Value": {
+                "id": "b011fbda-0d44-4ea9-8dd6-2faa5922482b",
+                "resourcePath": "scripts\\scr_activate_room_quest\\scr_activate_room_quest.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "6dd593c6-52af-4c11-8e1e-ad338e59b2f9",
             "Value": {
                 "id": "e80ee7ee-c49f-4732-8404-c88bc91ac284",
@@ -2572,6 +2580,14 @@
                 "id": "8dcdbeef-5b04-4c02-a6b3-9b274d03731a",
                 "resourcePath": "scripts\/scr_string_copy_words\/scr_string_copy_words.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "8820d9ac-70dd-4db5-82e2-186fd949a6a7",
+            "Value": {
+                "id": "f942a29d-a076-4ea6-abef-6ef6d8584922",
+                "resourcePath": "objects\\Quest_Phase_Parent\\Quest_Phase_Parent.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -3207,6 +3223,14 @@
             }
         },
         {
+            "Key": "a6f523aa-52be-4246-9f98-2a2f89e770eb",
+            "Value": {
+                "id": "59999758-aac9-4706-b799-5c5636eb2ced",
+                "resourcePath": "scripts\\scr_init_room_quest\\scr_init_room_quest.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "a71c5793-c58c-4590-9ce0-5da4b3932013",
             "Value": {
                 "id": "f1400926-5467-4c3d-a095-d4e659db6a77",
@@ -3483,6 +3507,14 @@
             "Value": {
                 "id": "cff1f5d6-7ea0-45e2-8602-f8448b20b19c",
                 "resourcePath": "scripts\/scr_spawn_gold\/scr_spawn_gold.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "b278d58b-8f1c-40ba-a19a-dc5137630a56",
+            "Value": {
+                "id": "1a23c6da-fbdd-471d-9527-2b7e3ab1acfe",
+                "resourcePath": "scripts\\scr_register_quest_phase\\scr_register_quest_phase.yy",
                 "resourceType": "GMScript"
             }
         },
