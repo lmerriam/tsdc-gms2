@@ -69,4 +69,4 @@ combo_bar_y2 = combo_bar_y1 + 4;
 // Keep track of announcements
 announce_timer = scr_sec_from_now(3);
 announce_target = noone;
-global.announcements = ds_list_create();
+global.announcements = ds_queue_create();

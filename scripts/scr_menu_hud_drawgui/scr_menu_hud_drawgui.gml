@@ -50,8 +50,8 @@ var maxexpr = Player.base_stats[? "Next Level Experience"];
 draw_healthbar(0,window_height-hbar,window_width,window_height,expr/maxexpr*100,c_black,c_white,c_white,0,true,true);
 
 //Draw announcements
-if (ds_list_size(global.announcements) > 0) {
+if (ds_queue_size(global.announcements) > 0) {
 	draw_set_font(PixelSmall_18);
-	scr_draw_text_shadow(global.window_width/2,global.window_height*.75,global.announcements[| 0],c_white,c_black,1,3,270,1,fa_center);
+	scr_draw_text_shadow(global.window_width/2,global.window_height*.75,ds_queue_head(global.announcements),c_white,c_black,1,3,270,1,fa_center);
 	draw_set_font(PixelSmall_12);
 }

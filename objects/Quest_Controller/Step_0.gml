@@ -14,7 +14,7 @@ for (var i = 0; i<ds_map_size(global.active_quests); i++) {
 		
 		// Check if the quest is complete
 		if (next_phase >= ds_list_size(phases)) {
-			scr_complete_quest(key);
+			scr_complete_quest(key,true);
 		} else {
 			// Move to the next phase if not
 			var next_phase_obj = phases[| next_phase];

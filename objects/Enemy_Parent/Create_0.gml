@@ -5,6 +5,8 @@ bleeds = true;
 damaged_by = ds_list_create();
 ds_list_add(damaged_by,Prop_Parent,Player);
 
+mob = noone;
+
 spawner = noone;
 spawn_x = x;
 spawn_y = y;

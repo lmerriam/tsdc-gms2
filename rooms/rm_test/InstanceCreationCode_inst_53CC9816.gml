@@ -1,1 +1,0 @@
-scr_init_room_quest("test quest", "Testy mctesterson")

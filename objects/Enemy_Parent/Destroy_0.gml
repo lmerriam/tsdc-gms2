@@ -1,12 +1,13 @@
 /// Loot and XP and
 event_inherited();
 
-if (spawner != noone and instance_exists(spawner)) spawner.current_enemies -= 1;
-
-for (var i = 0; i <= stats[? "Experience"]; i++) {
-    instance_create_layer(x+random_range(-16,16),y+random_range(-16,16),"entities",Expr);
+// Register to mob
+if (mob != noone and instance_exists(mob)) {
+	ds_map_delete(mob.enemies,id);
+	if (ds_map_size(mob.enemies) <= 0) instance_destroy(mob);
 }
 
+// Spawn loot
 if (ds_exists(loot,ds_type_map)) {
 	var current_key = ds_map_find_first(loot); // Start with the first key in the map
 	for (i=0; i < ds_map_size(loot); i++) {
@@ -18,7 +19,12 @@ if (ds_exists(loot,ds_type_map)) {
 	}
 }
 
+// TODO: Move gold and XP to an object variable
+// TODO: Also remove EXP objects and change to nice animation of XP bar
 scr_spawn_gold(stats[? "Level"]*irandom_range(8,11));
+for (var i = 0; i <= stats[? "Experience"]; i++) {
+    instance_create_layer(x+random_range(-16,16),y+random_range(-16,16),"entities",Expr);
+}
 
 if ds_exists(properties,ds_type_map) ds_map_destroy(properties);
 if ds_exists(loot,ds_type_map) ds_map_destroy(loot);

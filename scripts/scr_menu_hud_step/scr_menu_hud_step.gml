@@ -37,7 +37,7 @@ if (distance_to_object(nearest_interactable) < 32) {
 if (combo_timer == Time.now) {
 	if (combo_count > 2) {
 		var xp = combo_count * Player.base_stats[? "Level"];
-		scr_announce("Combo bonus: " + string(xp),noone);
+		scr_announce("Combo bonus: " + string(xp));
 		repeat(xp) instance_create_layer(Player.x + random_range(-16,16), Player.y + random_range(32,48), "entities", Expr);
 	}
 	combo_count = 0;
@@ -77,7 +77,7 @@ if (mouse_check_button_released(1)) {
 	
 }
 
-if (ds_list_size(global.announcements) > 0 and scr_alarm_passed(announce_timer)) {
-	ds_list_delete(global.announcements,0);
+if (ds_queue_size(global.announcements) > 0 and scr_alarm_passed(announce_timer)) {
+	ds_queue_dequeue(global.announcements);
 	announce_timer = scr_sec_from_now(3);
 }

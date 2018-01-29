@@ -20,4 +20,4 @@ if (target != noone and target != "noone" and is_string(target)) quest[? "Target
 if (current) scr_set_current_quest(name);
 
 // Announce the new quest
-if (announce) scr_announce("Quest: " + title, noone);
+if (announce) scr_announce("Quest: " + title);

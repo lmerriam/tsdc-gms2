@@ -69,7 +69,7 @@ switch phase {
 		
 	case "bang door 2":
 		if (scr_alarm_passed(bang_door)) {
-			//scr_announce("Bang 2!",noone);
+			//scr_announce("Bang 2!");
 			phase = "spawn baddies";
 			spawn_baddies = scr_sec_from_now(1);
 			part_particles_create(global.particles_above,room_width/2,8,global.dustcloud_particles,1);

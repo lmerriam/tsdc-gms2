@@ -15,6 +15,6 @@ quest[? "Title"] = title;
 quest[? "Target"] = target;
 global.active_quests[? "Name"] = name;
 
-if (announce) scr_announce("Quest complete: " + title, noone);
+if (announce) scr_announce("Quest complete: " + title);
 
 return quest;

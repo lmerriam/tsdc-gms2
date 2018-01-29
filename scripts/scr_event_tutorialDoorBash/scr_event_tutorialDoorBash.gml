@@ -1,1 +1,1 @@
-scr_announce("Crash!",noone);
+scr_announce("Crash!");

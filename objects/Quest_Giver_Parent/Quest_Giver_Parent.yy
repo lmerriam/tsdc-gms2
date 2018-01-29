@@ -33,7 +33,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "0",
+            "value": "default name",
             "varName": "quest_name",
             "varType": 2
         },
@@ -47,9 +47,37 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "0",
+            "value": "default title",
             "varName": "quest_title",
             "varType": 2
+        },
+        {
+            "id": "e8723613-7a36-4084-bf90-5abfb9baab4b",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "100",
+            "varName": "quest_gold",
+            "varType": 1
+        },
+        {
+            "id": "e774da98-cbe8-4a6b-8b74-eabea461238e",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "100",
+            "varName": "quest_xp",
+            "varType": 1
         }
     ],
     "solid": false,
