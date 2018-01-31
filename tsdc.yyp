@@ -2547,6 +2547,25 @@
             }
         },
         {
+            "Key": "424eb293-874c-4af1-bcfb-3ba330c70e21",
+            "Value": {
+                "id": "9539c531-045b-4079-bd15-ba213df00344",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/Quest_Phase_Trigger\/Quest_Phase_Trigger.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "42a90234-b2b0-4672-b10f-6578cf7e4c7d",
             "Value": {
                 "id": "6dc50079-48d6-4b98-a7d2-e0ffff624cd0",
@@ -8947,6 +8966,25 @@
                 ],
                 "resourcePath": "scripts\/scr_check_btn\/scr_check_btn.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "c361a139-0cc3-43ce-be27-52ba0fd196c6",
+            "Value": {
+                "id": "7f4532f0-1de6-4d50-bdc8-906ee6e411af",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/spr_collision_square\/spr_collision_square.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
