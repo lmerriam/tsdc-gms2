@@ -22,5 +22,8 @@ inst.sprite_index = props[? "Sprite"];
 
 with (inst) { sprite_set_offset(sprite_index,sprite_width/2,sprite_height/2); }
 
-var roll = scr_choose_rarity(0.25,0.25,0.15);
-scr_buff_equipment(props,roll);
+props[? "Rarity"] = scr_get_rarity(props[? "Buffs"]);
+props[? "Rarity color"] = scr_get_rarity_color(props[? "Rarity"]);
+
+//var roll = scr_choose_rarity(0.25,0.25,0.15);
+//scr_buff_equipment(props,roll);

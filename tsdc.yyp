@@ -4257,6 +4257,25 @@
             }
         },
         {
+            "Key": "68cf7bfc-efe7-4ff0-97de-200c030e5e1a",
+            "Value": {
+                "id": "c5f944f4-9a4e-4608-8e74-a2c27981aff1",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/Quest_Equipment\/Quest_Equipment.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "690f82aa-c946-458b-8191-b0e7598ba9e7",
             "Value": {
                 "id": "3aec31de-9eb8-44ef-97dc-6e05e77df0ae",
@@ -4542,6 +4561,25 @@
             }
         },
         {
+            "Key": "6c708116-cb2b-4431-8e11-077a0bcabeb6",
+            "Value": {
+                "id": "82aa9357-55a3-429f-afa6-2e5250e198ba",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/spr_bullet_tracer\/spr_bullet_tracer.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "6d235333-2ecb-4462-8c52-b06f6cb6e046",
             "Value": {
                 "id": "e0313877-0e1a-49d4-9ea8-5f4bd6f16c38",
@@ -4595,6 +4633,25 @@
                     "default"
                 ],
                 "resourcePath": "objects\/Event_Tutorial_OpenChest\/Event_Tutorial_OpenChest.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "6e6d7ebc-477c-4ede-a724-9d114f9e31bf",
+            "Value": {
+                "id": "a52b22ca-0fd8-44ad-bcbc-79930395ce03",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/Quest_Phase_Equipment\/Quest_Phase_Equipment.yy",
                 "resourceType": "GMObject"
             }
         },
