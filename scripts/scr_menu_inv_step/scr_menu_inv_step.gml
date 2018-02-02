@@ -47,7 +47,8 @@ if mouse_check_button_released(1) {
 		var selected_item_buffs = selected_item[? "Buffs"];
 		var buff_properties_length = 0;
 		var key = ds_map_find_first(selected_item_buffs);
-		for (var i=0; i<ds_map_size(selected_item[? "Buffs"]); i++) {
+		var num_buffs = ds_map_size(selected_item[? "Buffs"])
+		for (var i=0; i<num_buffs; i++) {
 			buff_properties_length += ds_map_size(selected_item_buffs[? key]);
 			key = ds_map_find_next(selected_item_buffs,key);
 		}

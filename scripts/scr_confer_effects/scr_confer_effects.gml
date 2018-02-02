@@ -12,7 +12,8 @@ if (effects != undefined and buffs != undefined and ds_exists(effects,ds_type_ma
 		//scr_copy_child_maps(effects,buffs);
 		
 		var key = ds_map_find_first(buffs);
-		for(var i=0;i<ds_map_size(buffs);i++) {
+		var num_buffs = ds_map_size(buffs);
+		for(var i=0;i<num_buffs;i++) {
 			effects[? key] = ds_map_create();
 			show_debug_message(string(i) + " " + string(key));
 			ds_map_copy(effects[? key],buffs[? key]);

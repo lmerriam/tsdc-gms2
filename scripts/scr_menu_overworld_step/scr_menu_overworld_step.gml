@@ -4,7 +4,8 @@ scr_menu_navigation_step()
 
 if (mouse_check_button_released(mb_left)) {
 	var key = ds_map_find_first(overworld_locations);
-	for (var i=0; i<ds_map_size(overworld_locations); i++) {
+	var num_locations = ds_map_size(overworld_locations);
+	for (var i=0; i<num_locations; i++) {
 		var location = overworld_locations[? key];
 		var xx = location[? "x"]*overworld_spr_ratio + overworld_spr_originx;
 		var yy = location[? "y"]*overworld_spr_ratio + overworld_spr_originy;

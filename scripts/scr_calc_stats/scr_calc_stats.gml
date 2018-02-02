@@ -3,7 +3,8 @@
 ds_map_copy(Player.properties[? "Stats"],Player.properties[? "Base Stats"]);
 
 // Iterate through equipment slots
-for (i=0; i<ds_grid_height(global.equipment_slots); i++) {
+var num_rows = ds_grid_height(global.equipment_slots);
+for (i=0; i<num_rows; i++) {
     var props = global.equipment_slots[# 0, i];
 	if (props!=noone){
 		//show_debug_message("Object: " + object_get_name(props[? "Object"]));
@@ -13,7 +14,7 @@ for (i=0; i<ds_grid_height(global.equipment_slots); i++) {
 	    // Iterate through stats in the current item
 	    var current_key = ds_map_find_first(item_stats);
 	    var size = ds_map_size(item_stats);
-	    for(var j = 0; j<ds_map_size(item_stats); j++) {
+	    for(var j = 0; j<size; j++) {
         
 	        // Update the related player stat to include item boosts
 	        if (scr_get_instance_stat(Player,current_key) != undefined) {

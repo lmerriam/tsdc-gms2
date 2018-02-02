@@ -1,6 +1,7 @@
 //show_debug_message(ds_map_find_first(events));
 //scr_debug_list(observers);
 //scr_debug_map(events);
+// TODO: think I can get rid of observers
 for(var i=0;i<ds_list_size(observers);i++) {
 	var observer = observers[| i];
 	var script = observer[? "script"];

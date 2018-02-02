@@ -6,7 +6,8 @@ draw_sprite_stretched(overworld_spr,0,overworld_spr_originx,overworld_spr_origin
 
 // Draw the locations
 var key = ds_map_find_first(overworld_locations);
-for (var i=0; i<ds_map_size(overworld_locations); i++) {
+var num_locations = ds_map_size(overworld_locations);
+for (var i=0; i<num_locations; i++) {
 	var location = overworld_locations[? key];
 	
 	if (location[? "discovered"]) {

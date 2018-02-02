@@ -2,11 +2,14 @@
 // You can write your code in this editor
 
 var key = ds_map_find_first(global.active_quests);
-for (var i = 0; i<ds_map_size(global.active_quests); i++) {
+var num_quests = ds_map_size(global.active_quests);
+for (var i = 0; i<num_quests; i++) {
 	var quest = global.active_quests[? key];
 	var phases = quest[? "phases"];
 	var current_phase = quest[? "current phase"];
 	var current_phase_obj = phases[| current_phase];
+	
+	scr_debug_map(quest);
 	
 	// Progress the quest phase if completed
 	if (current_phase_obj.completed) {

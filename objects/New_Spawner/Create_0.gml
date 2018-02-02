@@ -27,7 +27,8 @@ boss[? "Quantity"] = 1;
 
 enemies = ds_list_create();
 ds_list_copy(enemies,enemies_base);
-for (var i = 0; i<ds_list_size(enemies_base); i++) {
+var size = ds_list_size(enemies_base);
+for (var i = 0; i<size; i++) {
 	enemies[| i] = ds_map_create();
 	ds_map_copy(enemies[| i],enemies_base[| i]);
 }

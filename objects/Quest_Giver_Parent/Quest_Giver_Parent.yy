@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "Quest_Giver_Parent",
     "eventList": [
-        
+        {
+            "id": "0e7ece17-54ff-4143-b465-ef55cf313b5f",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "94a4ef8f-acc6-43bb-9d27-8c8434eda8ca"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
