@@ -1198,6 +1198,25 @@
             }
         },
         {
+            "Key": "20b87fc7-0384-4e89-8a89-60d0979d8872",
+            "Value": {
+                "id": "6b8b1c66-0a5d-414e-911d-e61322b3fa03",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/spr_location\/spr_location.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "21729b09-1b3e-410d-a7b5-d1619fd4b14d",
             "Value": {
                 "id": "7072daff-89ff-4f24-bebb-75210527e5a3",
@@ -2373,6 +2392,25 @@
                 ],
                 "resourcePath": "scripts\/scr_menu_castmode\/scr_menu_castmode.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "3e0ee8d9-3588-4b68-b419-5be6e6e9dd95",
+            "Value": {
+                "id": "19ef370d-449f-48f2-9683-6a63ab447919",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/spr_location_quest_new\/spr_location_quest_new.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -9121,6 +9159,25 @@
             }
         },
         {
+            "Key": "c4b280ef-c29e-495f-aef8-2d9d1ee2b985",
+            "Value": {
+                "id": "b1e72f7a-3a99-4726-887f-4c403309f895",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/spr_location_quest_active\/spr_location_quest_active.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "c551f442-bf80-4532-b688-980058a6d57a",
             "Value": {
                 "id": "eb373b4d-90c9-41f4-9bf6-72d57416b90c",
@@ -11776,7 +11833,7 @@
                 "resourceCreationConfigs": [
                     "default"
                 ],
-                "resourcePath": "sprites\/spr_location\/spr_location.yy",
+                "resourcePath": "sprites\/spr_location_old\/spr_location_old.yy",
                 "resourceType": "GMSprite"
             }
         },

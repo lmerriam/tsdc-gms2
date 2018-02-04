@@ -5,6 +5,7 @@ var key = ds_map_find_first(global.active_quests);
 var num_quests = ds_map_size(global.active_quests);
 for (var i = 0; i<num_quests; i++) {
 	var quest = global.active_quests[? key];
+	var giver = quest[? "giver"];
 	var phases = quest[? "phases"];
 	var current_phase = quest[? "current phase"];
 	var current_phase_obj = phases[| current_phase];

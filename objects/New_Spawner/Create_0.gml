@@ -1,4 +1,4 @@
-scr_register_location(id);
+scr_register_location(id,spr_location);
 
 max_enemies = 8;
 current_enemies = 0;

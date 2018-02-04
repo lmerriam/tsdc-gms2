@@ -13,7 +13,7 @@ for (var i = 0; i<num_locations; i++) {
 	var location = global.locations[| i];
 	var map_x = scr_map_x(location.x);
     var map_y = scr_map_y(location.y);
-    draw_sprite(location.sprite_index,0,map_x,map_y);
+    draw_sprite(location.location_sprite,0,map_x,map_y);
 }
 
 // Draw player position
