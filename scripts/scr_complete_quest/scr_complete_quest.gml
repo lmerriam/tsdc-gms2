@@ -18,4 +18,8 @@ show_debug_message("Gold: " + string(gold));
 if (announce) scr_announce("Completed " + name + "!");
 //show_debug_message("Completed " + name + "!");
 
+// Set giver quest complete
+var giver = quest[? "giver"];
+giver.location_sprite = spr_location_quest_complete;
+
 return quest;

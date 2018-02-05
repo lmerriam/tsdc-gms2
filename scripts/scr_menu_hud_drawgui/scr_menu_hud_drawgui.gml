@@ -28,7 +28,7 @@ if (nearest_interactable_in_range) {
 }
     
 // Draw the minimap
-draw_surface_stretched(minimap,minimap_window_x,minimap_window_y,minimap_width,minimap_height);
+draw_surface(minimap,minimap_window_x,minimap_window_y);
 draw_rectangle_color(minimap_window_x, minimap_window_y, minimap_window_x+minimap_width, minimap_window_y+minimap_height, c_black, c_black, c_black, c_black, true);
 draw_sprite_ext(spr_player_arrow,0,(minimap_window_x + (minimap_width/2)),(minimap_window_y + (minimap_height/2)),1,1,global.aim_dir,c_white,1);
     

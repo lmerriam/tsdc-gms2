@@ -1,13 +1,12 @@
 
 // HUD create event
-
 buttons = ds_list_create();
 
 // Init minimap
 minimap = -1;
 minimap_ratio = room_width/sprite_get_width(global.current_map);
-minimap_width = window_height/5;
-minimap_height = minimap_width;
+minimap_width = 120;
+minimap_height = 120;
 minimap_window = 500;
 minimap_window_x = window_width - minimap_width - windowpadding;
 minimap_window_y = windowpadding;
