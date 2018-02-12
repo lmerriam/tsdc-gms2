@@ -9406,6 +9406,25 @@
             }
         },
         {
+            "Key": "c5aecee7-f07e-4fdb-bb42-35b09ffd1a2a",
+            "Value": {
+                "id": "5f578f8e-a768-4630-a3a8-62e86845fd5f",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/Gold_Counter\/Gold_Counter.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "c61d4cfb-d631-4d24-a443-68b33ad44ba6",
             "Value": {
                 "id": "697d8f6e-bd8a-4ddf-bc75-432fd3e33d75",
