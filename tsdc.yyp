@@ -2566,6 +2566,25 @@
             }
         },
         {
+            "Key": "4134f851-d299-4cb9-bfca-25748376689c",
+            "Value": {
+                "id": "14900320-bc7f-4bf4-afe2-4b2f79c7e337",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/Exp_Counter\/Exp_Counter.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "41c7da85-5811-4dec-b498-b497e7e7d4cb",
             "Value": {
                 "id": "ab2b0721-80ca-43e4-adbf-5bdffecf9136",
@@ -7159,7 +7178,7 @@
                 "resourceCreationConfigs": [
                     "default"
                 ],
-                "resourcePath": "objects\/Damage_Counter\/Damage_Counter.yy",
+                "resourcePath": "objects\/Counter\/Counter.yy",
                 "resourceType": "GMObject"
             }
         },

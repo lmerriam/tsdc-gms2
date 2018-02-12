@@ -2,7 +2,7 @@
     "id": "963a4673-d0ce-443e-9f1c-efadc671da38",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "Damage_Counter",
+    "name": "Counter",
     "eventList": [
         {
             "id": "101ece55-957d-4b8b-8950-090edc198867",

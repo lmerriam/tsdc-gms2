@@ -1,5 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
-text = "+" + string(count);
 
+// Inherit the parent event
 event_inherited();
+
+color = c_yellow;

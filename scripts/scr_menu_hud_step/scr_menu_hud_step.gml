@@ -36,7 +36,7 @@ for (var i=0; i < ds_list_size(global.interactables); i++) {
 
 if (distance_to_object(nearest_interactable) < 32) {
     nearest_interactable_in_range = true;
-	shop_btn[4] = nearest_interactable.sprite_index;
+	interact_btn[4] = nearest_interactable.sprite_index;
 } else {
     nearest_interactable_in_range = false;   
 }
@@ -78,7 +78,7 @@ if (mouse_check_button_released(1)) {
 		nearest_drop = noone;
 		
 	// Detect vendor button click
-    } else if (nearest_interactable != noone and nearest_interactable_in_range and scr_check_btn(shop_btn)) {
+    } else if (nearest_interactable != noone and nearest_interactable_in_range and scr_check_btn(interact_btn)) {
 		show_debug_message(nearest_interactable);
 		with(nearest_interactable) event_user(1);
     }

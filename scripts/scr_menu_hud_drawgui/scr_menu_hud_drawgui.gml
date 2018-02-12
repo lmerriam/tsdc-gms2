@@ -24,7 +24,7 @@ if (nearest_drop_in_range) {
 
 // Draw nearest interactable button
 if (nearest_interactable_in_range) {
-    scr_draw_btn_sprite(shop_btn);
+    scr_draw_btn_sprite(interact_btn);
 }
     
 // Draw the minimap

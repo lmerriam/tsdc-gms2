@@ -49,6 +49,13 @@ nearest_btn[4] = noone;
 
 // Nearest interactable
 nearest_interactable_in_range = false;
+var width = 64;
+var height = 64;
+interact_btn[0] = window_width - (width+windowpadding);
+interact_btn[1] = cast_btn[1] - (height+windowpadding);
+interact_btn[2] = width;
+interact_btn[3] = height;
+interact_btn[4] = spr_menu_button;
 
 // Health bar
 var padding = 24;

@@ -7,8 +7,9 @@ var base_stats = Player.properties[? "Base Stats"];
 base_stats[? "Experience"] += quantity;
 var stats = Player.stats;
 
-if (base_stats[? "Experience"] >= base_stats[? "Next Level Experience"]) {
-	
+var remainder = base_stats[? "Experience"] - base_stats[? "Next Level Experience"];
+if (remainder >= 0) {
+	var remainder 
     base_stats[? "Level"] += 1;
     base_stats[? "Next Level Experience"] += base_stats[? "Next Level Experience"] + (base_stats[? "Level"] * 2);
     base_stats[? "Max Health"] += 2;
@@ -20,4 +21,5 @@ if (base_stats[? "Experience"] >= base_stats[? "Next Level Experience"]) {
 	base_stats[? "Stat points"] += 2;
 	scr_calc_stats();
     scr_announce("Achieved level " + string(base_stats[? "Level"]));
+	scr_give_xp(remainder);
 }

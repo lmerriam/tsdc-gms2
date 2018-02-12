@@ -22,9 +22,14 @@ if (ds_exists(loot,ds_type_map)) {
 // TODO: Move gold and XP to an object variable
 // TODO: Also remove EXP objects and change to nice animation of XP bar
 scr_spawn_gold(stats[? "Level"]*irandom_range(8,11));
-for (var i = 0; i <= stats[? "Experience"]; i++) {
-    instance_create_layer(x+random_range(-16,16),y+random_range(-16,16),"entities",Expr);
-}
+
+var counter = instance_create_layer(x,y,"system_objects",Exp_Counter);
+counter.count = stats[? "Experience"];
+scr_give_xp(stats[? "Experience"]);
+
+//for (var i = 0; i <= stats[? "Experience"]; i++) {
+//    instance_create_layer(x+random_range(-16,16),y+random_range(-16,16),"entities",Expr);
+//}
 
 if ds_exists(properties,ds_type_map) ds_map_destroy(properties);
 if ds_exists(loot,ds_type_map) ds_map_destroy(loot);

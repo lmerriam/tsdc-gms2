@@ -1,28 +1,18 @@
 {
-    "id": "c5aecee7-f07e-4fdb-bb42-35b09ffd1a2a",
+    "id": "4134f851-d299-4cb9-bfca-25748376689c",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "Gold_Counter",
+    "name": "Exp_Counter",
     "eventList": [
         {
-            "id": "ace3b9c2-1c12-4e79-814c-39428a0c4256",
+            "id": "5f7527a8-0746-412a-bd42-e0359d2f06a8",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 8,
-            "m_owner": "c5aecee7-f07e-4fdb-bb42-35b09ffd1a2a"
-        },
-        {
-            "id": "4ff73fe6-6771-493a-b6f6-09299e040591",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 0,
-            "m_owner": "c5aecee7-f07e-4fdb-bb42-35b09ffd1a2a"
+            "m_owner": "4134f851-d299-4cb9-bfca-25748376689c"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
