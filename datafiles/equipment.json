@@ -308,9 +308,7 @@
       "Value": 100,
       "Sprite": "spr_armor",
       "Stats": {
-        "Health": 5,
         "Health Regen": 1,
-        "Stamina": 0,
         "Stamina Regen": 0,
         "Speed": 0,
         "Defense": 3

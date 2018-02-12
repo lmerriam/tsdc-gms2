@@ -3,8 +3,8 @@ event_inherited();
 
 // Register to mob
 if (mob != noone and instance_exists(mob)) {
-	ds_map_delete(mob.enemies,id);
-	if (ds_map_size(mob.enemies) <= 0) instance_destroy(mob);
+	ds_list_delete(mob.enemies,ds_list_find_index(mob.enemies,id));
+	if (ds_list_size(mob.enemies) <= 0) instance_destroy(mob);
 }
 
 // Spawn loot

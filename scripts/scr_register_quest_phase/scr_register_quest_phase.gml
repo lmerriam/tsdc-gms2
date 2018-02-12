@@ -12,3 +12,5 @@ var phases = quest[? "phases"];
 phases[| phase_number] = inst;
 
 inst.completed = false;
+targets = ds_list_create();
+ds_list_add(targets,id);

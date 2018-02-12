@@ -16,18 +16,25 @@ minimap_btn[2] = minimap_width;
 minimap_btn[3] = minimap_height;
 minimap_btn[4] = noone;
 
-// Init menu button
-var width = .1 * window_width;
-var height = width;
-menu_btn_origin_x = windowpadding + width/2;
-menu_btn_origin_y = windowpadding + height/2;
-menu_btn_x2 = menu_btn_origin_x + width;
+//fog = ds_grid_create(1,1);
+fog_tile_size = 128;
+fog = ds_grid_create(1,1);
+fog_x = -20;
+fog_y = -200;
+fog_draw_range = 6;
+fog_vision_range = 3;
 
+// Init menu button
+var width = sprite_get_width(spr_inventory_button)*2;
+var height = width;
 menu_btn[0] = windowpadding;
 menu_btn[1] = windowpadding;
-menu_btn[2] = windowpadding + width;
-menu_btn[3] = windowpadding + height;
-menu_btn[4] = spr_menu_button;
+menu_btn[2] = width;
+menu_btn[3] = height;
+menu_btn[4] = spr_inventory_button;
+
+// Health bars
+
 
 // Init nearest drop UI
 nearest_drop = noone;
@@ -43,14 +50,22 @@ nearest_btn[4] = noone;
 // Nearest interactable
 nearest_interactable_in_range = false;
 
-// Nearest vendor UI
-var width = 64;
-var height = 64;
-shop_btn[0] = window_width - (width+windowpadding);
-shop_btn[1] = cast_btn[1] - (height+windowpadding);
-shop_btn[2] = width;
-shop_btn[3] = height;
-shop_btn[4] = spr_menu_button;
+// Health bar
+var padding = 24;
+hbar_width = 200;
+hbar_height = 18;
+hbar_x1 = menu_btn[2] + windowpadding;
+hbar_y1 = windowpadding;
+hbar_x2 = hbar_x1 + hbar_width;
+hbar_y2 = hbar_y1 + hbar_height;
+
+// Stamina bar
+sbar_width = hbar_width;
+sbar_height = hbar_height;
+sbar_x1 = hbar_x1;
+sbar_y1 = hbar_y2 + 12;
+sbar_x2 = hbar_x2;
+sbar_y2 = sbar_y1 + sbar_height;
 
 ds_list_add(buttons,cast_btn,menu_btn,nearest_btn);
 

@@ -22,14 +22,15 @@ if (nearest_drop_in_range) {
     scr_draw_nearest_comparison(nearest_drop.properties);
 }
 
-// Draw shop button
+// Draw nearest interactable button
 if (nearest_interactable_in_range) {
     scr_draw_btn_sprite(shop_btn);
 }
     
 // Draw the minimap
 draw_surface(minimap,minimap_window_x,minimap_window_y);
-draw_rectangle_color(minimap_window_x, minimap_window_y, minimap_window_x+minimap_width, minimap_window_y+minimap_height, c_black, c_black, c_black, c_black, true);
+//draw_rectangle_color(minimap_window_x, minimap_window_y, minimap_window_x+minimap_width, minimap_window_y+minimap_height, c_black, c_black, c_black, c_black, true);
+scr_draw_9patch(spr_ui_box_2x,0,minimap_window_x-2, minimap_window_y-2, minimap_window_x+minimap_width+2, minimap_window_y+minimap_height+2,6,6,6,6);
 draw_sprite_ext(spr_player_arrow,0,(minimap_window_x + (minimap_width/2)),(minimap_window_y + (minimap_height/2)),1,1,global.aim_dir,c_white,1);
     
 // Draw health and stamina
@@ -37,12 +38,17 @@ var hp = scr_get_instance_stat(Player,"Health");
 var maxhp = scr_get_instance_stat(Player,"Max Health");
 var stamina = scr_get_instance_stat(Player,"Stamina");
 var maxstamina = scr_get_instance_stat(Player,"Max Stamina");
-var hbar = .025*window_height;
-var lbar = .25*window_width;
-var padding = .01*window_height;
-draw_healthbar(menu_btn_x2+padding,windowpadding,menu_btn_x2+padding+lbar,windowpadding+hbar,hp/maxhp*100,c_black,c_red,c_green,0,true,true);
-draw_healthbar(menu_btn_x2+padding,windowpadding+hbar+padding,menu_btn_x2+padding+lbar,windowpadding+hbar*2+padding,stamina/maxstamina*100,c_black,c_blue,c_blue,0,true,true);
-    
+var hpercent = hp/maxhp;
+var spercent = stamina/maxstamina;
+//draw_healthbar(menu_btn_x2+padding,windowpadding,menu_btn_x2+padding+lbar,windowpadding+hbar,hp/maxhp*100,c_black,c_red,c_green,0,true,true);
+//draw_healthbar(menu_btn_x2+padding,windowpadding+hbar+padding,menu_btn_x2+padding+lbar,windowpadding+hbar*2+padding,stamina/maxstamina*100,c_black,c_blue,c_blue,0,true,true);
+scr_draw_9patch(spr_healthbar_fill,0,hbar_x1,hbar_y1,hbar_x1+hbar_width*hpercent,hbar_y2,6,6,6,6);
+scr_draw_9patch(spr_ui_box_2x,0,hbar_x1,hbar_y1,hbar_x2,hbar_y2,6,6,6,6);
+
+scr_draw_9patch(spr_staminabar_fill,0,sbar_x1,sbar_y1,sbar_x1+sbar_width*spercent,sbar_y2,6,6,6,6);
+scr_draw_9patch(spr_ui_box_2x,0,sbar_x1,sbar_y1,sbar_x2,sbar_y2,6,6,6,6);
+
+   
 // Draw expr
 var hbar = 3;
 var expr = Player.base_stats[? "Experience"];

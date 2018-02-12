@@ -10,7 +10,7 @@ mob = noone;
 spawner = noone;
 spawn_x = x;
 spawn_y = y;
-percent = 100;
+percent = 1;
 base_image_speed = 1;
 loot = ds_map_create();
 

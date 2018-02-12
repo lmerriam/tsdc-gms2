@@ -1,5 +1,5 @@
 /// @description Spawn enemies and destroy spawner
-if (last_spawn > 0 and ds_map_size(enemies)<=0) {
+if (last_spawn > 0 and ds_list_size(enemies)<=0) {
 	// Destroy mob when the enemies are defeated
 	instance_destroy();
 
@@ -8,7 +8,7 @@ if (last_spawn > 0 and ds_map_size(enemies)<=0) {
 	repeat(quantity) {
 		var inst = instance_create_layer(x,y,"entities",enemy);
 		inst.mob = id;
-		ds_map_add(enemies,inst,true);
+		ds_list_add(enemies,inst);
 		last_spawn = Time.now;
 	}
 }

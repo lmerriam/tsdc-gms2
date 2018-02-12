@@ -10,11 +10,14 @@ var height = line_count*line_height+padding*2;
 var x2 = xx+width;
 var y2 = yy+height;
 
+// TODO: stop calculating all this shit each step
+
 // Draw box
 draw_set_color(c_black);
-draw_set_alpha(.75);
-draw_rectangle_fast(xx,yy,xx+width,yy+(2*line_height)+(2*padding));
+draw_set_alpha(.70);
+draw_rectangle_fast(xx+4,yy+4,xx+width-2,yy+(2*line_height)+(2*padding)-2);
 draw_set_alpha(1);
+scr_draw_9patch(spr_ui_box_2x,0,xx,yy,xx+width,yy+(2*line_height)+(2*padding),6,6,6,6)
 
 // Draw stats
 draw_set_font(PixelSmall_12)
@@ -33,9 +36,10 @@ nearest_button_x1 = xx;
 nearest_button_x2 = xx + width;
 
 // Draw nearest btn
-draw_roundrect_color(nearest_button_x1,nearest_button_y1,nearest_button_x2,nearest_button_y2,c_yellow,c_yellow,false);
+//draw_roundrect_color(nearest_button_x1,nearest_button_y1,nearest_button_x2,nearest_button_y2,c_yellow,c_yellow,false);
+scr_draw_9patch(spr_button_yellow_x2,0,nearest_button_x1,nearest_button_y1,nearest_button_x2,nearest_button_y2,4,4,4,4);
 draw_set_halign(fa_center);
 draw_set_color(c_black);
-draw_text(nearest_button_x1+width/2,nearest_button_y1+nearest_button_height/2-10,string("Pick up"));
+draw_text(nearest_button_x1+width/2,nearest_button_y1+nearest_button_height/2-10,string("PICK UP"));
 draw_set_color(c_white)
 draw_set_halign(fa_left);

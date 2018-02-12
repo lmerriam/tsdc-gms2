@@ -1,7 +1,7 @@
 /// Check location clicked
 
 //Activate locations so we can draw them
-instance_activate_object(Location);
+//instance_activate_object(Location);
 
 // Check navigation submenu
 scr_menu_navigation_step();

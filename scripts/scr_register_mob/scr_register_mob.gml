@@ -6,4 +6,4 @@ var inst = argument0;
 
 inst.last_spawn = 0;
 inst.next_spawn = 0;
-inst.enemies = ds_map_create();
+inst.enemies = ds_list_create();
