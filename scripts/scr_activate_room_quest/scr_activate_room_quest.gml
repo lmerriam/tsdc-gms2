@@ -15,6 +15,7 @@ with (first_phase) event_user(0);
 
 // Set giver sprite
 var giver = quest[? "giver"];
-giver.location_sprite = spr_location_quest_active;
+giver.location_icon = spr_location_quest_active;
+giver.discovered = true;
 
 return quest;

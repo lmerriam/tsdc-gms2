@@ -4,4 +4,6 @@ var spr = argument1;
 
 ds_list_add(global.locations,inst);
 discovered = false;
-location_sprite = spr;
+completed = false;
+
+location_icon = spr_location;

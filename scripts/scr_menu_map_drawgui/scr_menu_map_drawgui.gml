@@ -11,9 +11,11 @@ draw_sprite_stretched(global.current_map,0,map_offset_x,map_offset_y,map_w,map_h
 var num_locations = ds_list_size(global.locations);
 for (var i = 0; i<num_locations; i++) {
 	var location = global.locations[| i];
-	var map_x = scr_map_x(location.x);
-    var map_y = scr_map_y(location.y);
-    draw_sprite(location.location_sprite,0,map_x,map_y);
+	if (location.discovered) {
+		var map_x = scr_map_x(location.x);
+	    var map_y = scr_map_y(location.y);
+	    draw_sprite(location.location_icon,0,map_x,map_y);
+	}
 }
 
 // Draw player position

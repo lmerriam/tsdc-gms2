@@ -42,8 +42,8 @@ if (surface_exists(minimap)) {
 	var num_locations = ds_list_size(global.locations);
 	for (var i=0; i<num_locations; i++) {
 		var location = global.locations[| i];
-		if (location.x > Player.x-range and location.x < Player.x+range and location.y > Player.y-range and location.y < Player.y+range) {
-			draw_sprite(location.location_sprite,0,scr_minimap_x(location.x)-originx,scr_minimap_y(location.y)-originy);
+		if (location.x > Player.x-range and location.x < Player.x+range and location.y > Player.y-range and location.y < Player.y+range and !location.completed and location.discovered) {
+			draw_sprite(location.location_icon,0,scr_minimap_x(location.x)-originx,scr_minimap_y(location.y)-originy);
 		}
 	}
 	

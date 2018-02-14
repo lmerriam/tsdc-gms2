@@ -9,7 +9,8 @@ var stats = Player.stats;
 
 var remainder = base_stats[? "Experience"] - base_stats[? "Next Level Experience"];
 if (remainder >= 0) {
-	var remainder 
+	
+	// Increase Player's stats
     base_stats[? "Level"] += 1;
     base_stats[? "Next Level Experience"] += base_stats[? "Next Level Experience"] + (base_stats[? "Level"] * 2);
     base_stats[? "Max Health"] += 2;
@@ -19,7 +20,13 @@ if (remainder >= 0) {
     base_stats[? "Max Stamina"] += 2;
     base_stats[? "Stamina"] = base_stats[? "Max Stamina"];
 	base_stats[? "Stat points"] += 2;
+	
+	// Recalculate the player's stats
 	scr_calc_stats();
+	
+	// Announce the levelup
     scr_announce("Achieved level " + string(base_stats[? "Level"]));
+	
+	// Give the player the amount of XP they went over the 
 	scr_give_xp(remainder);
 }

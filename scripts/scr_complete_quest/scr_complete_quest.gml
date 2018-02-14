@@ -20,6 +20,6 @@ if (announce) scr_announce("Completed " + name + "!");
 
 // Set giver quest complete
 var giver = quest[? "giver"];
-giver.location_sprite = spr_location_quest_complete;
+giver.location_icon = spr_location_quest_complete;
 
 return quest;

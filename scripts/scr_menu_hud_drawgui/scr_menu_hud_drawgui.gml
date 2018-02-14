@@ -55,6 +55,17 @@ var expr = Player.base_stats[? "Experience"];
 var maxexpr = Player.base_stats[? "Next Level Experience"];
 draw_healthbar(0,window_height-hbar,window_width,window_height,expr/maxexpr*100,c_black,c_white,c_white,0,true,true);
 
+// Draw locations
+var size = ds_list_size(global.locations);
+for (var i=0; i<size; i++) {
+	var location = global.locations[| i];
+	var xx = location.x;
+	var yy = location.y;
+	if (point_distance(Player.x,Player.y,xx,yy) < 512) {
+		scr_draw_location_pointer(xx,yy,location.location_icon);
+	}
+}
+
 //Draw announcements
 if (ds_queue_size(global.announcements) > 0) {
 	draw_set_font(PixelSmall_18);

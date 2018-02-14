@@ -4,6 +4,7 @@
 // Set up general purpose GUI variables
 window_width = global.window_width;
 window_height = global.window_height;
+global.window_ratio = window_width/window_height;
 window_hcenter = window_width/2;
 windowpadding = .01 * window_width;
 draw_set_font(BASE_FONT);

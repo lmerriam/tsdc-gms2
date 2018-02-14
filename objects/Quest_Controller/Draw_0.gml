@@ -13,12 +13,13 @@ if (global.current_quest != noone) {
 	var current_phase_obj = phases[| current_phase];
 	var final_phase = phases[| ds_list_size(phases)-1];
 	var targets = current_phase_obj.targets;
+	var icon = current_phase_obj.quest_icon;
 	
 	// TODO: switch to next current_quest instead of just cancelling the pointer when quest complete
 	if (!final_phase.completed) {
 		for (var i = 0; i<ds_list_size(targets); i++) {
 			var target = targets[| i];
-			scr_draw_quest_pointer(target.x,target.y);
+			scr_draw_quest_pointer(target.x,target.y,icon);
 		}
 	}
 }

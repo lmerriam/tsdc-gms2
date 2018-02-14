@@ -7,7 +7,7 @@ device_mouse_dbclick_enable(false);
 global.chests = ds_map_create();
 
 // Set up location registry
-global.locations = ds_list_create();
+//global.locations = ds_list_create();
 
 // Set up interactable registry
 global.interactables = ds_list_create();

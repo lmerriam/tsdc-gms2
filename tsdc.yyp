@@ -210,6 +210,25 @@
             }
         },
         {
+            "Key": "043647f1-ac42-41f2-bef1-8288316a7c56",
+            "Value": {
+                "id": "b06439b5-33c2-44b6-985c-6658eb31dcc2",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/Location_Controller\/Location_Controller.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "04f2fd4e-c114-4053-873c-b79d91cbbae0",
             "Value": {
                 "id": "0fbf32b2-6af7-4c4b-86f9-95df96528363",
@@ -682,6 +701,25 @@
                 ],
                 "resourcePath": "views\/0e088423-70d3-4065-b2ae-9c13f4035ad2.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "1129b2b1-1b2f-445d-921a-d33e6bc2156a",
+            "Value": {
+                "id": "f7f9b7c5-3786-40cd-902b-94ba777d9a94",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/spr_building_chip_black\/spr_building_chip_black.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -5207,6 +5245,25 @@
             }
         },
         {
+            "Key": "75b0716e-5301-477a-90b7-17e984964808",
+            "Value": {
+                "id": "e550c47d-9188-49df-85fe-e97255828cd0",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/spr_quest_icon_enemy\/spr_quest_icon_enemy.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "75ba0776-9d3b-401c-81ec-e31e4052ee1d",
             "Value": {
                 "id": "4bf50452-3515-4c31-89bf-ce0a87460e66",
@@ -6933,6 +6990,25 @@
                 ],
                 "resourcePath": "scripts\/scr_save_game\/scr_save_game.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "9107169f-61a4-41be-9ea4-a100655f1a85",
+            "Value": {
+                "id": "801b24d2-b2c3-425f-82fa-9c4d7f00ed56",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/spr_quest_icon_door\/spr_quest_icon_door.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -12085,6 +12161,25 @@
             }
         },
         {
+            "Key": "fdbf0162-f2f6-47d0-a629-70f3a47c289a",
+            "Value": {
+                "id": "d24b4948-eea3-41e6-af6a-fcc51fc8ebaf",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/scr_draw_location_pointer\/scr_draw_location_pointer.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "fdc9cc64-96db-43e0-bcdd-3d8fcfff80b2",
             "Value": {
                 "id": "a7f5780f-d780-4fbc-b3c4-e66a3986c795",
@@ -12387,7 +12482,9 @@
         "6d2708e2-85f4-48a1-a0f9-645fdd5b5306",
         "4c3c7182-4130-41ea-be4c-e58d172a8cce",
         "09a0b590-c16e-44b6-9401-0e79159fa44e",
-        "80b49fd4-12f2-4a5b-9273-b999ae4f9821"
+        "80b49fd4-12f2-4a5b-9273-b999ae4f9821",
+        "5052fec3-d9b1-444f-8dc9-7cd3dde3e45c",
+        "fdbf0162-f2f6-47d0-a629-70f3a47c289a"
     ],
     "tutorial": ""
 }
