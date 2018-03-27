@@ -1,2 +1,2 @@
 // Set quest
-scr_activate_quest("Intro",true,true);
+scr_activate_quest("intro",true,true,"story");

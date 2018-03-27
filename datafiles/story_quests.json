@@ -1,0 +1,34 @@
+{
+  "intro": {
+    "title": "Welcome to Vaultworld",
+    "phases": [
+      {
+        "description": "First phase",
+        "room": "rm_test"
+      },
+      {
+        "description": "Second phase",
+        "room": "rm_sanfrancisco"
+      },
+      {
+        "description": "Third phase",
+        "room": "rm_test"
+      }
+    ],
+    "next quest": "find vault village",
+    "xp": 20,
+    "gold": 0
+  },
+  "find vault village": {
+    "title": "Find Vault Village",
+    "phases": [
+      {
+        "description": "Escape the room",
+        "room": "Test"
+      }
+    ],
+    "next quest": "find vault village",
+    "xp": 20,
+    "gold": 10
+  }
+}

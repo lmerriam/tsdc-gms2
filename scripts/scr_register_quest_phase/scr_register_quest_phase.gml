@@ -1,16 +1,27 @@
-/// @param quest_name
-/// @param phase_number
-/// @param id
+// @param quest_id
+// @param phase_number
+// @param inst
+// @param quest_type
 
-var quest_name = argument0;
+var quest_id = argument0;
 var phase_number = argument1;
 var inst = argument2;
+var type = argument3;
+var quest = scr_get_quest(quest_id,type);
 
-var quest = global.room_quests[? quest_name];
+// Phases
+// @TODO: seriously, wtf is this:
 var phases = quest[? "phases"];
-
-phases[| phase_number] = inst;
+var phase;
+if ( phases[| phase_number] == undefined) {
+	phase = ds_map_create();
+	phases[| phase_number] = phase;
+} else {
+	phase = phases[| phase_number];
+}
+phase[? "room"] = room_get_name(room);
+phase[? "inst"] = inst;
 
 inst.completed = false;
 targets = ds_list_create();
-ds_list_add(targets,id);
+ds_list_add(targets,inst);

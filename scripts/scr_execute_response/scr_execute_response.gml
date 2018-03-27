@@ -45,8 +45,8 @@ if (response[? "xp"] != undefined) {
 
 // Check if room quest activated
 if (response[? "activate room quest"] != undefined) {
-	var name = response[? "activate room quest"];
-	scr_activate_room_quest(name);
+	var quest_id = response[? "activate room quest"];
+	scr_activate_room_quest(quest_id);
 }
 
 // Check completed quest phase

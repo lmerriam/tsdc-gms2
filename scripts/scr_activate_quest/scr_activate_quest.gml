@@ -2,22 +2,36 @@
 /// @param name
 /// @param current
 /// @param announce
+/// @param type
 
-var name = argument0;
+var quest_id = argument0;
 var current = argument1;
 var announce = argument2;
-var quest = global.quest_library[? name];
-var target = quest[? "Target"];
-var title = quest[? "Title"];
+var type = argument3;
+var quest = scr_get_quest(quest_id,type);
+var target = quest[? "target"];
+var title = quest[? "title"];
 
 // Add to active quests
-global.active_quests[? name] = quest;
+global.active_quests[? quest_id] = quest;
+quest[? "current phase"] = 0;
 
-// Set the target (if target is still a string from JSON, convert it to an asset index)
-if (target != noone and target != "noone" and is_string(target)) quest[? "Target"] = asset_get_index(target);
+// Init the first phase
+var phases = quest[? "phases"];
+var first_phase = ds_map_find_value(phases[| 0],"inst");
+with (first_phase) event_user(0);
 
-// Make it current
-if (current) scr_set_current_quest(name);
+// Set giver sprite
+var giver = quest[? "giver"];
+if (giver != noone) {
+	giver.location_icon = spr_location_quest_active;
+	giver.discovered = true;
+}
 
-// Announce the new quest
-if (announce) scr_announce("Quest: " + title);
+// Announce
+if (announce) scr_announce("New quest: " + string(title));
+
+// Current
+if (current) global.current_quest = quest;
+
+return quest;

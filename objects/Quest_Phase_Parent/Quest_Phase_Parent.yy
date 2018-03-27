@@ -69,6 +69,20 @@
             "value": "0",
             "varName": "phase_number",
             "varType": 1
+        },
+        {
+            "id": "6dbec99c-28a4-41d8-8cae-397f7768a18a",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "room",
+            "varName": "quest_type",
+            "varType": 2
         }
     ],
     "solid": false,

@@ -1,8 +1,9 @@
 /// @param name
 /// @param title
+/// @param giver
 /// @param gold
 /// @param xp
-var quest_id = argument0;
+var name = argument0;
 var title = argument1;
 var giver = argument2;
 var gold = argument3;
@@ -10,8 +11,8 @@ var xp = argument4;
 
 // Create quest
 var quest = ds_map_create();
-global.room_quests[? quest_id] = quest;
-quest[? "type"] = room;
+global.room_quests[? "test quest"] = quest;
+quest[? "type"] = "story";
 
 // Register the giver
 quest[? "giver"] = giver;

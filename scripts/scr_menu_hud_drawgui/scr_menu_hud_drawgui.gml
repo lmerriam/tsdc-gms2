@@ -28,10 +28,27 @@ if (nearest_interactable_in_range) {
 }
     
 // Draw the minimap
-draw_surface(minimap,minimap_window_x,minimap_window_y);
+//draw_surface(minimap,minimap_window_x,minimap_window_y);
 //draw_rectangle_color(minimap_window_x, minimap_window_y, minimap_window_x+minimap_width, minimap_window_y+minimap_height, c_black, c_black, c_black, c_black, true);
-scr_draw_9patch(spr_ui_box_2x,0,minimap_window_x-2, minimap_window_y-2, minimap_window_x+minimap_width+2, minimap_window_y+minimap_height+2,6,6,6,6);
-draw_sprite_ext(spr_player_arrow,0,(minimap_window_x + (minimap_width/2)),(minimap_window_y + (minimap_height/2)),1,1,global.aim_dir,c_white,1);
+//scr_draw_9patch(spr_ui_box_2x,0,minimap_window_x-2, minimap_window_y-2, minimap_window_x+minimap_width+2, minimap_window_y+minimap_height+2,6,6,6,6);
+draw_sprite_ext(spr_minimap_radius,0,minimap_center_x,minimap_center_y,2,2,0,c_white,1);
+// @todo: extract this out into a script
+var size = ds_list_size(global.locations);
+for (var i = 0; i<size; i++) {
+	var radius = 512;
+	var minimap_radius = 64;
+	var location = global.locations[| i];
+	var dis = point_distance(Player.x,Player.y,location.x,location.y);
+	var dir = point_direction(Player.x,Player.y,location.x,location.y);
+	var icon = location.location_icon;
+	var ratio = 512/minimap_radius;
+	if (dis < radius) {
+		var xx = GUI.minimap_center_x + (location.x - Player.x)/ratio;
+		var yy = GUI.minimap_center_y + (location.y - Player.y)/ratio;
+		draw_sprite_ext(icon,0,xx,yy,2,2,0,c_white,1);
+	}
+}
+draw_sprite_ext(spr_player_arrow,0,minimap_center_x,minimap_center_y,2,2,global.aim_dir,c_white,1);
     
 // Draw health and stamina
 var hp = scr_get_instance_stat(Player,"Health");
@@ -56,15 +73,15 @@ var maxexpr = Player.base_stats[? "Next Level Experience"];
 draw_healthbar(0,window_height-hbar,window_width,window_height,expr/maxexpr*100,c_black,c_white,c_white,0,true,true);
 
 // Draw locations
-var size = ds_list_size(global.locations);
-for (var i=0; i<size; i++) {
-	var location = global.locations[| i];
-	var xx = location.x;
-	var yy = location.y;
-	if (point_distance(Player.x,Player.y,xx,yy) < 512) {
-		scr_draw_location_pointer(xx,yy,location.location_icon);
-	}
-}
+//var size = ds_list_size(global.locations);
+//for (var i=0; i<size; i++) {
+//	var location = global.locations[| i];
+//	var xx = location.x;
+//	var yy = location.y;
+//	if (point_distance(Player.x,Player.y,xx,yy) < 512) {
+//		scr_draw_location_pointer(xx,yy,location.location_icon);
+//	}
+//}
 
 //Draw announcements
 if (ds_queue_size(global.announcements) > 0) {
