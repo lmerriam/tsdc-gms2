@@ -14,42 +14,28 @@ for (var i = 0; i<num_quests; i++) {
 	var current_phase_number = quest[? "current phase"];
 	var current_phase = phases[| current_phase_number];
 	var current_phase_obj = current_phase[? "inst"];
+	var current_phase_complete = current_phase[? "complete"];
 
 	// Progress the quest phase if completed
-	if (current_phase_obj.completed) {
+	if (current_phase_complete) {
 		var next_phase_number = current_phase_number + 1;
+		var quest_complete = next_phase_number >= ds_list_size(phases) ? true : false;
 		
 		// Check if the quest is complete
-		if (next_phase_number >= ds_list_size(phases)) {
+		if (quest_complete) {
 			scr_complete_quest(key,true);
 			
 		} else {
 			// Move to the next phase if not
 			var next_phase = phases[| next_phase_number];
 			var next_phase_obj = next_phase[? "inst"];
+			var next_phase_room = next_phase[? "room"];
 			quest[? "current phase"] = next_phase_number;
-			with (next_phase_obj) event_user(0);
+			
+			var next_phase_in_room = (string(room) == next_phase_room) ? true : false;
+			if (next_phase_in_room) with (next_phase_obj) event_user(0);
 		}
 	}
 	
 	key = ds_map_find_next(active_quests,key);
 }
-
-// Check for current story quest completion
-//if (current_story_quest != noone) {
-//	var current_phase = current_story_quest[? "current_phase"];
-//	var phases = current_story_quest[? "phases"];
-//	var phase_count = ds_list_size(phases);
-//	var next_phase = current_phase + 1;
-		
-//	// Check if the quest is complete
-//	if (next_phase >= phase_count) {
-//		scr_complete_quest(key,true);
-			
-//	} else {
-//		// Move to the next phase if not
-//		var next_phase_obj = phases[| next_phase];
-//		quest[? "current phase"] = next_phase;
-//		with (next_phase_obj) event_user(0);
-//	}
-//}

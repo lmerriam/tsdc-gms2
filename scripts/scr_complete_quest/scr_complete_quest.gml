@@ -1,12 +1,14 @@
 /// @description Complete a quest
-/// @param name
+/// @param quest_id
 /// @param announce
-var name = argument0;
+var quest_id = argument0;
 var announce = argument1;
 
-var quest = global.active_quests[? name];
-ds_map_delete(global.active_quests,name);
-ds_map_add(global.completed_quests,name,quest);
+var quest = global.active_quests[? quest_id];
+ds_map_delete(global.active_quests,quest_id);
+ds_map_add(global.completed_quests,quest_id,quest);
+
+var title = quest[? "title"];
 
 // Give rewards
 var gold = quest[? "gold"];
@@ -16,7 +18,7 @@ Player.properties[? "Gold"] += gold;
 show_debug_message("Gold: " + string(gold));
 
 // Announce quest complete
-if (announce) scr_announce("Completed " + name + "!");
+if (announce) scr_announce("Completed " + title + "!");
 
 // Set giver quest complete
 var giver = quest[? "giver"];
