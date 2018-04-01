@@ -34,5 +34,6 @@ if (announce) scr_announce("New quest: " + string(title));
 
 // Current
 if (current) global.current_quest = quest;
+if (type == "story") global.current_story_quest = quest;
 
 return quest;

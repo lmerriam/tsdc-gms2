@@ -22,7 +22,7 @@ ds_map_add_map(global.quest_library,"story",story_quests);
 ds_map_add_map(global.quest_library,"room",room_quests);
 
 // Current story quest
-current_story_quest = noone;
+global.current_story_quest = noone;
 
 // Set the current quest
 global.current_quest = noone;

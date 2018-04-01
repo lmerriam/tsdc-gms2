@@ -31,7 +31,7 @@ if (next_quest != undefined) {
 	global.current_quest = scr_get_quest(next_quest,type);
 	scr_activate_quest(next_quest,true,true,type);
 } else {
-	global.current_quest = noone;
+	global.current_quest = global.current_story_quest;
 }
 
 return quest;
