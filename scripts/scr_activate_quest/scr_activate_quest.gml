@@ -15,6 +15,7 @@ var title = quest[? "title"];
 // Add to active quests
 global.active_quests[? quest_id] = quest;
 quest[? "current phase"] = 0;
+quest[? "type"] = type;
 
 // Init the first phase
 var phases = quest[? "phases"];

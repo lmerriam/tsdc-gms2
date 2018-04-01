@@ -23,13 +23,13 @@ if (announce) scr_announce("Completed " + title + "!");
 
 // Set giver quest complete
 var giver = quest[? "giver"];
-giver.location_icon = spr_location_quest_complete;
+if (giver != undefined or giver != noone) giver.location_icon = spr_location_quest_complete;
 
 // If room quest, switch back to story quests
 var next_quest = quest[? "next quest"];
 if (next_quest != undefined) {
-	global.current_quest = scr_get_quest(next_quest,"story");
-	scr_activate_quest(next_quest,true,true,"story");
+	global.current_quest = scr_get_quest(next_quest,type);
+	scr_activate_quest(next_quest,true,true,type);
 } else {
 	global.current_quest = noone;
 }
