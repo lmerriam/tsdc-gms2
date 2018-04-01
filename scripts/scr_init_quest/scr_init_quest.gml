@@ -11,9 +11,9 @@ var announce = argument3;
 
 var quest = ds_map_create();
 
-quest[? "Title"] = title;
-quest[? "Target"] = target;
-global.active_quests[? "Name"] = name;
+quest[? "title"] = title;
+quest[? "target"] = target;
+global.active_quests[? "name"] = name;
 
 if (announce) scr_announce("Quest complete: " + title);
 

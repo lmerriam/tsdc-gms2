@@ -32,7 +32,7 @@ for (var i = 0; i<num_quests; i++) {
 			var next_phase_room = next_phase[? "room"];
 			quest[? "current phase"] = next_phase_number;
 			
-			var next_phase_in_room = (string(room) == next_phase_room) ? true : false;
+			var next_phase_in_room = (room_get_name(room) == next_phase_room) ? true : false;
 			if (next_phase_in_room) with (next_phase_obj) event_user(0);
 		}
 	}

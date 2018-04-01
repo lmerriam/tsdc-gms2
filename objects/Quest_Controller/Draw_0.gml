@@ -24,9 +24,11 @@ if (global.current_quest != noone) {
 	if (current_phase_room == room_get_name(room)) {
 		var targets = current_phase_obj.targets;
 		var icon = current_phase_obj.quest_icon;
-		for (var i = 0; i<ds_list_size(targets); i++) {
-			var target = targets[| i];
-			scr_draw_quest_pointer(target.x,target.y,icon);
+		if (ds_exists(targets,ds_type_list)) {
+			for (var i = 0; i<ds_list_size(targets); i++) {
+				var target = targets[| i];
+				scr_draw_quest_pointer(target.x,target.y,icon);
+			}
 		}
 	}
 }

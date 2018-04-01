@@ -24,10 +24,9 @@
     "phases": [
       {
         "description": "Escape the room",
-        "room": "Test"
+        "room": "rm_test"
       }
     ],
-    "next quest": "find vault village",
     "xp": 20,
     "gold": 10
   }

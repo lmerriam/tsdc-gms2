@@ -5,10 +5,11 @@ var quest_id = argument0;
 var announce = argument1;
 
 var quest = global.active_quests[? quest_id];
+var title = quest[? "title"];
+var type = quest[? "type"];
+
 ds_map_delete(global.active_quests,quest_id);
 ds_map_add(global.completed_quests,quest_id,quest);
-
-var title = quest[? "title"];
 
 // Give rewards
 var gold = quest[? "gold"];
@@ -25,13 +26,12 @@ var giver = quest[? "giver"];
 giver.location_icon = spr_location_quest_complete;
 
 // If room quest, switch back to story quests
-if (quest[? "type"] == "room") {
-	global.current_quest = global.current_story_quest;
-
-// If story quest, move to next story quest
-} else if (quest[? "type"] == "story") {
-	var next_story_quest = ds_list_find_index(story_quest_index, global.current_story_quest)+1;
-	global.current_quest = next_story_quest;
+var next_quest = quest[? "next quest"];
+if (next_quest != undefined) {
+	global.current_quest = scr_get_quest(next_quest,"story");
+	scr_activate_quest(next_quest,true,true,"story");
+} else {
+	global.current_quest = noone;
 }
 
 return quest;
