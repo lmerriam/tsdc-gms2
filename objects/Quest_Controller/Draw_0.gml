@@ -32,7 +32,7 @@ if (global.current_quest != noone) {
 			}
 		}
 	// Draw a pointer to the entrance of the room the next phase is in
-	} else if (global.subrooms[? current_phase_room] != undefined) {
+	} else if (global.entrances[? current_phase_room] != undefined) {
 		var entrance = scr_get_subroom_entrance(current_phase_room);
 		scr_draw_quest_pointer(entrance.x,entrance.y,noone);
 	}
