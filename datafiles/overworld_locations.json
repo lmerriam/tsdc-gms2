@@ -1,14 +1,33 @@
 {
-  "San Francisco": {
+  "rm_sanfrancisco": {
+  	"name": "San Francisco",
     "x": 112,
     "y": 135,
     "discovered": true,
-    "room": "rm_sanfrancisco"
+    "subrooms": [
+    	"dungeon1",
+    	"dungeon2",
+    	"dungeon3"
+    ]
   },
-  "Sacramento": {
+  "rm_sacramento": {
+  	"name": "Sacramento",
     "x": 175,
     "y": 66,
     "discovered": true,
-    "room": "rm_sacramento"
+    "subrooms": [
+    	"dungeon4",
+    	"dungeon5",
+    	"dungeon6"
+    ]
+  },
+  "rm_test": {
+  	"name": "TEST",
+    "x": 200,
+    "y": 200,
+    "discovered": true,
+    "subrooms": [
+    	"rm_sanfrancisco"
+    ]
   }
 }

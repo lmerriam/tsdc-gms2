@@ -21,6 +21,7 @@ if (global.current_quest != noone) {
 	var final_phase_obj = final_phase[? "inst"];
 	var final_phase_complete = final_phase[? "completed"];
 	
+	// Draw a quest pointer to the next phase
 	if (current_phase_room == room_get_name(room)) {
 		var targets = current_phase_obj.targets;
 		var icon = current_phase_obj.quest_icon;
@@ -30,5 +31,9 @@ if (global.current_quest != noone) {
 				scr_draw_quest_pointer(target.x,target.y,icon);
 			}
 		}
+	// Draw a pointer to the entrance of the room the next phase is in
+	} else if (global.subrooms[? current_phase_room] != undefined) {
+		var entrance = scr_get_subroom_entrance(current_phase_room);
+		scr_draw_quest_pointer(entrance.x,entrance.y,noone);
 	}
 }

@@ -11,7 +11,7 @@ if (mouse_check_button_released(mb_left)) {
 		var yy = location[? "y"]*overworld_spr_ratio + overworld_spr_originy;
 
 		if (scr_mouse_over_ui(xx-32,yy-32,xx+32,yy+32)) {
-			var rm = asset_get_index(location[? "room"]);
+			var rm = asset_get_index(key);
 			room_goto(rm);
 			Player.x = 32;
 			Player.y = 32;

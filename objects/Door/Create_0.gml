@@ -5,6 +5,4 @@ scr_register_interactable(id);
 
 location_icon = spr_quest_icon_door;
 
-properties[? "New X"] = 0;
-properties[? "New Y"] = 0;
-properties[? "New Room"] = 0;
+global.subrooms[? room_get_name(new_room)] = id;

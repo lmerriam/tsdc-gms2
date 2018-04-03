@@ -9,3 +9,4 @@ overworld_spr_ratio = (global.window_height-overworld_spr_originy)/overworld_spr
 
 // Locations
 overworld_locations = scr_load_json("overworld_locations");
+global.overworld_locations = overworld_locations;

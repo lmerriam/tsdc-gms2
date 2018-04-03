@@ -9,13 +9,14 @@ var key = ds_map_find_first(overworld_locations);
 var num_locations = ds_map_size(overworld_locations);
 for (var i=0; i<num_locations; i++) {
 	var location = overworld_locations[? key];
+	var name = location[? "name"];
 	
 	if (location[? "discovered"]) {
 		var xx = overworld_spr_originx + location[? "x"]*overworld_spr_ratio;
 		var yy = overworld_spr_originy + location[? "y"]*overworld_spr_ratio;
 
 		draw_sprite(spr_location,0,xx,yy);
-		scr_draw_text_shadow(xx,yy-64,key,c_black,c_white,0.3,2,270,1,fa_center);
+		scr_draw_text_shadow(xx,yy-64,name,c_black,c_white,0.3,2,270,1,fa_center);
 	}
 	var key = ds_map_find_next(overworld_locations,key);
 }
