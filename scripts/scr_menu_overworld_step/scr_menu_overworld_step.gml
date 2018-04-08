@@ -12,9 +12,7 @@ if (mouse_check_button_released(mb_left)) {
 
 		if (scr_mouse_over_ui(xx-32,yy-32,xx+32,yy+32)) {
 			var rm = asset_get_index(key);
-			room_goto(rm);
-			Player.x = 32;
-			Player.y = 32;
+			scr_change_room(rm);
 			scr_menu_hud();
 		}
 		var key = ds_map_find_next(overworld_locations,key);

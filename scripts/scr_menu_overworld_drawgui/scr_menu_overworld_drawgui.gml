@@ -15,7 +15,7 @@ for (var i=0; i<num_locations; i++) {
 		var xx = overworld_spr_originx + location[? "x"]*overworld_spr_ratio;
 		var yy = overworld_spr_originy + location[? "y"]*overworld_spr_ratio;
 
-		draw_sprite(spr_location,0,xx,yy);
+		draw_sprite_ext(spr_location,0,xx,yy,2,2,0,c_white,1);
 		scr_draw_text_shadow(xx,yy-64,name,c_black,c_white,0.3,2,270,1,fa_center);
 	}
 	var key = ds_map_find_next(overworld_locations,key);

@@ -2,6 +2,8 @@ device_mouse_dbclick_enable(false);
 
 // Where do we go after init room sets everything up
 #macro START_ROOM rm_test
+global.rm_current = START_ROOM;
+global.rm_previous = noone;
 
 // Create chest registry
 global.chests = ds_map_create();

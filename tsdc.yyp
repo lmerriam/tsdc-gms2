@@ -1369,6 +1369,25 @@
             }
         },
         {
+            "Key": "2335b42b-cc0b-41c5-80ef-ba223d457f8a",
+            "Value": {
+                "id": "d770755c-215c-4cca-aee1-824df9af7096",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/scr_change_room\/scr_change_room.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "23c5b29b-ecb9-4d1e-9b95-e7245ae3536a",
             "Value": {
                 "id": "13c19309-1b35-4218-8b43-93b285b90d62",
@@ -7335,6 +7354,25 @@
             }
         },
         {
+            "Key": "97a85a5e-0697-4fbc-ae77-8a17c24c547c",
+            "Value": {
+                "id": "1c78d7d7-bac3-47cb-8c90-d10fe11ba4f7",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/script251\/script251.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "97d423ee-a641-40c2-bef7-5aac5cfda4f6",
             "Value": {
                 "id": "b8120f22-7e7b-407a-a6df-e4581eb564a5",
@@ -8035,6 +8073,25 @@
                 ],
                 "resourcePath": "options\/linux\/options_linux.yy",
                 "resourceType": "GMLinuxOptions"
+            }
+        },
+        {
+            "Key": "a955979f-7bb6-40cb-b74c-d9c3d42bc2cc",
+            "Value": {
+                "id": "e0730945-afd9-4868-87ed-af41deae0d60",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/scr_get_entrance\/scr_get_entrance.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -12622,7 +12679,9 @@
         "013a1050-4d3a-4f12-aba6-e49c3552f340",
         "e375bee7-d6fe-4697-aa29-ba3bad428c81",
         "bcabb991-2141-41d6-b0dc-0530f4872320",
-        "84f009c9-611a-4a59-93d0-426b96ec4fbe"
+        "97a85a5e-0697-4fbc-ae77-8a17c24c547c",
+        "a955979f-7bb6-40cb-b74c-d9c3d42bc2cc",
+        "2335b42b-cc0b-41c5-80ef-ba223d457f8a"
     ],
     "tutorial": ""
 }
