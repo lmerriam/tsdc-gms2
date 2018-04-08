@@ -81,37 +81,9 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "noone",
+            "value": "rm_test",
             "varName": "new_room",
             "varType": 5
-        },
-        {
-            "id": "f0498700-7b72-48ac-9191-5497bebf3719",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "0",
-            "varName": "new_x",
-            "varType": 1
-        },
-        {
-            "id": "eedd9039-415d-4d03-a195-ac6098ba69b9",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "0",
-            "varName": "new_y",
-            "varType": 1
         }
     ],
     "solid": false,
