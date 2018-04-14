@@ -34,11 +34,11 @@ for (var i=0; i < ds_list_size(global.interactables); i++) {
 	if (inst_dis < nearest_dis) nearest_interactable = inst;
 }
 
-if (distance_to_object(nearest_interactable) < 32) {
+if (nearest_interactable != undefined and distance_to_object(nearest_interactable) < 32) {
     nearest_interactable_in_range = true;
 	interact_btn[4] = nearest_interactable.sprite_index;
 } else {
-    nearest_interactable_in_range = false;   
+    nearest_interactable_in_range = false;
 }
 
 // Check for combo

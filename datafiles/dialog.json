@@ -135,4 +135,25 @@
       }
     ]
   },
+  "test new dialog":
+  {
+    "text": [
+      "Who are you and how on earth did you get here?",
+      "Never mind, just grab that weapon.",
+      "They're coming."
+    ],
+    "confirm actions": {
+      "activate quest": "test quest",
+      "quest type": "room"
+    },
+    "confirm text": "Accept the quest?"
+  },
+  "test dialog with no actions":
+  {
+    "text": [
+      "Who are you and how on earth did you get here?",
+      "Never mind, just grab that weapon.",
+      "They're coming."
+    ]
+  }
 }

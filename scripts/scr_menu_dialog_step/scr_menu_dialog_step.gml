@@ -1,14 +1,15 @@
 if(mouse_check_button_released(mb_left)) {
 	
-	var num_responses = ds_list_size(dialog_responses);
-	for(var i = 0;i<num_responses;i++) {
-		var x1 = dialog_responses_x;
-		var x2 = dialog_responses_x+dialog_responses_width;
-		var y1 = dialog_responses_y + i * dialog_responses_line_height;
-		var y2 = y1 + dialog_responses_line_height;
-		if (scr_mouse_over_ui(x1,y1,x2,y2)) {
-			scr_execute_response(dialog_responses[| i]);
-			exit;
+	// Go to the next dialog step
+	dialog_text_num += 1;
+	
+	// Switch to confirm dialog if text is done
+	if (dialog_text_num >= dialog_count) {
+		if (confirm_actions == undefined) {
+			scr_menu_hud();
+		} else {
+			scr_menu_confirm(confirm_text,confirm_actions);
 		}
 	}
+
 }

@@ -70,7 +70,22 @@
         }
     ],
     "physicsStartAwake": true,
-    "properties": null,
+    "properties": [
+        {
+            "id": "24329e86-21d3-4389-ae72-b32e3e2f9c30",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "Will you accept this mission?",
+            "varName": "confirm_text",
+            "varType": 2
+        }
+    ],
     "solid": false,
     "spriteId": "05be0168-2799-400f-a924-784272bf5900",
     "visible": true
