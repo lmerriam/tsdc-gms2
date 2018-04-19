@@ -4238,6 +4238,25 @@
             }
         },
         {
+            "Key": "62d8741a-f95c-489e-9670-6b8d2919f7e3",
+            "Value": {
+                "id": "178c8cc0-1bd1-441f-8874-4dd16af211c2",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "datafiles_yy\/rm_test.png.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
             "Key": "6372240a-40b6-497b-be54-c01719d4fb4c",
             "Value": {
                 "id": "db295f33-c765-4a35-8675-a7e284e26cf7",
@@ -4520,6 +4539,25 @@
                 ],
                 "resourcePath": "objects\/Weapon_SMG\/Weapon_SMG.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "67f72206-341e-4f33-aadf-4f63d6d646f0",
+            "Value": {
+                "id": "c4f453d1-67fc-4487-9b13-1064f1603262",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/scr_init_footstep\/scr_init_footstep.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -4941,6 +4979,25 @@
             }
         },
         {
+            "Key": "6dace4a9-e117-42ff-b795-c378190b0254",
+            "Value": {
+                "id": "35d5c173-6363-457c-b1a4-eb8aa7d3e0ea",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/scr_quest_is_complete\/scr_quest_is_complete.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "6dd593c6-52af-4c11-8e1e-ad338e59b2f9",
             "Value": {
                 "id": "e80ee7ee-c49f-4732-8404-c88bc91ac284",
@@ -5013,6 +5070,25 @@
                     "default"
                 ],
                 "resourcePath": "sprites\/spr_player_attack_up\/spr_player_attack_up.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "6fcb73c5-d177-485d-9a3c-1da6e046132e",
+            "Value": {
+                "id": "f9fab55b-e8f4-4e07-ae6a-9c09cd1fcb56",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/spr_footstep\/spr_footstep.yy",
                 "resourceType": "GMSprite"
             }
         },

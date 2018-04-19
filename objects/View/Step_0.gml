@@ -3,8 +3,8 @@
 if (instance_exists(Player)) {
     var dis;
     if (global.cast_mode) {
-        x += (Player.x - x) * .3;
-        y += (Player.y - y) * .3;
+        x += (Player.x - x) * .5;
+        y += (Player.y - y) * .5;
     } else {
         if (os_type = os_android) {
             dis = 128;

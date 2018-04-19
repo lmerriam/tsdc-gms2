@@ -20,11 +20,11 @@ scr_register_interactable(id);
 //response_no[? "script"] = "scr_menu_hud";
 dialog = ds_map_create();
 dialog[? "text"] = ds_list_create();
-dialog[? "confirm action"] = ds_map_create();
 dialog[? "confirm text"] = confirm_text;
+confirm_actions = ds_map_create();
+dialog[? "confirm actions"] = confirm_actions;
+
+confirm_actions[? "activate quest"] = quest_name;
+confirm_actions[? "quest type"] = "room";
 
 //ds_list_add(responses,response_yes,response_no);
-for(var i = 0; i<array_length_1d(dialog); i++ ) {
-	var line = dialog_text[i];
-	ds_list_add(dialog[? "text"],line);
-}

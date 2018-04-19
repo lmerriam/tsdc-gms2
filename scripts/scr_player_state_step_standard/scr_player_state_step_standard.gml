@@ -11,21 +11,24 @@ image_xscale = orientation*scale;
     
 if (global.move_len > 0) {
     
-    if (front) {
-        sprite_index = spr_player_running;
-    } else {
-        sprite_index = spr_player_running_back;
-    }
+	// @TODO: add 
+    //if (front) {
+    //    sprite_index = spr_player_running;
+    //} else {
+    //    sprite_index = spr_player_running_back;
+    //}
+	sprite_index = spr_player_running;
     if (sign(hspd) == orientation) image_speed = img_spd else image_speed = -img_spd;
 	
-	//if (Time.now mod 30 < 1) part_particles_create(global.particles_below, x, y, global.dust_particles, 3);
+	if (Time.now mod 30 < 1) part_particles_create(global.particles_below, x, y, global.footstep_particles, 1);
         
 } else {
-    if (front) {
-        sprite_index = spr_player_idle;
-    } else {
-        sprite_index = spr_player_idle_back;
-    }
+    //if (front) {
+    //    sprite_index = spr_player_idle;
+    //} else {
+    //    sprite_index = spr_player_idle_back;
+    //}
+	sprite_index = spr_player_idle;
 }
     
 // Move the player

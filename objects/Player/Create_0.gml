@@ -7,6 +7,7 @@ scale = 1;
 image_xscale = scale;
 image_yscale = scale;
 img_spd = .3*30/room_speed;
+image_speed = img_spd;
 phy_fixed_rotation = true;
 
 // Who damages it
