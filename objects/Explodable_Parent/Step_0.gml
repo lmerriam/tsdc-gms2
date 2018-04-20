@@ -1,5 +1,5 @@
 /// @description Insert description here
-// You can write your code in this editor
+
 
 if (stats[? "Health"] <= 0) {
 	scr_damage_obj(x,y,damage_object,id,damage,knockback,noone);

@@ -1,5 +1,5 @@
 /// @description Insert description here
-// You can write your code in this editor
+
 
 //move any completed phases to next phase
 //check completion of all active quests
