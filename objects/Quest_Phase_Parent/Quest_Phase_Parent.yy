@@ -53,7 +53,7 @@
             "rangeMin": 0,
             "resourceFilter": 1023,
             "value": "default quest",
-            "varName": "quest_name",
+            "varName": "quest_id",
             "varType": 2
         },
         {

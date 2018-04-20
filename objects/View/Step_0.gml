@@ -17,8 +17,8 @@ if (instance_exists(Player)) {
         global.crosshair_x = targetx;
         global.crosshair_y = targety;
 
-        x += (targetx - x) * .1  * (30/room_speed);
-        y += (targety - y) * .1 * (30/room_speed);
+        x += (targetx - x) * .2  * (30/room_speed);
+        y += (targety - y) * .2 * (30/room_speed);
     }
 }
 

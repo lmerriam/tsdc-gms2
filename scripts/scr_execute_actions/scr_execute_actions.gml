@@ -22,15 +22,15 @@ if (actions[? "script"] != undefined) {
 
 // Check quests
 if (actions[? "activate event"] != undefined) {
-	var quest_name = actions[? "activate quest"];
-	//var quest = global.all_quests[? quest_name];
-	//scr_activate_quest(quest_name,true,true);
+	var quest_id = actions[? "activate quest"];
+	//var quest = global.all_quests[? quest_id];
+	//scr_activate_quest(quest_id,true,true);
 	instance_create_layer(x,y,"entities",Event_Test_Quest);
 }
 if (actions[? "complete event"] != undefined) {
-	var quest_name = actions[? "complete quest"];
-	var quest = global.all_quests[? quest_name];
-	scr_complete_quest(quest_name,true);
+	var quest_id = actions[? "complete quest"];
+	var quest = global.all_quests[? quest_id];
+	scr_complete_quest(quest_id,true);
 }
 
 // Check gold
@@ -57,8 +57,10 @@ if (actions[? "activate room quest"] != undefined) {
 
 // Check completed quest phase
 if (actions[? "complete quest phase"] != undefined) {
-	var event = actions[? "accept quest"];
-	event.completed = true;
+	var quest_id = actions[? "complete quest phase"];
+	var phase_number = actions[? "complete quest phase number"];
+	var quest = scr_get_quest(quest_id,"room");
+	scr_complete_quest_phase(quest,phase_number);
 }
 
 // Check denied quest

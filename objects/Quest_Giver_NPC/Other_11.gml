@@ -1,7 +1,7 @@
 /// @description Insert description here
 ds_list_clear(dialog[? "text"]);
 
-if (scr_quest_is_complete(quest_name)) {
+if (scr_quest_is_complete(quest_id)) {
 	for(var i = 0; i<array_length_1d(dialog_pre_quest); i++ ) {
 		var line = dialog_pre_quest[i];
 		ds_list_add(dialog[? "text"],line);

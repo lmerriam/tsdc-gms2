@@ -5,6 +5,11 @@ if(mouse_check_button_released(mb_left)) {
 	
 	// Switch to confirm dialog if text is done
 	if (dialog_text_num >= dialog_count) {
+		
+		if (dialog_actions != undefined) {
+			scr_execute_actions(dialog_actions);
+		}
+		
 		if (confirm_actions == undefined) {
 			scr_menu_hud();
 		} else {

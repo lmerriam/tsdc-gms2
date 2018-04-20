@@ -13,6 +13,7 @@ GUI.dialog_text_num = 0;
 
 GUI.confirm_text = dialog_ds[? "confirm text"];
 GUI.confirm_actions = dialog_ds[? "confirm actions"];
+GUI.dialog_actions = dialog_ds[? "dialog actions"];
 
 GUI.menu_step = scr_menu_dialog_step;
 GUI.menu_draw = scr_blank;

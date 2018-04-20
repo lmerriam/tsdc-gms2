@@ -1,42 +1,33 @@
 {
-    "id": "b54c77f2-2549-41c2-8d69-6b1840c1b678",
+    "id": "fd975caa-f915-4cb3-9a8e-638db0124ded",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "Quest_Giver_NPC",
+    "name": "Quest_NPC",
     "eventList": [
         {
-            "id": "cf50467f-acba-4f3e-80ae-3cd719e09301",
+            "id": "77b82b51-a6ce-492c-9a6d-ab4b534faad2",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 0,
-            "m_owner": "b54c77f2-2549-41c2-8d69-6b1840c1b678"
+            "m_owner": "fd975caa-f915-4cb3-9a8e-638db0124ded"
         },
         {
-            "id": "17a525bd-6f17-47bf-bfea-a84561234911",
+            "id": "23324491-8340-444f-a197-820aeec5e94d",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 11,
             "eventtype": 7,
-            "m_owner": "b54c77f2-2549-41c2-8d69-6b1840c1b678"
+            "m_owner": "fd975caa-f915-4cb3-9a8e-638db0124ded"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
-    "overriddenProperties": [
-        {
-            "id": "eef7aa96-8e71-4b3f-b5d9-51981c91ef89",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "94a4ef8f-acc6-43bb-9d27-8c8434eda8ca",
-            "propertyId": "1bb5813f-47b9-4808-a4df-0c09c6103970",
-            "value": "default name"
-        }
-    ],
-    "parentObjectId": "94a4ef8f-acc6-43bb-9d27-8c8434eda8ca",
+    "overriddenProperties": null,
+    "parentObjectId": "c40d988d-d8a7-49e2-b391-927c8cfb6018",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
@@ -50,28 +41,28 @@
     "physicsShape": 1,
     "physicsShapePoints": [
         {
-            "id": "683265a7-e474-4143-afaf-08a021ab364f",
+            "id": "fbdcd511-5a28-4e8b-9384-12c77c6d65ac",
             "modelName": "GMPoint",
             "mvc": "1.0",
             "x": 0,
             "y": 0
         },
         {
-            "id": "82baf6ad-bd72-47a8-b9c0-ddd9e63b8114",
+            "id": "52def8c2-2aa1-434f-8f13-f605f0e577ee",
             "modelName": "GMPoint",
             "mvc": "1.0",
             "x": 12,
             "y": 0
         },
         {
-            "id": "4bd41d27-a210-4079-97bf-2b8df6f19bae",
+            "id": "08b468db-b939-4cef-bc10-57bc4d970d97",
             "modelName": "GMPoint",
             "mvc": "1.0",
             "x": 12,
             "y": 14
         },
         {
-            "id": "7ba78911-8ef6-4d24-81aa-54f672172166",
+            "id": "d72b786e-5a51-4a9e-a45c-077e5468b7e1",
             "modelName": "GMPoint",
             "mvc": "1.0",
             "x": 0,
@@ -80,20 +71,7 @@
     ],
     "physicsStartAwake": true,
     "properties": [
-        {
-            "id": "24329e86-21d3-4389-ae72-b32e3e2f9c30",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "Will you accept this mission?",
-            "varName": "confirm_text",
-            "varType": 2
-        }
+        
     ],
     "solid": false,
     "spriteId": "05be0168-2799-400f-a924-784272bf5900",

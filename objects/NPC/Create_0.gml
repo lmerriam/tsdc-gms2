@@ -1,2 +1,2 @@
 event_inherited();
-dialog = "intro 1";
+//dialog = ds_map_create();
