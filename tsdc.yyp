@@ -11971,6 +11971,25 @@
             }
         },
         {
+            "Key": "f1643d1c-737b-4d63-b573-f6b4b354e7bd",
+            "Value": {
+                "id": "2a326254-e1be-4fe3-81f0-80542f2a2053",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/Tutorial_RightStick\/Tutorial_RightStick.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "f1839eb4-8d4c-49f0-b5a8-b6448577a0da",
             "Value": {
                 "id": "89b7c0ba-aee8-4df6-9f12-8ea775188e2d",
