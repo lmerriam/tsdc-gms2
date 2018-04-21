@@ -4,11 +4,13 @@
 var quantity = argument0;
 
 var base_stats = Player.properties[? "Base Stats"];
-base_stats[? "Experience"] += quantity;
 var stats = Player.stats;
 
-var remainder = base_stats[? "Experience"] - base_stats[? "Next Level Experience"];
-if (remainder >= 0) {
+var xp_to_next_level = base_stats[? "Next Level Experience"] - base_stats[? "Experience"];
+var remainder = quantity - xp_to_next_level;
+
+while (remainder >= 0) {
+	base_stats[? "Experience"] += xp_to_next_level;
 	
 	// Increase Player's stats
     base_stats[? "Level"] += 1;
@@ -27,6 +29,11 @@ if (remainder >= 0) {
 	// Announce the levelup
     scr_announce("Achieved level " + string(base_stats[? "Level"]));
 	
-	// Give the player the amount of XP they went over the 
-	scr_give_xp(remainder);
+	// Give the player the amount of XP they went over by
+	//scr_give_xp(remainder);
+	xp_to_next_level = base_stats[? "Next Level Experience"] - base_stats[? "Experience"];
+	remainder = remainder - xp_to_next_level;
 }
+
+if (remainder > 0) base_stats[? "Experience"] += remainder;
+
