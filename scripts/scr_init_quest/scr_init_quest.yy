@@ -1,5 +1,5 @@
 {
-    "id": "ffe7dbe3-9b2f-497d-a5af-77d336c996cf",
+    "id": "a6f523aa-52be-4246-9f98-2a2f89e770eb",
     "modelName": "GMScript",
     "mvc": "1.0",
     "name": "scr_init_quest",

@@ -3,6 +3,5 @@
 /// @param type
 
 var quest_id = argument0;
-var type = argument1;
 
-global.current_quest = scr_get_quest(quest_id,type);
+global.current_quest = scr_get_quest(quest_id);

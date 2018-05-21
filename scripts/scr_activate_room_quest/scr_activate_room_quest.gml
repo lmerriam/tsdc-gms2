@@ -2,4 +2,4 @@
 /// @param name
 var quest_id = argument0;
 
-scr_activate_quest(quest_id,true,true,"room");
+scr_activate_quest(quest_id,true,true);

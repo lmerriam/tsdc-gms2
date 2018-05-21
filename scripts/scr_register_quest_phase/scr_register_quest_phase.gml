@@ -1,13 +1,12 @@
 // @param quest_id
 // @param phase_number
 // @param inst
-// @param quest_type
 
 var quest_id = argument0;
 var phase_number = argument1;
 var inst = argument2;
-var type = argument3;
-var quest = scr_get_quest(quest_id,type);
+
+var quest = scr_get_quest(quest_id);
 
 // Phases
 // @TODO: seriously, wtf is this:

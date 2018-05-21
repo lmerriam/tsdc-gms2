@@ -6,7 +6,9 @@ var announce = argument1;
 
 var quest = global.active_quests[? quest_id];
 var title = quest[? "title"];
-var type = quest[? "type"];
+
+//show_debug_message("Quest: " + string(quest));
+//show_debug_message("Next quest: " + string(quest[? "next quest"]));
 
 ds_map_delete(global.active_quests,quest_id);
 ds_map_add(global.completed_quests,quest_id,quest);
@@ -26,10 +28,10 @@ var giver = quest[? "giver"];
 if (giver != undefined or giver != noone) giver.location_icon = spr_location_quest_complete;
 
 // If room quest, switch back to story quests
-var next_quest = quest[? "next quest"];
-if (next_quest != undefined) {
-	global.current_quest = scr_get_quest(next_quest,type);
-	scr_activate_quest(next_quest,true,true,type);
+if (scr_is_story_quest(quest_id)) {
+	var next_quest = quest[? "next quest"];
+	global.current_quest = scr_get_quest(next_quest);
+	scr_activate_quest(next_quest,true,true);
 } else {
 	global.current_quest = global.current_story_quest;
 }

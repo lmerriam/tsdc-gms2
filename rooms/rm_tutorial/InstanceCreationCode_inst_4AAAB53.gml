@@ -1,0 +1,1 @@
+//scr_init_quest("tutorial 1","Welcome to Vaultworld",noone,0,0);

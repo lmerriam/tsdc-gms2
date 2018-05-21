@@ -1,26 +1,37 @@
 {
-  "intro": {
+  "tutorial 1": {
     "title": "Welcome to Vaultworld",
     "phases": [
       {
-        "description": "First phase",
-        "room": "rm_test"
+        "description": "Learn to move",
+        "room": "rm_tutorial"
       },
       {
-        "description": "Second phase",
-        "room": "rm_sanfrancisco"
+        "description": "Talk to the dude",
+        "room": "rm_tutorial"
       },
       {
-        "description": "Third phase",
-        "room": "rm_test"
+        "description": "Pick up the item",
+        "room": "rm_tutorial"
       }
     ],
-    "next quest": "find vault village",
+    "next quest": "tutorial 2",
     "xp": 20,
     "gold": 0
   },
-  "find vault village": {
+  "tutorial 2": {
     "title": "Find Vault Village",
+    "phases": [
+      {
+        "description": "Escape the room",
+        "room": "rm_test"
+      }
+    ],
+    "xp": 20,
+    "gold": 10
+  },
+  "tutorial 3": {
+    "title": "Tutorial 3",
     "phases": [
       {
         "description": "Escape the room",

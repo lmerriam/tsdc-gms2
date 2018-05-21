@@ -1,20 +1,27 @@
-/// @description Initiate a quest
 /// @param name
 /// @param title
-/// @param target
-/// @param announce
-
-var name = argument0;
+/// @param giver
+/// @param gold
+/// @param xp
+var quest_id = argument0;
 var title = argument1;
-var target = argument2;
-var announce = argument3;
+var giver = argument2;
+var gold = argument3;
+var xp = argument4;
 
+// Create quest
 var quest = ds_map_create();
-
+global.quest_library[? quest_id] = quest;
 quest[? "title"] = title;
-quest[? "target"] = target;
-global.active_quests[? "name"] = name;
 
-if (announce) scr_announce("Quest complete: " + title);
+// Register the giver
+quest[? "giver"] = giver;
 
-return quest;
+// Set up phases
+var phases = ds_list_create();
+quest[? "phases"] = phases;
+quest[? "current phase"] = 0;
+
+// Rewards
+quest[? "gold"] = gold;
+quest[? "xp"] = xp;

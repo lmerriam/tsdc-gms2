@@ -8147,7 +8147,7 @@
                 "resourceCreationConfigs": [
                     "default"
                 ],
-                "resourcePath": "scripts\/scr_init_room_quest\/scr_init_room_quest.yy",
+                "resourcePath": "scripts\/scr_init_quest\/scr_init_quest.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -9307,6 +9307,25 @@
                     "default"
                 ],
                 "resourcePath": "scripts\/scr_controls_touch\/scr_controls_touch.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "be691d66-48c7-4d4f-903e-6095798f6891",
+            "Value": {
+                "id": "35bd0af9-5b7d-405f-af7a-6689448ca99f",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/scr_is_story_quest\/scr_is_story_quest.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -12691,25 +12710,6 @@
                 "resourcePath": "sprites\/spr_black\/spr_black.yy",
                 "resourceType": "GMSprite"
             }
-        },
-        {
-            "Key": "ffe7dbe3-9b2f-497d-a5af-77d336c996cf",
-            "Value": {
-                "id": "d9265b13-d736-40f4-bb25-8620e69902ce",
-                "modelName": "GMResourceInfo",
-                "mvc": "1.0",
-                "configDeltaFiles": [
-                    
-                ],
-                "configDeltas": [
-                    
-                ],
-                "resourceCreationConfigs": [
-                    "default"
-                ],
-                "resourcePath": "scripts\/scr_init_quest\/scr_init_quest.yy",
-                "resourceType": "GMScript"
-            }
         }
     ],
     "script_order": [
@@ -12944,7 +12944,6 @@
         "bb2e86ae-a796-443a-9cbc-f5d99b50f09d",
         "e6eb6e10-ee16-4323-a699-a1e81d4fde97",
         "a23d622b-4775-424f-939f-e8333d35dd68",
-        "ffe7dbe3-9b2f-497d-a5af-77d336c996cf",
         "c70d4fa3-0acc-4ead-a48c-83e5a48ca57f",
         "f1566065-0115-4b2e-b538-265b117329a9",
         "5df2b1f8-cf59-42d9-8433-37cb43861ed6",

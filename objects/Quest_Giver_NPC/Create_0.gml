@@ -25,6 +25,6 @@ confirm_actions = ds_map_create();
 dialog[? "confirm actions"] = confirm_actions;
 
 confirm_actions[? "activate quest"] = quest_id;
-confirm_actions[? "quest type"] = "room";
+//confirm_actions[? "quest type"] = "room";
 
 //ds_list_add(responses,response_yes,response_no);

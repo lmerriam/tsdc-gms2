@@ -12,7 +12,6 @@ var xp = argument4;
 // Create quest
 var quest = ds_map_create();
 global.room_quests[? "test quest"] = quest;
-quest[? "type"] = "story";
 
 // Register the giver
 quest[? "giver"] = giver;

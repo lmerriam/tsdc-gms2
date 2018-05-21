@@ -2,20 +2,18 @@
 /// @param name
 /// @param current
 /// @param announce
-/// @param type
 
 var quest_id = argument0;
 var current = argument1;
 var announce = argument2;
-var type = argument3;
-var quest = scr_get_quest(quest_id,type);
+
+var quest = scr_get_quest(quest_id);
 var target = quest[? "target"];
 var title = quest[? "title"];
 
 // Add to active quests
 global.active_quests[? quest_id] = quest;
 quest[? "current phase"] = 0;
-quest[? "type"] = type;
 
 // Init the first phase
 var phases = quest[? "phases"];
@@ -33,7 +31,7 @@ if (giver != noone) {
 if (announce) scr_announce("New quest: " + string(title));
 
 // Current
-if (current) global.current_quest = quest;
-if (type == "story") global.current_story_quest = quest;
+if (current) scr_set_current_quest(quest_id);
+if (scr_is_story_quest(quest_id)) global.current_story_quest = quest;
 
 return quest;

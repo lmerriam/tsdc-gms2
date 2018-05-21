@@ -1,7 +1,7 @@
 device_mouse_dbclick_enable(false);
 
 // Where do we go after init room sets everything up
-#macro START_ROOM rm_test
+#macro START_ROOM rm_tutorial
 global.rm_current = START_ROOM;
 global.rm_previous = noone;
 
