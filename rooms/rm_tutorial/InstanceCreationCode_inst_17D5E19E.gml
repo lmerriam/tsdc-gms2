@@ -1,7 +1,8 @@
 dialog_pre_quest = [
-	"What are you doing out here?",
-	"*Sigh*",
-	"Come with me, I'll get you back to safety"
+	"AHHH!",
+	"Where did you come from??",
+	"OK nevermind, we've got problems.",
+	"Go grab that weapon over there. NOW."
 ];
 
 dialog_post_quest = [
