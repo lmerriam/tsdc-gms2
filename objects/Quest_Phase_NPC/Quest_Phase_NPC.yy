@@ -43,7 +43,7 @@
     "physicsStartAwake": true,
     "properties": [
         {
-            "id": "c699d313-36c7-4ca0-b50c-c87e5b3d0358",
+            "id": "2516ccac-4872-4cfb-bf22-14cbe3422864",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -52,9 +52,23 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "Quest_Interact",
-            "varName": "interact_object",
-            "varType": 5
+            "value": "True",
+            "varName": "new_npc",
+            "varType": 3
+        },
+        {
+            "id": "7d4a3741-ca97-46b5-ac53-eccb185db089",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "No Name",
+            "varName": "npc_name",
+            "varType": 2
         }
     ],
     "solid": false,

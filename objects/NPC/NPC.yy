@@ -80,7 +80,22 @@
         }
     ],
     "physicsStartAwake": true,
-    "properties": null,
+    "properties": [
+        {
+            "id": "a4190f2c-c764-4a16-99d3-eb5f3ffd9c27",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "Dev Didn't Give Me A Name, Jr",
+            "varName": "npc_name",
+            "varType": 2
+        }
+    ],
     "solid": false,
     "spriteId": "05be0168-2799-400f-a924-784272bf5900",
     "visible": true

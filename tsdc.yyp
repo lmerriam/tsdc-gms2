@@ -1423,6 +1423,14 @@
             }
         },
         {
+            "Key": "4d5385be-cb07-4d82-8427-2345f428a872",
+            "Value": {
+                "id": "86472bf2-ba53-48b8-a0e9-01a49159d7c5",
+                "resourcePath": "scripts\\scr_register_npc\\scr_register_npc.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "4eee9a07-8f35-47dc-9a96-4bed3858ad73",
             "Value": {
                 "id": "ecc83e68-0ca1-455a-b70d-c1fd866a1cd3",
@@ -2515,6 +2523,14 @@
             "Value": {
                 "id": "f64ee021-2479-4893-89da-2f22324aba76",
                 "resourcePath": "scripts\/scr_weapon_state_step_flamethrower\/scr_weapon_state_step_flamethrower.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "7fb507bb-5370-42e2-a0b1-860bdc90b66c",
+            "Value": {
+                "id": "d59578cd-7c10-4a5f-bef1-abb297f019ec",
+                "resourcePath": "scripts\\scr_get_npc\\scr_get_npc.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -5633,7 +5649,10 @@
         "352463af-332a-4b06-a846-a8e50109ecb5",
         "6dace4a9-e117-42ff-b795-c378190b0254",
         "67f72206-341e-4f33-aadf-4f63d6d646f0",
-        "be691d66-48c7-4d4f-903e-6095798f6891"
+        "be691d66-48c7-4d4f-903e-6095798f6891",
+        "c4e72a28-ffa4-42cb-9e95-87dfc4abdbcf",
+        "4d5385be-cb07-4d82-8427-2345f428a872",
+        "7fb507bb-5370-42e2-a0b1-860bdc90b66c"
     ],
     "tutorial": ""
 }

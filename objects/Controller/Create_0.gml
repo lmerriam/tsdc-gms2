@@ -11,6 +11,8 @@ global.chests = ds_map_create();
 // Set up location registry
 //global.locations = ds_list_create();
 
+global.npcs = ds_list_create();
+
 // Set up interactable registry
 global.interactables = ds_list_create();
 
