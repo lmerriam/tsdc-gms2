@@ -71,7 +71,7 @@
             "varType": 1
         },
         {
-            "id": "6dbec99c-28a4-41d8-8cae-397f7768a18a",
+            "id": "ebc00146-ff35-4742-a081-88cde466df2b",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -80,9 +80,23 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "room",
-            "varName": "quest_type",
-            "varType": 2
+            "value": "noone",
+            "varName": "start_script",
+            "varType": 5
+        },
+        {
+            "id": "3e97d5d5-958f-48ba-837b-98bc7c9c16a8",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "noone",
+            "varName": "end_script",
+            "varType": 5
         }
     ],
     "solid": false,

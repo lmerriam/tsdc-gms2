@@ -21,6 +21,9 @@ for (var i = 0; i<num_quests; i++) {
 		var next_phase_number = current_phase_number + 1;
 		var quest_complete = next_phase_number >= ds_list_size(phases) ? true : false;
 		
+		// Execute end script
+		if (current_phase_obj.end_script != noone) script_execute(current_phase_obj.end_script);
+		
 		// Check if the quest is complete
 		if (quest_complete) {
 			scr_complete_quest(key,true);
@@ -33,7 +36,16 @@ for (var i = 0; i<num_quests; i++) {
 			quest[? "current phase"] = next_phase_number;
 			
 			var next_phase_in_room = (room_get_name(room) == next_phase_room) ? true : false;
-			if (next_phase_in_room) with (next_phase_obj) event_user(0);
+			
+			if (next_phase_in_room) with (next_phase_obj) {
+				
+				// Execute start script
+				if (start_script != noone) script_execute(start_script);
+				
+				// Activate quest phase
+				event_user(0);
+			}
+			
 		}
 	}
 	
