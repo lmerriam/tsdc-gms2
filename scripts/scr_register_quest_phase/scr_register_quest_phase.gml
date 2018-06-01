@@ -7,6 +7,9 @@ var phase_number = argument1;
 var inst = argument2;
 
 var quest = scr_get_quest(quest_id);
+show_debug_message("Quest ID: " + string(quest));
+show_debug_message("Quest: " + string(quest));
+//scr_debug_map(quest);
 
 // Phases
 // @TODO: seriously, wtf is this:

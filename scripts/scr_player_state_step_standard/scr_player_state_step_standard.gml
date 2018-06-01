@@ -21,7 +21,7 @@ if (global.move_len > 0) {
     if (sign(hspd) == orientation) image_speed = img_spd else image_speed = -img_spd;
 	
 	if (Time.now mod 30 < 1) part_particles_create(global.particles_below, x, y, global.footstep_particles, 1);
-        
+	//if (image_index == 3 or image_index == 7) part_particles_create(global.particles_below, x, y, global.footstep_particles, 1);        
 } else {
     //if (front) {
     //    sprite_index = spr_player_idle;

@@ -1,1 +1,0 @@
-scr_activate_quest("tutorial 1",true,false);

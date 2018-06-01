@@ -1,2 +1,3 @@
  /// Create
-properties = ds_map_create();
+state = 0;
+complete = false;

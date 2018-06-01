@@ -69,6 +69,34 @@
             "value": "No Name",
             "varName": "npc_name",
             "varType": 2
+        },
+        {
+            "id": "f947c550-9a9a-4591-82f4-d6f2a97b959f",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "False",
+            "varName": "npc_initiate",
+            "varType": 3
+        },
+        {
+            "id": "0e792854-8a97-42d9-a17f-4b24f4edbd0b",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "move_to_player",
+            "varType": 3
         }
     ],
     "solid": false,
