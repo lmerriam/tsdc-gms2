@@ -28,6 +28,7 @@ var giver = quest[? "giver"];
 if (giver != undefined or giver != noone) giver.location_icon = spr_location_quest_complete;
 
 // If room quest, switch back to story quests
+
 if (scr_is_story_quest(quest_id)) {
 	var next_quest = quest[? "next quest"];
 	global.current_quest = scr_get_quest(next_quest);

@@ -103,6 +103,31 @@
                 410,
                 0
             ]
+        },
+        {
+            "id": "7970f936-4fbd-4fcf-95c5-1c130a48f5d8",
+            "modelName": "GMAutoTileSet",
+            "mvc": "1.0",
+            "closed_edge": false,
+            "name": "Water",
+            "tiles": [
+                124,
+                61,
+                60,
+                92,
+                29,
+                123,
+                0,
+                91,
+                28,
+                0,
+                125,
+                93,
+                156,
+                155,
+                157,
+                0
+            ]
         }
     ],
     "macroPageTiles": {
