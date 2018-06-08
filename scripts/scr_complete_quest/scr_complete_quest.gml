@@ -33,6 +33,8 @@ if (scr_is_story_quest(quest_id)) {
 	var next_quest = quest[? "next quest"];
 	global.current_quest = scr_get_quest(next_quest);
 	scr_activate_quest(next_quest,true,true);
+//} else if (ds_map_size(global.active_quests) == 0) {
+//	global.current_quest = noone;
 } else {
 	global.current_quest = global.current_story_quest;
 }

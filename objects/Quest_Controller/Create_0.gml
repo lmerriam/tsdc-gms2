@@ -24,14 +24,7 @@ ds_map_copy(global.story_quest_library,global.quest_library);
 //ds_map_add_map(global.quest_library,"room",room_quests);
 
 // Current story quest
-global.current_story_quest = "tutorial 1";
+global.current_story_quest = "intro 1";
 
 // Set the current quest
-global.current_quest = noone;
-
-//global.story_quest_index = ds_list_create();
-//ds_list_add(global.story_quest_index,
-//	"tutorial 1",
-//	"tutorial 2",
-//	"tutorial 3"
-//);
+scr_activate_quest(global.current_story_quest,true,false);
