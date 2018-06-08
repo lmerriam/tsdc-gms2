@@ -1,7 +1,7 @@
 {
   "intro 1": {
     "title": "Get acquainted",
-    "next quest": "tutorial 2",
+    "next quest": "intro 2",
     "phases": [
       {
         "description": "Talk to the town leader",
@@ -13,17 +13,27 @@
   },
   "intro 2": {
     "title": "Find Vault Village",
+    "next quest": "intro 3",
     "phases": [
       {
-        "description": "Help the defense director",
+        "description": "Find the cave",
         "room": "rm_test1"
-      }
+      },
+      {
+        "description": "Defeat the bots",
+        "room": "rm_testdungeon"
+      },
+      {
+        "description": "Return to Marcus",
+        "room": "rm_test1"
+      },
     ],
     "xp": 20,
     "gold": 10
   },
   "intro 3": {
     "title": "Tutorial 3",
+    "next quest": "noone",
     "phases": [
       {
         "description": "Take out the mobs",

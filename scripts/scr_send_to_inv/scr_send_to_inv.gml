@@ -1,4 +1,7 @@
 ///scr_send_to_inv(props,inventory)
+/// @param properties
+/// @param inventory
+
 var item_props = argument[0];
 var slots = argument[1];
 
