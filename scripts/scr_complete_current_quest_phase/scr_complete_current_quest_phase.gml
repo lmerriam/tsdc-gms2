@@ -1,0 +1,1 @@
+scr_complete_quest_phase(global.current_quest,global.current_quest[? "current phase"]);

@@ -1,7 +1,9 @@
 /// @description Insert description here
 
-if (new_npc) {
-	var npc = instance_create_layer(x,y,"entities",Quest_NPC);
+var npc;
+
+if (scr_get_npc(npc_name) == noone) {
+	npc = instance_create_layer(x,y,"entities",Quest_NPC);
 	npc.creator = id;
 	npc.npc_name = npc_name;
 
@@ -11,11 +13,15 @@ if (new_npc) {
 	npc.quest_id = quest_id;
 	npc.phase_number = phase_number;
 } else {
-	var npc = scr_get_npc(npc_name);
+	npc = scr_get_npc(npc_name);
 	npc.creator = id;
 	npc.dialog_pre_quest = dialog_pre_quest;
+	npc.quest_id = quest_id;
 	npc.phase_number = phase_number;
 }
+
+ds_list_clear(targets);
+ds_list_add(targets,npc);
 
 if (npc_initiate) {
 	with(npc) event_user(1);

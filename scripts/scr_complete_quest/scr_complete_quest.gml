@@ -4,7 +4,10 @@
 var quest_id = argument0;
 var announce = argument1;
 
-var quest = global.active_quests[? quest_id];
+var quest;
+if (typeof(quest_id) == "number") { quest = quest_id; }
+else { quest = global.active_quests[? quest_id]; }
+
 var title = quest[? "title"];
 
 //show_debug_message("Quest: " + string(quest));
