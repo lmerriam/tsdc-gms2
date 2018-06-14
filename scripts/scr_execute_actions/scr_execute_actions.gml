@@ -48,12 +48,6 @@ if (actions[? "activate quest"] != undefined) {
 	scr_activate_quest(quest_id,true,true);
 }
 
-// Check if room quest activated
-if (actions[? "activate room quest"] != undefined) {
-	var quest_id = actions[? "activate room quest"];
-	scr_activate_room_quest(quest_id);
-}
-
 // Check completed quest phase
 if (actions[? "complete quest phase"] != undefined) {
 	var quest_id = actions[? "complete quest phase"];

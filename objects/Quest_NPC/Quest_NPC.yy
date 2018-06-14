@@ -13,16 +13,6 @@
             "enumb": 0,
             "eventtype": 0,
             "m_owner": "fd975caa-f915-4cb3-9a8e-638db0124ded"
-        },
-        {
-            "id": "73452a84-7b6b-4846-ae0b-440d93090813",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 11,
-            "eventtype": 7,
-            "m_owner": "fd975caa-f915-4cb3-9a8e-638db0124ded"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -71,7 +61,20 @@
     ],
     "physicsStartAwake": true,
     "properties": [
-        
+        {
+            "id": "076f3ff6-d023-4151-a359-12fbc03bde98",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "Generic quest dialog. Bad developer.",
+            "varName": "dialog_quest_text",
+            "varType": 2
+        }
     ],
     "solid": false,
     "spriteId": "05be0168-2799-400f-a924-784272bf5900",

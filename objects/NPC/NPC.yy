@@ -94,6 +94,20 @@
             "value": "Dev Didn't Give Me A Name, Jr",
             "varName": "npc_name",
             "varType": 2
+        },
+        {
+            "id": "f243e44b-2067-4647-8b40-112251a630cf",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "Generic dialog. Bad developer.",
+            "varName": "dialog_standard_text",
+            "varType": 2
         }
     ],
     "solid": false,

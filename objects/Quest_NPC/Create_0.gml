@@ -1,7 +1,6 @@
 event_inherited();
-scr_register_interactable(id);
 
-dialog = ds_map_create();
-dialog[? "text"] = ds_list_create();
-dialog_actions = ds_map_create();
-dialog[? "dialog actions"] = dialog_actions;
+dialog_quest = scr_dialog_init();
+//scr_dialog_set_text(dialog_quest,dialog_quest_text);
+//scr_dialog_add_action(dialog_quest,"complete quest phase",quest_id);
+//scr_dialog_add_action(dialog_quest,"complete quest phase number",phase_number);

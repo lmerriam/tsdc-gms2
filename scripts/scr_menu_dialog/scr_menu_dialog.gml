@@ -1,12 +1,11 @@
 /// @description Open the dialog menu
 /// @param portrait
-/// @param dialog_ds_map
-/// @param actions_ds
+/// @param dialog_ds
 
 var portrait = argument0;
 var dialog_ds = argument1;
 
-GUI.dialog_portrait = argument0;
+GUI.dialog_portrait = portrait;
 GUI.dialog_text = dialog_ds[? "text"];
 GUI.dialog_count = ds_list_size(GUI.dialog_text);
 GUI.dialog_text_num = 0;

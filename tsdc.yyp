@@ -6936,6 +6936,25 @@
             }
         },
         {
+            "Key": "8b585522-7b04-4100-9281-2d3b0fa6727e",
+            "Value": {
+                "id": "de276b1f-3e5c-44d2-8de3-b0ddcea82385",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/Quest_Giver_NPC\/Quest_Giver_NPC.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "8bb878fd-63c7-46c6-93d1-50c8f39af379",
             "Value": {
                 "id": "ebf0188d-7627-4dae-9d5e-4791e3868d53",
@@ -7484,6 +7503,25 @@
                 ],
                 "resourcePath": "sprites\/background18\/background18.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "94691b2e-c12a-4d31-bf27-caa4c891ae9f",
+            "Value": {
+                "id": "828960b8-f44b-49c8-b05b-9c8da5e29e4f",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/scr_register_quest_giver\/scr_register_quest_giver.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -8513,6 +8551,25 @@
             }
         },
         {
+            "Key": "ab918f24-81a1-48d6-8f93-49a2f1f1162c",
+            "Value": {
+                "id": "37dc965e-4603-4003-b194-2046eb64add1",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/scr_dialog_set_text\/scr_dialog_set_text.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "abff1d4a-1500-4899-b4a5-988ac1793a0f",
             "Value": {
                 "id": "852ec405-c3ed-4165-bca1-aebc2bb7be31",
@@ -9116,7 +9173,7 @@
                 "resourceCreationConfigs": [
                     "default"
                 ],
-                "resourcePath": "objects\/Quest_Giver_NPC\/Quest_Giver_NPC.yy",
+                "resourcePath": "objects\/Quest_Giver_Interactable\/Quest_Giver_Interactable.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -10717,6 +10774,25 @@
             }
         },
         {
+            "Key": "d1eaa7da-0698-4ac2-b1ab-f39c72c5570a",
+            "Value": {
+                "id": "80af8b95-cd0d-445a-83be-121e6d6ee712",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/scr_dialog_init\/scr_dialog_init.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "d212cd29-5ffa-4cc8-b4a2-738011991e9a",
             "Value": {
                 "id": "78004ee5-14fb-4d36-a0ab-95071c66e889",
@@ -11968,6 +12044,25 @@
                 ],
                 "resourcePath": "tilesets\/TilesetDesert_tileset\/TilesetDesert_tileset.yy",
                 "resourceType": "GMTileSet"
+            }
+        },
+        {
+            "Key": "ec2c28e3-7a81-4bcb-b0b2-a2eabdc3039b",
+            "Value": {
+                "id": "29d0e3ba-fcc5-4263-ad02-fdf7d85ae3af",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/scr_dialog_add_action\/scr_dialog_add_action.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -13244,7 +13339,14 @@
         "c4c75d25-0d53-46d1-ba4c-62be3428e77a",
         "d9d37729-a851-46a8-8bf4-2ff6a698e3c3",
         "a6c1f910-93a0-412a-a579-257d18f3f8d3",
-        "5bc2d516-64ff-49f9-a21e-8ca1ea896360"
+        "5bc2d516-64ff-49f9-a21e-8ca1ea896360",
+        "36c638dd-df66-40da-8c75-53695e7b1f0d",
+        "cdf5bdec-9c5b-49e2-a83f-564ca6d9159e",
+        "41a2c599-4913-459d-9105-0f14d5640ae4",
+        "94691b2e-c12a-4d31-bf27-caa4c891ae9f",
+        "d1eaa7da-0698-4ac2-b1ab-f39c72c5570a",
+        "ec2c28e3-7a81-4bcb-b0b2-a2eabdc3039b",
+        "ab918f24-81a1-48d6-8f93-49a2f1f1162c"
     ],
     "tutorial": ""
 }

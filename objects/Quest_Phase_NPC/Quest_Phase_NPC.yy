@@ -57,6 +57,34 @@
             "varType": 2
         },
         {
+            "id": "c931fb0c-fc74-41ee-a463-7fe7888c2a78",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "Generic quest phase standard text. Bad dev.",
+            "varName": "dialog_standard_text",
+            "varType": 2
+        },
+        {
+            "id": "9752e300-2d48-422c-9f50-5dbefb18117a",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "Generic quest phase quest text. Bad dev.",
+            "varName": "dialog_quest_text",
+            "varType": 2
+        },
+        {
             "id": "f947c550-9a9a-4591-82f4-d6f2a97b959f",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
