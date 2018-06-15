@@ -1,7 +1,7 @@
 /// @param dialog
-/// @param key
+/// @param text_ds
 
 var dialog = argument0;
 var text = argument1;
 
-ds_list_add(dialog[? "text"],text);
+dialog[? "text"] = text;

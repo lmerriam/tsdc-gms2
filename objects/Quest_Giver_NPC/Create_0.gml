@@ -11,5 +11,5 @@ event_inherited();
 
 // Create quest dialog
 dialog_quest = scr_dialog_init();
-scr_dialog_set_text(dialog_quest, dialog_quest_text);
+scr_dialog_split_string(dialog_quest,dialog_quest_text);
 scr_dialog_add_action(dialog_quest, "activate quest", quest_id);

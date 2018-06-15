@@ -26,7 +26,7 @@ npc.phase_number = phase_number;
 npc.dialog_quest = scr_dialog_init();
 
 // Set up quest text
-scr_dialog_set_text(npc.dialog_quest,dialog_quest_text);
+scr_dialog_split_string(npc.dialog_quest,dialog_quest_text);
 
 // Set up quest actions
 scr_dialog_add_action(npc.dialog_quest,"complete quest phase",quest_id);
