@@ -59,6 +59,48 @@
             "value": "generic quest",
             "varName": "quest_id",
             "varType": 2
+        },
+        {
+            "id": "016693f9-e5e3-41dd-9b15-b92aca5ca822",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "10",
+            "varName": "quest_xp",
+            "varType": 1
+        },
+        {
+            "id": "ecaca7ef-92bd-414f-9d82-0b843b742cad",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "15",
+            "varName": "quest_gold",
+            "varType": 1
+        },
+        {
+            "id": "8ee5a83a-0486-4e28-b124-cbc23c8bb46e",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "\"Find the medicine\"",
+            "varName": "quest_title",
+            "varType": 2
         }
     ],
     "solid": false,

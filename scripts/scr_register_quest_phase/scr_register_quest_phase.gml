@@ -1,6 +1,6 @@
-// @param quest_id
-// @param phase_number
-// @param inst
+/// @param quest_id
+/// @param phase_number
+/// @param inst
 
 var quest_id = argument0;
 var phase_number = argument1;
