@@ -14,7 +14,9 @@ if (scr_get_npc(npc_name) == noone) {
 } else {
 	// Set up NPC
 	npc = scr_get_npc(npc_name);
-	ds_map_destroy(npc.dialog_quest);
+	if (variable_instance_exists(npc,"dialog_quest")) {
+		ds_map_destroy(npc.dialog_quest);
+	}
 }
 
 // Set up NPC

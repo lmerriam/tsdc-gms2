@@ -9,19 +9,23 @@ var giver = argument2;
 var gold = argument3;
 var xp = argument4;
 
-// Create quest
-var quest = ds_map_create();
-global.quest_library[? quest_id] = quest;
-quest[? "title"] = title;
+if (scr_get_quest(quest_id) == noone) {
 
-// Register the giver
-quest[? "giver"] = giver;
+	// Create quest
+	var quest = ds_map_create();
+	global.quest_library[? quest_id] = quest;
+	quest[? "title"] = title;
 
-// Set up phases
-var phases = ds_list_create();
-quest[? "phases"] = phases;
-quest[? "current phase"] = 0;
+	// Register the giver
+	quest[? "giver"] = giver;
 
-// Rewards
-quest[? "gold"] = gold;
-quest[? "xp"] = xp;
+	// Set up phases
+	var phases = ds_list_create();
+	quest[? "phases"] = phases;
+	quest[? "current phase"] = 0;
+
+	// Rewards
+	quest[? "gold"] = gold;
+	quest[? "xp"] = xp;
+
+}
