@@ -37,3 +37,10 @@ if (global.current_quest != noone) {
 		scr_draw_quest_pointer(entrance.x,entrance.y,noone);
 	}
 }
+
+for (var i = 0; i<ds_list_size(global.quest_givers); i++) {
+	var giver = global.quest_givers[| i];
+	if (!scr_quest_is_complete(giver.quest_id) and scr_point_in_view(giver.x,giver.y)) {
+		draw_sprite(spr_alert,Time.now mod 80 div 10,giver.x,giver.y-32);
+	}
+}

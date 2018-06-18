@@ -28,3 +28,5 @@ global.current_story_quest = "intro 1";
 
 // Set the current quest
 scr_activate_quest(global.current_story_quest,true,false);
+
+global.quest_givers = ds_list_create();
