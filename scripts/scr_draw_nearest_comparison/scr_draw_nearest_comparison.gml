@@ -1,12 +1,12 @@
 ///scr_draw_nearest_comparison(props)
 var props = argument[0];
-var xx = 16;
-var yy = menu_btn[3] + 16;
 var padding = 12;
 var width = 200;
 var line_height = 24;
-var line_count = ds_map_size(props[? "Stats"]) + ds_map_size(props[? "Buffs"]) + 2;
+var line_count = 2;
 var height = line_count*line_height+padding*2;
+var xx = 16;
+var yy = global.window_height - height - nearest_button_height - 32;
 var x2 = xx+width;
 var y2 = yy+height;
 

@@ -38,9 +38,15 @@ if (global.current_quest != noone) {
 	}
 }
 
-for (var i = 0; i<ds_list_size(global.quest_givers); i++) {
-	var giver = global.quest_givers[| i];
-	if (!scr_quest_is_complete(giver.quest_id) and scr_point_in_view(giver.x,giver.y)) {
-		draw_sprite(spr_alert,Time.now mod 80 div 10,giver.x,giver.y-32);
+// Show quest giver markers
+var nearby_givers = global.active_chunk_registry[? "quest giver"];
+if (nearby_givers != undefined) {
+	for (var i = 0; i<ds_list_size(nearby_givers); i++) {
+		var giver = nearby_givers[| i];
+		if (scr_quest_is_active(giver.quest_id) and scr_point_in_view(giver.x,giver.y)) {
+			draw_sprite(spr_location_quest_active,0,giver.x,giver.y-32);
+		} else if (!scr_quest_is_complete(giver.quest_id) and scr_point_in_view(giver.x,giver.y)) {
+			draw_sprite(spr_alert,Time.now mod 80 div 10,giver.x,giver.y-32);
+		}
 	}
 }

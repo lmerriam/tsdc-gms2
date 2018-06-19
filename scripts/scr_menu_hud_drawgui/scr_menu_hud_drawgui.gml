@@ -83,6 +83,12 @@ draw_healthbar(0,window_height-hbar,window_width,window_height,expr/maxexpr*100,
 //	}
 //}
 
+// Draw current quest
+draw_sprite_ext(spr_location_pointer,0,20,90,2,2,270,c_white,1);
+draw_set_font(PixelSmall_12);
+scr_draw_text_shadow(32,76,global.current_quest[? "title"],c_white,c_black,1,3,270,1,fa_left);
+
+
 //Draw announcements
 if (ds_queue_size(global.announcements) > 0) {
 	draw_set_font(PixelSmall_18);

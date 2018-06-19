@@ -6404,6 +6404,25 @@
             }
         },
         {
+            "Key": "82cb3fe0-9e74-4899-91bc-de1917718a45",
+            "Value": {
+                "id": "662d9506-b63f-4db4-8609-55928787a1da",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/scr_quest_is_active\/scr_quest_is_active.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "836f5aed-d5f4-47a5-809e-12f92ecd19ae",
             "Value": {
                 "id": "64c45b51-1293-4d7b-ab35-84257c09cbd4",
