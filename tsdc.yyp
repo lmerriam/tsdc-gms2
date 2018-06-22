@@ -3991,6 +3991,25 @@
             }
         },
         {
+            "Key": "5a9492bb-8370-4a28-9d98-e1bb2e9cb926",
+            "Value": {
+                "id": "dda26617-a59c-40ca-acb8-9dbde4d16045",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/spr_quest_current_minimap_icon\/spr_quest_current_minimap_icon.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "5a9fd600-3847-4121-b4a5-101d41aba89c",
             "Value": {
                 "id": "df53422b-3296-4fd1-b5d0-a5692a1f4d2a",
@@ -5033,6 +5052,25 @@
                 ],
                 "resourcePath": "objects\/Event_Tutorial\/Event_Tutorial.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "6b2aa81d-0ee6-4c5f-8108-20bde5e723f6",
+            "Value": {
+                "id": "55de5ead-fbcb-4256-98fe-9140df8788af",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/scr_quest_get_current_phase\/scr_quest_get_current_phase.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -12329,6 +12367,25 @@
                 ],
                 "resourcePath": "notes\/scripted_events.yy",
                 "resourceType": "GMNotes"
+            }
+        },
+        {
+            "Key": "ef333ae5-a138-4b41-964d-4d664fe470a4",
+            "Value": {
+                "id": "999271d3-a2a4-40c4-8326-bcdc0488989c",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/scr_minimap_draw_location\/scr_minimap_draw_location.yy",
+                "resourceType": "GMScript"
             }
         },
         {

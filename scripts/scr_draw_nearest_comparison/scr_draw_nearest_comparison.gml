@@ -10,7 +10,7 @@ var yy = global.window_height - height - nearest_button_height - 32;
 var x2 = xx+width;
 var y2 = yy+height;
 
-// TODO: stop calculating all this shit each step
+// TODO: stop calculating all this shit each stepv
 
 // Draw box
 draw_set_color(c_black);

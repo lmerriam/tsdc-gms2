@@ -33,22 +33,38 @@ if (nearest_interactable_in_range) {
 //scr_draw_9patch(spr_ui_box_2x,0,minimap_window_x-2, minimap_window_y-2, minimap_window_x+minimap_width+2, minimap_window_y+minimap_height+2,6,6,6,6);
 draw_sprite_ext(spr_minimap_radius,0,minimap_center_x,minimap_center_y,2,2,0,c_white,1);
 // @todo: extract this out into a script
+
 var size = ds_list_size(global.locations);
 for (var i = 0; i<size; i++) {
-	var radius = 512;
-	var minimap_radius = 64;
 	var location = global.locations[| i];
-	var dis = point_distance(Player.x,Player.y,location.x,location.y);
-	var dir = point_direction(Player.x,Player.y,location.x,location.y);
 	var icon = location.location_icon;
-	var ratio = 512/minimap_radius;
-	if (dis < radius) {
-		var xx = GUI.minimap_center_x + (location.x - Player.x)/ratio;
-		var yy = GUI.minimap_center_y + (location.y - Player.y)/ratio;
-		draw_sprite_ext(icon,0,xx,yy,2,2,0,c_white,1);
-	}
+	scr_minimap_draw_location(location.x,location.y,icon,false);
 }
 draw_sprite_ext(spr_player_arrow,0,minimap_center_x,minimap_center_y,2,2,global.aim_dir,c_white,1);
+
+// Draw the current quest location
+if (global.current_quest != noone) {
+	var current_phase = scr_quest_get_current_phase(global.current_quest);
+	var current_phase_obj = current_phase[? "inst"];
+	var current_phase_room = current_phase[? "room"];
+	var icon = spr_quest_current_minimap_icon;
+	// Draw a quest pointer to the next phase
+	if (current_phase_room == room_get_name(room)) {
+		var targets = current_phase_obj.targets;
+		if (ds_exists(targets,ds_type_list)) {
+			for (var i = 0; i<ds_list_size(targets); i++) {
+				var target = targets[| i];
+				scr_minimap_draw_location(target.x,target.y,icon,true);
+			}
+		}
+	// Draw a pointer to the entrance of the room the next phase is in
+	} else if (global.entrances[? current_phase_room] != undefined) {
+		var entrance = scr_get_entrance(current_phase_room);
+		scr_minimap_draw_location(entrance.x,entrance.y,icon,true);
+	}
+	
+}
+
     
 // Draw health and stamina
 var hp = scr_get_instance_stat(Player,"Health");
