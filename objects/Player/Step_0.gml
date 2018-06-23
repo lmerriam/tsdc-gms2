@@ -16,6 +16,8 @@ scr_get_input();
 // Record coordinates
 global.player_x = x;
 global.player_y = y;
+global.player_tile_x = scr_tile_coord(x);
+global.player_tile_y = scr_tile_coord(y);
 
 // Execute state
 script_execute(player_state_step);

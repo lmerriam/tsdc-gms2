@@ -10,7 +10,7 @@ global.chests = ds_map_create();
 
 // Set up location registry
 //global.locations = ds_list_create();
-
+global.tile_size = 32;
 global.npcs = ds_list_create();
 
 // Set up interactable registry
