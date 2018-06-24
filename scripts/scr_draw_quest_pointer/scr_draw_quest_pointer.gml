@@ -18,7 +18,7 @@ var icon_x = Player.x + lengthdir_x(icon_len,pointer_dir);
 var icon_y = Player.y + lengthdir_y(icon_len,pointer_dir);
 
 if (scr_point_in_view(targetx,targety)) {
-	draw_sprite_ext(spr_location_pointer,0,targetx,targety-32,1,1,270,c_white,1);
+	draw_sprite_ext(spr_quest_current_minimap_icon,0,targetx,targety-32,1,1,270,c_white,1);
 } else if (distance_to_target >= len+8) {
 	draw_sprite_ext(spr_location_pointer,0,pointer_x,pointer_y,1,1,pointer_dir,c_white,1);
 	if (icon != noone) draw_sprite(icon,0,icon_x,icon_y);

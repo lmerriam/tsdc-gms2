@@ -34,7 +34,7 @@ if (nearest_interactable_in_range) {
 
 // @todo: extract this out into a script
 // Draw dynamic minimap
-var range = 12;
+var range = 16;
 for (var tx=global.player_tile_x-range;tx<global.player_tile_x+range;tx++) {
 	for (var ty=global.player_tile_y-range;ty<global.player_tile_y+range;ty++) {
 		var rmx = tx*global.tile_size;
@@ -47,6 +47,9 @@ for (var tx=global.player_tile_x-range;tx<global.player_tile_x+range;tx++) {
 	}
 }
 
+// Radial minimap outline
+draw_sprite_ext(spr_minimap_radius,0,minimap_center_x,minimap_center_y,2,2,0,c_white,1);
+
 // Draw locations
 var size = ds_list_size(global.locations);
 for (var i = 0; i<size; i++) {
@@ -55,8 +58,6 @@ for (var i = 0; i<size; i++) {
 	scr_minimap_draw_location(location.x,location.y,icon,false);
 }
 
-// Radial minimap outline
-draw_sprite_ext(spr_minimap_radius,0,minimap_center_x,minimap_center_y,2,2,0,c_white,1);
 // Draw player arrow
 draw_sprite_ext(spr_player_arrow,0,minimap_center_x,minimap_center_y,2,2,global.aim_dir,c_white,1);
 
