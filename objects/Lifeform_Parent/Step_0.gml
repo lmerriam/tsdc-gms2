@@ -3,7 +3,7 @@ event_inherited();
 
 if (stats[? "Health"] <= 0) {
     instance_destroy();
-    exit;
+    //exit;
 }
 
 /// Effects

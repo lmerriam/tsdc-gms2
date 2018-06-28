@@ -3,7 +3,6 @@ var inst = argument0;
 
 inst.properties = ds_map_create();
 inst.effects = noone;
-
 inst.damaged_by = noone;
 inst.bleeds = false;
 

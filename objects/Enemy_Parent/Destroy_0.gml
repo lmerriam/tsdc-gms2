@@ -1,7 +1,7 @@
 /// Loot and XP and
 event_inherited();
 
-// Register to mob
+// Deregister to mob
 if (mob != noone and instance_exists(mob)) {
 	ds_list_delete(mob.enemies,ds_list_find_index(mob.enemies,id));
 	if (ds_list_size(mob.enemies) <= 0) instance_destroy(mob);
