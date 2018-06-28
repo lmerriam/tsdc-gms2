@@ -1,39 +1,55 @@
 {
-  "intro 1": {
-    "title": "Get acquainted",
-    "next quest": "intro 2",
+  "talk to leader": {
+    "title": "Talk to Leader Wyse",
+    "next quest": "rescue villagers",
     "phases": [
       {
         "description": "Talk to the town leader",
         "room": "rm_test1"
       }
     ],
-    "xp": 20,
+    "xp": 10,
     "gold": 0
   },
-  "intro 2": {
-    "title": "Find Vault Village",
-    "next quest": "intro 3",
+  "rescue villagers": {
+    "title": "Rescue the townspeople",
+    "next quest": "gather remedies",
     "phases": [
       {
         "description": "Find the cave",
         "room": "rm_test1"
-      },
-      {
-        "description": "Defeat the bots",
-        "room": "rm_testdungeon"
-      },
-      {
-        "description": "Return to Marcus",
-        "room": "rm_test1"
-      },
+      }
     ],
-    "xp": 20,
+    "xp": 12,
     "gold": 10
   },
-  "intro 3": {
-    "title": "Tutorial 3",
-    "next quest": "noone",
+  "gather remedies": {
+    "title": "Notify the scouts",
+    "next quest": "defeat bandits",
+    "phases": [
+      {
+        "description": "Take out the mobs",
+        "room": "rm_test1"
+      }
+    ],
+    "xp": 15,
+    "gold": 10
+  },
+  "defeat bandits": {
+    "title": "Chase off bandits",
+    "next quest": "notify scouts",
+    "phases": [
+      {
+        "description": "Take out the mobs",
+        "room": "rm_test1"
+      }
+    ],
+    "xp": 18,
+    "gold": 10
+  },
+  "notify scouts": {
+    "title": "Notify the scouts",
+    "next quest": "gather parts",
     "phases": [
       {
         "description": "Take out the mobs",
@@ -41,6 +57,54 @@
       }
     ],
     "xp": 20,
+    "gold": 10
+  },
+  "gather parts": {
+    "title": "Gather tech components",
+    "next quest": "activate generator",
+    "phases": [
+      {
+        "description": "Take out the mobs",
+        "room": "rm_test1"
+      }
+    ],
+    "xp": 20,
+    "gold": 10
+  },
+  "activate generator": {
+    "title": "Activate the generator",
+    "next quest": "find vault key",
+    "phases": [
+      {
+        "description": "Take out the mobs",
+        "room": "rm_test1"
+      }
+    ],
+    "xp": 24,
+    "gold": 10
+  },
+  "find vault key": {
+    "title": "Find a key to the vault",
+    "next quest": "clear vault 1",
+    "phases": [
+      {
+        "description": "Take out the mobs",
+        "room": "rm_test1"
+      }
+    ],
+    "xp": 20,
+    "gold": 10
+  },
+  "clear vault 1": {
+    "title": "Gather scrap",
+    "next quest": "noone",
+    "phases": [
+      {
+        "description": "Take out the mobs",
+        "room": "rm_test1"
+      }
+    ],
+    "xp": 30,
     "gold": 10
   }
 }

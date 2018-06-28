@@ -24,7 +24,7 @@ ds_map_copy(global.story_quest_library,global.quest_library);
 //ds_map_add_map(global.quest_library,"room",room_quests);
 
 // Current story quest
-global.current_story_quest = "intro 1";
+global.current_story_quest = "talk to leader";
 
 // Set the current quest
 scr_activate_quest(global.current_story_quest,true,false);

@@ -37,12 +37,14 @@ if (nearest_interactable_in_range) {
 var range = 16;
 for (var tx=global.player_tile_x-range;tx<global.player_tile_x+range;tx++) {
 	for (var ty=global.player_tile_y-range;ty<global.player_tile_y+range;ty++) {
-		var rmx = tx*global.tile_size;
-		var rmy = ty*global.tile_size;
-		var tile = global.collision_tiles[# tx,ty];
-		if (tile) {
-			scr_minimap_draw_location(rmx,rmy,spr_black,false);
-			//show_debug_message("Tile here: " + string(tx) + ", " + string(ty));
+		if (tx>0 and tx<global.room_tile_w and ty>0 and ty<global.room_tile_h) {
+			var rmx = tx*global.tile_size;
+			var rmy = ty*global.tile_size;
+			var tile = global.collision_tiles[# tx,ty];
+			if (tile) {
+				scr_minimap_draw_location(rmx,rmy,spr_black,false);
+				//show_debug_message("Tile here: " + string(tx) + ", " + string(ty));
+			}
 		}
 	}
 }

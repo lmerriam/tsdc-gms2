@@ -1,0 +1,1 @@
+global.entities = ds_list_create();
