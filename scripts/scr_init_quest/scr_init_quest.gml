@@ -1,4 +1,4 @@
-/// @param name
+/// @param quest_id
 /// @param title
 /// @param giver
 /// @param gold

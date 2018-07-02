@@ -15,12 +15,10 @@ if (effects != undefined and buffs != undefined and ds_exists(effects,ds_type_ma
 		var num_buffs = ds_map_size(buffs);
 		for(var i=0;i<num_buffs;i++) {
 			effects[? key] = ds_map_create();
-			show_debug_message(string(i) + " " + string(key));
 			ds_map_copy(effects[? key],buffs[? key]);
-			//show_debug_message("Copying: " + key);
 			key = ds_map_find_next(buffs,key);
 		}
 		
 } else {
-	show_debug_message("Can't confer, missing effects or buffs");
+	show_debug_message("Can't confer, missing effects or buffs ds");
 }

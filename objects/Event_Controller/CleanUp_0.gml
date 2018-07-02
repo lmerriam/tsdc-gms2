@@ -1,2 +1,1 @@
-ds_map_destroy(events);
-ds_list_destroy(observers);
+ds_list_destroy(events);

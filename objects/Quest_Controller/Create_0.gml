@@ -30,3 +30,5 @@ global.current_story_quest = "talk to leader";
 scr_activate_quest(global.current_story_quest,true,false);
 
 global.quest_givers = ds_list_create();
+
+scr_init_quest("test destroy","tester destroyer",noone,10,10);

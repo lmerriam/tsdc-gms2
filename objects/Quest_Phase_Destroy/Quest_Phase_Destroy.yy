@@ -5,22 +5,12 @@
     "name": "Quest_Phase_Destroy",
     "eventList": [
         {
-            "id": "15f34259-633b-4274-acbb-71775d04950f",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 0,
-            "m_owner": "9d0295fd-c2ce-40a3-bf97-cc9fdd8e12f7"
-        },
-        {
             "id": "92f90ccc-ed52-4125-b248-99200c308e4e",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 11,
+            "enumb": 10,
             "eventtype": 7,
             "m_owner": "9d0295fd-c2ce-40a3-bf97-cc9fdd8e12f7"
         }
@@ -41,8 +31,23 @@
     "physicsShape": 1,
     "physicsShapePoints": null,
     "physicsStartAwake": true,
-    "properties": null,
+    "properties": [
+        {
+            "id": "a239cc37-168b-43ec-a1c7-bb2d9e2d8192",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "Explodable_Car",
+            "varName": "destroy_obj",
+            "varType": 5
+        }
+    ],
     "solid": false,
     "spriteId": "00000000-0000-0000-0000-000000000000",
-    "visible": true
+    "visible": false
 }

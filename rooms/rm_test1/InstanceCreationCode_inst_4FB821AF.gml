@@ -1,0 +1,1 @@
+scr_activate_quest("test destroy",true,false);
