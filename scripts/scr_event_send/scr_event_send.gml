@@ -1,4 +1,4 @@
-/// @description send an event to the eventcontroller
+/// @description send an event to the event controller
 /// @param event_name
 /// @param arguments
 var event = argument0;
