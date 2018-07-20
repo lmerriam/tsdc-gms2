@@ -6,8 +6,8 @@
 //check completion of current story quest
 
 var key = ds_map_find_first(active_quests);
-var num_quests = ds_map_size(active_quests);
-for (var i = 0; i<num_quests; i++) {
+//var num_quests = ds_map_size(active_quests);
+for (var i = 0; i<ds_map_size(active_quests); i++) {
 	var quest = active_quests[? key];
 	var giver = quest[? "giver"];
 	var phases = quest[? "phases"];
