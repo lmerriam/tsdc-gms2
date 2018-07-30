@@ -1,5 +1,10 @@
 /// @description activate quest phases
 
+//var active_quests = global.active_quests;
+//show_debug_message("Debugging active_quests");
+//scr_debug_map(active_quests);
+//scr_debug_map(global.active_quests);
+
 var size = ds_map_size(active_quests);
 var key = ds_map_find_first(active_quests);
 for (var i = 0; i<size; i++) {
