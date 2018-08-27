@@ -37,6 +37,8 @@ if (global.completed_quests[? quest_id] == undefined) {
 	if (current) scr_set_current_quest(quest_id);
 	if (scr_is_story_quest(quest_id)) global.current_story_quest = quest;
 
+} else {
+	show_debug_message("Tried to activate quest " + string(quest_id) + ", but it was already completed");
 }
 
 return quest;

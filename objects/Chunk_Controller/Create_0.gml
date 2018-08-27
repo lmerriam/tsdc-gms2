@@ -5,6 +5,7 @@ chunk_count_x = ceil(room_width/chunk_size);
 chunk_count_y = ceil(room_height/chunk_size);
 prev_chunk_x = 0;
 prev_chunk_y = 0;
+chunk_change = false;
 
 global.chunks = ds_grid_create(chunk_count_x,chunk_count_y);
 ds_grid_clear(global.chunks,noone);

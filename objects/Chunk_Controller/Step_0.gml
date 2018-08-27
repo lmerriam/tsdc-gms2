@@ -1,7 +1,8 @@
 current_chunk_x = floor(Player.x/chunk_size);
 current_chunk_y = floor(Player.y/chunk_size);
+chunk_change = (current_chunk_x != prev_chunk_x or current_chunk_y != prev_chunk_y) ? true : false;
 
-if (current_chunk_x != prev_chunk_x or current_chunk_y != prev_chunk_y) {
+if (chunk_change) {
 	ds_map_clear(global.active_chunk_registry);
 	
 	for (var xx = current_chunk_x-1; xx <= current_chunk_x+1; xx++) {

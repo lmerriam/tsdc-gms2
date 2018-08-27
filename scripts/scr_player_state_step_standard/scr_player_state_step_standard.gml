@@ -1,4 +1,5 @@
 // Calculate hspd and vspd
+
 var hspd = lengthdir_x(global.move_len,global.move_dir);
 var vspd = lengthdir_y(global.move_len,global.move_dir);
     

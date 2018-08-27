@@ -1369,6 +1369,25 @@
             }
         },
         {
+            "Key": "22948443-1b88-41eb-b337-6ad8da72ad68",
+            "Value": {
+                "id": "c700c076-4105-4335-9d98-f64e283c4a04",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/scr_quest_rescue_villagers_deactivate_fence\/scr_quest_rescue_villagers_deactivate_fence.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "22957894-0772-4211-a079-f1738fbdc6fb",
             "Value": {
                 "id": "256e4503-6102-4c7e-b585-369283cc5c76",
@@ -6689,25 +6708,6 @@
             }
         },
         {
-            "Key": "84f009c9-611a-4a59-93d0-426b96ec4fbe",
-            "Value": {
-                "id": "749eacea-8aec-423b-81d2-b428ebe0e244",
-                "modelName": "GMResourceInfo",
-                "mvc": "1.0",
-                "configDeltaFiles": [
-                    
-                ],
-                "configDeltas": [
-                    
-                ],
-                "resourceCreationConfigs": [
-                    "default"
-                ],
-                "resourcePath": "scripts\/scr_get_subroom_entrance\/scr_get_subroom_entrance.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "850dedaf-fd9a-4972-9f35-a9430b289b29",
             "Value": {
                 "id": "1307acc0-306c-4f60-b3b8-6a5d75b4baac",
@@ -7654,6 +7654,25 @@
                     "default"
                 ],
                 "resourcePath": "sprites\/spr_quest_icon_door\/spr_quest_icon_door.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "911e04aa-a9e2-4a5b-8163-8ec23778af52",
+            "Value": {
+                "id": "3c2362ea-cda9-4334-a26f-25bbcea6ce90",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/spr_electricity\/spr_electricity.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -10163,6 +10182,25 @@
                 ],
                 "resourcePath": "scripts\/scr_controls_mouse\/scr_controls_mouse.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "c3d3f448-6d72-46bc-87f0-0b74b0c817fb",
+            "Value": {
+                "id": "100d791c-ad56-4686-bcac-87241bfc2c0f",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/Prop_Electric_Fence\/Prop_Electric_Fence.yy",
+                "resourceType": "GMObject"
             }
         },
         {

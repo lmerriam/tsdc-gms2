@@ -22,7 +22,7 @@ if (global.current_quest != noone) {
 	var final_phase_complete = final_phase[? "completed"];
 	
 	// Draw a quest pointer to the next phase
-	if (current_phase_room == room_get_name(room)) {
+	if (current_phase_room == room_get_name(room) and current_phase_obj != undefined) {
 		var targets = current_phase_obj.targets;
 		var icon = current_phase_obj.quest_icon;
 		if (ds_exists(targets,ds_type_list)) {

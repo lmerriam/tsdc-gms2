@@ -70,7 +70,7 @@ if (global.current_quest != noone) {
 	var current_phase_room = current_phase[? "room"];
 	var icon = spr_quest_current_minimap_icon;
 	// Draw a quest pointer to the next phase
-	if (current_phase_room == room_get_name(room)) {
+	if (current_phase_room == room_get_name(room) and current_phase_obj != undefined) {
 		var targets = current_phase_obj.targets;
 		if (ds_exists(targets,ds_type_list)) {
 			for (var i = 0; i<ds_list_size(targets); i++) {
@@ -83,7 +83,6 @@ if (global.current_quest != noone) {
 		var entrance = scr_get_entrance(current_phase_room);
 		scr_minimap_draw_location(entrance.x,entrance.y,icon,true);
 	}
-	
 }
 
     
@@ -123,8 +122,12 @@ draw_healthbar(0,window_height-hbar,window_width,window_height,expr/maxexpr*100,
 // Draw current quest
 draw_sprite_ext(spr_location_pointer,0,20,90,2,2,270,c_white,1);
 draw_set_font(PixelSmall_12);
-scr_draw_text_shadow(32,76,global.current_quest[? "title"],c_white,c_black,1,3,270,1,fa_left);
-
+scr_draw_text_shadow(32,76,string_upper(global.current_quest[? "title"]),c_white,c_black,1,3,270,1,fa_left);
+var current_phase = scr_quest_get_current_phase(global.current_quest);
+var current_phase_desc = current_phase[? "description"];
+if (current_phase_desc != undefined) {
+	scr_draw_text_shadow(32,96,current_phase_desc,c_white,c_black,1,3,270,1,fa_left);
+}
 
 //Draw announcements
 if (ds_queue_size(global.announcements) > 0) {

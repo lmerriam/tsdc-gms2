@@ -1,0 +1,1 @@
+with(Prop_Electric_Fence) instance_destroy();

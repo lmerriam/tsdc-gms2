@@ -1,10 +1,10 @@
 {
   "talk to leader": {
-    "title": "Talk to Leader Wyse",
+    "title": "Welcome to Town",
     "next quest": "rescue villagers",
     "phases": [
       {
-        "description": "Talk to the town leader",
+        "description": "Speak with town leader Wyse",
         "room": "rm_test1"
       }
     ],
@@ -21,14 +21,22 @@
       }
     ],
     "xp": 12,
-    "gold": 10
+    "gold": 100
   },
   "gather remedies": {
-    "title": "Notify the scouts",
+    "title": "Remedy this",
     "next quest": "defeat bandits",
     "phases": [
       {
-        "description": "Take out the mobs",
+        "description": "Speak with Wyse",
+        "room": "rm_test1"
+      },
+      {
+        "description": "Harvest goo from slimes",
+        "room": "rm_test1"
+      },
+      {
+        "description": "See Wyse for your reward",
         "room": "rm_test1"
       }
     ],
@@ -36,20 +44,19 @@
     "gold": 10
   },
   "defeat bandits": {
-    "title": "Chase off bandits",
-    "next quest": "notify scouts",
+    "title": "Bandit Trouble",
     "phases": [
       {
-        "description": "Take out the mobs",
+        "description": "Speak with Armie",
         "room": "rm_test1"
       }
     ],
     "xp": 18,
-    "gold": 10
+    "gold": 10,
+    "next quest": "notify scouts"
   },
   "notify scouts": {
     "title": "Notify the scouts",
-    "next quest": "gather parts",
     "phases": [
       {
         "description": "Take out the mobs",
@@ -57,11 +64,11 @@
       }
     ],
     "xp": 20,
-    "gold": 10
+    "gold": 10,
+    "next quest": "gather parts"
   },
   "gather parts": {
     "title": "Gather tech components",
-    "next quest": "activate generator",
     "phases": [
       {
         "description": "Take out the mobs",
@@ -69,7 +76,8 @@
       }
     ],
     "xp": 20,
-    "gold": 10
+    "gold": 10,
+    "next quest": "activate generator"
   },
   "activate generator": {
     "title": "Activate the generator",
