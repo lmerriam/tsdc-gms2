@@ -5,7 +5,8 @@
     "phases": [
       {
         "description": "Speak with town leader Wyse",
-        "room": "rm_test1"
+        "room": "rm_test1",
+        "layer": "quest_testdestroy_0"
       }
     ],
     "xp": 10,

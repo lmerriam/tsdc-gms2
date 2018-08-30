@@ -14,8 +14,17 @@ if (last_spawn > 0 and ds_list_size(enemies)<=0) {
 		ds_list_add(enemies,inst);
 		last_spawn = Time.now;
 	}
+	// If quest mob, set targets
 	if (creator != noone) {
 		ds_list_destroy(creator.targets);
 		creator.targets = enemies;
+	}
+	// If quest drops, assign to loot
+	if (quest_drop != noone) {
+		var enemy_count = ds_list_size(enemies);
+		repeat(quest_drop_count) {
+			var inst = enemies[| irandom(enemy_count-1)];
+			ds_map_add(inst.loot,quest_drop,1);
+		}
 	}
 }

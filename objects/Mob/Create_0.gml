@@ -2,6 +2,6 @@
 //event_inherited();
 scr_register_mob(id);
 
-quest_drop = noone;
-quest_drop_count = quantity;
+quest_drop = "Quest";
+quest_drop_count = 2;
 creator = noone;

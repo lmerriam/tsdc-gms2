@@ -10,3 +10,9 @@ var phase_number = argument1;
 
 var phase = ds_list_find_value(quest[? "phases"], phase_number);
 phase[? "complete"] = true;
+
+var phase_layer = phase[? "layer"];
+if (phase_layer != undefined) {
+	var lyr_id = layer_get_id(phase_layer);
+	layer_set_visible(lyr_id,true);
+}
