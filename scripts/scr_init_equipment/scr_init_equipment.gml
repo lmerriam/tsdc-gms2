@@ -1,5 +1,5 @@
 /// @param instance
-/// @param item_name
+/// @param equipment_id
 
 var inst = argument0;
 var item_name = argument1;

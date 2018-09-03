@@ -1,5 +1,5 @@
 {
-    "id": "823ee795-7e2e-4668-80ef-e6ed0eb1def8",
+    "id": "6945a04f-9c1d-40a0-9006-5d62a15b24fd",
     "modelName": "GMScript",
     "mvc": "1.0",
     "name": "scr_observer_register",

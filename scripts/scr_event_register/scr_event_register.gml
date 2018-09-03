@@ -2,11 +2,9 @@
 /// @param expire
 /// @param script
 /// @param args...
-// @TODO: don't think this script is necessary
 
 var name = argument[0];
-var expire = argument[1];
-var script = argument[2];
+var script = argument[1];
 
 var event_map = ds_map_create();
 event_map[? "name"] = name;
@@ -21,3 +19,6 @@ for (var i=req_arg_count;i<arg_count;i++) {
 }
 
 event_map[? "args"] = args;
+
+// Add to events
+ds_list_add(global.events,event_map);

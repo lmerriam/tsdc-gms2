@@ -2110,6 +2110,25 @@
             }
         },
         {
+            "Key": "31677092-5c0b-4437-85f9-532b16c7b965",
+            "Value": {
+                "id": "d04d06c9-7a1c-4787-83a7-8c675a45fc28",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "notes\/events.yy",
+                "resourceType": "GMNotes"
+            }
+        },
+        {
             "Key": "319bfabd-fdc4-4d2e-a07c-0a3abe6b9b94",
             "Value": {
                 "id": "69d3b170-4317-42aa-9a78-35c842a3a6e7",
@@ -4936,7 +4955,7 @@
                 "resourceCreationConfigs": [
                     "default"
                 ],
-                "resourcePath": "scripts\/scr_event_register\/scr_event_register.yy",
+                "resourcePath": "scripts\/scr_observer_register\/scr_observer_register.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -6494,7 +6513,7 @@
                 "resourceCreationConfigs": [
                     "default"
                 ],
-                "resourcePath": "scripts\/scr_observer_register\/scr_observer_register.yy",
+                "resourcePath": "scripts\/scr_event_register\/scr_event_register.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -6799,6 +6818,25 @@
                     "default"
                 ],
                 "resourcePath": "scripts\/scr_equip_weapon_bow\/scr_equip_weapon_bow.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "874318c6-b41f-42ae-a0e6-595f17a8f969",
+            "Value": {
+                "id": "0be902d9-32fe-46d8-b8fa-04f70bf41c04",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/scr_observer_pickUpQuestItem\/scr_observer_pickUpQuestItem.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -7693,6 +7731,25 @@
                 ],
                 "resourcePath": "sprites\/spr_slime_orange\/spr_slime_orange.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "92cd172b-d5e8-4dd1-bbba-054ee5dbb674",
+            "Value": {
+                "id": "b3ae5527-0549-4188-a261-9a7ef80ea6db",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/scr_event_emit\/scr_event_emit.yy",
+                "resourceType": "GMScript"
             }
         },
         {

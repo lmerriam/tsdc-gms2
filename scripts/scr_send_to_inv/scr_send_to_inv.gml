@@ -19,7 +19,8 @@ for (row = 0; row < grid_height; row++) {
 			
 			// Fire send_to_inv event
 			//script_execute(event_send_to_inv);
-			scr_event_send("send to inv",item_props);
+			//scr_event_send("send to inv",item_props);
+			scr_event_emit("send to inv",item_props);
             
             // Return the fact that a slot was found
             return true;

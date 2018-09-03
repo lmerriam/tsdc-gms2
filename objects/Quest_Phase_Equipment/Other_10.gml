@@ -1,9 +1,12 @@
 /// @description Spawn the item
 
-var item = instance_create_layer(x,y,"entities",Quest_Equipment);
-item.creator = id;
-item.type = "quest";
+var item = instance_create_layer(x,y,"entities",Equipment_Parent);
+//item.creator = id;
 
 scr_init_equipment(item,"Quest");
-item.properties[? "Name"] = item_name;
-item.sprite_index = item_sprite;
+
+var args = ds_map_create();
+args[? "item name"] = item_name;
+args[? "quest id"] = quest_id;
+args[? "phase number"] = phase_number;
+scr_observer_register("send to inv",scr_observer_pickUpQuestItem,args);

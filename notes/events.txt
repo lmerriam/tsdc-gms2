@@ -1,0 +1,5 @@
+send to inv
+	- item id
+	- quest id
+	- quest phase number
+
