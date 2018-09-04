@@ -5,6 +5,7 @@ if (spawned and ds_list_size(enemies)<=0) {
 	//}
 	// Destroy mob when the enemies are defeated
 	instance_destroy();
+	scr_event_emit("mob defeated",id);
 
 } else if (!spawned and point_distance(x,y,Player.x,Player.y)<325) {
 	// Sapwn enemies
@@ -14,6 +15,7 @@ if (spawned and ds_list_size(enemies)<=0) {
 		ds_list_add(enemies,inst);
 		spawned = true;
 	}
+	scr_event_emit("mob spawned",id);
 	//// If quest mob, set targets
 	//if (creator != noone) {
 	//	ds_list_destroy(creator.targets);

@@ -1,1 +1,1 @@
-ds_list_destroy(observers);
+ds_list_destroy(global.observers);

@@ -1065,6 +1065,25 @@
             }
         },
         {
+            "Key": "1ab3ab81-ebbf-42fe-b61e-6fb4032a04a1",
+            "Value": {
+                "id": "a736b0f4-6b0e-45b2-b170-e044d4a5ca58",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/scr_ds_map_check_identical\/scr_ds_map_check_identical.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "1b2349ce-359f-442d-9997-23b408e56c50",
             "Value": {
                 "id": "925291a8-885e-411c-bc24-53d0ca35ac0a",
@@ -3493,6 +3512,25 @@
                     "default"
                 ],
                 "resourcePath": "scripts\/scr_register_npc\/scr_register_npc.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "4dcb8938-14f5-41b9-9a83-05e0760f2f04",
+            "Value": {
+                "id": "5ecea6d4-f35f-4a03-8a20-cfe48c9ac521",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/scr_observer_questMobSpawned\/scr_observer_questMobSpawned.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -8642,6 +8680,25 @@
                     "default"
                 ],
                 "resourcePath": "scripts\/scr_npc_idle\/scr_npc_idle.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "a6c9e0f9-a3cc-4744-b0fd-b4d50e9993f3",
+            "Value": {
+                "id": "d49a14b8-cf74-42c6-ac42-f2e28ebb765d",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/scr_observer_questMobDefeated\/scr_observer_questMobDefeated.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -13852,7 +13909,11 @@
         "c5cb293d-51e1-4e05-ac71-67c356bf2584",
         "6945a04f-9c1d-40a0-9006-5d62a15b24fd",
         "ce04b5bd-618f-431b-96fe-0608e98f57eb",
-        "22948443-1b88-41eb-b337-6ad8da72ad68"
+        "22948443-1b88-41eb-b337-6ad8da72ad68",
+        "92cd172b-d5e8-4dd1-bbba-054ee5dbb674",
+        "874318c6-b41f-42ae-a0e6-595f17a8f969",
+        "a6c9e0f9-a3cc-4744-b0fd-b4d50e9993f3",
+        "4dcb8938-14f5-41b9-9a83-05e0760f2f04"
     ],
     "tutorial": ""
 }
