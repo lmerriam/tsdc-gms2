@@ -7981,6 +7981,25 @@
             }
         },
         {
+            "Key": "96001414-f86b-44e2-973d-3f513a6be3af",
+            "Value": {
+                "id": "3dcad984-0e11-4a91-a47d-b0b2ca81480e",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/scr_quest_get_phase_inst\/scr_quest_get_phase_inst.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "963a4673-d0ce-443e-9f1c-efadc671da38",
             "Value": {
                 "id": "a14f931d-93fb-46a3-9624-ea467df375dc",
@@ -13913,7 +13932,9 @@
         "92cd172b-d5e8-4dd1-bbba-054ee5dbb674",
         "874318c6-b41f-42ae-a0e6-595f17a8f969",
         "a6c9e0f9-a3cc-4744-b0fd-b4d50e9993f3",
-        "4dcb8938-14f5-41b9-9a83-05e0760f2f04"
+        "4dcb8938-14f5-41b9-9a83-05e0760f2f04",
+        "1ab3ab81-ebbf-42fe-b61e-6fb4032a04a1",
+        "96001414-f86b-44e2-973d-3f513a6be3af"
     ],
     "tutorial": ""
 }

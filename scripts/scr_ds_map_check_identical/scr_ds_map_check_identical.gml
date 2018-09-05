@@ -14,4 +14,4 @@ if (map1_size == map2_size) { // Do a quick check for equivalent size
 	return true;
 } else {
 	return false;
-}
+} 
