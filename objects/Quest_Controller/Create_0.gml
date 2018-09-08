@@ -1,4 +1,5 @@
 /// @description Create quest data structures
+image_speed = .1;
 
 global.active_quests = ds_map_create();
 active_quests = global.active_quests;

@@ -32,9 +32,12 @@ if (nearest_interactable_in_range) {
 //draw_rectangle_color(minimap_window_x, minimap_window_y, minimap_window_x+minimap_width, minimap_window_y+minimap_height, c_black, c_black, c_black, c_black, true);
 //scr_draw_9patch(spr_ui_box_2x,0,minimap_window_x-2, minimap_window_y-2, minimap_window_x+minimap_width+2, minimap_window_y+minimap_height+2,6,6,6,6);
 
+// Radial minimap outline
+draw_sprite_ext(spr_minimap_background,0,minimap_center_x,minimap_center_y,2,2,0,c_white,1);
+
 // @todo: extract this out into a script
 // Draw dynamic minimap
-var range = 16;
+var range = 15;
 for (var tx=global.player_tile_x-range;tx<global.player_tile_x+range;tx++) {
 	for (var ty=global.player_tile_y-range;ty<global.player_tile_y+range;ty++) {
 		if (tx>0 and tx<global.room_tile_w and ty>0 and ty<global.room_tile_h) {
@@ -48,9 +51,6 @@ for (var tx=global.player_tile_x-range;tx<global.player_tile_x+range;tx++) {
 		}
 	}
 }
-
-// Radial minimap outline
-draw_sprite_ext(spr_minimap_radius,0,minimap_center_x,minimap_center_y,2,2,0,c_white,1);
 
 // Draw locations
 var size = ds_list_size(global.locations);
@@ -84,6 +84,9 @@ if (global.current_quest != noone) {
 		scr_minimap_draw_location(entrance.x,entrance.y,icon,true);
 	}
 }
+
+// Draw minimap outline
+draw_sprite_ext(spr_minimap_radius,0,minimap_center_x,minimap_center_y,2,2,0,c_white,1);
 
     
 // Draw health and stamina

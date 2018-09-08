@@ -1,5 +1,6 @@
 // Set up the HUD
 //show_debug_overlay(true);
+image_speed = .1;
 
 // Set up general purpose GUI variables
 window_width = global.window_width;

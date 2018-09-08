@@ -1,3 +1,11 @@
+var map_img = working_directory + room_get_name(room) + ".png";
+if (file_exists(map_img)) {
+	global.current_map = sprite_add(map_img,0,false,false,0,0);
+	GUI.minimap_ratio = room_width/sprite_get_width(global.current_map);
+} else {
+	global.current_map = spr_square;
+}
+
 // Set up minimap variables
 global.map_spr_width = sprite_get_width(global.current_map);
 global.map_spr_height = sprite_get_height(global.current_map);

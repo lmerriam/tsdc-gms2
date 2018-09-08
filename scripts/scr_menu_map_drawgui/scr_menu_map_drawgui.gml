@@ -22,14 +22,42 @@ for (var xx=0; xx<ds_grid_width(fog); xx++) {
 	}
 }
 
-// Draw the marker and set its map coordinates
+// Draw locations
 var num_locations = ds_list_size(global.locations);
 for (var i = 0; i<num_locations; i++) {
 	var location = global.locations[| i];
 	if (location.discovered) {
 		var map_x = scr_map_x(location.x);
 	    var map_y = scr_map_y(location.y);
-	    draw_sprite(location.location_icon,0,map_x,map_y);
+	    draw_sprite_ext(location.location_icon,0,map_x,map_y,2,2,0,c_white,1);
+	}
+}
+
+// Draw quest marker
+if (global.current_quest != noone) {
+	var current_phase = scr_quest_get_current_phase(global.current_quest);
+	var current_phase_obj = current_phase[? "inst"];
+	var current_phase_room = current_phase[? "room"];
+	var icon = spr_quest_current_minimap_icon;
+	// Draw a quest pointer to the next phase
+	if (current_phase_room == room_get_name(room) and current_phase_obj != undefined) {
+		var targets = current_phase_obj.targets;
+		if (ds_exists(targets,ds_type_list)) {
+			for (var i = 0; i<ds_list_size(targets); i++) {
+				var target = targets[| i];
+				if instance_exists(target) {
+					var xx = scr_map_x(target.x);
+					var yy = scr_map_y(target.y);
+					draw_sprite_ext(icon,-1,xx,yy,2,2,0,c_white,1);
+				}
+			}
+		}
+	// Draw a pointer to the entrance of the room the next phase is in
+	} else if (global.entrances[? current_phase_room] != undefined) {
+		var entrance = scr_get_entrance(current_phase_room);
+		var xx = scr_map_x(entrance.x);
+		var yy = scr_map_y(entrance.y);
+		draw_sprite_ext(icon,-1,xx,yy,2,2,0,c_white,1);
 	}
 }
 

@@ -1844,6 +1844,25 @@
             }
         },
         {
+            "Key": "2aabdc42-26f6-49f3-a213-fbd7cc9574cb",
+            "Value": {
+                "id": "65eda795-3df3-445a-ad98-874d41b98420",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/spr_minimap_background\/spr_minimap_background.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "2ac5508d-8675-441b-be18-ec87c01dd492",
             "Value": {
                 "id": "e58e8db7-7812-409d-92fc-b62be86a3bd1",
@@ -2715,6 +2734,25 @@
                 ],
                 "resourcePath": "scripts\/scr_menu_shop\/scr_menu_shop.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "3ec467b8-09af-430d-82e4-393f7b874b40",
+            "Value": {
+                "id": "2acac407-5a74-410f-bca0-91ae247ffd8d",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "datafiles_yy\/rm_test1.png.yy",
+                "resourceType": "GMIncludedFile"
             }
         },
         {
