@@ -23,6 +23,9 @@ if (chunk_change) {
 						key = ds_map_find_next(chunk,key);
 					}
 				}
+				
+				// Set fog of war
+				global.fog_grid[# xx,yy] = false;
 			}
 		}
 	}

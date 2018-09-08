@@ -7,8 +7,13 @@ prev_chunk_x = 0;
 prev_chunk_y = 0;
 chunk_change = false;
 
+
 global.chunks = ds_grid_create(chunk_count_x,chunk_count_y);
 ds_grid_clear(global.chunks,noone);
+
+// Set up the fog
+global.fog_grid = ds_grid_create(chunk_count_x, chunk_count_y);
+ds_grid_clear(global.fog_grid,true);
 
 //for (var xx=0;xx<chunk_count_x;xx++) {
 //	for (var yy=0;yy<chunk_count_y;yy++) {

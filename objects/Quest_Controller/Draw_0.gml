@@ -28,7 +28,7 @@ if (global.current_quest != noone) {
 		if (ds_exists(targets,ds_type_list)) {
 			for (var i = 0; i<ds_list_size(targets); i++) {
 				var target = targets[| i];
-				scr_draw_quest_pointer(target.x,target.y,icon);
+				if instance_exists(target) scr_draw_quest_pointer(target.x,target.y,icon);
 			}
 		}
 	// Draw a pointer to the entrance of the room the next phase is in
