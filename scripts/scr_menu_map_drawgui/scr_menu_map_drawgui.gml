@@ -45,7 +45,7 @@ if (global.current_quest != noone) {
 		if (ds_exists(targets,ds_type_list)) {
 			for (var i = 0; i<ds_list_size(targets); i++) {
 				var target = targets[| i];
-				if instance_exists(target) {
+				if (target.x != undefined) {
 					var xx = scr_map_x(target.x);
 					var yy = scr_map_y(target.y);
 					draw_sprite_ext(icon,-1,xx,yy,2,2,0,c_white,1);

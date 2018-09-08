@@ -75,7 +75,7 @@ if (global.current_quest != noone) {
 		if (ds_exists(targets,ds_type_list)) {
 			for (var i = 0; i<ds_list_size(targets); i++) {
 				var target = targets[| i];
-				if instance_exists(target) scr_minimap_draw_location(target.x,target.y,icon,true);
+				if (target.x != undefined) scr_minimap_draw_location(target.x,target.y,icon,true);
 			}
 		}
 	// Draw a pointer to the entrance of the room the next phase is in
