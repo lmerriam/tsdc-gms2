@@ -45,7 +45,7 @@ if (nearest_interactable != undefined and distance_to_object(nearest_interactabl
 if (combo_timer == Time.now) {
 	if (combo_count > 2) {
 		var xp = combo_count * Player.base_stats[? "Level"];
-		scr_announce("Combo bonus: " + string(xp));
+		scr_announce_simple("Combo bonus: " + string(xp));
 		repeat(xp) instance_create_layer(Player.x + random_range(-16,16), Player.y + random_range(32,48), "entities", Expr);
 	}
 	combo_count = 0;
@@ -82,10 +82,11 @@ if (mouse_check_button_released(1)) {
 		show_debug_message(nearest_interactable);
 		with(nearest_interactable) event_user(1);
     }
-	
 }
 
+// Announcements count down
 if (ds_queue_size(global.announcements) > 0 and scr_alarm_passed(announce_timer)) {
 	ds_queue_dequeue(global.announcements);
 	announce_timer = scr_sec_from_now(3);
+	announce_new = true;
 }

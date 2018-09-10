@@ -52,6 +52,9 @@ for (var tx=global.player_tile_x-range;tx<global.player_tile_x+range;tx++) {
 	}
 }
 
+// Draw minimap outline
+draw_sprite_ext(spr_minimap_radius,0,minimap_center_x,minimap_center_y,2,2,0,c_white,1);
+
 // Draw locations
 var size = ds_list_size(global.locations);
 for (var i = 0; i<size; i++) {
@@ -69,6 +72,7 @@ if (global.current_quest != noone) {
 	var current_phase_obj = current_phase[? "inst"];
 	var current_phase_room = current_phase[? "room"];
 	var icon = spr_quest_current_minimap_icon;
+	
 	// Draw a quest pointer to the next phase
 	if (current_phase_room == room_get_name(room) and current_phase_obj != undefined) {
 		var targets = current_phase_obj.targets;
@@ -84,10 +88,6 @@ if (global.current_quest != noone) {
 		scr_minimap_draw_location(entrance.x,entrance.y,icon,true);
 	}
 }
-
-// Draw minimap outline
-draw_sprite_ext(spr_minimap_radius,0,minimap_center_x,minimap_center_y,2,2,0,c_white,1);
-
     
 // Draw health and stamina
 var hp = scr_get_instance_stat(Player,"Health");
@@ -134,7 +134,29 @@ if (current_phase_desc != undefined) {
 
 //Draw announcements
 if (ds_queue_size(global.announcements) > 0) {
+	var announcement = ds_queue_head(global.announcements);
+	var text = announcement[? "text"];
+	var type = announcement[? "type"];
+	
+	// Draw announcement text
+	var xx = global.window_width/2;
+	var yy = global.window_height*.75;
+	//draw_set_halign(fa_center);
 	draw_set_font(PixelSmall_18);
-	scr_draw_text_shadow(global.window_width/2,global.window_height*.75,ds_queue_head(global.announcements),c_white,c_black,1,3,270,1,fa_center);
+	scr_draw_text_shadow(xx,yy,text,c_white,c_black,1,3,270,1,fa_center);
+	
+	// Draw rewards
+	if (type != "text") {
+		var rewards = ["xp","gold","items"];
+		for (var i=0;i<3;i++) {
+			var reward = rewards[i];
+			var text = reward + ": " + string(announcement[? reward])
+			scr_draw_text_shadow(xx,yy+(i+1)*18,text,c_white,c_black,1,3,270,1,fa_center);
+			//if (announce_new) {
+			//	part_particles_create(global.particles_above,xx,yy+(i+1)*18,global.bulletspark_particles,5);
+			//	announce_new = false;
+			//}
+		}
+	}
 	draw_set_font(PixelSmall_12);
 }

@@ -27,7 +27,7 @@ while (remainder >= 0) {
 	scr_calc_stats();
 	
 	// Announce the levelup
-    scr_announce("Achieved level " + string(base_stats[? "Level"]));
+    scr_announce_simple("Achieved level " + string(base_stats[? "Level"]));
 	
 	// Give the player the amount of XP they went over by
 	//scr_give_xp(remainder);

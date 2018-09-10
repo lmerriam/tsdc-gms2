@@ -31,7 +31,7 @@ if (global.completed_quests[? quest_id] == undefined) {
 	}
 
 	// Announce
-	if (announce) scr_announce("New quest: " + string(title));
+	if (announce) scr_announce_simple("New quest: " + string(title));
 
 	// Current
 	if (current) scr_set_current_quest(quest_id);

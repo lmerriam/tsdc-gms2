@@ -10,4 +10,4 @@ var vendor = scr_find_spawn_point(x,y,64,Vendor,stats[? "Level"]);
 instance_create_layer(x,y,"entities",Outpost_Parent);
 
 // Announce
-scr_announce("Outpost liberated!");
+scr_announce_simple("Outpost liberated!");

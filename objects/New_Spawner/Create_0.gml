@@ -1,6 +1,5 @@
 scr_register_location(id,spr_location);
 
-max_enemies = 8;
 current_enemies = 0;
 spawn_timer = 0;
 

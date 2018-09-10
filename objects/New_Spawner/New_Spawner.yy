@@ -31,7 +31,7 @@
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
-            "eventtype": 1,
+            "eventtype": 12,
             "m_owner": "e82db7e4-643f-4725-88e9-706ceeca54e2"
         }
     ],
@@ -51,7 +51,22 @@
     "physicsShape": 1,
     "physicsShapePoints": null,
     "physicsStartAwake": true,
-    "properties": null,
+    "properties": [
+        {
+            "id": "19f8a6ab-f3be-41bc-b622-4047bd85e9b1",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "8",
+            "varName": "max_enemies",
+            "varType": 1
+        }
+    ],
     "solid": false,
     "spriteId": "8d24c668-c020-4f92-89fe-13be3234ac18",
     "visible": false

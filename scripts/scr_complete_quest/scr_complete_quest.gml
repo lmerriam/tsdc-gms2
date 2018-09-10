@@ -22,7 +22,7 @@ Player.properties[? "Gold"] += gold;
 show_debug_message("Gold: " + string(gold));
 
 // Announce quest complete
-if (announce) scr_announce("Completed " + title + "!");
+if (announce) scr_announce("Completed " + title + "!","quest completed",xp,gold,noone);
 
 // Set giver quest complete
 var giver = quest[? "giver"];
