@@ -1293,6 +1293,25 @@
             }
         },
         {
+            "Key": "1fcf2d08-0827-49cf-a166-f42e97c764b2",
+            "Value": {
+                "id": "0d6fb200-7617-4d2d-9bd4-0d248d16e6cf",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/Spawn_Point\/Spawn_Point.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "2097250d-6d1f-4ffb-8802-0a87f46fa5ff",
             "Value": {
                 "id": "5b99ffe0-d56a-4cda-bf63-e6a017ee62c6",
@@ -2866,6 +2885,25 @@
                     "default"
                 ],
                 "resourcePath": "scripts\/scr_chunk_add_record\/scr_chunk_add_record.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "41ae5cdb-3bb7-48a8-b05d-4d52fd32a541",
+            "Value": {
+                "id": "adfa6714-2977-42d2-bc5d-de31b116eab1",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/scr_observer_spawnerEnemyDefeated\/scr_observer_spawnerEnemyDefeated.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -12498,8 +12536,27 @@
                 "resourceCreationConfigs": [
                     "default"
                 ],
-                "resourcePath": "objects\/New_Spawner\/New_Spawner.yy",
+                "resourcePath": "objects\/Spawn_Point_Controller\/Spawn_Point_Controller.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "e85fb43d-53aa-4f3a-b629-2c063125038f",
+            "Value": {
+                "id": "16fe2923-49fb-4e9d-aa3f-7511a82be69d",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/spr_enemy_spawn_colony\/spr_enemy_spawn_colony.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -13991,7 +14048,8 @@
         "a6c9e0f9-a3cc-4744-b0fd-b4d50e9993f3",
         "4dcb8938-14f5-41b9-9a83-05e0760f2f04",
         "1ab3ab81-ebbf-42fe-b61e-6fb4032a04a1",
-        "96001414-f86b-44e2-973d-3f513a6be3af"
+        "96001414-f86b-44e2-973d-3f513a6be3af",
+        "9835cb48-af7c-449f-80c9-d2d6d668e46f"
     ],
     "tutorial": ""
 }

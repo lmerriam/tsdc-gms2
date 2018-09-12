@@ -1,6 +1,12 @@
 /// Loot and XP and
 event_inherited();
 
+// Emit event
+var args = ds_map_create();
+args[? "properties"] = properties;
+args[? "id"] = id;
+scr_event_emit("enemy destroyed",args);
+
 // Deregister to mob
 if (mob != noone and instance_exists(mob)) {
 	ds_list_delete(mob.enemies,ds_list_find_index(mob.enemies,id));

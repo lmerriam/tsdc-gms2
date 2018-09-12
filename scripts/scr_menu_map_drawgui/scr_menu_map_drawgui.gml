@@ -8,6 +8,7 @@ scr_menu_navigation_drawgui();
 draw_sprite_stretched(global.current_map,0,map_offset_x,map_offset_y,map_w,map_h);
 
 // Draw fog of war
+draw_set_alpha(.75);
 var fog = global.fog_grid;
 for (var xx=0; xx<ds_grid_width(fog); xx++) {
 	for (var yy=0; yy<ds_grid_height(fog); yy++) {
@@ -21,6 +22,7 @@ for (var xx=0; xx<ds_grid_width(fog); xx++) {
 		}
 	}
 }
+draw_set_alpha(1);
 
 // Draw locations
 var num_locations = ds_list_size(global.locations);
