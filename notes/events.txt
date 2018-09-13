@@ -3,3 +3,6 @@ send to inv
 
 enemy destroyed
 - id (instance)
+
+spawner depleted
+- id (instance)

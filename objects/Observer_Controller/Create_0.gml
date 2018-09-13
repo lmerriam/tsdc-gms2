@@ -1,0 +1,1 @@
+global.observers = ds_list_create();

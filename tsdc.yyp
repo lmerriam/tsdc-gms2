@@ -2580,7 +2580,7 @@
                 "resourceCreationConfigs": [
                     "default"
                 ],
-                "resourcePath": "objects\/Event_Controller\/Event_Controller.yy",
+                "resourcePath": "objects\/Observer_Controller\/Observer_Controller.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -3684,6 +3684,25 @@
                 ],
                 "resourcePath": "scripts\/scr_draw_9patch\/scr_draw_9patch.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "50553ef1-cb80-4ca4-8b9c-e6d47c271f0e",
+            "Value": {
+                "id": "d76f8858-c78c-426d-8ab9-3d70dbd91897",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "notes\/activities.yy",
+                "resourceType": "GMNotes"
             }
         },
         {

@@ -9,4 +9,4 @@ var args = ds_map_create();
 args[? "item name"] = item_name;
 args[? "quest id"] = quest_id;
 args[? "phase number"] = phase_number;
-scr_observer_register("quest equipment" + quest_id + string(phase_number),"send to inv",scr_observer_pickUpQuestItem,args);
+scr_observer_register("send to inv",scr_observer_pickUpQuestItem,false,args);

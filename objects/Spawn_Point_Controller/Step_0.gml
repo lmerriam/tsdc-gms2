@@ -17,7 +17,7 @@ if (remaining_spawns > 0 and scr_alarm_passed(spawn_timer) and current_enemy_cou
 	var args = ds_map_create();
 	args[? "enemy_id"] = inst;
 	args[? "id"] = id;
-	scr_observer_register("destroy spawn " + string(inst.id),"enemy destroyed",scr_observer_spawnerEnemyDefeated,args);
+	scr_observer_register("enemy destroyed",scr_observer_spawnerEnemyDefeated,false,args);
 	
 	// Increment spawn timer
 	spawn_timer = scr_sec_from_now(.5);
