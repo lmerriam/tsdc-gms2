@@ -438,6 +438,25 @@
             }
         },
         {
+            "Key": "077308e7-54cc-453d-a2c9-de1415fd2063",
+            "Value": {
+                "id": "02a035b2-5f86-40c4-8946-228d676efae5",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/spr_inventory_tab_armor\/spr_inventory_tab_armor.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "0871805d-2a89-47b7-b393-a4a4c97b3840",
             "Value": {
                 "id": "7ae470fd-ffd6-4552-85c6-9eaf42eb9ff7",
@@ -606,6 +625,25 @@
                 ],
                 "resourcePath": "rooms\/rm_tutorial\/rm_tutorial.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "09fbebd2-d6fc-44ef-ba84-94997431f79f",
+            "Value": {
+                "id": "269643e1-c585-4859-81b8-37c4e463d9f5",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/spr_inventory_tab_gem\/spr_inventory_tab_gem.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -7430,6 +7468,25 @@
             }
         },
         {
+            "Key": "8c61cdc0-2f62-4b48-8a41-7f357ab40c45",
+            "Value": {
+                "id": "36df15ed-6157-4da6-a059-010d0b2a626d",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/spr_inventory_tab_weapon\/spr_inventory_tab_weapon.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "8c9c53b0-434d-4551-87f2-d9f21bc8eed8",
             "Value": {
                 "id": "0adca969-be1e-49f5-a912-350143de57fb",
@@ -8684,6 +8741,25 @@
             }
         },
         {
+            "Key": "a3504cb6-1723-4119-9ff0-e26b53a53124",
+            "Value": {
+                "id": "e7a0639f-999b-4d45-bd54-015d9d4cb856",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/spr_inventory_tab_spell\/spr_inventory_tab_spell.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "a37e82dc-2acf-4568-9d1a-20888c2c5745",
             "Value": {
                 "id": "93fa7843-b685-47ee-83cb-21ac0e76185f",
@@ -8794,6 +8870,25 @@
                     "default"
                 ],
                 "resourcePath": "sprites\/spr_player_unconscious\/spr_player_unconscious.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "a59a792d-5e50-403f-92a8-ed5169a424ac",
+            "Value": {
+                "id": "64a01218-ea38-4ca9-a138-ec3ee424d8e4",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/spr_inventory_tab_quest\/spr_inventory_tab_quest.yy",
                 "resourceType": "GMSprite"
             }
         },
