@@ -3,7 +3,7 @@
 var item = instance_create_layer(x,y,"entities",Equipment_Parent);
 //item.creator = id;
 
-scr_init_equipment(item,"Quest");
+scr_init_equipment_instance(item,"Quest");
 
 var args = ds_map_create();
 args[? "item name"] = item_name;

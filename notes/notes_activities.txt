@@ -12,3 +12,4 @@ complete shrines
 capture or tag animals
 scout areas to clear part of map or reveal points of interest
 scan technology to open up new skills, machines/crafting options, backstory
+protecc machine while it researches/extracts something cool for the player

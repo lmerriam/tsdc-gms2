@@ -1160,6 +1160,25 @@
             }
         },
         {
+            "Key": "1c6c369a-5b1d-4f54-9434-a6da1254e2c6",
+            "Value": {
+                "id": "1abe148c-b0df-4b23-855a-8af6ddeec1e5",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/scr_init_equipment\/scr_init_equipment.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "1dd08c6e-2867-47e3-b04b-e16a73951218",
             "Value": {
                 "id": "c22836a3-cdb7-4af8-a263-879c0a7b5bcc",
@@ -2181,7 +2200,7 @@
                 "resourceCreationConfigs": [
                     "default"
                 ],
-                "resourcePath": "notes\/events.yy",
+                "resourcePath": "notes\/events_notes.yy",
                 "resourceType": "GMNotes"
             }
         },
@@ -3701,7 +3720,7 @@
                 "resourceCreationConfigs": [
                     "default"
                 ],
-                "resourcePath": "notes\/activities.yy",
+                "resourcePath": "notes\/activities_notes.yy",
                 "resourceType": "GMNotes"
             }
         },
@@ -4120,6 +4139,25 @@
                     "default"
                 ],
                 "resourcePath": "scripts\/scr_draw_btn_sprite\/scr_draw_btn_sprite.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "580a61c6-af6a-477a-8919-0650fdcc48b8",
+            "Value": {
+                "id": "1402bccd-6450-4cd7-945c-063280897916",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/script293\/script293.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -8033,7 +8071,7 @@
                 "resourceCreationConfigs": [
                     "default"
                 ],
-                "resourcePath": "scripts\/scr_init_equipment\/scr_init_equipment.yy",
+                "resourcePath": "scripts\/scr_init_equipment_instance\/scr_init_equipment_instance.yy",
                 "resourceType": "GMScript"
             }
         },

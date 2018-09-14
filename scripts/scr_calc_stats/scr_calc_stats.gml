@@ -3,9 +3,10 @@
 ds_map_copy(Player.properties[? "Stats"],Player.properties[? "Base Stats"]);
 
 // Iterate through equipment slots
-var num_rows = ds_grid_height(global.equipment_slots);
-for (i=0; i<num_rows; i++) {
-    var props = global.equipment_slots[# 0, i];
+var size = ds_map_size(global.equipment_slots);
+var key = ds_map_find_first(global.equipment_slots);
+for (i=0; i<size; i++) {
+    var props = global.equipment_slots[? key];
 	if (props!=noone){
 		//show_debug_message("Object: " + object_get_name(props[? "Object"]));
 		var item_stats = props[? "Stats"];
@@ -26,4 +27,5 @@ for (i=0; i<num_rows; i++) {
 	        current_key = ds_map_find_next(item_stats, current_key);
 	    }
 	}
+	key = ds_map_find_next(global.equipment_slots,key);
 }

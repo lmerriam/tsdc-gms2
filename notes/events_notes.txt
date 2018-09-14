@@ -6,3 +6,6 @@ enemy destroyed
 
 spawner depleted
 - id (instance)
+
+equip item
+- props

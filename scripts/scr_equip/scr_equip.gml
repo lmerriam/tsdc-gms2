@@ -1,40 +1,15 @@
-/// scr_equip(properties_ds)
-var _props = argument0;
-var _type = _props[? "Type"];
+/// scr_equip(props)
+var props = argument0;
+var type = props[? "Type"];
 
-var _prev_obj;
-//scr_debug_map(_props);
+// Get currently equipped
+var equipped_previous = global.equipment_slots[? type];
 
-// Detect equipment type and send it to the correct slot
-var slot;
-switch(_type) {
-	case "Weapon":
-		slot = 0;
-		script_execute(asset_get_index(_props[? "Equip Script"]));
-		break;
-	case "Spell":
-		slot = 1;
-		script_execute(asset_get_index(_props[? "Equip Script"]));
-		break;
-	case "Armor":
-		slot = 2;
-		break;
-	case "Gem":
-		slot = 3;
-		break;
-}
+// Equip new item
+global.equipment_slots[? type] = props;
 
-// Equip the new item
-_prev_obj = global.equipment_slots[# 0,slot];
-global.equipment_slots[# 0,slot] = scr_copy_drop_props(_props);
+// Send previously equipped item to inventory
+if (equipped_previous != noone and equipped_previous != undefined) scr_send_to_inv(equipped_previous);
 
-// Send the previously equipped item to the inventory
-if (_prev_obj != noone) scr_send_to_inv(_prev_obj,global.inventory_slots);
-
-// Send an event
-//var args = [];
-//args[0] = _props;
-//args[1] = _type;
-//scr_event_send("equip item",args);
-
-return true;
+// Emit event
+scr_event_emit("equip item",props)

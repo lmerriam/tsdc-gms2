@@ -11,6 +11,6 @@ var item_name = argument2;
 var inst = instance_create_layer(spawn_x,spawn_y,"entities",Equipment_Parent);
 
 // Init the equipment
-scr_init_equipment(inst,item_name);
+scr_init_equipment_instance(inst,item_name);
 
 return inst;

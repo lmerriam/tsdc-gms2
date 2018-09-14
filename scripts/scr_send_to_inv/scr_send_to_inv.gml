@@ -1,33 +1,21 @@
 ///scr_send_to_inv(props,inventory)
 /// @param properties
-/// @param inventory
 
-var item_props = argument[0];
-var slots = argument[1];
+var item_props = argument0;
 
-// Get the inventory height and width
-var grid_width = ds_grid_width(slots);
-var grid_height = ds_grid_height(slots);
-
-// Iterate through all slots and deposit item into first empty one
-for (row = 0; row < grid_height; row++) {
-    for (column = 0; column < grid_width; column++) {
-        if (slots[# column,row] = noone) {
+// Figure out correct inventory
+var item_type = item_props[? "Type"];
+var inventory = global.inventory[? item_type];
 			
-			// Copy props into new slot
-            slots[# column,row] = scr_copy_drop_props(item_props);
+// Copy props into new slot
+//var item_props = scr_copy_drop_props(item_props);
+ds_list_add(inventory,item_props);
 			
-			// Fire send_to_inv event
-			//script_execute(event_send_to_inv);
-			//scr_event_send("send to inv",item_props);
-			scr_event_emit("send to inv",item_props);
+// Fire send_to_inv event
+//script_execute(event_send_to_inv);
+//scr_event_send("send to inv",item_props);
+scr_event_emit("send to inv",item_props);
             
-            // Return the fact that a slot was found
-            return true;
+// Return the fact that a slot was found
+return true;
 			
-        }
-    }
-}
-
-show_message("No room in inventory");
-return false;
