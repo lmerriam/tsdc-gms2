@@ -1,5 +1,5 @@
 // Calculate hspd and vspd
-
+if (global.current_menu == "HUD") {
 var hspd = lengthdir_x(global.move_len,global.move_dir);
 var vspd = lengthdir_y(global.move_len,global.move_dir);
     
@@ -43,3 +43,4 @@ if (!scr_tile_collision(phy_position_x,phy_position_y+vspd)) phy_position_y += v
 
 global.player_speed_x = hspd;
 global.player_speed_y = vspd;
+}

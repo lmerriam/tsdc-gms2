@@ -10,12 +10,12 @@ if mouse_check_button_pressed(mb_left) {
 
 // Mouse released 
 if mouse_check_button_released(mb_left) {
-	if gui_mouse_dragged inv_drag_momentum = gui_mouse_delta_y;
+	if gui_mouse_released_drag inv_drag_momentum = gui_mouse_delta_y;
 }
 
+// Mouse down
 if (mouse_check_button(mb_left)) {
 	inv_list_offset = inv_list_offset_origin + (gui_mouse_y - gui_mouse_origin_y);
-	
 } else {
 	
 	// Get max and min offset

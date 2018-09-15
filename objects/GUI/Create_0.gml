@@ -14,14 +14,22 @@ draw_set_font(BASE_FONT);
 // Mouse event variables
 gui_mouse_origin_x = 0;
 gui_mouse_origin_y = 0;
-gui_mouse_clicked = false;
-gui_mouse_dragged = false;
+gui_mouse_pressed = false;
+gui_mouse_down = false;
+gui_mouse_dragging = false;
+gui_mouse_released = false;
+gui_mouse_released_click = false;
+gui_mouse_released_drag = false;
 gui_mouse_distance_traveled = 0;
 gui_mouse_timer = 0;
 gui_mouse_x = 0;
 gui_mouse_y = 0;
 gui_mouse_prev_x = 0;
 gui_mouse_prev_y = 0;
+gui_mouse_over_hud = false;
+gui_mouse_origin_hud = false;
+room_mouse_x = 0;
+room_mouse_y = 0;
 
 // Set up the various menus and their elements
 scr_menu_castmode_create();

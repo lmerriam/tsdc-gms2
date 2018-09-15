@@ -46,7 +46,7 @@ if (combo_timer == Time.now) {
 }
 
 // Handle mouse clicks
-if (mouse_check_button_released(1)) {
+if (gui_mouse_released_click) {
 
 	// Cast mode
     if (scr_check_btn(cast_btn)) {

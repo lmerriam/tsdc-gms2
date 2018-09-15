@@ -9,7 +9,7 @@ if (instance_exists(Player)) {
         if (os_type = os_android) {
             dis = 128;
         } else {
-            dis = point_distance(Player.x,Player.y,mouse_x,mouse_y);
+            dis = point_distance(Player.x,Player.y,GUI.room_mouse_x,GUI.room_mouse_y);
         }
         var targetx = global.weapon_origin_x + lengthdir_x(dis/5,global.aim_dir);
         var targety = global.weapon_origin_y + lengthdir_y(dis/5,global.aim_dir);
