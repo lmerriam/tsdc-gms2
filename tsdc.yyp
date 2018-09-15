@@ -12256,6 +12256,25 @@
             }
         },
         {
+            "Key": "df1e5d0f-481f-43a5-a322-3844d8a8265f",
+            "Value": {
+                "id": "89e24c18-6170-403e-817a-9cb36b75e292",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/spr_ui_box_selected_2x\/spr_ui_box_selected_2x.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "df485127-4499-4e5c-b149-5ad60bf150c1",
             "Value": {
                 "id": "325014b0-ae76-4d2a-9eb3-ba5653d9d9be",
@@ -12804,6 +12823,25 @@
                 ],
                 "resourcePath": "scripts\/scr_send_to_inv\/scr_send_to_inv.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "ea638a14-e51a-41d2-a3a7-ecfc986f28c8",
+            "Value": {
+                "id": "c2aee120-716a-49cc-a1eb-a9ec4dc1547a",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/spr_ui_selection_carat_2x\/spr_ui_selection_carat_2x.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

@@ -33,8 +33,3 @@ map_h = global.map_spr_height*ratio;
 // Map offsets
 map_offset_y = TAB_BAR_HEIGHT;
 map_offset_x = window_width/2 - map_w/2;
-
-// Init fog
-ds_grid_resize(fog,room_width/fog_tile_size,room_height/fog_tile_size);
-show_debug_message("Gridw: " + string(ds_grid_width(fog)) + " Gridh: " + string(ds_grid_height(fog)));
-ds_grid_clear(fog,false);

@@ -2,6 +2,7 @@
 //var maph, mapw, ratio;
 
 // Draw nav menu
+scr_draw_overlay();
 scr_menu_navigation_drawgui();
 
 // Draw the current map sprite

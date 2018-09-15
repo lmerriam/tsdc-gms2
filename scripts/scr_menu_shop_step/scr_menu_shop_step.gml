@@ -4,9 +4,8 @@
 // Check navigation submenu
 scr_menu_navigation_step()
 
-var mousex = device_mouse_x_to_gui(0);
-var mousey = device_mouse_y_to_gui(0);
-
+var mousex = gui_mouse_x;
+var mousey = gui_mouse_y;
 
 // TODO: figure out why the fuck div seems to be rounding up so I can remove these -3s
 if (scr_mouse_over_ui(inv_player_coords[0],inv_player_coords[1],inv_player_coords[2],inv_player_coords[3])) {

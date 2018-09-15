@@ -1,5 +1,4 @@
 /// Draw top bar buttons
-scr_draw_overlay();
 draw_set_halign(fa_center)
 draw_set_font(PixelSmall_12);
 var num_btns = ds_list_size(tab_btns);

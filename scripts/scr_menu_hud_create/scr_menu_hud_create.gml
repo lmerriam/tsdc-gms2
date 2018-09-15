@@ -3,6 +3,7 @@
 buttons = ds_list_create();
 
 // Init minimap
+// TODO: name this shit better (eg minimap_display_width). Also add HUD namespace to like all the variables in this script.
 minimap = -1;
 minimap_ratio = room_width/sprite_get_width(global.current_map);
 minimap_width = 120;
@@ -10,6 +11,8 @@ minimap_height = 120;
 minimap_window = 500;
 minimap_window_x = window_width - minimap_width - windowpadding;
 minimap_window_y = windowpadding;
+minimap_window_x2 = minimap_window_x + minimap_width;
+minimap_window_y2 = minimap_window_y + minimap_height;
 minimap_center_x = minimap_window_x + (minimap_width/2);
 minimap_center_y = minimap_window_y + (minimap_height/2);
 minimap_btn[0] = minimap_window_x;
@@ -17,14 +20,6 @@ minimap_btn[1] = minimap_window_y;
 minimap_btn[2] = minimap_width;
 minimap_btn[3] = minimap_height;
 minimap_btn[4] = noone;
-
-//fog = ds_grid_create(1,1);
-fog_tile_size = 128;
-fog = ds_grid_create(1,1);
-fog_x = -20;
-fog_y = -200;
-fog_draw_range = 6;
-fog_vision_range = 3;
 
 // Init menu button
 var width = sprite_get_width(spr_inventory_button)*2;

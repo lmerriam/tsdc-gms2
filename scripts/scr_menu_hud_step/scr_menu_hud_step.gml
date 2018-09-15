@@ -5,14 +5,6 @@ y = Player.y;
 __view_set( e__VW.XView, 1, Player.x - __view_get( e__VW.WView, 1 )/2 );
 __view_set( e__VW.YView, 1, Player.y - __view_get( e__VW.HView, 1 )/2 );
 
-// Check fog
-if (Time.now mod 10 == 0) {
-	fog_x = floor(Player.x/fog_tile_size);
-	fog_y = floor(Player.y/fog_tile_size);
-	var range = fog_vision_range;
-	ds_grid_set_region(fog,fog_x-range,fog_y-range,fog_x+range,fog_y+range,true);
-}
-
 // Check for nearest drop
 nearest_drop = instance_nearest(x,y,Equipment_Parent);
 if (distance_to_object(nearest_drop) < 32) {
