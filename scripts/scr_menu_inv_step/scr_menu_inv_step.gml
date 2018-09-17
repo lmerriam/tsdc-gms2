@@ -19,6 +19,7 @@ if gui_mouse_released_drag {
 		var inv = inventory_index[i];
 		//var inv = global.inventory[? inv];
 		inventory_current = inv;
+		inv_item_selected = noone;
 	} else if scr_mouse_over_ui(inv_list_x1,inv_list_y1,inv_list_x2,inv_list_y2) {
 		var height = gui_mouse_y - inv_list_y1 - inv_list_offset;
 		var i = floor(height/inv_list_item_height);

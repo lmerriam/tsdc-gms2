@@ -45,7 +45,7 @@ scr_equip(scr_init_equipment("Gem"));
 scr_equip(scr_init_equipment("Projectile"));
 scr_calc_stats();
 
-repeat(16) scr_send_to_inv(scr_init_equipment(choose("SMG","Pistol","Bomb")));
+repeat(16) scr_send_to_inv(scr_init_equipment(choose("SMG","Heavy Armor","Gem","Lineup")));
 
 // Set up 
 inv_padding = 32;
@@ -96,6 +96,7 @@ inv_offset_origin = inv_list_offset;
 // Set up inventory tooltip
 inv_tooltip_width = 256;
 inv_tooltip_height = 0;
+inv_tooltip_line_height = 24;
 inv_tooltip_x1 = inv_list_x2 + inv_padding;
 inv_tooltip_x2 = inv_tooltip_x1 + inv_tooltip_width;
 inv_tooltip_y1 = inv_y1;

@@ -67,6 +67,73 @@ for (var i=0; i<ds_list_size(inv); i++) {
 	draw_set_halign(fa_left);
 }
 
+// Draw the tooltip
+if (inv_item_selected) {
+	var item = inv_item_selected;
+	var stats = item[? "Stats"];
+	var buffs = item[? "Buffs"];
+	var height = (ds_map_size(stats)+ds_map_size(buffs)+2)*(inv_tooltip_line_height);
+	var name = item[? "Name"];
+	var rarity = item[? "Rarity"];
+	var rarity_color = item[? "Rarity color"];
+	
+	// Draw the tooltip box
+	var x1 = inv_tooltip_x1;
+	var y1 = inv_tooltip_y1;
+	var x2 = inv_tooltip_x2;
+	var y2 = inv_tooltip_y1 + height;
+	scr_draw_9patch(spr_ui_box_2x,0,x1,y1,x2,y2,6,6,6,6);
+	
+	// Draw the tooltip text
+	var line_height = inv_tooltip_line_height;
+	x1 += 16;
+	y1 += line_height;
+	
+	// Item name
+	draw_set_color(rarity_color);
+	draw_text(x1,y1,name);
+	
+	// Item rarity
+	y1 += line_height;
+	draw_text(x1,y1,rarity);
+	draw_set_color(c_white);
+	
+	// Stats
+	var stat_list = inv_tooltip_stats;
+	var size = array_length_1d(stat_list);
+	var line_count = 0;
+	for (var i=0;i<size;i++) {
+		var stat = stat_list[i];
+		var value = stats[? stat];
+		if (value) {
+			y1 += line_height;
+			// Draw stat name
+			draw_text(x1,y1,stat);
+			// Draw stat value
+			draw_set_halign(fa_right);
+			draw_text(x2-16,y1,value);
+			draw_set_halign(fa_left);
+			line_count++;
+		}
+	}
+	
+	// Buffs
+	var buff = ds_map_find_first(buffs)
+	var size = ds_map_size(buffs);
+	for (var i=0;i<size;i++) {
+		y1 += line_height;
+		var value = buffs[? buff];
+		// Draw buff name
+		draw_text(x1,y1,buff);
+		// Draw stat value
+		draw_set_halign(fa_right);
+		draw_text(x2-16,y1,value);
+		draw_set_halign(fa_left);
+		line_count++;
+	}
+	
+}
+
 // Reset the color and alpha
 draw_set_color(c_white);
 draw_set_alpha(1);
