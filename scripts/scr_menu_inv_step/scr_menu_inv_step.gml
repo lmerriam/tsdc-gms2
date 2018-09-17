@@ -4,17 +4,33 @@
 scr_menu_navigation_step();
 
 // Check inventory clicks
-if mouse_check_button_pressed(mb_left) {
+if gui_mouse_pressed {
 	inv_list_offset_origin = inv_list_offset;
 }
 
 // Mouse released 
-if mouse_check_button_released(mb_left) {
-	if gui_mouse_released_drag inv_drag_momentum = gui_mouse_delta_y;
+if gui_mouse_released_drag {
+	inv_drag_momentum = gui_mouse_delta_y;
+} else if gui_mouse_released_click {
+	
+	if scr_mouse_over_ui(inv_tab_x1,inv_tab_y1,inv_tab_x2,inv_tab_y2) {
+		var height = gui_mouse_y - inv_tab_y1;
+		var i = floor(height/inv_tab_size);
+		var inv = inventory_index[i];
+		//var inv = global.inventory[? inv];
+		inventory_current = inv;
+	} else if scr_mouse_over_ui(inv_list_x1,inv_list_y1,inv_list_x2,inv_list_y2) {
+		var height = gui_mouse_y - inv_list_y1 - inv_list_offset;
+		var i = floor(height/inv_list_item_height);
+		var inv = global.inventory[? inventory_current];
+		var item = inv[| i]
+		inv_item_selected = item;
+	}
+	
 }
 
 // Mouse down
-if (mouse_check_button(mb_left)) {
+if (gui_mouse_down) {
 	inv_list_offset = inv_list_offset_origin + (gui_mouse_y - gui_mouse_origin_y);
 } else {
 	

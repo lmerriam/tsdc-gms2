@@ -9,7 +9,6 @@ draw_set_font(PixelSmall_12);
 // Draw the inventory tabs
 for (var i=0; i<array_length_1d(inventory_index); i++) {
 	var inv_name = inventory_index[i];
-	show_debug_message(inv_name);
 	var inv_props = inventory_props[? inv_name];
 	
 	var sprite = inv_props[? "tab sprite"];
@@ -36,14 +35,16 @@ var inv = global.inventory[? inventory_current];
 for (var i=0; i<ds_list_size(inv); i++) {
 	
 	// Draw the item box
+	var item = inv[| i];
 	var x1 = inv_list_x1;
 	var x2 = inv_list_x2;
 	var y1 = inv_list_offset + inv_list_y1 + inv_list_item_height*i;
 	var y2 = y1 + inv_list_item_height;
-	scr_draw_9patch(spr_ui_box_2x,0,x1,y1,x2,y2,6,6,6,6);
+	var box;
+	if item == inv_item_selected box = spr_ui_box_selected_2x else box = spr_ui_box_2x;
+	scr_draw_9patch(box,0,x1,y1,x2,y2,6,6,6,6);
 	
 	// Draw the item sprite
-	var item = inv[| i];
 	var sprite = item[? "Sprite"];
 	var name = item[? "Name"];
 	var rarity = item[? "Rarity"];
