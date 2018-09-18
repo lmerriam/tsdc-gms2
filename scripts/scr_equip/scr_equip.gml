@@ -13,3 +13,5 @@ if (equipped_previous != noone and equipped_previous != undefined) scr_send_to_i
 
 // Emit event
 scr_event_emit("equip item",props)
+
+return true;

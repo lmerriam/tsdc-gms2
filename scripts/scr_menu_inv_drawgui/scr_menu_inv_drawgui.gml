@@ -82,6 +82,8 @@ if (inv_item_selected) {
 	var y1 = inv_tooltip_y1;
 	var x2 = inv_tooltip_x2;
 	var y2 = inv_tooltip_y1 + height;
+	inv_tooltip_y2 = y2;
+	inv_tooltip_height = height;
 	scr_draw_9patch(spr_ui_box_2x,0,x1,y1,x2,y2,6,6,6,6);
 	
 	// Draw the tooltip text
@@ -131,6 +133,28 @@ if (inv_item_selected) {
 		draw_set_halign(fa_left);
 		line_count++;
 	}
+	
+	// Equip button
+	x1 = inv_equip_btn_x1;
+	x2 = inv_equip_btn_x2;
+	y1 = inv_tooltip_y2 + 8;
+	y2 = y1 + inv_equip_btn_height;
+	// Update the equip btn size variables
+	inv_equip_btn_y1 = y1;
+	inv_equip_btn_y2 = y2;
+	// Draw button rectangle
+	scr_draw_9patch(spr_button_yellow_x2,0,x1,y1,x2,y2,4,4,4,4);
+	draw_set_color(c_black);
+	// Draw button text
+	var y_center = y1 + (inv_equip_btn_height/2);
+	var x_center = x1 + (inv_equip_btn_width/2);
+	draw_set_valign(fa_middle);
+	draw_set_halign(fa_center);
+	draw_text(x_center,y_center,"Equip");
+	draw_set_halign(fa_left);
+	draw_set_valign(fa_top);
+	
+	// Drop button
 	
 }
 

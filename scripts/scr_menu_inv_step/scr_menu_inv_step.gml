@@ -26,6 +26,13 @@ if gui_mouse_released_drag {
 		var inv = global.inventory[? inventory_current];
 		var item = inv[| i]
 		inv_item_selected = item;
+	} else if inv_item_selected and scr_mouse_over_ui(inv_equip_btn_x1,inv_equip_btn_y1,inv_equip_btn_x2,inv_equip_btn_y2) {
+		if scr_equip(inv_item_selected) {
+			var inv = global.inventory[? inventory_current];
+			var pos = ds_list_find_index(inv,inv_item_selected);
+			ds_list_delete(inv,pos);
+		}
+		inv_item_selected = noone;
 	}
 	
 }

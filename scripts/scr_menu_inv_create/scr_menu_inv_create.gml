@@ -17,7 +17,6 @@ inv_tooltip_stats[11] = "Knockback";
 inv_tooltip_stats[12] = "Spell Knockback";
 inv_tooltip_stats[13] = "Cooldown";
 
-
 // Set up inventories
 inventory_index = ["Weapon","Armor","Spell","Gem","Quest"];
 inventory_current = "Weapon";
@@ -28,7 +27,6 @@ for (var i=0;i<array_length_1d(inventory_index);i++) {
 	var key = inventory_index[i];
 	global.inventory[? key] = ds_list_create();
 }
-
 
 // Set up equipment slots
 equipment_index = ["Weapon","Armor","Spell","Gem"];
@@ -49,6 +47,7 @@ repeat(16) scr_send_to_inv(scr_init_equipment(choose("SMG","Heavy Armor","Gem","
 
 // Set up 
 inv_padding = 32;
+inv_pane_margin = 24;
 inv_y1 = TAB_BAR_HEIGHT + inv_padding;
 inv_x1 = inv_padding;
 
@@ -83,7 +82,7 @@ equipment_props = ds_map_create();
 // Set up inventory list dimensions
 inv_list_item_height = inv_tab_size;
 inv_list_item_width = 384;
-inv_list_x1 = inv_tab_x2 + inv_padding;
+inv_list_x1 = inv_tab_x2 + inv_pane_margin;
 inv_list_x2 = inv_list_x1+inv_list_item_width;
 inv_list_y1 = inv_y1;
 inv_list_height = global.window_height - inv_list_y1 - inv_padding;
@@ -97,14 +96,17 @@ inv_offset_origin = inv_list_offset;
 inv_tooltip_width = 256;
 inv_tooltip_height = 0;
 inv_tooltip_line_height = 24;
-inv_tooltip_x1 = inv_list_x2 + inv_padding;
+inv_tooltip_x1 = inv_list_x2 + inv_pane_margin;
 inv_tooltip_x2 = inv_tooltip_x1 + inv_tooltip_width;
 inv_tooltip_y1 = inv_y1;
 inv_tooltip_y2 = inv_y1 + inv_tooltip_height;
 
-inv_equip_btn_height = 32;
+// Equip btn
+inv_equip_btn_height = 48;
 inv_equip_btn_width = inv_tooltip_width;
 inv_equip_btn_x1 = inv_tooltip_x1;
 inv_equip_btn_x2 = inv_tooltip_x2;
 inv_equip_btn_y1 = 0;
 inv_equip_btn_y2 = 0;
+
+// Drop btn
