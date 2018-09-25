@@ -1,5 +1,20 @@
 /// Init the inventory
 
+// Load equipment 
+//global.equipment = scr_load_json("equipment");
+inventory_props = scr_load_json("equipment_types");
+global.buffs = scr_load_json("buffs");
+global.rarity = ["Common","Uncommon","Rare","Epic"];
+global.equipment = ds_map_create();
+
+var size = ds_list_size(inventory_props);
+for (var i=0; i<size; i++) {
+	var props = inventory_props[| i];
+	var type = props[? "type"];
+	var eqp = scr_load_json("equipment_" + string_lower(type));
+	ds_map_add(global.equipment,type,eqp);
+}
+
 // Set up stats list
 inv_tooltip_stats = noone;
 inv_tooltip_stats[0] = "Level";
@@ -18,18 +33,18 @@ inv_tooltip_stats[12] = "Spell Knockback";
 inv_tooltip_stats[13] = "Cooldown";
 
 // Set up inventories
-inventory_index = ["Weapon","Armor","Spell","Gem","Quest"];
 inventory_current = "Weapon";
 inv_item_selected = noone;
 
 global.inventory = ds_map_create();
-for (var i=0;i<array_length_1d(inventory_index);i++) {
-	var key = inventory_index[i];
-	global.inventory[? key] = ds_list_create();
+for (var i=0;i<ds_list_size(inventory_props);i++) {
+	var props = inventory_props[| i];
+	var type = props[? "type"];
+	global.inventory[? type] = ds_list_create();
 }
 
 // Set up equipment slots
-equipment_index = ["Weapon","Armor","Spell","Gem"];
+equipment_index = ["Weapon","Armor","Spell","Mod"];
 
 global.equipment_slots = ds_map_create();
 for (var i=0;i<array_length_1d(equipment_index);i++) {
@@ -39,11 +54,11 @@ for (var i=0;i<array_length_1d(equipment_index);i++) {
 
 scr_equip(scr_init_equipment("Shotgun"));
 scr_equip(scr_init_equipment("Heavy Armor"));
-scr_equip(scr_init_equipment("Gem"));
+scr_equip(scr_init_equipment("Mod"));
 scr_equip(scr_init_equipment("Projectile"));
 scr_calc_stats();
 
-repeat(16) scr_send_to_inv(scr_init_equipment(choose("SMG","Heavy Armor","Gem","Lineup")));
+repeat(26) scr_send_to_inv(scr_init_equipment(choose("SMG","Heavy Armor","Mod","Scrap Metal")));
 
 // Set up 
 inv_padding = 32;
@@ -54,16 +69,17 @@ inv_x1 = inv_padding;
 // Inv tab area
 inv_tab_size = 64;
 inv_tab_y1 = inv_y1;
-inv_tab_y2 = inv_y1 + inv_tab_size * array_length_1d(inventory_index);
+inv_tab_y2 = inv_y1 + inv_tab_size * ds_list_size(inventory_props);
 inv_tab_x1 = inv_x1;
 inv_tab_x2 = inv_tab_x1 + inv_tab_size;
 
 // Init inventory properties
-inventory_props = ds_map_create();
-for (var i=0; i<array_length_1d(inventory_index); i++) {
-	var inv_name = inventory_index[i];
-	var inv = ds_map_create();
-	inventory_props[? inv_name] = inv;
+//inventory_props = ds_map_create();
+for (var i=0; i<ds_list_size(inventory_props); i++) {
+	var inv = inventory_props[| i];
+	var inv_name = inv[? "type"];
+	//var inv = ds_map_create();
+	//inventory_props[? inv_name] = inv;
 	
 	// Set up the tab buttons for the different inventories
 	var x1 = inv_padding;
@@ -91,6 +107,8 @@ inv_list_offset = 0;
 inv_drag_momentum = 0;
 inv_friction = 0.9;
 inv_offset_origin = inv_list_offset;
+inv_drag_on_list = false;
+inv_current_equippable = false;
 
 // Set up inventory tooltip
 inv_tooltip_width = 256;

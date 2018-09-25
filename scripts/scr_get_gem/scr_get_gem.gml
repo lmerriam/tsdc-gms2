@@ -1,2 +1,2 @@
 /// scr_get_gem()
-return global.equipment_slots[? "Gem"];
+return global.equipment_slots[? "Mod"];

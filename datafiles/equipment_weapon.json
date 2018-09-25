@@ -1,0 +1,167 @@
+{
+  "SMG": {
+      "Properties": {
+        "Type": "Weapon",
+        "Name": "Submachine Gun",
+        "Value": 100,
+        "Sprite": "spr_SMG",
+        "Attack Script": "scr_attack_smg",
+        "Equip Script": "scr_equip_weapon_standard",
+        "Stats": {
+          "Damage": 1,
+          "Knockback": 2,
+          "Atk Delay": 0.2
+        }
+      }
+    },
+    "Pistol": {
+      "Properties": {
+        "Type": "Weapon",
+        "Name": "Pistol",
+        "Value": 100,
+        "Sprite": "spr_pistol",
+        "Attack Script": "scr_attack_pistol",
+        "Equip Script": "scr_equip_weapon_standard",
+        "Stats": {
+          "Damage": 3,
+          "Knockback": 5,
+          "Atk Delay": 1
+        }
+      }
+    },
+    "Bomb": {
+      "Properties": {
+        "Type": "Weapon",
+        "Name": "Bomb",
+        "Value": 100,
+        "Sprite": "spr_bomb",
+        "Attack Script": "scr_attack_bomb",
+        "Equip Script": "scr_equip_weapon_standard",
+        "Stats": {
+          "Damage": 5,
+          "Knockback": 10,
+          "Atk Delay": 1.5
+        }
+      }
+    },
+    "Shotgun": {
+      "Properties": {
+        "Type": "Weapon",
+        "Name": "Shotgun",
+        "Value": 100,
+        "Sprite": "spr_shotgun",
+        "Attack Script": "scr_attack_shotgun",
+        "Equip Script": "scr_equip_weapon_standard",
+        "Stats": {
+          "Damage": 8,
+          "Knockback": 2,
+          "Atk Delay": 1
+        }
+      }
+    },
+    "Blade": {
+      "Properties": {
+        "Type": "Weapon",
+        "Name": "Blade",
+        "Value": 100,
+        "Sprite": "spr_blade",
+        "Attack Script": "scr_attack_blade",
+        "Equip Script": "scr_equip_weapon_standard",
+        "Stats": {
+          "Damage": 3,
+          "Knockback": 10,
+          "Atk Delay": 1
+        }
+      }
+    },
+    "Hammer": {
+      "Properties": {
+        "Type": "Weapon",
+        "Name": "Hammer",
+        "Value": 100,
+        "Sprite": "spr_hammer",
+        "Attack Script": "scr_attack_hammer",
+        "Equip Script": "scr_equip_weapon_standard",
+        "Stats": {
+          "Damage": 2,
+          "Knockback": 30,
+          "Atk Delay": 1
+        }
+      }
+    },
+    "Spear": {
+      "Properties": {
+        "Type": "Weapon",
+        "Name": "Spear",
+        "Value": 100,
+        "Sprite": "spr_spear",
+        "Attack Script": "scr_attack_spear",
+        "Equip Script": "scr_equip_weapon_spear",
+        "Stats": {
+          "Damage": 2,
+          "Knockback": 30,
+          "Atk Delay": 1
+        }
+      }
+    },
+    "Bow": {
+      "Properties": {
+        "Type": "Weapon",
+        "Name": "Bow",
+        "Value": 100,
+        "Sprite": "spr_bow",
+        "Attack Script": "scr_attack_bow",
+        "Equip Script": "scr_equip_weapon_bow",
+        "Stats": {
+          "Damage": 20,
+          "Knockback": 10,
+          "Atk Delay": 0.5
+        }
+      }
+    },
+    "Flamethrower": {
+      "Properties": {
+        "Type": "Weapon",
+        "Name": "Flamethrower",
+        "Value": 100,
+        "Sprite": "spr_flamethrower",
+        "Attack Script": "scr_attack_flamethrower",
+        "Equip Script": "scr_equip_weapon_flamethrower",
+        "Stats": {
+          "Damage": 1,
+          "Knockback": 0,
+          "Atk Delay": 1
+        }
+      }
+    },
+    "Boomerang": {
+      "Properties": {
+        "Type": "Weapon",
+        "Name": "Boomerang",
+        "Value": 100,
+        "Sprite": "spr_boomerang",
+        "Attack Script": "scr_attack_boomerang",
+        "Equip Script": "scr_equip_weapon_boomerang",
+        "Stats": {
+          "Damage": 2,
+          "Knockback": 0,
+          "Atk Delay": 1
+        }
+      }
+    },
+    "Philactery": {
+      "Properties": {
+          "Type": "Weapon",
+          "Name": "Philactery",
+          "Value": 100,
+          "Sprite": "spr_philactery",
+          "Attack Script": "scr_attack_philactery",
+          "Equip Script": "scr_equip_weapon_philactery",
+          "Stats": {
+          "Damage": 3,
+          "Knockback": 0,
+          "Atk Delay": 1
+          }
+      }
+  }
+}

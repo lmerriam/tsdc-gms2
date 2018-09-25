@@ -11,4 +11,11 @@ while (!file_text_eof(theJsonFile))
 }
 file_text_close(theJsonFile);
 
-return json_decode(theData);
+var json = json_decode(theData);
+
+// If the top level is an array it will be wrapped in the "default" map, trim this if needed
+if (json[? "default"]) {
+	return json[? "default"];
+} else {
+	return json;
+}

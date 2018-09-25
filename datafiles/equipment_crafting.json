@@ -1,0 +1,10 @@
+{
+  "Scrap Metal": {
+    "Properties": {
+      "Type": "Crafting",
+      "Name": "Scrap Metal",
+      "Value": 0,
+      "Sprite": "spr_equipment_parent"
+    }
+  }
+}

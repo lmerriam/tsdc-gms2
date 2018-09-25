@@ -13,15 +13,15 @@ stats[? "Knockback"] = 5;
 stats[? "Speed"] = 1 * (30/room_speed);
 
 // Loot
-ds_map_add(loot, "Pistol", .2);
-ds_map_add(loot, "Shotgun", .2);
-ds_map_add(loot, "SMG", .2);
-ds_map_add(loot, "Bomb", .2);
-ds_map_add(loot, "Blade", .2);
-ds_map_add(loot, "Vorpal", .2);
-ds_map_add(loot, "Projectile", .2);
-ds_map_add(loot, "Column", .2);
-ds_map_add(loot, "Push", .2);
-ds_map_add(loot, "Pull", .2);
-ds_map_add(loot, "Area", .2);
-ds_map_add(loot, "Blink", .2);
+ds_map_add(loot, "Scrap Metal", .5);
+//ds_map_add(loot, "Shotgun", .2);
+//ds_map_add(loot, "SMG", .2);
+//ds_map_add(loot, "Bomb", .2);
+//ds_map_add(loot, "Blade", .2);
+//ds_map_add(loot, "Vorpal", .2);
+//ds_map_add(loot, "Projectile", .2);
+//ds_map_add(loot, "Column", .2);
+//ds_map_add(loot, "Push", .2);
+//ds_map_add(loot, "Pull", .2);
+//ds_map_add(loot, "Area", .2);
+//ds_map_add(loot, "Blink", .2);

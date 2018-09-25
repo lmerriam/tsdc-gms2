@@ -9,12 +9,14 @@ var _old_props = argument0;
 ds_map_copy(_new_props,_old_props);
 
 // Copy stats
-_new_props[? "Stats"] = ds_map_create();
-ds_map_copy(_new_props[? "Stats"],_old_props[? "Stats"]);
+if (_old_props[? "Stats"]) {
+	_new_props[? "Stats"] = ds_map_create();
+	ds_map_copy(_new_props[? "Stats"],_old_props[? "Stats"]);
+}
 
 // Set up buffs
-_new_props[? "Buffs"] = ds_map_create();
-if (_old_props[? "Buffs"] != undefined) {
+if (_old_props[? "Buffs"]) {
+	_new_props[? "Buffs"] = ds_map_create();
 	// TODO: make sure we don't need scr_copy_child_maps here
 	ds_map_copy(_new_props[? "Buffs"],_old_props[? "Buffs"]);
 }

@@ -16,11 +16,6 @@ global.npcs = ds_list_create();
 // Set up interactable registry
 global.interactables = ds_list_create();
 
-// Equipment 
-global.equipment = scr_load_json("equipment");
-global.buffs = scr_load_json("buffs");
-global.rarity = ["Common","Uncommon","Rare","Epic"];
-
 if (os_type == os_android or os_type == os_ios) {
 	control_scheme = scr_controls_touch;
 	move_touch = 0;

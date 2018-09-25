@@ -1,0 +1,15 @@
+{
+  "Heavy Armor": {
+    "Properties": {
+      "Type": "Armor",
+      "Name": "Heavy Armor",
+      "Value": 100,
+      "Sprite": "spr_armor",
+      "Stats": {
+        "Health Regen": 1,
+        "Stamina Regen": 0,
+        "Defense": 3
+      }
+    }
+  }
+}

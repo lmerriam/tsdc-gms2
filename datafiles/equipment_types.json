@@ -1,0 +1,26 @@
+[
+  {
+    "type": "Weapon",
+    "stackable": false
+  },
+  {
+    "type": "Mod",
+    "stackable": false
+  },
+  {
+    "type": "Armor",
+    "stackable": false
+  },
+  {
+    "type": "Spell",
+    "stackable": false
+  },
+  {
+    "type": "Quest",
+    "stackable": false
+  },
+  {
+    "type": "Crafting",
+    "stackable": true
+  }
+]

@@ -1,0 +1,20 @@
+re-roll weapon attributes
+gamble for items
+defeat minibosses
+solve environmental puzzles (like koroks)
+hunt for collectibles
+find treasure maps
+complete "bounties" on certain enemies
+craft items
+rebuild towns (bring merchants back and collect rewards)
+craft more inventory space
+complete shrines, some give you a choice of bonuses, some require a sacrifice, some require task completed
+capture or tag companions/animals/enemies/mounts
+scout areas to clear part of map or reveal points of interest
+scan technology to open up new skills, machines/crafting options, backstory
+protecc machine while it researches/extracts something cool for the player
+hunts for loot/baddies/lost npcs including finding tracks, etc
+grow plants for crafting potions
+defend a settlement/house/other important place
+collect daily tribute from somewhere in game (size based on player level or quest completion or some other thing that increases throughout game)
+build teleporters

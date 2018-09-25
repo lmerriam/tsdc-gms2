@@ -1,0 +1,10 @@
+{
+  "Quest": {
+    "Properties": {
+      "Type": "Quest",
+      "Name": "Generic Quest Item",
+      "Value": 0,
+      "Sprite": "spr_equipment_parent"
+    }
+  }
+}

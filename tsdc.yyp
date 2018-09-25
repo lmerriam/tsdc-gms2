@@ -1673,6 +1673,25 @@
             }
         },
         {
+            "Key": "25441bdb-3554-4e07-836d-824085534093",
+            "Value": {
+                "id": "d718c7d0-fd10-4f51-9ba2-2d1d630ee75c",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "datafiles_yy\/equipment_mod.json.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
             "Key": "25db442b-c7b5-440f-9bbc-b68e4e3c6011",
             "Value": {
                 "id": "c73cb134-03eb-45e9-ab30-b86aadcd8f6c",
@@ -4124,6 +4143,25 @@
             }
         },
         {
+            "Key": "5796a98a-0b4e-4292-b234-8f6ca19cc859",
+            "Value": {
+                "id": "d760be38-918a-498d-b51d-83332a0d375c",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/spr_inventory_tab_crafting\/spr_inventory_tab_crafting.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "579f86bc-5e1d-4d3f-b328-b4593c97095d",
             "Value": {
                 "id": "9fbc58d1-4a11-4367-9b59-4da369a2143f",
@@ -4675,6 +4713,25 @@
             }
         },
         {
+            "Key": "621ae600-559e-4483-a0c0-14a84deaafa3",
+            "Value": {
+                "id": "944eba96-ab25-4998-98c1-523fc7d4fdb9",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "datafiles_yy\/equipment_weapon.json.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
             "Key": "62a0caf2-c74a-46fa-b8b0-df2429101e39",
             "Value": {
                 "id": "5b35a53c-3b55-427e-b590-1e6bed2c14b2",
@@ -5014,6 +5071,25 @@
                 ],
                 "resourcePath": "objects\/Weapon_SMG\/Weapon_SMG.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "679dbcd3-190b-4d8c-85cc-0a5becd7de38",
+            "Value": {
+                "id": "70758a44-534b-4c31-970d-126df50188b2",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/scr_inv_get_props\/scr_inv_get_props.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -6784,6 +6860,25 @@
             }
         },
         {
+            "Key": "8341c7ea-8e8e-4c3e-b424-6f7e604fb502",
+            "Value": {
+                "id": "2278a42e-866d-415a-9f62-4d8afbba56de",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/spr_mod\/spr_mod.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "836f5aed-d5f4-47a5-809e-12f92ecd19ae",
             "Value": {
                 "id": "64c45b51-1293-4d7b-ab35-84257c09cbd4",
@@ -7408,6 +7503,25 @@
                 ],
                 "resourcePath": "objects\/Quest_Giver_NPC\/Quest_Giver_NPC.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "8b64cac3-3f81-41a1-959f-48d6aa9db7d7",
+            "Value": {
+                "id": "4b46b468-3701-4118-a789-8ce0b4fa7cde",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/scr_inventory_check_item_exists\/scr_inventory_check_item_exists.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -8532,6 +8646,25 @@
             }
         },
         {
+            "Key": "9eddbc80-4e4e-431a-b1dd-c513aa945d54",
+            "Value": {
+                "id": "c26efd2c-34b5-460b-b1a5-d57381e91100",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "datafiles_yy\/equipment_armor.json.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
             "Key": "a00ca57c-54bd-4036-bfcd-71a358a8c7f5",
             "Value": {
                 "id": "d10f81c1-8dc2-402c-bd5b-1dc1010cca75",
@@ -8681,6 +8814,25 @@
                 ],
                 "resourcePath": "scripts\/scr_menu_confirm_drawgui\/scr_menu_confirm_drawgui.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "a26959a0-d802-4dfc-9248-850889061926",
+            "Value": {
+                "id": "725d523d-7708-46ec-8dac-ea2c5147ca6d",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "datafiles_yy\/equipment_crafting.json.yy",
+                "resourceType": "GMIncludedFile"
             }
         },
         {
@@ -10014,6 +10166,25 @@
             }
         },
         {
+            "Key": "baaca7f7-2a4b-49d3-8a05-c3dd11aa3d03",
+            "Value": {
+                "id": "51057f92-10d8-4ea3-b7e7-c970ec600141",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "datafiles_yy\/equipment_spell.json.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
             "Key": "bb2e86ae-a796-443a-9cbc-f5d99b50f09d",
             "Value": {
                 "id": "02de0c89-6808-4f2c-b374-f284eb1c94d7",
@@ -10128,6 +10299,25 @@
             }
         },
         {
+            "Key": "bc7d90de-f88f-4650-89fe-2d5abc54557b",
+            "Value": {
+                "id": "73fff87e-a235-4dcc-94a3-e4b8314761e4",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "datafiles_yy\/equipment_quest.json.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
             "Key": "bcabb991-2141-41d6-b0dc-0530f4872320",
             "Value": {
                 "id": "57fa982a-5d54-45b4-990c-f37a2d1b6d2d",
@@ -10182,6 +10372,25 @@
                 ],
                 "resourcePath": "scripts\/scr_controls_touch\/scr_controls_touch.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "bd89fa41-95e9-4a36-8d8a-3676cbb38d18",
+            "Value": {
+                "id": "7f85b871-4258-4f76-b049-d51954cad7d5",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/spr_inventory_tab_mod\/spr_inventory_tab_mod.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -12196,6 +12405,25 @@
                 ],
                 "resourcePath": "views\/dda31138-4437-4b72-b2da-2102cece1319.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "ddc1225f-c609-49b7-bc1b-ea7e06a70775",
+            "Value": {
+                "id": "a22b78e7-0fea-430f-a416-f1064bcdf3bc",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "datafiles_yy\/equipment_types.json.yy",
+                "resourceType": "GMIncludedFile"
             }
         },
         {
