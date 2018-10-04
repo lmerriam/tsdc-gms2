@@ -1,4 +1,5 @@
 /// @description scr_choose_rarity
+/// @param 1_buff_chance...
 var rarity = 0;
 
 for (var i=0;i<argument_count;i++) {

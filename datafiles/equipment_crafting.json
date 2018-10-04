@@ -6,5 +6,29 @@
       "Value": 0,
       "Sprite": "spr_equipment_parent"
     }
+  },
+  "Schematics": {
+    "Properties": {
+      "Type": "Crafting",
+      "Name": "Schematics",
+      "Value": 0,
+      "Sprite": "spr_equipment_parent"
+    }
+  },
+  "Microchip": {
+    "Properties": {
+      "Type": "Crafting",
+      "Name": "Microchip",
+      "Value": 0,
+      "Sprite": "spr_equipment_parent"
+    }
+  },
+  "Sensors": {
+    "Properties": {
+      "Type": "Crafting",
+      "Name": "Sensors",
+      "Value": 0,
+      "Sprite": "spr_equipment_parent"
+    }
   }
 }

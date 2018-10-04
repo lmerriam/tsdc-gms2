@@ -1,15 +1,7 @@
 var item_name = argument0;
 
 // Get DS
-var equipment = noone;
-var size = ds_list_size(GUI.inventory_props);
-for (var i=0;i<size;i++) {
-	var props = GUI.inventory_props[| i];
-	var type = props[? "type"];
-	var inv = global.equipment[? type];
-	var item = inv[? item_name];
-	if (item) equipment = item;
-}
+var equipment = scr_get_equipment(item_name);
 
 if (equipment) {
 	var props = scr_copy_drop_props(equipment[? "Properties"]);

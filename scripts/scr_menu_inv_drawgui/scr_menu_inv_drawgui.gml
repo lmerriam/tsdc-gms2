@@ -30,16 +30,30 @@ for (var i=0; i<ds_list_size(inventory_props); i++) {
 	draw_sprite_stretched(sprite,0,spr_x,spr_y,spr_size,spr_size);
 }
 
+// Get the ui list variables
+var list_props = inv_list_player;
+var inv_list_x1 = list_props[? "x1"];
+var inv_list_x2 = list_props[? "x2"];
+var inv_list_y1 = list_props[? "y1"];
+var inv_list_y2 = list_props[? "y2"];
+var inv_list_item_height = list_props[? "item height"];
+var inv_list_offset = list_props[? "offset"];
+var inv_list_drag_momentum = list_props[? "drag momentum"];
+var inv_list_friction = list_props[? "friction"];
+var inv_list_offset_origin = list_props[? "offset origin"];
+var inv_list_drag_on_list = list_props[? "drag on list"];
+
 // Draw the currently selected inventory
 var inv = global.inventory[? inventory_current];
 for (var i=0; i<ds_list_size(inv); i++) {
 	
+	
 	// Draw the item box
-	var item = inv[| i];
 	var x1 = inv_list_x1;
 	var x2 = inv_list_x2;
-	var y1 = inv_list_offset + inv_list_y1 + inv_list_item_height*i;
+	var y1 = inv_list_y1 + inv_list_offset + inv_list_item_height*i;
 	var y2 = y1 + inv_list_item_height;
+	var item = inv[| i];
 	var box;
 	if (item == inv_item_selected) box = spr_ui_box_selected_2x else box = spr_ui_box_2x;
 	scr_draw_9patch(box,0,x1,y1,x2,y2,6,6,6,6);

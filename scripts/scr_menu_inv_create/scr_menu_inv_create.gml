@@ -5,14 +5,23 @@
 inventory_props = scr_load_json("equipment_types");
 global.buffs = scr_load_json("buffs");
 global.rarity = ["Common","Uncommon","Rare","Epic"];
-global.equipment = ds_map_create();
+global.equipment_library = ds_map_create();
 
+// Set up equipment library
 var size = ds_list_size(inventory_props);
 for (var i=0; i<size; i++) {
 	var props = inventory_props[| i];
 	var type = props[? "type"];
 	var eqp = scr_load_json("equipment_" + string_lower(type));
-	ds_map_add(global.equipment,type,eqp);
+	
+	var key = ds_map_find_first(eqp)
+	for (var j=0; j<ds_map_size(eqp); j++) {
+		var item = eqp[? key];
+		ds_map_add(global.equipment_library,key,item);
+		item[? "type"] = type;
+		key = ds_map_find_next(eqp,key);
+	}
+	//ds_map_add(global.equipment,type,eqp);
 }
 
 // Set up stats list
@@ -93,28 +102,22 @@ for (var i=0; i<ds_list_size(inventory_props); i++) {
 	inv[? "tab sprite"] = asset_get_index("spr_inventory_tab_" + string_lower(inv_name));
 }
 
-equipment_props = ds_map_create();
+// Init the player inventory list
+var width = 384;
+var x1 = inv_tab_x2 + inv_pane_margin;
+var y1 = inv_y1;
+var x2 = x1 + width;
+var y2 = global.window_height-inv_padding;
+var item_height = inv_tab_size;
+inv_list_player = scr_ui_scrolling_list_create(x1,y1,x2,y2,item_height);
 
-// Set up inventory list dimensions
-inv_list_item_height = inv_tab_size;
-inv_list_item_width = 384;
-inv_list_x1 = inv_tab_x2 + inv_pane_margin;
-inv_list_x2 = inv_list_x1+inv_list_item_width;
-inv_list_y1 = inv_y1;
-inv_list_height = global.window_height - inv_list_y1 - inv_padding;
-inv_list_y2 = inv_list_y1 + inv_list_height;
-inv_list_offset = 0;
-inv_drag_momentum = 0;
-inv_friction = 0.9;
-inv_offset_origin = inv_list_offset;
-inv_drag_on_list = false;
-inv_current_equippable = false;
+equipment_props = ds_map_create();
 
 // Set up inventory tooltip
 inv_tooltip_width = 256;
 inv_tooltip_height = 0;
 inv_tooltip_line_height = 24;
-inv_tooltip_x1 = inv_list_x2 + inv_pane_margin;
+inv_tooltip_x1 = x2 + inv_pane_margin;
 inv_tooltip_x2 = inv_tooltip_x1 + inv_tooltip_width;
 inv_tooltip_y1 = inv_y1;
 inv_tooltip_y2 = inv_y1 + inv_tooltip_height;

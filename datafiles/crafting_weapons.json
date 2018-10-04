@@ -1,0 +1,12 @@
+"SMG": {
+    "Schematics": 1,
+    "Sensors": 3,
+    "Microchips": 3,
+    "Scrap Metal": 5
+},
+"Shotgun": {
+    "Schematics": 1,
+    "Sensors": 3,
+    "Microchips": 3,
+    "Scrap Metal": 5
+}

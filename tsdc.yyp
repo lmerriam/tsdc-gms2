@@ -818,6 +818,25 @@
             }
         },
         {
+            "Key": "11c362f4-f545-4069-9a4d-6244772a731e",
+            "Value": {
+                "id": "ef8b37cb-7873-448b-8c90-79e7c5dbdd71",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/scr_get_equipment\/scr_get_equipment.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "11c8d05c-a539-4df5-ae78-523044656701",
             "Value": {
                 "id": "e54350bd-612e-4ce1-b65b-f2169f7ba1e2",
@@ -7520,7 +7539,7 @@
                 "resourceCreationConfigs": [
                     "default"
                 ],
-                "resourcePath": "scripts\/scr_inventory_check_item_exists\/scr_inventory_check_item_exists.yy",
+                "resourcePath": "scripts\/scr_inv_get_item\/scr_inv_get_item.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -8662,6 +8681,25 @@
                 ],
                 "resourcePath": "datafiles_yy\/equipment_armor.json.yy",
                 "resourceType": "GMIncludedFile"
+            }
+        },
+        {
+            "Key": "9ee0fef3-b145-498d-ba72-c6d13efa2f51",
+            "Value": {
+                "id": "da27cf32-b44f-49b4-8d12-48676f1d548e",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/scr_menu_crafting_create\/scr_menu_crafting_create.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -11075,6 +11113,25 @@
                 ],
                 "resourcePath": "sprites\/spr_damage_philactery\/spr_damage_philactery.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "c668c516-94ce-4df8-a881-844aa3fab456",
+            "Value": {
+                "id": "d357a6d7-8cb1-4f61-8797-b1afc9b8cb43",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/scr_ui_scrolling_list_create\/scr_ui_scrolling_list_create.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -14470,7 +14527,9 @@
         "9835cb48-af7c-449f-80c9-d2d6d668e46f",
         "41ae5cdb-3bb7-48a8-b05d-4d52fd32a541",
         "580a61c6-af6a-477a-8919-0650fdcc48b8",
-        "1c6c369a-5b1d-4f54-9434-a6da1254e2c6"
+        "1c6c369a-5b1d-4f54-9434-a6da1254e2c6",
+        "8b64cac3-3f81-41a1-959f-48d6aa9db7d7",
+        "679dbcd3-190b-4d8c-85cc-0a5becd7de38"
     ],
     "tutorial": ""
 }

@@ -9,7 +9,7 @@ var item_type = item_props[? "Type"];
 var inventory = global.inventory[? item_type];
 var inv_props = scr_inv_get_props(item_type);
 var stackable = inv_props[? "stackable"];
-var item_existing = scr_inventory_check_item_exists(item_name);
+var item_existing = scr_inv_get_item(item_name);
 
 // Copy props into new slot
 //var item_props = scr_copy_drop_props(item_props);
