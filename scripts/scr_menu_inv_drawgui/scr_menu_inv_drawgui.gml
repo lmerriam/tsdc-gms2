@@ -30,63 +30,12 @@ for (var i=0; i<ds_list_size(inventory_props); i++) {
 	draw_sprite_stretched(sprite,0,spr_x,spr_y,spr_size,spr_size);
 }
 
-// Get the ui list variables
-var list_props = inv_list_player;
-var inv_list_x1 = list_props[? "x1"];
-var inv_list_x2 = list_props[? "x2"];
-var inv_list_y1 = list_props[? "y1"];
-var inv_list_y2 = list_props[? "y2"];
-var inv_list_item_height = list_props[? "item height"];
-var inv_list_offset = list_props[? "offset"];
-var inv_list_drag_momentum = list_props[? "drag momentum"];
-var inv_list_friction = list_props[? "friction"];
-var inv_list_offset_origin = list_props[? "offset origin"];
-var inv_list_drag_on_list = list_props[? "drag on list"];
-
-// Draw the currently selected inventory
-var inv = global.inventory[? inventory_current];
-for (var i=0; i<ds_list_size(inv); i++) {
-	
-	
-	// Draw the item box
-	var x1 = inv_list_x1;
-	var x2 = inv_list_x2;
-	var y1 = inv_list_y1 + inv_list_offset + inv_list_item_height*i;
-	var y2 = y1 + inv_list_item_height;
-	var item = inv[| i];
-	var box;
-	if (item == inv_item_selected) box = spr_ui_box_selected_2x else box = spr_ui_box_2x;
-	scr_draw_9patch(box,0,x1,y1,x2,y2,6,6,6,6);
-	if (item == inv_item_selected) draw_sprite(spr_ui_selection_carat_2x,0,x2-1,y1+inv_list_item_height/2);
-	
-	// Draw the item sprite
-	var sprite = item[? "Sprite"];
-	var name = item[? "Name"];
-	var quantity = item[? "Quantity"];
-	var rarity = item[? "Rarity"];
-	var rarity_color = item[? "Rarity color"];
-	var spr_offset = (inv_list_item_height-spr_size)/2;
-	var xx = x1+32;
-	var yy = y1+inv_list_item_height/2;
-	//draw_sprite_ext(spr_inv_slot_highlight,0,xx,yy,1,1,0,rarity_color,1);
-	draw_sprite_ext(sprite,1,xx,yy,2,2,22,c_white,1);
-	
-	// Draw the item name
-	var xx = xx+24;
-	draw_set_valign(fa_middle);
-	if (quantity) name = name + " x " + string(quantity);
-	draw_text(xx,yy,name);
-	
-	// Draw the item level
-	var xx = x2 - 16;
-	draw_set_halign(fa_right);
-	draw_text(xx,yy,rarity);
-	draw_set_halign(fa_left);
-}
+// Draw the current inventory list
+scr_ui_list_drawgui_equipment(ui_list_player_inv);
 
 // Draw the tooltip
-if (inv_item_selected) {
-	var item = inv_item_selected;
+var item = ui_list_player_inv[? "selected item"];
+if (item) {
 	var stats = item[? "Stats"];
 	var buffs = item[? "Buffs"];
 	var stats_size = stats == undefined ? 0 : ds_map_size(stats);

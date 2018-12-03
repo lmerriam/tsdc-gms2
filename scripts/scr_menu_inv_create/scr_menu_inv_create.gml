@@ -41,10 +41,6 @@ inv_tooltip_stats[11] = "Knockback";
 inv_tooltip_stats[12] = "Spell Knockback";
 inv_tooltip_stats[13] = "Cooldown";
 
-// Set up inventories
-inventory_current = "Weapon";
-inv_item_selected = noone;
-
 global.inventory = ds_map_create();
 for (var i=0;i<ds_list_size(inventory_props);i++) {
 	var props = inventory_props[| i];
@@ -87,8 +83,6 @@ inv_tab_x2 = inv_tab_x1 + inv_tab_size;
 for (var i=0; i<ds_list_size(inventory_props); i++) {
 	var inv = inventory_props[| i];
 	var inv_name = inv[? "type"];
-	//var inv = ds_map_create();
-	//inventory_props[? inv_name] = inv;
 	
 	// Set up the tab buttons for the different inventories
 	var x1 = inv_padding;
@@ -109,9 +103,8 @@ var y1 = inv_y1;
 var x2 = x1 + width;
 var y2 = global.window_height-inv_padding;
 var item_height = inv_tab_size;
-inv_list_player = scr_ui_scrolling_list_create(x1,y1,x2,y2,item_height);
-
-equipment_props = ds_map_create();
+inventory_current = "Weapon";
+ui_list_player_inv = scr_ui_list_create(global.inventory[? inventory_current],x1,y1,x2,y2,item_height);
 
 // Set up inventory tooltip
 inv_tooltip_width = 256;

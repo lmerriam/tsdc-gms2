@@ -4,7 +4,7 @@
 scr_menu_navigation_step();
 
 // Get list props
-var list_props = inv_list_player;
+var list_props = ui_list_player_inv;
 var inv_list_x1 = list_props[? "x1"];
 var inv_list_x2 = list_props[? "x2"];
 var inv_list_y1 = list_props[? "y1"];
@@ -16,6 +16,7 @@ var inv_list_offset = list_props[? "offset"];
 var inv_list_offset_origin = list_props[? "offset origin"];
 var inv_list_friction = list_props[? "friction"];
 var inv_drag_on_list = list_props[? "drag on list"];
+var inv_item_selected = list_props[? "selected item"];
 
 // Check inventory clicks
 if gui_mouse_pressed {
@@ -37,10 +38,9 @@ if gui_mouse_released_drag {
 		var height = gui_mouse_y - inv_tab_y1;
 		var i = floor(height/inv_tab_size);
 		var inv_props = inventory_props[| i];
-		var type = inv_props[? "type"];
-		//var inv = global.inventory[? inv];
-		inventory_current = type;
-		inv_item_selected = noone;
+		inventory_current = inv_props[? "type"];
+		list_props[? "list"] = global.inventory[? inventory_current];
+		list_props[? "selected item"] = noone;
 		
 	// Select inventory list items
 	} else if scr_mouse_over_ui(inv_list_x1,inv_list_y1,inv_list_x2,inv_list_y2) {
@@ -48,7 +48,7 @@ if gui_mouse_released_drag {
 		var i = floor(height/inv_list_item_height);
 		var inv = global.inventory[? inventory_current];
 		var item = inv[| i]
-		inv_item_selected = item;
+		list_props[? "selected item"] = item;
 		inv_current_equippable = global.equipment_slots[? inventory_current] ? true : false;
 		
 	// Equip button
@@ -58,7 +58,7 @@ if gui_mouse_released_drag {
 			var pos = ds_list_find_index(inv,inv_item_selected);
 			ds_list_delete(inv,pos);
 		}
-		inv_item_selected = noone;
+		list_props[? "selected item"] = noone;
 	}
 	
 }
