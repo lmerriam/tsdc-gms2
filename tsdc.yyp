@@ -13472,6 +13472,25 @@
             }
         },
         {
+            "Key": "f08a6bb2-c008-4f18-be69-fd91a6c76a4a",
+            "Value": {
+                "id": "5264023f-a360-40b0-a132-2964b98aa245",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/scr_ui_list_step\/scr_ui_list_step.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "f0a5c07f-b059-46ef-8d4b-4dfc731d97f9",
             "Value": {
                 "id": "350e1fc3-a09c-4792-8f9b-9a7ef4138f65",
@@ -14552,7 +14571,8 @@
         "9ee0fef3-b145-498d-ba72-c6d13efa2f51",
         "11c362f4-f545-4069-9a4d-6244772a731e",
         "c668c516-94ce-4df8-a881-844aa3fab456",
-        "5b60a17f-e82f-46c0-8bb6-4e809b002cf0"
+        "5b60a17f-e82f-46c0-8bb6-4e809b002cf0",
+        "f08a6bb2-c008-4f18-be69-fd91a6c76a4a"
     ],
     "tutorial": ""
 }
