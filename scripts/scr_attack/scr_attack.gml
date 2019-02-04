@@ -21,7 +21,7 @@ if (victim != attacker and scr_is_damaged_by(victim,attacker)) {
 	// Cause bleeding and blood spots
 	// TODO: consider whether blood and blood spots should be used contextually
 	if (victim.bleeds) {
-		part_particles_create(global.particles_below, victim.x, victim.y, global.blood_particles, 10);
+		with (Particles) part_particles_create(global.particles_below, victim.x, victim.y, global.blood_particles, 10);
 		scr_bloodspot(victim.x, victim.y, 0.3);
 	}
 	

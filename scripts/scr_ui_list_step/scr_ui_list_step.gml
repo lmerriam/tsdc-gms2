@@ -1,4 +1,5 @@
 /// Detect the list slot the mouse is over and store it
+/// @param list_props
 
 // Get list props
 var list_props = argument0;

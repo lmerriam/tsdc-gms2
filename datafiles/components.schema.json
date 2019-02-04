@@ -1,0 +1,15 @@
+{
+  "$id": "https://example.com/address.schema.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "Components for TSDC game",
+  "type": "object",
+  "properties": {
+    "component": {
+      "type": "object",
+      "stats": {
+        "type": "object"
+      }
+    }
+  },
+  "required": [ "stats"]
+}

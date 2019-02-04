@@ -1,7 +1,7 @@
 /// Init particle system
 
 global.particles_below = part_system_create();
-part_system_depth(global.particles_below, 101);
+part_system_depth(global.particles_below, 300);
 scr_init_dust();
 scr_init_blood();
 

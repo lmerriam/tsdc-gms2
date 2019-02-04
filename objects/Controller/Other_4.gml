@@ -5,12 +5,15 @@ global.room_tile_h = room_height/global.tile_size;
 var room_tile_w = global.room_tile_w;
 var room_tile_h = global.room_tile_h;
 
-// Create the grid or resize existing
+// If collision grids already exist, destroy them
 if (variable_global_exists("collision_tiles")) {
-	ds_grid_resize(global.collision_tiles,room_tile_w,room_tile_h);
-} else {
-	global.collision_tiles = ds_grid_create(room_tile_w,room_tile_h);
+	ds_grid_destroy(global.collision_tiles);
+	mp_grid_destroy(global.path_tiles);
 }
+
+// Create or regenerate collision grids
+global.collision_tiles = ds_grid_create(room_tile_w,room_tile_h);
+global.path_tiles = mp_grid_create(0,0,room_tile_w,room_tile_h,global.tile_size,global.tile_size);
 ds_grid_clear(global.collision_tiles,false);
 
 // Iterate through all layers in room
@@ -28,6 +31,7 @@ for (var lyr=0; lyr<layer_count; lyr++) {
 			for (var yy=0; yy<room_tile_h; yy++) {
 				if (tilemap_get(tilemap, xx, yy) != 0) {
 					global.collision_tiles[# xx,yy] = true;
+					mp_grid_add_cell(global.path_tiles,xx,yy);
 				}
 			}
 		}

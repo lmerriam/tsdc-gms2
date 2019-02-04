@@ -25,3 +25,6 @@ targety = 0;
 
 // Stats
 stats[? "Level"] = 1;
+
+// Create path
+path = path_add();

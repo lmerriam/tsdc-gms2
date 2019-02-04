@@ -53,3 +53,7 @@
 //} else {
 //    minimap = surface_create(minimap_width,minimap_height);
 //}
+
+//draw_set_alpha(0.3);
+//mp_grid_draw(global.path_tiles);
+//draw_set_alpha(1);

@@ -1,7 +1,8 @@
 [
   {
     "type": "Weapon",
-    "stackable": false
+    "stackable": false,
+    "components": ["Processor","Power Supply","Material"]
   },
   {
     "type": "Mod",

@@ -1,0 +1,1 @@
+scr_ui_list_drawgui_equipment(ui_list_crafting);

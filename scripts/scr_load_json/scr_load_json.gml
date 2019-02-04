@@ -2,7 +2,7 @@
 /// @param filename
 var filename = argument0;
 
-var theJsonFile = file_text_open_read(working_directory+argument0+".json");
+var theJsonFile = file_text_open_read(working_directory+filename+".json");
 var theData = "";
 while (!file_text_eof(theJsonFile))
 {

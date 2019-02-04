@@ -1,0 +1,82 @@
+{
+	"Processor": {
+		"Silicon": {
+			"Type": "Processor",
+			"Name": "Silicon",
+			"Value": 100,
+			"Sprite": "spr_equipment_parent",
+			"Stats": {
+				"Damage": 1
+			}
+		},
+		"Quantum": {
+			"Type": "Processor",
+			"Name": "Quantum",
+			"Value": 100,
+			"Sprite": "spr_equipment_parent",
+			"Stats": {
+				"Damage": 1
+			}
+		},
+		"Nano": {
+			"Type": "Processor",
+			"Name": "Nano",
+			"Value": 100,
+			"Sprite": "spr_equipment_parent",
+			"Stats": {
+				"Damage": 1
+			}
+		}
+	},
+	"Power Supply": {
+		"Lithium": {
+			"Type": "Power Supply",
+			"Name": "Lithium",
+			"Value": 100,
+			"Sprite": "spr_equipment_parent",
+			"Stats": {
+				"Damage": 1
+			}
+		},
+		"Ferrite": {
+			"Type": "Power Supply",
+			"Name": "Ferrite",
+			"Value": 100,
+			"Sprite": "spr_equipment_parent",
+			"Stats": {
+				"Damage": 1
+			}
+		},
+		"Nuclear": {
+			"Type": "Power Supply",
+			"Name": "Ferrite",
+			"Value": 100,
+			"Sprite": "spr_equipment_parent",
+			"Stats": {
+				"Damage": 1
+			}
+		}
+	},
+	"Material": {
+		"Aluminum": {
+			"Type": "Material",
+			"Name": "Aluminum",
+			"Value": 100,
+			"Sprite": "spr_equipment_parent",
+			"Stats": {
+				"Damage": 1
+			}
+		}
+	},
+	"Mod": {
+		"Sharp": {
+			"Type": "Mod",
+			"Name": "Sharp",
+			"Value": 100,
+			"Sprite": "spr_equipment_parent",
+			"Stats": {
+				"Damage": 1
+			}
+		}
+	}
+}

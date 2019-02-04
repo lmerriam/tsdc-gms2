@@ -43,6 +43,8 @@ scr_menu_dialog_create();
 scr_menu_quests_create();
 scr_menu_overworld_create();
 scr_menu_confirm_create();
+scr_menu_modify_create();
+scr_menu_crafting_create();
 
 // Set initial menu state
 global.current_menu = "HUD";
