@@ -17,6 +17,10 @@
     "stackable": false
   },
   {
+    "type": "Food",
+    "stackable": true
+  },
+  {
     "type": "Quest",
     "stackable": false
   },

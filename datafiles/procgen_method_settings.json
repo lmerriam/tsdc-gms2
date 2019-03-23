@@ -1,0 +1,6 @@
+{
+  "birth limit": 3,
+  "death limit": 4,
+  "step count": 4,
+  "seed": "random noise"
+}

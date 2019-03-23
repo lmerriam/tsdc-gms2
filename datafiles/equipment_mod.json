@@ -1,7 +1,6 @@
 {
     "Mod": {
         "Properties": {
-          "Type": "Mod",
           "Name": "Generic Mod",
           "Value": 100,
           "Sprite": "spr_mod",

@@ -1,7 +1,6 @@
 {
 		"Projectile": {
 				"Properties": {
-					"Type": "Spell",
 					"Name": "Projectile Spell",
 					"Value": 100,
 					"Sprite": "spr_scroll_projectile",
@@ -17,7 +16,6 @@
 			},
 			"Column": {
 				"Properties": {
-					"Type": "Spell",
 					"Name": "Column Spell",
 					"Value": 100,
 					"Sprite": "spr_scroll_column",
@@ -33,7 +31,6 @@
 			},
 			"Lineup": {
 				"Properties": {
-					"Type": "Spell",
 					"Name": "Lineup Spell",
 					"Value": 100,
 					"Sprite": "spr_scroll_lineup",
@@ -49,7 +46,6 @@
 			},
 			"Area": {
 				"Properties": {
-					"Type": "Spell",
 					"Name": "Area of Effect Spell",
 					"Value": 100,
 					"Sprite": "spr_scroll_area",
@@ -65,7 +61,6 @@
 			},
 			"Vorpal": {
 				"Properties": {
-					"Type": "Spell",
 					"Name": "Vorpal Spell",
 					"Value": 100,
 					"Sprite": "spr_scroll_vorpal",

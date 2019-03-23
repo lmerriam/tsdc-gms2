@@ -1,7 +1,6 @@
 {
   "SMG": {
       "Properties": {
-        "Type": "Weapon",
         "Name": "Submachine Gun",
         "Value": 100,
         "Sprite": "spr_SMG",
@@ -16,7 +15,6 @@
     },
     "Pistol": {
       "Properties": {
-        "Type": "Weapon",
         "Name": "Pistol",
         "Value": 100,
         "Sprite": "spr_pistol",
@@ -31,7 +29,6 @@
     },
     "Bomb": {
       "Properties": {
-        "Type": "Weapon",
         "Name": "Bomb",
         "Value": 100,
         "Sprite": "spr_bomb",
@@ -46,7 +43,6 @@
     },
     "Shotgun": {
       "Properties": {
-        "Type": "Weapon",
         "Name": "Shotgun",
         "Value": 100,
         "Sprite": "spr_shotgun",
@@ -61,7 +57,6 @@
     },
     "Blade": {
       "Properties": {
-        "Type": "Weapon",
         "Name": "Blade",
         "Value": 100,
         "Sprite": "spr_blade",
@@ -76,7 +71,6 @@
     },
     "Hammer": {
       "Properties": {
-        "Type": "Weapon",
         "Name": "Hammer",
         "Value": 100,
         "Sprite": "spr_hammer",
@@ -91,7 +85,6 @@
     },
     "Spear": {
       "Properties": {
-        "Type": "Weapon",
         "Name": "Spear",
         "Value": 100,
         "Sprite": "spr_spear",
@@ -106,7 +99,6 @@
     },
     "Bow": {
       "Properties": {
-        "Type": "Weapon",
         "Name": "Bow",
         "Value": 100,
         "Sprite": "spr_bow",
@@ -121,7 +113,6 @@
     },
     "Flamethrower": {
       "Properties": {
-        "Type": "Weapon",
         "Name": "Flamethrower",
         "Value": 100,
         "Sprite": "spr_flamethrower",
@@ -136,7 +127,6 @@
     },
     "Boomerang": {
       "Properties": {
-        "Type": "Weapon",
         "Name": "Boomerang",
         "Value": 100,
         "Sprite": "spr_boomerang",
@@ -151,7 +141,7 @@
     },
     "Philactery": {
       "Properties": {
-          "Type": "Weapon",
+
           "Name": "Philactery",
           "Value": 100,
           "Sprite": "spr_philactery",

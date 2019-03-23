@@ -17,8 +17,9 @@ for (var i=0; i<size; i++) {
 	var key = ds_map_find_first(eqp)
 	for (var j=0; j<ds_map_size(eqp); j++) {
 		var item = eqp[? key];
+		var item_props = item[? "Properties"];
 		ds_map_add(global.equipment_library,key,item);
-		item[? "type"] = type;
+		item_props[? "Type"] = type;
 		key = ds_map_find_next(eqp,key);
 	}
 	//ds_map_add(global.equipment,type,eqp);
@@ -63,7 +64,7 @@ scr_equip(scr_init_equipment("Mod"));
 scr_equip(scr_init_equipment("Projectile"));
 scr_calc_stats();
 
-repeat(26) scr_send_to_inv(scr_init_equipment(choose("SMG","Heavy Armor","Mod","Scrap Metal")));
+repeat(26) scr_send_to_inv(scr_init_equipment("carrot"));
 
 // Set up 
 inv_padding = 32;

@@ -1,7 +1,6 @@
 {
   "Heavy Armor": {
     "Properties": {
-      "Type": "Armor",
       "Name": "Heavy Armor",
       "Value": 100,
       "Sprite": "spr_armor",

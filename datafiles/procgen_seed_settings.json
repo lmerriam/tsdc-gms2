@@ -1,0 +1,9 @@
+{
+  "random noise": {
+    "chance to init": 0.55
+  },
+  "random spray": {
+    "tiles per spray": 16,
+    "count of sprays": 24
+  }
+}

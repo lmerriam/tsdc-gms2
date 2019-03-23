@@ -6,7 +6,7 @@
     "children": [
         "abd4d734-48c4-4b4c-90a1-ee61cf2fe993"
     ],
-    "filterType": "root",
+    "filterType": "user",
     "folderName": "Default2",
     "isDefaultView": false,
     "localisedFolderName": ""

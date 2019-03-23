@@ -1,0 +1,178 @@
+{
+  "apple": {
+    "Properties": {
+      "Name": "Apple",
+      "Value": 10,
+      "Sprite": "food_01"
+    }
+  },
+  "lime": {
+    "Properties": {
+      "Name": "Lime",
+      "Value": 10,
+      "Sprite": "food_02"
+    }
+  },
+  "orange": {
+    "Properties": {
+      "Name": "Orange",
+      "Value": 10,
+      "Sprite": "food_03"
+    }
+  },
+  "peach": {
+    "Properties": {
+      "Name": "Peach",
+      "Value": 10,
+      "Sprite": "food_04"
+    }
+  },
+  "pineapple": {
+    "Properties": {
+      "Name": "Pineapple",
+      "Value": 10,
+      "Sprite": "food_05"
+    }
+  },
+  "banana": {
+    "Properties": {
+      "Name": "Banana",
+      "Value": 10,
+      "Sprite": "food_06"
+    }
+  },
+  "cherries": {
+    "Properties": {
+      "Type": "Cherries",
+      "Name": "Apple",
+      "Value": 10,
+      "Sprite": "food_07"
+    }
+  },
+  "watermelon": {
+    "Properties": {
+      "Name": "Watermelon",
+      "Value": 10,
+      "Sprite": "food_08"
+    }
+  },
+  "cookie": {
+    "Properties": {
+      "Name": "Cookie",
+      "Value": 10,
+      "Sprite": "food_17"
+    }
+  },
+  "candy": {
+    "Properties": {
+      "Name": "Candy",
+      "Value": 10,
+      "Sprite": "food_18"
+    }
+  },
+  "candy cane": {
+    "Properties": {
+      "Name": "Candy Cane",
+      "Value": 10,
+      "Sprite": "food_19"
+    }
+  },
+  "chocolate cake": {
+    "Properties": {
+      "Name": "Chocolate Cake",
+      "Value": 10,
+      "Sprite": "food_20"
+    }
+  },
+  "chocolate bar": {
+    "Properties": {
+      "Name": "Chocolate Bar",
+      "Value": 10,
+      "Sprite": "food_21"
+    }
+  },
+  "blue lollipop": {
+    "Properties": {
+      "Name": "Blue Lollipop",
+      "Value": 10,
+      "Sprite": "food_22"
+    }
+  },
+  "chocolate ice cream": {
+    "Properties": {
+      "Name": "Chocolate Ice Cream",
+      "Value": 10,
+      "Sprite": "food_23"
+    }
+  },
+  "honey": {
+    "Properties": {
+      "Name": "Honey",
+      "Value": 10,
+      "Sprite": "food_24"
+    }
+  },
+  "cheese": {
+    "Properties": {
+      "Name": "Cheese",
+      "Value": 10,
+      "Sprite": "food_33"
+    }
+  },
+  "uncooked ham": {
+    "Properties": {
+      "Name": "Uncooked Ham",
+      "Value": 10,
+      "Sprite": "food_34"
+    }
+  },
+  "egg": {
+    "Properties": {
+      "Name": "Egg",
+      "Value": 10,
+      "Sprite": "food_35"
+    }
+  },
+  "uncooked fish": {
+    "Properties": {
+      "Name": "Uncooked Fish",
+      "Value": 10,
+      "Sprite": "food_36"
+    }
+  },
+  "carrot": {
+    "Properties": {
+      "Name": "Carrot",
+      "Value": 10,
+      "Sprite": "food_49"
+    }
+  },
+  "pepper": {
+    "Properties": {
+      "Name": "Pepper",
+      "Value": 10,
+      "Sprite": "food_50"
+    }
+  },
+  "tomato": {
+    "Properties": {
+      "Name": "Tomato",
+      "Value": 10,
+      "Sprite": "food_51"
+    }
+  },
+  "red grape": {
+    "Properties": {
+      "Name": "Red Grape",
+      "Value": 10,
+      "Sprite": "food_52"
+    }
+  },
+  "blue grape": {
+    "Properties": {
+      "Name": "Blue Grape",
+      "Value": 10,
+      "Sprite": "food_53"
+    }
+  },
+}

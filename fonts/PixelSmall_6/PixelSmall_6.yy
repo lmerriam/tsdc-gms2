@@ -5,6 +5,7 @@
     "name": "PixelSmall_6",
     "AntiAlias": 0,
     "TTFName": "",
+    "ascenderOffset": 0,
     "bold": false,
     "charset": 1,
     "first": 0,
