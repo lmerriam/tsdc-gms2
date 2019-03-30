@@ -21,9 +21,11 @@ if (distance_to_object(nearest_drop) < 32) {
 nearest_interactable = global.interactables[| 0];
 for (var i=0; i < ds_list_size(global.interactables); i++) {
 	var inst = global.interactables[| i];
-	var inst_dis = point_distance(Player.x,Player.y,inst.x,inst.y);
-	var nearest_dis = point_distance(Player.x,Player.y,nearest_interactable.x,nearest_interactable.y);
-	if (inst_dis < nearest_dis) nearest_interactable = inst;
+	if instance_exists(inst) and instance_exists(nearest_interactable) {
+		var inst_dis = point_distance(Player.x,Player.y,inst.x,inst.y);
+		var nearest_dis = point_distance(Player.x,Player.y,nearest_interactable.x,nearest_interactable.y);
+		if (inst_dis < nearest_dis) nearest_interactable = inst;
+	}
 }
 
 if (nearest_interactable != undefined and distance_to_object(nearest_interactable) < 32) {

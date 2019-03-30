@@ -10215,6 +10215,14 @@
             }
         },
         {
+            "Key": "e43a00e6-3f97-44e9-9cf4-1cfb6fb5054a",
+            "Value": {
+                "id": "c9f2dd9e-ace2-4c63-b095-2b656abe6d22",
+                "resourcePath": "objects\\Depth_Controller\\Depth_Controller.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "e449e045-c7e6-47ed-9698-aa7f14f7ea87",
             "Value": {
                 "id": "f3042e1d-589b-446d-b610-1b082c1c931c",
@@ -11558,7 +11566,9 @@
         "4974b45b-d0fc-42e2-80fa-650d854a0e2c",
         "6eeb6cb2-3a7d-4312-93f1-09a581d8921a",
         "c5129308-942a-4bab-91e4-310cdfe178b0",
-        "3d560f1a-da71-45e4-8f85-b6c9bcb1dd7a"
+        "3d560f1a-da71-45e4-8f85-b6c9bcb1dd7a",
+        "b2dfd0cb-b188-4f60-b052-165f002acbed",
+        "f3eb3f25-90e9-442f-b019-22cf30e7ab81"
     ],
     "tutorial": ""
 }

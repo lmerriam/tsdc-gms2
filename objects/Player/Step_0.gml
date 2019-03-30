@@ -24,6 +24,9 @@ script_execute(player_state_step);
 script_execute(weapon_state_step);
 script_execute(spell_state_step);
 
+// Set layer based on depth
+layer = global.depth_layers[| y div global.depth_layer_height];
+
 /// Teleport player
 if (global.teleport_player_x != noone) {
     scr_move_player(global.teleport_player_x,global.teleport_player_y);

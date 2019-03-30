@@ -2,6 +2,7 @@
 
 // Generate seed
 random_set_seed(current_time);
+show_debug_message("Seed" + string(random_get_seed()));
 
 ds_grid_clear(tile_grid,false);
 
@@ -11,6 +12,8 @@ tilemap_clear(map_id,0);
 
 layer_destroy("props");
 layer_create(0,"props");
+
+with (Chest) instance_destroy(id,false);
 
 //// Generate voronoi regions
 //regions = ds_list_create();
@@ -63,11 +66,12 @@ layer_create(0,"props");
 //}
 
 //// Generate seed via random square sprays
+show_debug_message("Generate tilemap seed via spray")
 var spray_count = 12;
 var spray_radius = 48;
 var part_count = 64;
 var part_radius = 12;
-var padding = chunk_size*2;
+var padding = 64;
 
 regions = ds_list_create();
 
@@ -87,18 +91,21 @@ repeat(spray_count) {
 		var len = irandom(spray_radius);
 		var part_x = floor(origin_x + lengthdir_x(len,dir));
 		var part_y = floor(origin_y + lengthdir_y(len,dir));
+		
+		ds_grid_set_disk(tile_grid,part_x,part_y,irandom_range(1,8),true);
 
-		repeat(24){
-			var dir = irandom(360);
-			var len = irandom(part_radius);
-			var sm_part_x = floor(part_x + lengthdir_x(len,dir));
-			var sm_part_y = floor(part_y + lengthdir_y(len,dir));
-			tile_grid[# sm_part_x,sm_part_y] = true;
-		}
+		//repeat(24){
+		//	var dir = irandom(360);
+		//	var len = irandom(part_radius);
+		//	var sm_part_x = floor(part_x + lengthdir_x(len,dir));
+		//	var sm_part_y = floor(part_y + lengthdir_y(len,dir));
+		//	tile_grid[# sm_part_x,sm_part_y] = true;
+		//}
 	}
 }
 
-// Grow
+// Grow seeded tilemap
+show_debug_message("Growing");
 var numberOfSteps = 4;
 var birth_limit = 3;
 var death_limit = 3;
@@ -108,7 +115,7 @@ repeat (numberOfSteps) {
 	ds_grid_copy(new_grid,tile_grid);
 	for (var xx=0; xx<rm_tile_width; xx++) {
 		for (var yy=0; yy<rm_tile_height; yy++) {
-			
+
 			// Count living neighbors
 			var living_neighbors = scr_grid_neighbor_count(tile_grid, true, xx, yy);
 			
@@ -133,10 +140,72 @@ repeat (numberOfSteps) {
 	ds_grid_destroy(new_grid);
 }
 
-// Draw water tiles
+// Place trees and props
+show_debug_message("Placing trees");
+var len_max = 512;
+//repeat(24) {
+//	var x_origin = irandom(ds_grid_width(tile_grid));
+//	var y_origin = irandom(ds_grid_height(tile_grid));
+//	if (tile_grid[# x_origin,y_origin]) {
+//		x_origin *= tile_size;
+//		y_origin *= tile_size;
+//		repeat(24) {
+//			var len = irandom(len_max);
+//			var dir = irandom(360);
+//			var xx = x_origin + lengthdir_x(len,dir);
+//			var yy = y_origin + lengthdir_y(len,dir);
+//			if !place_meeting(xx,yy,Entity_Parent) instance_create_layer(xx,yy,"entities",Tree);
+//		}
+//	}
+//}
+
+show_debug_message("Placing points of interest");
+var pois_placed = 0;
+while pois_placed < 40 {
+	var xx = irandom(rm_tile_width-1);
+	var yy = irandom(rm_tile_height-1);
+	var tile = tile_grid[# xx, yy];
+	var neighbors = scr_grid_neighbor_exists(tile_grid,false,xx,yy);
+	if (tile and neighbors) {
+		var sprx = xx*tile_size;
+		var spry = yy*tile_size;
+		layer_sprite_create("props",sprx,spry,spr_damage_medium);
+		pois_placed++;
+	}
+}
+
+var pois_placed = 0;
+while pois_placed < 80 {
+	var xx = irandom(rm_tile_width-1);
+	var yy = irandom(rm_tile_height-1);
+	var tile = tile_grid[# xx, yy];
+	if tile {
+		var sprx = xx*tile_size;
+		var spry = yy*tile_size;
+		instance_create_layer(sprx,spry,"entities",Chest);
+		pois_placed++;
+	}
+}
+
+// Put the player at one of the regions
+show_debug_message("Spawning player");
+var player_spawn_region = regions[| irandom(ds_list_size(regions)-1)];
+var player_spawn_x = player_spawn_region[? "origin x"] * tile_size;
+var player_spawn_y = player_spawn_region[? "origin y"] * tile_size;
+scr_move_player(player_spawn_x,player_spawn_y);
+
+// Create tiles
 for (var xx=0; xx<rm_tile_width; xx++) {
 	for (var yy=0; yy<rm_tile_height; yy++) {
 		var tile = tile_grid[# xx,yy];
 		if tile tilemap_set(map_id, 2, xx, yy);
+	}
+}
+
+// Create collision tiles
+ds_grid_resize(global.collision_tiles,rm_tile_width,rm_tile_height);
+for (var xx=0; xx<rm_tile_width; xx++) {
+	for (var yy=0; yy<rm_tile_height; yy++) {
+		global.collision_tiles[# xx,yy] = !tile_grid[# xx,yy];
 	}
 }
