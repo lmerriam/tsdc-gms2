@@ -6,6 +6,9 @@ show_debug_message("Seed" + string(random_get_seed()));
 
 ds_grid_clear(tile_grid,false);
 
+// TODO: all those maps in region_paths are still hanging around...
+ds_list_clear(region_paths);
+
 var lay_id = layer_get_id("ProcgenTiles");
 var map_id = layer_tilemap_get_id(lay_id);
 tilemap_clear(map_id,0);
@@ -67,10 +70,10 @@ with (Chest) instance_destroy(id,false);
 
 //// Generate seed via random square sprays
 show_debug_message("Generate tilemap seed via spray")
-var spray_count = 12;
+var spray_count = 24;
 var spray_radius = 48;
 var part_count = 64;
-var part_radius = 12;
+var part_radius = 10;
 var padding = 64;
 
 regions = ds_list_create();
@@ -92,7 +95,7 @@ repeat(spray_count) {
 		var part_x = floor(origin_x + lengthdir_x(len,dir));
 		var part_y = floor(origin_y + lengthdir_y(len,dir));
 		
-		ds_grid_set_disk(tile_grid,part_x,part_y,irandom_range(1,8),true);
+		ds_grid_set_disk(tile_grid,part_x,part_y,irandom_range(1,part_radius),true);
 
 		//repeat(24){
 		//	var dir = irandom(360);
@@ -142,7 +145,7 @@ repeat (numberOfSteps) {
 
 // Place trees and props
 show_debug_message("Placing trees");
-var len_max = 512;
+//var len_max = 512;
 //repeat(24) {
 //	var x_origin = irandom(ds_grid_width(tile_grid));
 //	var y_origin = irandom(ds_grid_height(tile_grid));
@@ -209,3 +212,46 @@ for (var xx=0; xx<rm_tile_width; xx++) {
 		global.collision_tiles[# xx,yy] = !tile_grid[# xx,yy];
 	}
 }
+
+// Generate minimum spanning tree
+// Create collections of connected and unconnected regions
+var regions_unconnected = ds_list_create();
+var regions_connected = ds_list_create();
+ds_list_copy(regions_unconnected, regions);
+// Create tree structure for storing the graph
+//region_paths = ds_list_create();
+// Pick a random starting point and add it to the connected list
+ds_list_add(regions_connected,regions_unconnected[| 0]);
+ds_list_delete(regions_unconnected,0);
+//Iterate through the regions and add the nearest unconnected to the nearest connected until all connected
+while (ds_list_size(regions_unconnected)>0) {
+	var weight = 99999999999;
+	var region_to_add = noone;
+	var new_path = ds_map_create();
+	for(var i=0; i<ds_list_size(regions_connected); i++) {
+		for (var j=0; j<ds_list_size(regions_unconnected); j++) {
+			var reg_1 = regions_connected[| i];
+			var x1 = reg_1[? "origin x"];
+			var y1 = reg_1[? "origin y"];
+		
+			var reg_2 = regions_unconnected[| j];
+			var x2 = reg_2[? "origin x"];
+			var y2 = reg_2[? "origin y"];
+		
+			var dis = point_distance(x1,y1,x2,y2);
+			if dis<weight {
+				weight=dis;
+				region_to_add = j;
+				new_path[? "x1"] = x1;
+				new_path[? "y1"] = y1;
+				new_path[? "x2"] = x2;
+				new_path[? "y2"] = y2;
+			}
+		}
+	}
+	ds_list_add(region_paths,new_path);
+	ds_list_add(regions_connected,regions_unconnected[| region_to_add]);
+	ds_list_delete(regions_unconnected,region_to_add);
+}
+ds_list_destroy(regions_connected);
+ds_list_destroy(regions_unconnected);

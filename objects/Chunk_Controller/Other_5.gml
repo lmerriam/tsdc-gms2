@@ -4,5 +4,5 @@ for (var xx=0;xx<chunk_count_x;xx++) {
 	}
 }
 // TODO: this is a HACK. resizing the chunk grid bigger than any room so we don't have to 
-ds_grid_resize(global.chunks,50,50);
+ds_grid_resize(global.chunks,999,999);
 ds_grid_clear(global.chunks,noone);

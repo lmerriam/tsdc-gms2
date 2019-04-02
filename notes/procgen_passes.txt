@@ -1,0 +1,29 @@
+BASE PLAYABLE AREA
+- Major points of interest
+- Pathing between points
+TERRAIN
+- Cliffs
+- Forests
+- Biomes
+MAJOR CITIES
+- Streets and houses
+- NPCs, Vendors, Quest Givers
+- Dungeons/Buildings to enter
+- Trade routes with other cities
+- Collectibles
+- Lore
+MAJOR QUESTS
+POINTS OF INTEREST
+- Outposts
+- Dungeons
+- Events
+- Towers
+- Minibosses
+- Side quests
+ENEMY MOBS
+COLLECTIBLES
+RESOURCES
+DESTRUCTIBLES
+PROPS
+- Animals
+- Biome props

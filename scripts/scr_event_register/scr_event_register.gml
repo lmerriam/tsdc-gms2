@@ -12,7 +12,7 @@ event_map[? "script"] = script;
 
 // Transcribe optional args
 var args = ds_list_create();
-var arg_count = array_length_1d(argument);
+var arg_count = argument_count;
 var req_arg_count = 3;
 for (var i=req_arg_count;i<arg_count;i++) {
 	args[| i-req_arg_count] = argument[i];
