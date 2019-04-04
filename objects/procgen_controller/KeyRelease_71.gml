@@ -6,8 +6,10 @@ show_debug_message("Seed" + string(random_get_seed()));
 
 ds_grid_clear(tile_grid,false);
 
-// TODO: all those maps in region_paths are still hanging around...
+// TODO: all the embedded maps and lists are just hanging around...
 ds_list_clear(region_paths);
+ds_map_clear(region_neighbors);
+ds_list_clear(regions);
 
 var lay_id = layer_get_id("ProcgenTiles");
 var map_id = layer_tilemap_get_id(lay_id);
@@ -16,7 +18,7 @@ tilemap_clear(map_id,0);
 layer_destroy("props");
 layer_create(0,"props");
 
-with (Chest) instance_destroy(id,false);
+with (Chest) instance_destroy();
 
 //// Generate voronoi regions
 //regions = ds_list_create();
@@ -76,8 +78,6 @@ var part_count = 64;
 var part_radius = 10;
 var padding = 64;
 
-regions = ds_list_create();
-
 repeat(spray_count) {
 	var origin_x = irandom_range(padding,rm_tile_width-padding);
 	var origin_y = irandom_range(padding,rm_tile_height-padding);
@@ -87,6 +87,7 @@ repeat(spray_count) {
 	var region = ds_map_create();
 	region[? "origin x"] = origin_x;
 	region[? "origin y"] = origin_y;
+	region[? "neighbors"] = ds_list_create();
 	ds_list_add(regions,region);
 	
 	repeat(irandom_range(part_count,part_count*3)) {
@@ -96,20 +97,12 @@ repeat(spray_count) {
 		var part_y = floor(origin_y + lengthdir_y(len,dir));
 		
 		ds_grid_set_disk(tile_grid,part_x,part_y,irandom_range(1,part_radius),true);
-
-		//repeat(24){
-		//	var dir = irandom(360);
-		//	var len = irandom(part_radius);
-		//	var sm_part_x = floor(part_x + lengthdir_x(len,dir));
-		//	var sm_part_y = floor(part_y + lengthdir_y(len,dir));
-		//	tile_grid[# sm_part_x,sm_part_y] = true;
-		//}
 	}
 }
 
 // Grow seeded tilemap
 show_debug_message("Growing");
-var numberOfSteps = 4;
+var numberOfSteps = 2;
 var birth_limit = 3;
 var death_limit = 3;
 repeat (numberOfSteps) {
@@ -162,41 +155,6 @@ show_debug_message("Placing trees");
 //	}
 //}
 
-show_debug_message("Placing points of interest");
-var pois_placed = 0;
-while pois_placed < 40 {
-	var xx = irandom(rm_tile_width-1);
-	var yy = irandom(rm_tile_height-1);
-	var tile = tile_grid[# xx, yy];
-	var neighbors = scr_grid_neighbor_exists(tile_grid,false,xx,yy);
-	if (tile and neighbors) {
-		var sprx = xx*tile_size;
-		var spry = yy*tile_size;
-		layer_sprite_create("props",sprx,spry,spr_damage_medium);
-		pois_placed++;
-	}
-}
-
-var pois_placed = 0;
-while pois_placed < 80 {
-	var xx = irandom(rm_tile_width-1);
-	var yy = irandom(rm_tile_height-1);
-	var tile = tile_grid[# xx, yy];
-	if tile {
-		var sprx = xx*tile_size;
-		var spry = yy*tile_size;
-		instance_create_layer(sprx,spry,"entities",Chest);
-		pois_placed++;
-	}
-}
-
-// Put the player at one of the regions
-show_debug_message("Spawning player");
-var player_spawn_region = regions[| irandom(ds_list_size(regions)-1)];
-var player_spawn_x = player_spawn_region[? "origin x"] * tile_size;
-var player_spawn_y = player_spawn_region[? "origin y"] * tile_size;
-scr_move_player(player_spawn_x,player_spawn_y);
-
 // Create tiles
 for (var xx=0; xx<rm_tile_width; xx++) {
 	for (var yy=0; yy<rm_tile_height; yy++) {
@@ -218,14 +176,16 @@ for (var xx=0; xx<rm_tile_width; xx++) {
 var regions_unconnected = ds_list_create();
 var regions_connected = ds_list_create();
 ds_list_copy(regions_unconnected, regions);
-// Create tree structure for storing the graph
-//region_paths = ds_list_create();
 // Pick a random starting point and add it to the connected list
 ds_list_add(regions_connected,regions_unconnected[| 0]);
 ds_list_delete(regions_unconnected,0);
+var region_initial = regions[| 0];
+region_initial[? "level"] = 1;
 //Iterate through the regions and add the nearest unconnected to the nearest connected until all connected
 while (ds_list_size(regions_unconnected)>0) {
 	var weight = 99999999999;
+	var nb_1;
+	var nb_2;
 	var region_to_add = noone;
 	var new_path = ds_map_create();
 	for(var i=0; i<ds_list_size(regions_connected); i++) {
@@ -246,12 +206,81 @@ while (ds_list_size(regions_unconnected)>0) {
 				new_path[? "y1"] = y1;
 				new_path[? "x2"] = x2;
 				new_path[? "y2"] = y2;
+				// Set neighbors
+				nb_1 = reg_1;
+				nb_2 = reg_2;
 			}
 		}
 	}
 	ds_list_add(region_paths,new_path);
 	ds_list_add(regions_connected,regions_unconnected[| region_to_add]);
 	ds_list_delete(regions_unconnected,region_to_add);
+	
+	// Link the new neighbors
+	if (!region_neighbors[? nb_1]) region_neighbors[? nb_1] = ds_list_create();
+	if (!region_neighbors[? nb_2]) region_neighbors[? nb_2] = ds_list_create();
+	ds_list_add(region_neighbors[? nb_1], nb_2);
+	ds_list_add(region_neighbors[? nb_2], nb_1);
+	
+	// Assign levels
+	nb_2[? "level"] = nb_1[? "level"] + 1;
 }
 ds_list_destroy(regions_connected);
 ds_list_destroy(regions_unconnected);
+
+// Generate town at start point
+var rx = region_initial[? "origin x"];
+var ry = region_initial[? "origin y"];
+
+var points = ds_list_create();
+repeat(8){
+	var xx = irandom_range(rx-8,rx+8)<<5;
+	var yy = irandom_range(ry-8,ry+8)<<5;
+	var point = ds_map_create();
+	point[? "x"] = xx;
+	point[? "y"] = yy;
+	ds_list_add(points,point);
+	layer_sprite_create("props",xx,yy,spr_cottage_brown);
+}
+
+// Put the player at one of the regions
+show_debug_message("Spawning player");
+var player_spawn_region = regions[| 0];
+var player_spawn_x = player_spawn_region[? "origin x"] * tile_size;
+var player_spawn_y = player_spawn_region[? "origin y"] * tile_size;
+scr_move_player(player_spawn_x,player_spawn_y);
+
+// Seed chests on boundaries
+show_debug_message("Placing points of interest");
+var pois_placed = 0;
+while pois_placed < 40 {
+	var xx = irandom(rm_tile_width-1);
+	var yy = irandom(rm_tile_height-1);
+	var tile = tile_grid[# xx, yy];
+	var neighbors = scr_grid_neighbor_exists(tile_grid,false,xx,yy);
+	if (tile and neighbors) {
+		var sprx = xx*tile_size;
+		var spry = yy*tile_size;
+		layer_sprite_create("props",sprx,spry,spr_damage_medium);
+		pois_placed++;
+	}
+}
+// Seed chests randomly
+var pois_placed = 0;
+while pois_placed < 100 {
+	var xx = irandom(rm_tile_width-1);
+	var yy = irandom(rm_tile_height-1);
+	var tile = tile_grid[# xx, yy];
+	if tile {
+		// Bitshifting to multiply by 32 (tile grid) efficiently
+		var sprx = xx<<5;
+		var spry = yy<<5;
+		var chest = instance_create_layer(sprx,spry,"entities",Chest);
+		// Level the chest
+		var region = scr_region_find_nearest(sprx,spry);
+		var level = region[? "level"];
+		chest.stats[? "Level"] = level;
+		
+		pois_placed++;
+	}
+}

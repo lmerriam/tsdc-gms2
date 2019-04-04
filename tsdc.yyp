@@ -7079,6 +7079,14 @@
             }
         },
         {
+            "Key": "a26a6b8c-b84b-45c8-9aac-adef760fec54",
+            "Value": {
+                "id": "1f148d29-d7f3-4719-98f0-e3645d5770fe",
+                "resourcePath": "scripts\\scr_region_find_nearest\\scr_region_find_nearest.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "a27574c3-2263-4eac-a8c4-fa8295283690",
             "Value": {
                 "id": "444025df-0bdd-4a34-af3c-6c282d3ff6ba",
