@@ -10,6 +10,7 @@ ds_grid_clear(tile_grid,false);
 ds_list_clear(region_paths);
 ds_map_clear(region_neighbors);
 ds_list_clear(regions);
+mp_grid_clear_all(global.path_tiles);
 
 var lay_id = layer_get_id("ProcgenTiles");
 var map_id = layer_tilemap_get_id(lay_id);
@@ -81,7 +82,7 @@ var padding = 64;
 repeat(spray_count) {
 	var origin_x = irandom_range(padding,rm_tile_width-padding);
 	var origin_y = irandom_range(padding,rm_tile_height-padding);
-	layer_sprite_create("props",origin_x*tile_size,origin_y*tile_size,spr_area_damage);
+	//layer_sprite_create("props",origin_x*tile_size,origin_y*tile_size,spr_area_damage);
 	//var spray_radius = irandom_range(spray_radius*.75,spray_radius*1.25);
 	
 	var region = ds_map_create();
@@ -167,7 +168,9 @@ for (var xx=0; xx<rm_tile_width; xx++) {
 ds_grid_resize(global.collision_tiles,rm_tile_width,rm_tile_height);
 for (var xx=0; xx<rm_tile_width; xx++) {
 	for (var yy=0; yy<rm_tile_height; yy++) {
-		global.collision_tiles[# xx,yy] = !tile_grid[# xx,yy];
+		var tile = tile_grid[# xx,yy];
+		global.collision_tiles[# xx,yy] = !tile;
+		if !tile mp_grid_add_cell(global.path_tiles,xx,yy);
 	}
 }
 
@@ -282,5 +285,24 @@ while pois_placed < 100 {
 		chest.stats[? "Level"] = level;
 		
 		pois_placed++;
+	}
+}
+
+// Tile the paths
+var path = path_add();
+for (var i=0; i<ds_list_size(region_paths); i++) {
+	var edge = region_paths[| i];
+	var x1 = edge[? "x1"]<<5;
+	var y1 = edge[? "y1"]<<5;
+	var x2 = edge[? "x2"]<<5;
+	var y2 = edge[? "y2"]<<5;
+	
+	if mp_grid_path(global.path_tiles,path,x1,y1,x2,y2,true) {
+		for (var j=0; j<path_get_number(path); j++) {
+			var xx = path_get_point_x(path,j)>>5;
+			var yy = path_get_point_y(path,j)>>5;
+			tilemap_set(map_id, 1, xx, yy);
+			tilemap_set(map_id, 1, xx+choose(-1,0,1), yy);
+		}
 	}
 }

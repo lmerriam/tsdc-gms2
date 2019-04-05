@@ -21,3 +21,4 @@ ds_grid_clear(tile_grid,false);
 regions = ds_list_create();
 region_neighbors = ds_map_create();
 region_paths = ds_list_create();
+path_grid = ds_grid_create(rm_tile_width,rm_tile_height);
