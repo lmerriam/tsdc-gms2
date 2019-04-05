@@ -289,6 +289,9 @@ while pois_placed < 100 {
 }
 
 // Tile the paths
+var lay_id = layer_get_id("PathTiles");
+var map_id = layer_tilemap_get_id(lay_id);
+
 var path = path_add();
 for (var i=0; i<ds_list_size(region_paths); i++) {
 	var edge = region_paths[| i];
@@ -301,8 +304,8 @@ for (var i=0; i<ds_list_size(region_paths); i++) {
 		for (var j=0; j<path_get_number(path); j++) {
 			var xx = path_get_point_x(path,j)>>5;
 			var yy = path_get_point_y(path,j)>>5;
-			tilemap_set(map_id, 1, xx, yy);
-			tilemap_set(map_id, 1, xx+choose(-1,0,1), yy);
+			tilemap_set(map_id, irandom_range(1,7), xx, yy);
+			//tilemap_set(map_id, 1, xx+choose(-1,0,1), yy);
 		}
 	}
 }

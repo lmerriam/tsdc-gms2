@@ -3807,6 +3807,14 @@
             }
         },
         {
+            "Key": "5b0117d6-9943-4697-a274-377f5c2348ca",
+            "Value": {
+                "id": "299c4106-7328-44d7-aac0-279b52d5cbfb",
+                "resourcePath": "sprites\\spr_tiles_walkway\\spr_tiles_walkway.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "5b08e312-6eac-4fe7-bc9b-3b6fd08619bb",
             "Value": {
                 "id": "446e0644-018b-41a7-b25d-98cb139e706f",
@@ -7820,6 +7828,14 @@
                 "id": "d77bc78f-4660-4cb5-af2d-c8a7e70c1079",
                 "resourcePath": "views\/b11c5f01-73db-4bb1-ab78-43e8cf655e9a.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "b12642f8-f79d-43ff-a122-f02b9e06c196",
+            "Value": {
+                "id": "f1b67bdf-37c5-4ef2-9a5b-593ea0fa2006",
+                "resourcePath": "tilesets\\tiles_walkway\\tiles_walkway.yy",
+                "resourceType": "GMTileSet"
             }
         },
         {
