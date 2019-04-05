@@ -305,7 +305,48 @@ for (var i=0; i<ds_list_size(region_paths); i++) {
 			var xx = path_get_point_x(path,j)>>5;
 			var yy = path_get_point_y(path,j)>>5;
 			tilemap_set(map_id, irandom_range(1,7), xx, yy);
-			//tilemap_set(map_id, 1, xx+choose(-1,0,1), yy);
+			tilemap_set(map_id, irandom_range(1,7), xx+choose(-1,0,1), yy);
 		}
+	}
+}
+
+
+// Grow seeded tilemap
+show_debug_message("Growing again");
+var numberOfSteps = 4;
+var death_limit = 6;
+repeat (numberOfSteps) {
+	// Create new grid so we can continue to reference prior grid state as we iterate over the new grid
+	var new_grid = ds_grid_create(rm_tile_width,rm_tile_height);
+	ds_grid_copy(new_grid,tile_grid);
+	for (var xx=0; xx<rm_tile_width; xx++) {
+		for (var yy=0; yy<rm_tile_height; yy++) {
+
+			// Count living neighbors
+			var living_neighbors = scr_grid_neighbor_count(tile_grid, true, xx, yy);
+			
+			// Apply the rules of life
+			var tile_alive = tile_grid[# xx,yy];
+			if (tile_alive) {
+				if (living_neighbors<death_limit) {
+					new_grid[# xx,yy] = false;
+				} else {
+					new_grid[# xx,yy] = true;
+				}
+			}
+		}
+	}
+	ds_grid_copy(tile_grid,new_grid);
+	ds_grid_destroy(new_grid);
+}
+
+// Create grass tiles
+var lay_id = layer_get_id("GrassTiles");
+var map_id = layer_tilemap_get_id(lay_id);
+
+for (var xx=0; xx<rm_tile_width; xx++) {
+	for (var yy=0; yy<rm_tile_height; yy++) {
+		var tile = tile_grid[# xx,yy];
+		if tile tilemap_set(map_id, 4, xx, yy);
 	}
 }
