@@ -246,6 +246,8 @@ repeat(8){
 	layer_sprite_create("props",xx,yy,spr_cottage_brown);
 }
 
+instance_create_layer((rx<<5)-tile_size,(ry<<5)-tile_size,"entities",Sign);
+
 // Put the player at one of the regions
 show_debug_message("Spawning player");
 var player_spawn_region = regions[| 0];
@@ -348,5 +350,24 @@ for (var xx=0; xx<rm_tile_width; xx++) {
 	for (var yy=0; yy<rm_tile_height; yy++) {
 		var tile = tile_grid[# xx,yy];
 		if tile tilemap_set(map_id, 4, xx, yy);
+	}
+}
+
+// Seed props randomly
+var lay_id = layer_get_id("props");
+
+var pois_placed = 0;
+while pois_placed < 2000 {
+	var xx = irandom(rm_tile_width-1);
+	var yy = irandom(rm_tile_height-1);
+	var tile = tile_grid[# xx, yy];
+	if tile {
+		// Bitshifting to multiply by 32 (tile grid) efficiently
+		var sprx = xx<<5;
+		var spry = yy<<5;
+		var spr = choose(spr_rock_0,spr_rock_1,spr_rock_2,spr_flower_0,spr_flower_1,spr_flower_2,generic_rpg_grass01,generic_rpg_grass02);
+		layer_sprite_create(lay_id,sprx,spry,spr);
+		
+		pois_placed++;
 	}
 }

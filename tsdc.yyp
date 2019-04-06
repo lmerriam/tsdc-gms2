@@ -239,6 +239,22 @@
             }
         },
         {
+            "Key": "049b8f1f-b048-4c4f-afac-6156dd50c91c",
+            "Value": {
+                "id": "1eab346f-fa56-4241-8c21-cbcf6fb9e2e3",
+                "resourcePath": "sprites\\spr_rock_1\\spr_rock_1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "04ec489a-7a61-461d-86f6-7c13e8b5c61f",
+            "Value": {
+                "id": "c229a39e-4e37-462c-822e-8d4e9c3fb7b0",
+                "resourcePath": "sprites\\spr_flower_0\\spr_flower_0.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "04f2fd4e-c114-4053-873c-b79d91cbbae0",
             "Value": {
                 "id": "0fbf32b2-6af7-4c4b-86f9-95df96528363",
@@ -1823,6 +1839,14 @@
             }
         },
         {
+            "Key": "2e78db05-c621-4490-bb48-cb0a141ed2a2",
+            "Value": {
+                "id": "49612948-e57a-4766-9a7e-0db422dddd98",
+                "resourcePath": "sprites\\spr_flower_1\\spr_flower_1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "2edabf9d-717f-4eb1-931b-a4d101e1e4c2",
             "Value": {
                 "id": "99c6a527-8ab4-4208-80a8-106783d2b11d",
@@ -2748,6 +2772,14 @@
                 "id": "3e73fbc6-9b1b-438d-8826-589b1e9e6a5e",
                 "resourcePath": "tilesets\/background22_tileset\/background22_tileset.yy",
                 "resourceType": "GMTileSet"
+            }
+        },
+        {
+            "Key": "445a39ca-2da6-4118-be69-f0948d009747",
+            "Value": {
+                "id": "a4a1849d-2adc-4543-b253-81d0bf8e1284",
+                "resourcePath": "sprites\\spr_flower_2\\spr_flower_2.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -4999,6 +5031,14 @@
             }
         },
         {
+            "Key": "727564ed-9f58-4721-a97e-0bb8dddc0af0",
+            "Value": {
+                "id": "9faf11c4-096a-458f-a42f-b63861b97593",
+                "resourcePath": "timelines\\timeline2\\timeline2.yy",
+                "resourceType": "GMTimeline"
+            }
+        },
+        {
             "Key": "72acec6b-0d13-466c-b4b0-d79627d4d1c7",
             "Value": {
                 "id": "3b831c92-d7de-465f-9aeb-fc40c0adf601",
@@ -6511,6 +6551,14 @@
             }
         },
         {
+            "Key": "926eb8ce-ab8a-4d69-96c2-68e782f906eb",
+            "Value": {
+                "id": "cfd08243-3301-4e7b-9c43-10eb909c37fa",
+                "resourcePath": "sprites\\generic_rpg_grass02\\generic_rpg_grass02.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "92badb47-304e-4394-b3d8-4fce88e23e45",
             "Value": {
                 "id": "66d613f8-dc48-4c51-a3fa-aa08b9124ba0",
@@ -7183,6 +7231,14 @@
             }
         },
         {
+            "Key": "a46fc988-62af-4599-acdd-e8e195fa5e1a",
+            "Value": {
+                "id": "b7701d3d-f0d2-41bd-89c4-20d549f0826d",
+                "resourcePath": "sprites\\spr_rock_2\\spr_rock_2.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "a4b2ff44-12a6-4147-958c-f0e686f4eca0",
             "Value": {
                 "id": "ba4c4675-860e-4227-94e5-c955101c29fe",
@@ -7292,6 +7348,14 @@
                 "id": "d49a14b8-cf74-42c6-ac42-f2e28ebb765d",
                 "resourcePath": "scripts\/scr_observer_questMobDefeated\/scr_observer_questMobDefeated.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "a6da1725-2d26-4036-b117-7a968d612623",
+            "Value": {
+                "id": "fa681404-9545-41f8-b941-874e799bbb28",
+                "resourcePath": "sprites\\generic_rpg_grass01\\generic_rpg_grass01.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -11211,6 +11275,14 @@
             "Value": {
                 "id": "a7f5780f-d780-4fbc-b3c4-e66a3986c795",
                 "resourcePath": "sprites\/spr_player_idle_back\/spr_player_idle_back.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "fe50511c-5a74-4fb1-b03e-ac5b3dec2e87",
+            "Value": {
+                "id": "4a0670a5-7d1e-4670-9919-ed8773edfd76",
+                "resourcePath": "sprites\\spr_rock_0\\spr_rock_0.yy",
                 "resourceType": "GMSprite"
             }
         },
